@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Saludos y Cortesía en Alemán (Begrüßung und Höflichkeit)</title>
+<!-- Tipografía Roboto -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<!-- Hoja de estilos -->
+<link rel="stylesheet" href="css/verbos.css">
+<style>
+.intro-box, .outro-box {
+ margin: 15px 0 25px 0;
+ padding: 15px;
+ background-color: #f8f9fa;
+ border-left: 4px solid #e91e63;
+ border-radius: 4px;
+}
+.outro-box {
+ margin-top: 25px;
+ margin-bottom: 0;
+}
+.intro-box h2, .outro-box h2 {
+ margin-top: 0;
+ margin-bottom: 6px;
+ font-size: 1.1em;
+ color: #333;
+}
+.intro-box p, .outro-box p {
+ margin: 0 0 12px 0;
+ font-size: 0.95em;
+ color: #555;
+ line-height: 1.4;
+}
+.outro-box p:last-child {
+ margin-bottom: 0;
+}
+.audio-btn {
+ background: none;  
+ border: none;
+ cursor: pointer;
+ font-size: 0.9em;
+ padding: 0;
+ margin-left: 4px;
+}
+.conj-cell {
+ font-size: 0.9em;
+ line-height: 1.25;
+}
+.conj-cell small {
+ display: block;
+ color: #666;
+ font-size: 0.85em;
+ margin-top: 2px;
+}
+.section-title {
+ font-size: 1.4em;
+ color: #e91e63;
+ margin: 30px 0 15px 0;
+ font-weight: 700;
+}
+.german-text {
+ cursor: pointer;
+ color: #0056b3;
+}
+.german-text:hover {
+ text-decoration: underline;
+}
+.table-container {
+ overflow-x: auto;
+ margin-bottom: 20px;
+}
+table {
+ width: 100%;
+ border-collapse: collapse;
+ margin-top: 10px;
+}
+th, td {
+ padding: 10px 12px;
+ border: 1px solid #ddd;
+ text-align: left;
+} 
+th {
+ background-color: #f2f2f2;
+ font-weight: 700;
+}
+td small {
+ display: block;
+ color: #666;
+ font-size: 0.85em;
+ margin-top: 2px;
+}
+</style>
+</head>
+<body>
+<!-- Header Rosa Chicle -->
+    <!-- Header Rosa Chicle -->
+    <header class="site-header">
+    <div class="header-container">
+        <a href="index.html" class="logo">Deutsch</a>
+        <nav class="nav-container">
+            <ul class="nav-menu">
+                <li class="dropdown">
+                    <a href="#" class="nav-link dropdown-btn">Artículos y Sustantivos</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="der.html">Der</a></li>
+                        <li><a href="die.html">Die</a></li>
+                        <li><a href="das.html">Das</a></li>
+                    </ul>
+                </li>
+                <li><a href="akk-dativ.html" class="nav-link">Acusativos y Dativos</a></li>
+                <li class="dropdown">
+                    <a href="#" class="nav-link dropdown-btn active">Verbos</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="verbo-separables.html">Verbos Separables</a></li>
+                        <li><a href="verbos-regulares.html">Verbos Regulares</a></li>
+                        <li><a href="verbos-irregulares.html">Verbos Irregulares</a></li>
+                        <li><a href="verbos-modales.html">Verbos Modales</a></li>
+                        <li><a href="verbos-reflexivos.html">Verbos Reflexivos</a></li>
+                    </ul>
+                </li>
+                <li><a href="unidades-tiempo.html" class="nav-link">Unidades de Tiempo</a></li>
+                <li><a href="preposiciones.html" class="nav-link">Preposiciones</a></li>
+                <li><a href="vocabulario-hotel.html" class="nav-link">Hotel</a></li>
+                <li><a href="w-worter.html" class="nav-link">W-Worter</a></li>
+                <li><a href="saludos.html" class="nav-link">Saludos</a></li>
+                <li><a href="numeros.html" class="nav-link">Números</a></li>
+                <li><a href="casos.html" class="nav-link">Casos</a></li>
+                <li><a href="coenctores.html" class="nav-link">Conectores</a></li>
+                <li><a href="hora.html" class="nav-link">La Hora</a></li>
+                <li><a href="adjetivos.html" class="nav-link">Adjetivos</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main class="main-container" style="padding: 20px; max-width: 1200px; margin: 0 auto;">
+ <h1 class="section-title">🙏 Saludos y Cortesía Básica</h1>
+ <div class="intro-box">
+ <h2>Expresiones de Cortesía y Agradecimiento</h2>
+ <p>Haz clic en cualquiera de los términos en alemán o en el botón del parlante 🔊 para escuchar la pronunciación exacta.</p>
+ </div>
+
+ <div class="table-container">
+ <table>
+ <thead>
+ <tr>
+ <th>Alemán</th>
+ <th>Español</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr>
+ <td>
+ <span class="german-text" onclick="playAudio('Bitte')">Bitte</span>
+ <button class="audio-btn" onclick="playAudio('Bitte')">🔊</button>
+ <small>Por favor / De nada</small>
+ </td>
+ <td>Por favor / De nada</td>
+ </tr>
+ <tr>
+ <td>
+ <span class="german-text" onclick="playAudio('Bitte schön')">Bitte schön</span>
+ <button class="audio-btn" onclick="playAudio('Bitte schön')">🔊</button>
+ <small>Por favor (más amable) / Aquí tienes</small>
+ </td>
+ <td>Por favor (más amable) / Aquí tienes</td>
+ </tr>
+ <tr>
+ <td>
+ <span class="german-text" onclick="playAudio('Vielen Dank')">Vielen Dank</span>
+ <button class="audio-btn" onclick="playAudio('Vielen Dank')">🔊</button>
+ <small>Muchas gracias</small>
+ </td>
+ <td>Muchas gracias</td>
+ </tr>
+ <tr>
+ <td>
+ <span class="german-text" onclick="playAudio('Danke schön')">Danke schön</span>
+ <button class="audio-btn" onclick="playAudio('Danke schön')">🔊</button>
+ <small>Muchas gracias (más cordial)</small>
+ </td>
+ <td>Muchas gracias (más cordial)</td>
+ </tr>
+ <tr>
+ <td>
+ <span class="german-text" onclick="playAudio('Danke')">Danke</span>
+ <button class="audio-btn" onclick="playAudio('Danke')">🔊</button>
+ <small>Gracias</small>
+ </td>
+ <td>Gracias</td>
+ </tr>
+ <tr>
+ <td>
+ <span class="german-text" onclick="playAudio('Danke vielmals')">Danke vielmals</span>
+ <button class="audio-btn" onclick="playAudio('Danke vielmals')">🔊</button>
+ <small>Muchas gracias (muy usado en Suiza)</small>
+ </td>
+ <td>Muchas gracias (muy usado en Suiza)</td>
+ </tr>
+ <tr>
+ <td>
+ <span class="german-text" onclick="playAudio('Gern geschehen')">Gern geschehen</span>
+ <button class="audio-btn" onclick="playAudio('Gern geschehen')">🔊</button>
+ <small>De nada / Con gusto</small>
+ </td>
+ <td>De nada / Con gusto</td>
+ </tr>
+ <tr>
+ <td>
+ <span class="german-text" onclick="playAudio('Keine Ursache')">Keine Ursache</span>
+ <button class="audio-btn" onclick="playAudio('Keine Ursache')">🔊</button>
+ <small>No hay problema / No hay de qué</small>
+ </td>
+ <td>No hay problema / No hay de qué</td>
+ </tr>
+ <tr>
+ <td>
+ <span class="german-text" onclick="playAudio('Bitte, kein Problem')">Bitte, kein Problem</span>
+ <button class="audio-btn" onclick="playAudio('Bitte, kein Problem')">🔊</button>
+ <small>De nada, no hay problema</small>
+ </td>
+ <td>De nada, no hay problema</td>
+ </tr>
+ </tbody>
+ </table>
+ </div>
+
+ <!-- Sección: Pedir Disculpas -->
+ <h1 class="section-title">🙇 Pedir Disculpas</h1>
+ <div class="table-container">
+ <table>
+ <thead>
+ <tr>
+ <th>Alemán</th>
+ <th>Español</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr>
+ <td>
+ <span class="german-text" onclick="playAudio('Entschuldigung')">Entschuldigung</span>
+ <button class="audio-btn" onclick="playAudio('Entschuldigung')">🔊</button>
+ <small>Disculpe / Perdón</small>
+ </td>
+ <td>Disculpe / Perdón</td>
+ </tr>
+ <tr>
+ <td>
+ <span class="german-text" onclick="playAudio('Entschuldigen Sie bitte')">Entschuldigen Sie bitte</span>
+ <button class="audio-btn" onclick="playAudio('Entschuldigen Sie bitte')">🔊</button>
+ <small>Disculpe, por favor (formal)</small>
+ </td>
+ <td>Disculpe, por favor (formal)</td>
+ </tr>
+ <tr>
+ <td>
+ <span class="german-text" onclick="playAudio('Entschuldige bitte')">Entschuldige bitte</span>
+ <button class="audio-btn" onclick="playAudio('Entschuldige bitte')">🔊</button>
+ <small>Perdona (informal)</small>
+ </td>
+ <td>Perdona (informal)</td>
+ </tr>
+ <tr>
+ <td>
+ <span class="german-text" onclick="playAudio('Es tut mir leid')">Es tut mir leid</span>
+ <button class="audio-btn" onclick="playAudio('Es tut mir leid')">🔊</button>
+ <small>Lo siento</small>
+ </td>
+ <td>Lo siento</td>
+ </tr>
+ <tr>
+ <td>
+ <span class="german-text" onclick="playAudio('Verzeihung')">Verzeihung</span>
+ <button class="audio-btn" onclick="playAudio('Verzeihung')">🔊</button>
+ <small>Perdón (más formal)</small>
+ </td>
+ <td>Perdón (más formal)</td>
+ </tr>
+ <tr>
+ <td>
+ <span class="german-text" onclick="playAudio('Das war mein Fehler')">Das war mein Fehler</span>
+ <button class="audio-btn" onclick="playAudio('Das war mein Fehler')">🔊</button>
+ <small>Fue mi error</small>
+ </td>
+ <td>Fue mi error</td>
+ </tr>
+ <tr>
+ <td>
+ <span class="german-text" onclick="playAudio('Ich bitte um Entschuldigung')">Ich bitte um Entschuldigung</span>
+ <button class="audio-btn" onclick="playAudio('Ich bitte um Entschuldigung')">🔊</button>
+ <small>Pido disculpas</small>
+ </td>
+ <td>Pido disculpas</td>
+ </tr>
+ </tbody>
+ </table>
+ </div>
+
+ <!-- Nueva Sección: Pedir algo de manera educada -->
+ <h1 class="section-title">🤝 Pedir algo de manera educada</h1>
+ <div class="table-container">
+ <table>
+ <thead>
+ <tr>
+ <th>Alemán</th>
+ <th>Español</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr>
+ <td>
+ <span class="german-text" onclick="playAudio('Könnten Sie mir bitte helfen?')">Könnten Sie mir bitte helfen?</span>
+ <button class="audio-btn" onclick="playAudio('Könnten Sie mir bitte helfen?')">🔊</button>
+ <small>¿Podría ayudarme, por favor? (formal)</small>
+ </td>
+ <td>¿Podría ayudarme, por favor? (formal)</td>
+ </tr>
+ <tr>
+ <td>
+ <span class="german-text" onclick="playAudio('Kannst du mir bitte helfen?')">Kannst du mir bitte helfen?</span>
+ <button class="audio-btn" onclick="playAudio('Kannst du mir bitte helfen?')">🔊</button>
+ <small>¿Puedes ayudarme, por favor? (informal)</small>
+ </td>
+ <td>¿Puedes ayudarme, por favor? (informal)</td>
+ </tr>
+ <tr>
+ <td>
+ <span class="german-text" onclick="playAudio('Ich hätte gern...')">Ich hätte gern...</span>
+ <button class="audio-btn" onclick="playAudio('Ich hätte gern...')">🔊</button>
+ <small>Me gustaría... (para pedir algo)</small>
+ </td>
+ <td>Me gustaría... (para pedir algo)</td>
+ </tr>
+ <tr>
+ <td>
+ <span class="german-text" onclick="playAudio('Ich möchte...')">Ich möchte...</span>
+ <button class="audio-btn" onclick="playAudio('Ich möchte...')">🔊</button>
+ <small>Me gustaría / Quisiera...</small>
+ </td>
+ <td>Me gustaría / Quisiera...</td>
+ </tr>
+ <tr>
+ <td>
+ <span class="german-text" onclick="playAudio('Darf ich...?')">Darf ich...?</span>
+ <button class="audio-btn" onclick="playAudio('Darf ich...?')">🔊</button>
+ <small>¿Puedo...?</small>
+ </td>
+ <td>¿Puedo...?</td>
+ </tr>
+ <tr>
+ <td>
+ <span class="german-text" onclick="playAudio('Wäre es möglich...?')">Wäre es möglich...?</span>
+ <button class="audio-btn" onclick="playAudio('Wäre es möglich...?')">🔊</button>
+ <small>¿Sería posible...?</small>
+ </td>
+ <td>¿Sería posible...?</td>
+ </tr>
+ </tbody>
+ </table>
+ </div>
+
+ <!-- Nueva Sección: Frases amables del día a día -->
+ <h1 class="section-title">😊 Frases amables del día a día</h1>
+ <div class="table-container">
+ <table>
+ <thead>
+ <tr>
+ <th>Alemán</th>
+ <th>Español</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr>
+ <td>
+ <span class="german-text" onclick="playAudio('Guten Morgen')">Guten Morgen</span>
+ <button class="audio-btn" onclick="playAudio('Guten Morgen')">🔊</button>
+ <small>Buenos días</small>
+ </td>
+ <td>Buenos días</td>
+ </tr>
+ <tr>
+ <td>
+ <span class="german-text" onclick="playAudio('Guten Tag')">Guten Tag</span>
+ <button class="audio-btn" onclick="playAudio('Guten Tag')">🔊</button>
+ <small>Buen día / Buenas tardes</small>
+ </td>
+ <td>Buen día / Buenas tardes</td>
+ </tr>
+ <tr>
+ <td>
+ <span class="german-text" onclick="playAudio('Guten Abend')">Guten Abend</span>
+ <button class="audio-btn" onclick="playAudio('Guten Abend')">🔊</button>
+ <small>Buenas tardes/noches</small>
+ </td>
+ <td>Buenas tardes/noches</td>
+ </tr>
+ <tr>
+ <td>
+ <span class="german-text" onclick="playAudio('Gute Nacht')">Gute Nacht</span>
+ <button class="audio-btn" onclick="playAudio('Gute Nacht')">🔊</button>
+ <small>Buenas noches (para ir a dormir)</small>
+ </td>
+ <td>Buenas noches (para ir a dormir)</td>
+ </tr>
+ <tr>
+ <td>
+ <span class="german-text" onclick="playAudio('Wie geht es Ihnen?')">Wie geht es Ihnen?</span>
+ <button class="audio-btn" onclick="playAudio('Wie geht es Ihnen?')">🔊</button>
+ <small>¿Cómo está usted? (formal)</small>
+ </td>
+ <td>¿Cómo está usted? (formal)</td>
+ </tr>
+ <tr>
+ <td>
+ <span class="german-text" onclick="playAudio('Wie geht\'s dir?')">Wie geht's dir?</span>
+ <button class="audio-btn" onclick="playAudio('Wie geht\'s dir?')">🔊</button>
+ <small>¿Cómo estás? (informal)</small>
+ </td>
+ <td>¿Cómo estás? (informal)</td>
+ </tr>
+ <tr>
+ <td>
+ <span class="german-text" onclick="playAudio('Sehr gut, danke.')">Sehr gut, danke.</span>
+ <button class="audio-btn" onclick="playAudio('Sehr gut, danke.')">🔊</button>
+ <small>Muy bien, gracias.</small>
+ </td>
+ <td>Muy bien, gracias.</td>
+ </tr>
+ <tr>
+ <td>
+ <span class="german-text" onclick="playAudio('Freut mich.')">Freut mich.</span>
+ <button class="audio-btn" onclick="playAudio('Freut mich.')">🔊</button>
+ <small>Mucho gusto / Me alegra</small>
+ </td>
+ <td>Mucho gusto / Me alegra</td>
+ </tr>
+ <tr>
+ <td>
+ <span class="german-text" onclick="playAudio('Schön, dich kennenzulernen.')">Schön, dich kennenzulernen.</span>
+ <button class="audio-btn" onclick="playAudio('Schön, dich kennenzulernen.')">🔊</button>
+ <small>Encantado/a de conocerte.</small>
+ </td>
+ <td>Encantado/a de conocerte.</td>
+ </tr>
+ <tr>
+ <td>
+ <span class="german-text" onclick="playAudio('Schönen Tag noch!')">Schönen Tag noch!</span>
+ <button class="audio-btn" onclick="playAudio('Schönen Tag noch!')">🔊</button>
+ <small>¡Que tenga un buen día!</small>
+ </td>
+ <td>¡Que tenga un buen día!</td>
+ </tr>
+ <tr>
+ <td>
+ <span class="german-text" onclick="playAudio('Schönes Wochenende!')">Schönes Wochenende!</span>
+ <button class="audio-btn" onclick="playAudio('Schönes Wochenende!')">🔊</button>
+ <small>¡Buen fin de semana!</small>
+ </td>
+ <td>¡Buen fin de semana!</td>
+ </tr>
+ </tbody>
+ </table>
+ </div>
+</main>
+
+<script>
+function playAudio(text) {
+ if ('speechSynthesis' in window) {
+ window.speechSynthesis.cancel(); // Detener audios anteriores
+ const utterance = new SpeechSynthesisUtterance(text);
+ utterance.lang = 'de-DE';
+ utterance.rate = 0.9;
+ window.speechSynthesis.speak(utterance);
+ } else {
+ alert('Tu navegador no soporta la reproducción de voz.');
+ }
+}
+</script>
+</body>
+</html>

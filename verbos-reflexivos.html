@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Verbos Reflexivos en Alemán</title>
+<!-- Tipografía Roboto -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<!-- Hoja de estilos -->
+<link rel="stylesheet" href="css/verbos.css">
+<style>
+.intro-box, .outro-box {
+  margin: 15px 0 25px 0;
+  padding: 15px;
+  background-color: #f8f9fa;
+  border-left: 4px solid #e91e63;
+  border-radius: 4px;
+}
+.outro-box {
+  margin-top: 25px;
+  margin-bottom: 0;
+}
+.intro-box h2, .outro-box h2 {
+  margin-top: 0;
+  margin-bottom: 6px;
+  font-size: 1.1em;
+  color: #333;
+}
+.intro-box p, .outro-box p {
+  margin: 0 0 12px 0;
+  font-size: 0.95em;
+  color: #555;
+  line-height: 1.4;
+}
+.outro-box p:last-child {
+  margin-bottom: 0;
+}
+.example-box {
+  margin-top: 4px;
+  font-size: 0.85em;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.audio-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 0.9em;
+  padding: 0;
+  margin-left: 4px;
+}
+.example-box small {
+  color: #666;
+}
+</style>
+</head>
+<body>
+
+<!-- Header Rosa Chicle -->
+    <!-- Header Rosa Chicle -->
+    <header class="site-header">
+    <div class="header-container">
+        <a href="index.html" class="logo">Deutsch</a>
+        <nav class="nav-container">
+            <ul class="nav-menu">
+                <li class="dropdown">
+                    <a href="#" class="nav-link dropdown-btn">Artículos y Sustantivos</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="der.html">Der</a></li>
+                        <li><a href="die.html">Die</a></li>
+                        <li><a href="das.html">Das</a></li>
+                    </ul>
+                </li>
+                <li><a href="akk-dativ.html" class="nav-link">Acusativos y Dativos</a></li>
+                <li class="dropdown">
+                    <a href="#" class="nav-link dropdown-btn active">Verbos</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="verbo-separables.html">Verbos Separables</a></li>
+                        <li><a href="verbos-regulares.html">Verbos Regulares</a></li>
+                        <li><a href="verbos-irregulares.html">Verbos Irregulares</a></li>
+                        <li><a href="verbos-modales.html">Verbos Modales</a></li>
+                        <li><a href="verbos-reflexivos.html">Verbos Reflexivos</a></li>
+                    </ul>
+                </li>
+                <li><a href="unidades-tiempo.html" class="nav-link">Unidades de Tiempo</a></li>
+                <li><a href="preposiciones.html" class="nav-link">Preposiciones</a></li>
+                <li><a href="vocabulario-hotel.html" class="nav-link">Hotel</a></li>
+                <li><a href="w-worter.html" class="nav-link">W-Worter</a></li>
+                <li><a href="saludos.html" class="nav-link">Saludos</a></li>
+                <li><a href="numeros.html" class="nav-link">Números</a></li>
+                <li><a href="casos.html" class="nav-link">Casos</a></li>
+                <li><a href="coenctores.html" class="nav-link">Conectores</a></li>
+                <li><a href="hora.html" class="nav-link">La Hora</a></li>
+                <li><a href="adjetivos.html" class="nav-link">Adjetivos</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- Contenido Principal -->
+<main class="content-container">
+<div class="main-card">
+<h1 class="card-title">Pronombres y Verbos Reflexivos en Alemán</h1>
+
+<!-- Sección Explicativa Inicial -->
+<div class="intro-box">
+ <h2>1. ¿Qué son los verbos reflexivos?</h2>
+ <p>Los verbos reflexivos indican que la persona hace la acción sobre sí misma.</p>
+</div>
+
+<div class="table-wrapper">
+<table class="custom-table">
+<thead>
+<tr>
+<th>Persona</th>
+<th>Pronombre Reflexivo<br><small>(Akkusativ / Dativ)</small></th>
+<th>Ejemplo Akkusativ <button type="button" class="audio-btn" onclick="speechSynthesis.speak(Object.assign(new SpeechSynthesisUtterance('sich waschen'), {lang: 'de-DE'}))">🔊</button><br><small>(sich waschen - lavarse)</small></th>
+<th>Ejemplo Dativ <button type="button" class="audio-btn" onclick="speechSynthesis.speak(Object.assign(new SpeechSynthesisUtterance('sich die Hände waschen'), {lang: 'de-DE'}))">🔊</button><br><small>(sich die Hände waschen - lavarse las manos)</small></th>
+</tr>
+</thead>
+<tbody>
+
+<!-- ich -->
+<tr>
+<td><b>ich</b></td>
+<td><b>mich / mir</b></td>
+<td>
+ <b>ich wasche mich</b> <button type="button" class="audio-btn" onclick="speechSynthesis.speak(Object.assign(new SpeechSynthesisUtterance('ich wasche mich'), {lang: 'de-DE'}))">🔊</button>
+ <div class="example-box">
+ <span>Ich wasche mich morgens <button type="button" class="audio-btn" onclick="speechSynthesis.speak(Object.assign(new SpeechSynthesisUtterance('Ich wasche mich morgens.'), {lang: 'de-DE'}))">🔊</button></span>
+ <small>(Me lavo por la mañana)</small>
+ </div>
+</td>
+<td>
+ <b>ich wasche mir...</b> <button type="button" class="audio-btn" onclick="speechSynthesis.speak(Object.assign(new SpeechSynthesisUtterance('ich wasche mir'), {lang: 'de-DE'}))">🔊</button>
+ <div class="example-box">
+ <span>Ich wasche mir die Hände <button type="button" class="audio-btn" onclick="speechSynthesis.speak(Object.assign(new SpeechSynthesisUtterance('Ich wasche mir die Hände.'), {lang: 'de-DE'}))">🔊</button></span>
+ <small>(Me lavo las manos)</small>
+ </div>
+</td>
+</tr>
+
+<!-- du -->
+<tr>
+<td><b>du</b></td>
+<td><b>dich / dir</b></td>
+<td>
+ <b>du wäschst dich</b> <button type="button" class="audio-btn" onclick="speechSynthesis.speak(Object.assign(new SpeechSynthesisUtterance('du wäschst dich'), {lang: 'de-DE'}))">🔊</button>
+ <div class="example-box">
+ <span>Du wäschst dich schnell <button type="button" class="audio-btn" onclick="speechSynthesis.speak(Object.assign(new SpeechSynthesisUtterance('Du wäschst dich schnell.'), {lang: 'de-DE'}))">🔊</button></span>
+ <small>(Te lavas rápido)</small>
+ </div> 
+</td>
+<td>
+ <b>du wäschst dir...</b> <button type="button" class="audio-btn" onclick="speechSynthesis.speak(Object.assign(new SpeechSynthesisUtterance('du wäschst dir'), {lang: 'de-DE'}))">🔊</button>
+ <div class="example-box">
+ <span>Du wäschst dir die Haare <button type="button" class="audio-btn" onclick="speechSynthesis.speak(Object.assign(new SpeechSynthesisUtterance('Du wäschst dir die Haare.'), {lang: 'de-DE'}))">🔊</button></span>
+ <small>(Te lavas el pelo)</small>
+ </div>
+</td>
+</tr>
+
+<!-- er / sie / es -->
+<tr>
+<td><b>er / sie / es</b></td>
+<td><b>sich / sich</b></td>
+<td>
+ <b>er/sie wäscht sich</b> <button type="button" class="audio-btn" onclick="speechSynthesis.speak(Object.assign(new SpeechSynthesisUtterance('er wäscht sich'), {lang: 'de-DE'}))">🔊</button>
+ <div class="example-box">
+ <span>Er wäscht sich im Bad <button type="button" class="audio-btn" onclick="speechSynthesis.speak(Object.assign(new SpeechSynthesisUtterance('Er wäscht sich im Bad.'), {lang: 'de-DE'}))">🔊</button></span>
+ <small>(Él se lava en el baño)</small>
+ </div>
+</td>
+<td>
+ <b>er/sie wäscht sich...</b> <button type="button" class="audio-btn" onclick="speechSynthesis.speak(Object.assign(new SpeechSynthesisUtterance('sie wäscht sich'), {lang: 'de-DE'}))">🔊</button>
+ <div class="example-box">
+ <span>Sie wäscht sich das Gesicht <button type="button" class="audio-btn" onclick="speechSynthesis.speak(Object.assign(new SpeechSynthesisUtterance('Sie wäscht sich das Gesicht.'), {lang: 'de-DE'}))">🔊</button></span>
+ <small>(Ella se lava la cara)</small>
+ </div>
+</td>
+</tr>
+
+<!-- wir -->
+<tr>
+<td><b>wir</b></td>
+<td><b>uns / uns</b></td>
+<td>
+ <b>wir waschen uns</b> <button type="button" class="audio-btn" onclick="speechSynthesis.speak(Object.assign(new SpeechSynthesisUtterance('wir waschen uns'), {lang: 'de-DE'}))">🔊</button>
+ <div class="example-box">
+ <span>Wir waschen uns jeden Tag <button type="button" class="audio-btn" onclick="speechSynthesis.speak(Object.assign(new SpeechSynthesisUtterance('Wir waschen uns jeden Tag.'), {lang: 'de-DE'}))">🔊</button></span>
+ <small>(Nos lavamos todos los días)</small>
+ </div>
+</td>
+<td>
+ <b>wir waschen uns...</b> <button type="button" class="audio-btn" onclick="speechSynthesis.speak(Object.assign(new SpeechSynthesisUtterance('wir waschen uns'), {lang: 'de-DE'}))">🔊</button>
+ <div class="example-box">
+ <span>Wir waschen uns die Hände <button type="button" class="audio-btn" onclick="speechSynthesis.speak(Object.assign(new SpeechSynthesisUtterance('Wir waschen uns die Hände.'), {lang: 'de-DE'}))">🔊</button></span>
+ <small>(Nos lavamos las manos)</small>
+ </div>
+</td>
+</tr>
+
+<!-- ihr -->
+<tr>
+<td><b>ihr</b></td>
+<td><b>euch / euch</b></td>
+<td>
+ <b>ihr wascht euch</b> <button type="button" class="audio-btn" onclick="speechSynthesis.speak(Object.assign(new SpeechSynthesisUtterance('ihr wascht euch'), {lang: 'de-DE'}))">🔊</button>
+ <div class="example-box">
+ <span>Ihr wascht euch spät <button type="button" class="audio-btn" onclick="speechSynthesis.speak(Object.assign(new SpeechSynthesisUtterance('Ihr wascht euch spät.'), {lang: 'de-DE'}))">🔊</button></span>
+ <small>(Os laváis tarde)</small>
+ </div>
+</td>
+<td>
+ <b>ihr wascht euch...</b> <button type="button" class="audio-btn" onclick="speechSynthesis.speak(Object.assign(new SpeechSynthesisUtterance('ihr wascht euch'), {lang: 'de-DE'}))">🔊</button>
+ <div class="example-box">
+ <span>Ihr wascht euch die Zähne <button type="button" class="audio-btn" onclick="speechSynthesis.speak(Object.assign(new SpeechSynthesisUtterance('Ihr wascht euch die Zähne.'), {lang: 'de-DE'}))">🔊</button></span>
+ <small>(Os laváis los dientes)</small>
+ </div>
+</td>
+</tr>
+
+<!-- sie / Sie -->
+<tr>
+<td><b>sie / Sie</b></td>
+<td><b>sich / sich</b></td>
+<td>
+ <b>sie/Sie waschen sich</b> <button type="button" class="audio-btn" onclick="speechSynthesis.speak(Object.assign(new SpeechSynthesisUtterance('sie waschen sich'), {lang: 'de-DE'}))">🔊</button>
+ <div class="example-box">
+ <span>Sie waschen sich jetzt <button type="button" class="audio-btn" onclick="speechSynthesis.speak(Object.assign(new SpeechSynthesisUtterance('Sie waschen sich jetzt.'), {lang: 'de-DE'}))">🔊</button></span>
+ <small>(Ellos se lavan / Usted se lava ahora)</small>
+ </div> 
+</td>
+<td>
+ <b>sie/Sie waschen sich...</b> <button type="button" class="audio-btn" onclick="speechSynthesis.speak(Object.assign(new SpeechSynthesisUtterance('Sie waschen sich'), {lang: 'de-DE'}))">🔊</button>
+ <div class="example-box">
+ <span>Sie waschen sich die Hände <button type="button" class="audio-btn" onclick="speechSynthesis.speak(Object.assign(new SpeechSynthesisUtterance('Sie waschen sich die Hände.'), {lang: 'de-DE'}))">🔊</button></span>
+ <small>(Ellos se lavan / Usted se lava las manos)</small>
+ </div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+<!-- Sección Explicativa Final -->
+<div class="outro-box">
+ <h2>¿Cuándo usamos mich/dich/sich… (Akkusativ)?</h2>
+ <p>Cuando el pronombre es el objeto directo.</p>
+
+ <h2>¿Cuándo usamos mir/dir/sich… (Dativ)?</h2>
+ <p>Cuando hay otro objeto en acusativo.</p>
+</div>
+
+</div>
+</main>
+</body>
+</html>

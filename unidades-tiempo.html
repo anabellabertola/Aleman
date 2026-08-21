@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Unidades de Tiempo en Alemán</title>
+<!-- Tipografía Roboto -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<!-- Hoja de estilos -->
+<link rel="stylesheet" href="css/verbos.css">
+<style>
+.intro-box, .outro-box {
+  margin: 15px 0 25px 0;
+  padding: 15px;
+  background-color: #f8f9fa;
+  border-left: 4px solid #e91e63;
+  border-radius: 4px;
+}
+.outro-box {
+  margin-top: 25px;
+  margin-bottom: 0;
+}
+.intro-box h2, .outro-box h2 {
+  margin-top: 0;
+  margin-bottom: 6px;
+  font-size: 1.1em;
+  color: #333;
+}
+.intro-box p, .outro-box p {
+  margin: 0 0 12px 0;
+  font-size: 0.95em;
+  color: #555;
+  line-height: 1.4;
+}
+.outro-box p:last-child {
+  margin-bottom: 0;
+}
+.audio-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 0.9em;
+  padding: 0;
+  margin-left: 4px;
+}
+.conj-cell {
+  font-size: 0.9em;
+  line-height: 1.25;
+}
+.conj-cell small {
+  display: block;
+  color: #666;
+  font-size: 0.85em;
+  margin-top: 2px;
+}
+.section-title {
+  font-size: 1.4em;
+  color: #e91e63;
+  margin: 30px 0 15px 0;
+  font-weight: 700;
+}
+.german-text {
+  cursor: pointer;
+  color: #0056b3;
+}
+.german-text:hover {
+  text-decoration: underline;
+}
+.table-container {
+  overflow-x: auto;
+  margin-bottom: 20px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+th, td {
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+th {
+  background-color: #f2f2f2;
+  font-weight: 700;
+}
+</style>
+</head>
+<body>
+<!-- Header Rosa Chicle -->
+    <!-- Header Rosa Chicle -->
+    <header class="site-header">
+    <div class="header-container">
+        <a href="index.html" class="logo">Deutsch</a>
+        <nav class="nav-container">
+            <ul class="nav-menu">
+                <li class="dropdown">
+                    <a href="#" class="nav-link dropdown-btn">Artículos y Sustantivos</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="der.html">Der</a></li>
+                        <li><a href="die.html">Die</a></li>
+                        <li><a href="das.html">Das</a></li>
+                    </ul>
+                </li>
+                <li><a href="akk-dativ.html" class="nav-link">Acusativos y Dativos</a></li>
+                <li class="dropdown">
+                    <a href="#" class="nav-link dropdown-btn active">Verbos</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="verbo-separables.html">Verbos Separables</a></li>
+                        <li><a href="verbos-regulares.html">Verbos Regulares</a></li>
+                        <li><a href="verbos-irregulares.html">Verbos Irregulares</a></li>
+                        <li><a href="verbos-modales.html">Verbos Modales</a></li>
+                        <li><a href="verbos-reflexivos.html">Verbos Reflexivos</a></li>
+                    </ul>
+                </li>
+                <li><a href="unidades-tiempo.html" class="nav-link">Unidades de Tiempo</a></li>
+                <li><a href="preposiciones.html" class="nav-link">Preposiciones</a></li>
+                <li><a href="vocabulario-hotel.html" class="nav-link">Hotel</a></li>
+                <li><a href="w-worter.html" class="nav-link">W-Worter</a></li>
+                <li><a href="saludos.html" class="nav-link">Saludos</a></li>
+                <li><a href="numeros.html" class="nav-link">Números</a></li>
+                <li><a href="casos.html" class="nav-link">Casos</a></li>
+                <li><a href="coenctores.html" class="nav-link">Conectores</a></li>
+                <li><a href="hora.html" class="nav-link">La Hora</a></li>
+                <li><a href="adjetivos.html" class="nav-link">Adjetivos</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main class="main-container" style="padding: 20px; max-width: 1200px; margin: 0 auto;">
+  <h1 class="section-title">Unidades de Tiempo y Conectores Temporales</h1>
+  
+  <div class="intro-box">
+    <h2>Estructuras Temporales en Alemán</h2>
+    <p>Haz clic en cualquier palabra u oración en alemán (o en el ícono 🔊) para escuchar su pronunciación nativa.</p>
+  </div>
+
+  <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>Alemán</th>
+          <th>Español</th>
+          <th>Ejemplo de Oración</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="german-text" onclick="playAudio('zuerst')">zuerst</span> <button class="audio-btn" onclick="playAudio('zuerst')">🔊</button></td>
+          <td>primero</td>
+          <td><span class="german-text" onclick="playAudio('Zuerst stehe ich auf.')">Zuerst stehe ich auf.</span> <button class="audio-btn" onclick="playAudio('Zuerst stehe ich auf.')">🔊</button><br><small>Primero me levanto.</small></td>
+        </tr>
+        <tr>
+          <td><span class="german-text" onclick="playAudio('dann')">dann</span> <button class="audio-btn" onclick="playAudio('dann')">🔊</button></td>
+          <td>luego, entonces</td>
+          <td><span class="german-text" onclick="playAudio('Dann trinke ich einen Kaffee.')">Dann trinke ich einen Kaffee.</span> <button class="audio-btn" onclick="playAudio('Dann trinke ich einen Kaffee.')">🔊</button><br><small>Luego tomo un café.</small></td>
+        </tr>
+        <tr>
+          <td><span class="german-text" onclick="playAudio('danach')">danach</span> <button class="audio-btn" onclick="playAudio('danach')">🔊</button></td>
+          <td>después de eso</td>
+          <td><span class="german-text" onclick="playAudio('Danach gehe ich arbeiten.')">Danach gehe ich arbeiten.</span> <button class="audio-btn" onclick="playAudio('Danach gehe ich arbeiten.')">🔊</button><br><small>Después de eso voy a trabajar.</small></td>
+        </tr>
+        <tr>
+          <td><span class="german-text" onclick="playAudio('Gerade')">Gerade</span> <button class="audio-btn" onclick="playAudio('Gerade')">🔊</button></td>
+          <td>En este momento</td>
+          <td><span class="german-text" onclick="playAudio('Ich lerne gerade Deutsch.')">Ich lerne gerade Deutsch.</span> <button class="audio-btn" onclick="playAudio('Ich lerne gerade Deutsch.')">🔊</button><br><small>Estoy aprendiendo alemán en este momento.</small></td>
+        </tr>
+        <tr>
+          <td><span class="german-text" onclick="playAudio('Jetzt')">Jetzt</span> <button class="audio-btn" onclick="playAudio('Jetzt')">🔊</button></td>
+          <td>ahora</td>
+          <td><span class="german-text" onclick="playAudio('Jetzt habe ich Pause.')">Jetzt habe ich Pause.</span> <button class="audio-btn" onclick="playAudio('Jetzt habe ich Pause.')">🔊</button><br><small>Ahora tengo un descanso.</small></td>
+        </tr>
+        <tr>
+          <td><span class="german-text" onclick="playAudio('anschließend')">anschließend</span> <button class="audio-btn" onclick="playAudio('anschließend')">🔊</button></td>
+          <td>a continuación</td>
+          <td><span class="german-text" onclick="playAudio('Anschließend essen wir zu Mittag.')">Anschließend essen wir zu Mittag.</span> <button class="audio-btn" onclick="playAudio('Anschließend essen wir zu Mittag.')">🔊</button><br><small>A continuación comemos el almuerzo.</small></td>
+        </tr>
+        <tr>
+          <td><span class="german-text" onclick="playAudio('später')">später</span> <button class="audio-btn" onclick="playAudio('später')">🔊</button></td>
+          <td>más tarde</td>
+          <td><span class="german-text" onclick="playAudio('Ich rufe dich später an.')">Ich rufe dich später an.</span> <button class="audio-btn" onclick="playAudio('Ich rufe dich später an.')">🔊</button><br><small>Te llamo más tarde.</small></td>
+        </tr>
+        <tr>
+          <td><span class="german-text" onclick="playAudio('um ... Uhr')">um ... Uhr</span> <button class="audio-btn" onclick="playAudio('um ... Uhr')">🔊</button></td>
+          <td>a las ... (hora)</td>
+          <td><span class="german-text" onclick="playAudio('Um acht Uhr stehe ich auf.')">Um acht Uhr stehe ich auf.</span> <button class="audio-btn" onclick="playAudio('Um acht Uhr stehe ich auf.')">🔊</button><br><small>A las ocho me levanto.</small></td>
+        </tr>
+        <tr>
+          <td><span class="german-text" onclick="playAudio('gegen ... Uhr')">gegen ... Uhr</span> <button class="audio-btn" onclick="playAudio('gegen ... Uhr')">🔊</button></td>
+          <td>alrededor de las ... (hora)</td>
+          <td><span class="german-text" onclick="playAudio('Ich komme gegen zwei Uhr.')">Ich komme gegen zwei Uhr.</span> <button class="audio-btn" onclick="playAudio('Ich komme gegen zwei Uhr.')">🔊</button><br><small>Llego alrededor de las dos.</small></td>
+        </tr>
+        <tr>
+          <td><span class="german-text" onclick="playAudio('am Morgen / am Vormittag')">am Morgen / am Vormittag</span> <button class="audio-btn" onclick="playAudio('am Morgen, am Vormittag')">🔊</button></td>
+          <td>por la mañana</td>
+          <td><span class="german-text" onclick="playAudio('Am Morgen trinke ich Tee.')">Am Morgen trinke ich Tee.</span> <button class="audio-btn" onclick="playAudio('Am Morgen trinke ich Tee.')">🔊</button><br><small>Por la mañana tomo té.</small></td>
+        </tr>
+        <tr>
+          <td><span class="german-text" onclick="playAudio('am Mittag')">am Mittag</span> <button class="audio-btn" onclick="playAudio('am Mittag')">🔊</button></td>
+          <td>al mediodía</td>
+          <td><span class="german-text" onclick="playAudio('Am Mittag esse ich einen Salat.')">Am Mittag esse ich einen Salat.</span> <button class="audio-btn" onclick="playAudio('Am Mittag esse ich einen Salat.')">🔊</button><br><small>Al mediodía como una ensalada.</small></td>
+        </tr>
+        <tr>
+          <td><span class="german-text" onclick="playAudio('am Nachmittag / am Abend')">am Nachmittag / am Abend</span> <button class="audio-btn" onclick="playAudio('am Nachmittag, am Abend')">🔊</button></td>
+          <td>por la tarde / por la noche</td>
+          <td><span class="german-text" onclick="playAudio('Am Abend sehe ich fern.')">Am Abend sehe ich fern.</span> <button class="audio-btn" onclick="playAudio('Am Abend sehe ich fern.')">🔊</button><br><small>Por la noche veo la televisión.</small></td>
+        </tr>
+        <tr>
+          <td><span class="german-text" onclick="playAudio('am Wochenende')">am Wochenende</span> <button class="audio-btn" onclick="playAudio('am Wochenende')">🔊</button></td>
+          <td>el fin de semana</td>
+          <td><span class="german-text" onclick="playAudio('Am Wochenende schlafe ich viel.')">Am Wochenende schlafe ich viel.</span> <button class="audio-btn" onclick="playAudio('Am Wochenende schlafe ich viel.')">🔊</button><br><small>El fin de semana duermo mucho.</small></td>
+        </tr>
+        <tr>
+          <td><span class="german-text" onclick="playAudio('jeden Tag / jeden Morgen')">jeden Tag / jeden Morgen</span> <button class="audio-btn" onclick="playAudio('jeden Tag, jeden Morgen')">🔊</button></td>
+          <td>todos los días / cada mañana</td>
+          <td><span class="german-text" onclick="playAudio('Jeden Morgen gehe ich joggen.')">Jeden Morgen gehe ich joggen.</span> <button class="audio-btn" onclick="playAudio('Jeden Morgen gehe ich joggen.')">🔊</button><br><small>Cada mañana voy a trotar.</small></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2 class="section-title">Zeitausdrücke (Expresiones de tiempo)</h2>
+
+  <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>Alemán</th>
+          <th>Español</th>
+          <th>Ejemplo de Oración</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="german-text" onclick="playAudio('morgens / vormittags / mittags')">morgens / vormittags / mittags</span> <button class="audio-btn" onclick="playAudio('morgens, vormittags, mittags')">🔊</button></td>
+          <td>por la mañana / a media mañana / al mediodía</td>
+          <td><span class="german-text" onclick="playAudio('Morgens trinke ich immer Kaffee.')">Morgens trinke ich immer Kaffee.</span> <button class="audio-btn" onclick="playAudio('Morgens trinke ich immer Kaffee.')">🔊</button><br><small>Por la mañana siempre tomo café.</small></td>
+        </tr>
+        <tr>
+          <td><span class="german-text" onclick="playAudio('nachmittags / abends / nachts')">nachmittags / abends / nachts</span> <button class="audio-btn" onclick="playAudio('nachmittags, abends, nachts')">🔊</button></td>
+          <td>por la tarde / por la noche / de madrugada</td>
+          <td><span class="german-text" onclick="playAudio('Abends lerne ich Deutsch.')">Abends lerne ich Deutsch.</span> <button class="audio-btn" onclick="playAudio('Abends lerne ich Deutsch.')">🔊</button><br><small>Por la noche aprendo alemán.</small></td>
+        </tr>
+        <tr>
+          <td><span class="german-text" onclick="playAudio('zuerst / dann / danach')">zuerst / dann / danach</span> <button class="audio-btn" onclick="playAudio('zuerst, dann, danach')">🔊</button></td>
+          <td>primero / luego / después</td>
+          <td><span class="german-text" onclick="playAudio('Zuerst dusche ich, dann frühstücke ich.')">Zuerst dusche ich, dann frühstücke ich.</span> <button class="audio-btn" onclick="playAudio('Zuerst dusche ich, dann frühstücke ich.')">🔊</button><br><small>Primero me ducho, luego desayuno.</small></td>
+        </tr>
+        <tr>
+          <td><span class="german-text" onclick="playAudio('später / anschließend / zum Schluss')">später / anschließend / zum Schluss</span> <button class="audio-btn" onclick="playAudio('später, anschließend, zum Schluss')">🔊</button></td>
+          <td>más tarde / a continuación / al final</td>
+          <td><span class="german-text" onclick="playAudio('Zum Schluss gehe ich schlafen.')">Zum Schluss gehe ich schlafen.</span> <button class="audio-btn" onclick="playAudio('Zum Schluss gehe ich schlafen.')">🔊</button><br><small>Al final me voy a dormir.</small></td>
+        </tr>
+        <tr>
+          <td><span class="german-text" onclick="playAudio('um ... Uhr / von ... bis ...')">um … Uhr / von … bis …</span> <button class="audio-btn" onclick="playAudio('um acht Uhr, von neun bis fünf Uhr')">🔊</button></td>
+          <td>a la(s) … / de … a …</td>
+          <td><span class="german-text" onclick="playAudio('Ich arbeite von neun bis fünf Uhr.')">Ich arbeite von neun bis fünf Uhr.</span> <button class="audio-btn" onclick="playAudio('Ich arbeite von neun bis fünf Uhr.')">🔊</button><br><small>Trabajo de nueve a cinco.</small></td>
+        </tr>
+        <tr>
+          <td><span class="german-text" onclick="playAudio('heute / gestern / morgen / übermorgen')">heute / gestern / morgen / übermorgen</span> <button class="audio-btn" onclick="playAudio('heute, gestern, morgen, übermorgen')">🔊</button></td>
+          <td>hoy / ayer / mañana / pasado mañana</td>
+          <td><span class="german-text" onclick="playAudio('Heute habe ich viel Zeit.')">Heute habe ich viel Zeit.</span> <button class="audio-btn" onclick="playAudio('Heute habe ich viel Zeit.')">🔊</button><br><small>Hoy tengo mucho tiempo.</small></td>
+        </tr>
+        <tr>
+          <td><span class="german-text" onclick="playAudio('am Wochenende / unter der Woche')">am Wochenende / unter der Woche</span> <button class="audio-btn" onclick="playAudio('am Wochenende, unter der Woche')">🔊</button></td>
+          <td>el fin de semana / entre semana</td>
+          <td><span class="german-text" onclick="playAudio('Unter der Woche arbeite ich viel.')">Unter der Woche arbeite ich viel.</span> <button class="audio-btn" onclick="playAudio('Unter der Woche arbeite ich viel.')">🔊</button><br><small>Entre semana trabajo mucho.</small></td>
+        </tr>
+        <tr>
+          <td><span class="german-text" onclick="playAudio('jeden Tag / manchmal / oft / selten / nie / immer')">jeden Tag / manchmal / oft / selten / nie / immer</span> <button class="audio-btn" onclick="playAudio('jeden Tag, manchmal, oft, selten, nie, immer')">🔊</button></td>
+          <td>cada día / a veces / a menudo / rara vez / nunca / siempre</td>
+          <td><span class="german-text" onclick="playAudio('Ich lerne jeden Tag Deutsch.')">Ich lerne jeden Tag Deutsch.</span> <button class="audio-btn" onclick="playAudio('Ich lerne jeden Tag Deutsch.')">🔊</button><br><small>Aprendo alemán cada día.</small></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</main>
+
+<script>
+function playAudio(text) {
+ if ('speechSynthesis' in window) {
+ window.speechSynthesis.cancel(); // Detener audios anteriores
+ const utterance = new SpeechSynthesisUtterance(text);
+ utterance.lang = 'de-DE';
+ utterance.rate = 0.9;
+ window.speechSynthesis.speak(utterance);
+ } else {
+ alert('Tu navegador no soporta la reproducción de voz.');
+ }
+}
+</script>
+</body>
+</html>

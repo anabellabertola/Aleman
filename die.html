@@ -1,0 +1,4897 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sustantivos con Die - Alemán</title>
+<!-- Tipografía Roboto -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<!-- Hoja de estilos -->
+<link rel="stylesheet" href="css/styles.css">
+<script>
+function speakGermanWord(buttonElement) {
+    var wordContainer = buttonElement.parentElement;
+    var wordSpan = wordContainer.querySelector('span');
+    if (!wordSpan) return;
+    
+    var textToSpeak = wordSpan.innerText.trim();
+    if ('speechSynthesis' in window) {
+        window.speechSynthesis.cancel();
+        var utterance = new SpeechSynthesisUtterance(textToSpeak);
+        utterance.lang = 'de-DE';
+        utterance.rate = 0.9;
+        window.speechSynthesis.speak(utterance);
+    } else {
+        alert('Tu navegador no soporta la reproducción de voz.');
+    }
+}
+
+function playAudio(audioId) {
+    var audio = document.getElementById(audioId);
+    if (audio) {
+        audio.play().catch(function(error) {
+            console.log("Audio file playback error or missing file:", error);
+        });
+    }
+}
+</script>
+</head>
+<body>
+<!-- Header -->
+    <!-- Header Rosa Chicle -->
+    <header class="site-header">
+    <div class="header-container">
+        <a href="index.html" class="logo">Deutsch</a>
+        <nav class="nav-container">
+            <ul class="nav-menu">
+                <li class="dropdown">
+                    <a href="#" class="nav-link dropdown-btn">Artículos y Sustantivos</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="der.html">Der</a></li>
+                        <li><a href="die.html">Die</a></li>
+                        <li><a href="das.html">Das</a></li>
+                    </ul>
+                </li>
+                <li><a href="akk-dativ.html" class="nav-link">Acusativos y Dativos</a></li>
+                <li class="dropdown">
+                    <a href="#" class="nav-link dropdown-btn active">Verbos</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="verbo-separables.html">Verbos Separables</a></li>
+                        <li><a href="verbos-regulares.html">Verbos Regulares</a></li>
+                        <li><a href="verbos-irregulares.html">Verbos Irregulares</a></li>
+                        <li><a href="verbos-modales.html">Verbos Modales</a></li>
+                        <li><a href="verbos-reflexivos.html">Verbos Reflexivos</a></li>
+                    </ul>
+                </li>
+                <li><a href="unidades-tiempo.html" class="nav-link">Unidades de Tiempo</a></li>
+                <li><a href="preposiciones.html" class="nav-link">Preposiciones</a></li>
+                <li><a href="vocabulario-hotel.html" class="nav-link">Hotel</a></li>
+                <li><a href="w-worter.html" class="nav-link">W-Worter</a></li>
+                <li><a href="saludos.html" class="nav-link">Saludos</a></li>
+                <li><a href="numeros.html" class="nav-link">Números</a></li>
+                <li><a href="casos.html" class="nav-link">Casos</a></li>
+                <li><a href="coenctores.html" class="nav-link">Conectores</a></li>
+                <li><a href="hora.html" class="nav-link">La Hora</a></li>
+                <li><a href="adjetivos.html" class="nav-link">Adjetivos</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<!-- Contenido Principal -->
+<main class="content-container">
+<div class="main-card">
+<h1 class="card-title">Sustantivos con Artículo Die</h1>
+<div class="table-wrapper">
+<table class="custom-table">
+<thead>
+<tr>
+<th>Artículo</th>
+<th>Alemán</th>
+<th>Español</th>
+<th>Género</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="badge die">die</span></td>
+<td>
+<div class="word-audio">
+<span>Zeit</span>
+<audio id="audio-zeit" src="assets/audio/zeit.mp3"></audio>
+<button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-zeit');" title="Escuchar">🔊</button>
+</div>
+</td>
+<td>Tiempo</td>
+<td>Femenino</td>
+</tr>
+<tr>
+<!-- Sustantivos actualizados -->
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Frau</span>
+      <audio id="audio-frau" src="assets/audio/frau.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-frau');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Mujer</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Frage</span>
+      <audio id="audio-frage" src="assets/audio/frage.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-frage');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Pregunta</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Leute</span>
+      <audio id="audio-leute" src="assets/audio/leute.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-leute');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Gente</td>
+  <td>Plural</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Arbeit</span>
+      <audio id="audio-arbeit" src="assets/audio/arbeit.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-arbeit');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Trabajo</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Hand</span>
+      <audio id="audio-hand" src="assets/audio/hand.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-hand');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Mano</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Stadt</span>
+      <audio id="audio-stadt" src="assets/audio/stadt.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-stadt');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Ciudad</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Welt</span>
+      <audio id="audio-welt" src="assets/audio/welt.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-welt');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Mundo</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Million</span>
+      <audio id="audio-million" src="assets/audio/million.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-million');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Millón</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Schule</span>
+      <audio id="audio-schule" src="assets/audio/schule.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-schule');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Escuela</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Woche</span>
+      <audio id="audio-woche" src="assets/audio/woche.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-woche');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Semana</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Mutter</span>
+      <audio id="audio-mutter" src="assets/audio/mutter.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-mutter');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Madre</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Sache</span>
+      <audio id="audio-sache" src="assets/audio/sache.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-sache');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Cosa</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Stunde</span>
+      <audio id="audio-stunde" src="assets/audio/stunde.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-stunde');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Hora</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Geschichte</span>
+      <audio id="audio-geschichte" src="assets/audio/geschichte.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-geschichte');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Historia</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Gesellschaft</span>
+      <audio id="audio-gesellschaft" src="assets/audio/gesellschaft.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-gesellschaft');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Sociedad</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Familie</span>
+      <audio id="audio-familie" src="assets/audio/familie.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-familie');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Familia</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Aufgabe</span>
+      <audio id="audio-aufgabe" src="assets/audio/aufgabe.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-aufgabe');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Tarea</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Universität</span>
+      <audio id="audio-universitaet" src="assets/audio/universitaet.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-universitaet');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Universidad</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Person</span>
+      <audio id="audio-person" src="assets/audio/person.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-person');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Persona</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Nacht</span>
+      <audio id="audio-nacht" src="assets/audio/nacht.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-nacht');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Noche</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Zahl</span>
+      <audio id="audio-zahl" src="assets/audio/zahl.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-zahl');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Número</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Uhr</span>
+      <audio id="audio-uhr" src="assets/audio/uhr.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-uhr');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Hora / Reloj</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Eltern</span>
+      <audio id="audio-eltern" src="assets/audio/eltern.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-eltern');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Padres</td>
+  <td>Plural</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Straße</span>
+      <audio id="audio-strasse" src="assets/audio/strasse.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-strasse');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Calle</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Minute</span>
+      <audio id="audio-minute" src="assets/audio/minute.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-minute');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Minuto</td>
+  <td>Femenino</td>
+</tr>
+<!-- Nuevos sustantivos insertados -->
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Sprache</span>
+      <audio id="audio-sprache" src="assets/audio/sprache.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-sprache');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Idioma</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Milliarde</span>
+      <audio id="audio-milliarde" src="assets/audio/milliarde.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-milliarde');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Mil millones</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Wohnung</span>
+      <audio id="audio-wohnung" src="assets/audio/wohnung.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-wohnung');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Departamento / Vivienda</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Bank</span>
+      <audio id="audio-bank" src="assets/audio/bank.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-bank');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Banco</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Tochter</span>
+      <audio id="audio-tochter" src="assets/audio/tochter.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-tochter');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Hija</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Klasse</span>
+      <audio id="audio-klasse" src="assets/audio/klasse.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-klasse');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Clase</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Verfügung</span>
+      <audio id="audio-verfuegung" src="assets/audio/verfuegung.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-verfuegung');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Disposición</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Antwort</span>
+      <audio id="audio-antwort" src="assets/audio/antwort.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-antwort');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Respuesta</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Kosten</span>
+      <audio id="audio-kosten" src="assets/audio/kosten.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-kosten');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Costos / Gastos</td>
+  <td>Plural / Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Hilfe</span>
+      <audio id="audio-hilfe" src="assets/audio/hilfe.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-hilfe');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Ayuda</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Schwester</span>
+      <audio id="audio-schwester" src="assets/audio/schwester.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-schwester');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Hermana</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Reise</span>
+      <audio id="audio-reise" src="assets/audio/reise.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-reise');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Viaje</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Größe</span>
+      <audio id="audio-groesse" src="assets/audio/groesse.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-groesse');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Tamaño</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Liebe</span>
+      <audio id="audio-liebe" src="assets/audio/liebe.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-liebe');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Amor</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Daten</span>
+      <audio id="audio-daten" src="assets/audio/daten.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-daten');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Datos</td>
+  <td>Plural / Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Bibliothek</span>
+      <audio id="audio-bibliothek" src="assets/audio/bibliothek.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-bibliothek');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Biblioteca</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Jugendliche</span>
+      <audio id="audio-jugendliche" src="assets/audio/jugendliche.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-jugendliche');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Joven (mujer)</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Sonne</span>
+      <audio id="audio-sonne" src="assets/audio/sonne.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-sonne');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Sol</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Küche</span>
+      <audio id="audio-kueche" src="assets/audio/kueche.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-kueche');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Cocina</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Hälfte</span>
+      <audio id="audio-haelfte" src="assets/audio/haelfte.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-haelfte');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Mitad</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Nummer</span>
+      <audio id="audio-nummer" src="assets/audio/nummer.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-nummer');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Número</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Sorge</span>
+      <audio id="audio-sorge" src="assets/audio/sorge.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-sorge');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Preocupación</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Beschäftigte</span>
+      <audio id="audio-beschaeftigte" src="assets/audio/beschaeftigte.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-beschaeftigte');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Empleada / Trabajadora</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Erklärung</span>
+      <audio id="audio-erklaerung" src="assets/audio/erklaerung.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-erklaerung');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Explicación</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Freizeit</span>
+      <audio id="audio-freizeit" src="assets/audio/freizeit.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-freizeit');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Tiempo libre</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Karte</span>
+      <audio id="audio-karte" src="assets/audio/karte.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-karte');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Tarjeta / Mapa</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Bitte</span>
+      <audio id="audio-bitte" src="assets/audio/bitte.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-bitte');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Petición / Por favor</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Pflanze</span>
+      <audio id="audio-pflanze" src="assets/audio/pflanze.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-pflanze');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Planta</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Dame</span>
+      <audio id="audio-dame" src="assets/audio/dame.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-dame');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Señora</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Mama</span>
+      <audio id="audio-mama" src="assets/audio/mama.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-mama');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Mamá</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Bahn</span>
+      <audio id="audio-bahn" src="assets/audio/bahn.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-bahn');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Tren / Vía</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Nation</span>
+      <audio id="audio-nation" src="assets/audio/nation.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-nation');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Nación</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Veranstaltung</span>
+      <audio id="audio-veranstaltung" src="assets/audio/veranstaltung.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-veranstaltung');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Evento</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Änderung</span>
+      <audio id="audio-aenderung" src="assets/audio/aenderung.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-aenderung');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Cambio</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Leitung</span>
+      <audio id="audio-leitung" src="assets/audio/leitung.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-leitung');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Dirección / Gestión</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Landschaft</span>
+      <audio id="audio-landschaft" src="assets/audio/landschaft.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-landschaft');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Paisaje</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Branche</span>
+      <audio id="audio-branche" src="assets/audio/branche.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-branche');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Sector</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Katze</span>
+      <audio id="audio-katze" src="assets/audio/katze.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-katze');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Gata / Gato</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Lehre</span>
+      <audio id="audio-lehre" src="assets/audio/lehre.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-lehre');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Enseñanza / Aprendizaje</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Jugend</span>
+      <audio id="audio-jugend" src="assets/audio/jugend.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-jugend');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Juventud</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Tasche</span>
+      <audio id="audio-tasche" src="assets/audio/tasche.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-tasche');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Bolso / Bolsillo</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Tante</span>
+      <audio id="audio-tante" src="assets/audio/tante.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-tante');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Tía</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Fahrt</span>
+      <audio id="audio-fahrt" src="assets/audio/fahrt.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-fahrt');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Viaje / Trayecto</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Flasche</span>
+      <audio id="audio-flasche" src="assets/audio/flasche.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-flasche');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Botella</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Adresse</span>
+      <audio id="audio-adresse" src="assets/audio/adresse.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-adresse');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Dirección</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Post</span>
+      <audio id="audio-post" src="assets/audio/post.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-post');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Correo</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Saison</span>
+      <audio id="audio-saison" src="assets/audio/saison.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-saison');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Temporada</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Fotografie</span>
+      <audio id="audio-fotografie" src="assets/audio/fotografie.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-fotografie');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Fotografía</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Liste</span>
+      <audio id="audio-liste" src="assets/audio/liste.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-liste');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Lista</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Kasse</span>
+      <audio id="audio-kasse" src="assets/audio/kasse.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-kasse');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Caja</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Beratung</span>
+      <audio id="audio-beratung" src="assets/audio/beratung.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-beratung');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Asesoramiento</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Lebensmittel</span>
+      <audio id="audio-lebensmittel" src="assets/audio/lebensmittel.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-lebensmittel');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Alimentos</td>
+  <td>Plural / Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Treppe</span>
+      <audio id="audio-treppe" src="assets/audio/treppe.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-treppe');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Escalera</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Versicherung</span>
+      <audio id="audio-versicherung" src="assets/audio/versicherung.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-versicherung');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Seguro</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Identität</span>
+      <audio id="audio-identitaet" src="assets/audio/identitaet.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-identitaet');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Identidad</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Kamera</span>
+      <audio id="audio-kamera" src="assets/audio/kamera.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-kamera');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Cámara</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Zigarette</span>
+      <audio id="audio-zigarette" src="assets/audio/zigarette.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-zigarette');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Cigarrillo</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Geburt</span>
+      <audio id="audio-geburt" src="assets/audio/geburt.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-geburt');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Nacimiento</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Halle</span>
+      <audio id="audio-halle" src="assets/audio/halle.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-halle');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Sala / Nave</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Sitzung</span>
+      <audio id="audio-sitzung" src="assets/audio/sitzung.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-sitzung');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Reunión</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Angehörige</span>
+      <audio id="audio-angehoerige" src="assets/audio/angehoerige.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-angehoerige');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Familiar</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Station</span>
+      <audio id="audio-station" src="assets/audio/station.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-station');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Estación / Planta hospitalaria</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Dienstleistung</span>
+      <audio id="audio-dienstleistung" src="assets/audio/dienstleistung.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-dienstleistung');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Servicio</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Seite</span>
+      <audio id="audio-seite" src="assets/audio/seite.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-seite');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Página / Lado</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Art</span>
+      <audio id="audio-art" src="assets/audio/art.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-art');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Tipo / Manera</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Möglichkeit</span>
+      <audio id="audio-moeglichkeit" src="assets/audio/moeglichkeit.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-moeglichkeit');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Posibilidad</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Stelle</span>
+      <audio id="audio-stelle" src="assets/audio/stelle.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-stelle');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Puesto / Posición / Empleo</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Form</span>
+      <audio id="audio-form" src="assets/audio/form.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-form');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Forma</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Marke</span>
+      <audio id="audio-marke" src="assets/audio/marke.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-marke');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Marca / Marco</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Entwicklung</span>
+      <audio id="audio-entwicklung" src="assets/audio/entwicklung.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-entwicklung');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Desarrollo</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Gruppe</span>
+      <audio id="audio-gruppe" src="assets/audio/gruppe.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-gruppe');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Grupo</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Folge</span>
+      <audio id="audio-folge" src="assets/audio/folge.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-folge');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Consecuencia / Episodio</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Rolle</span>
+      <audio id="audio-rolle" src="assets/audio/rolle.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-rolle');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Rol / Papel</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Tür</span>
+      <audio id="audio-tuer" src="assets/audio/tuer.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-tuer');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Puerta</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Bedeutung</span>
+      <audio id="audio-bedeutung" src="assets/audio/bedeutung.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-bedeutung');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Significado</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Weise</span>
+      <audio id="audio-weise" src="assets/audio/weise.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-weise');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Manera</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Regierung</span>
+      <audio id="audio-regierung" src="assets/audio/regierung.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-regierung');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Gobierno</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Situation</span>
+      <audio id="audio-situation" src="assets/audio/situation.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-situation');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Situación</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Abbildung</span>
+      <audio id="audio-abbildung" src="assets/audio/abbildung.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-abbildung');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Ilustración / Figura</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Funktion</span>
+      <audio id="audio-funktion" src="assets/audio/funktion.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-funktion');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Función</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Stimme</span>
+      <audio id="audio-stimme" src="assets/audio/stimme.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-stimme');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Voz</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Richtung</span>
+      <audio id="audio-richtung" src="assets/audio/richtung.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-richtung');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Dirección</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Angst</span>
+      <audio id="audio-angst" src="assets/audio/angst.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-angst');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Miedo</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Information</span>
+      <audio id="audio-information" src="assets/audio/information.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-information');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Información</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Kunst</span>
+      <audio id="audio-kunst" src="assets/audio/kunst.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-kunst');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Arte</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Musik</span>
+      <audio id="audio-musik" src="assets/audio/musik.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-musik');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Música</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Politik</span>
+      <audio id="audio-politik" src="assets/audio/politik.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-politik');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Política</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Regel</span>
+      <audio id="audio-regel" src="assets/audio/regel.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-regel');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Regla</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Beziehung</span>
+      <audio id="audio-beziehung" src="assets/audio/beziehung.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-beziehung');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Relación</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Erfahrung</span>
+      <audio id="audio-erfahrung" src="assets/audio/erfahrung.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-erfahrung');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Experiencia</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Zukunft</span>
+      <audio id="audio-zukunft" src="assets/audio/zukunft.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-zukunft');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Futuro</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Partei</span>
+      <audio id="audio-partei" src="assets/audio/partei.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-partei');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Partido político</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Kirche</span>
+      <audio id="audio-kirche" src="assets/audio/kirche.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-kirche');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Iglesia</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Entscheidung</span>
+      <audio id="audio-entscheidung" src="assets/audio/entscheidung.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-entscheidung');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Decisión</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Firma</span>
+      <audio id="audio-firma" src="assets/audio/firma.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-firma');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Empresa</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Kraft</span>
+      <audio id="audio-kraft" src="assets/audio/kraft.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-kraft');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Fuerza</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Chance</span>
+      <audio id="audio-chance" src="assets/audio/chance.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-chance');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Oportunidad</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Zeitung</span>
+      <audio id="audio-zeitung" src="assets/audio/zeitung.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-zeitung');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Periódico</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Grenze</span>
+      <audio id="audio-grenze" src="assets/audio/grenze.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-grenze');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Frontera</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Kultur</span>
+      <audio id="audio-kultur" src="assets/audio/kultur.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-kultur');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Cultura</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Lage</span>
+      <audio id="audio-lage" src="assets/audio/lage.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-lage');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Situación</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Leistung</span>
+      <audio id="audio-leistung" src="assets/audio/leistung.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-leistung');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Rendimiento / Prestación</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Lösung</span>
+      <audio id="audio-loesung" src="assets/audio/loesung.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-loesung');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Solución</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Höhe</span>
+      <audio id="audio-hoehe" src="assets/audio/hoehe.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-hoehe');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Altura</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Luft</span>
+      <audio id="audio-luft" src="assets/audio/luft.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-luft');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Aire</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Meinung</span>
+      <audio id="audio-meinung" src="assets/audio/meinung.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-meinung');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Opinión</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Idee</span>
+      <audio id="audio-idee" src="assets/audio/idee.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-idee');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Idea</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Natur</span>
+      <audio id="audio-natur" src="assets/audio/natur.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-natur');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Naturaleza</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Wirtschaft</span>
+      <audio id="audio-wirtschaft" src="assets/audio/wirtschaft.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-wirtschaft');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Economía</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Bewegung</span>
+      <audio id="audio-bewegung" src="assets/audio/bewegung.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-bewegung');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Movimiento</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Sicherheit</span>
+      <audio id="audio-sicherheit" src="assets/audio/sicherheit.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-sicherheit');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Seguridad</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Angabe</span>
+      <audio id="audio-angabe" src="assets/audio/angabe.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-angabe');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Dato / Indicación</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Menge</span>
+      <audio id="audio-menge" src="assets/audio/menge.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-menge');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Cantidad</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Verbindung</span>
+      <audio id="audio-verbindung" src="assets/audio/verbindung.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-verbindung');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Conexión</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Vorstellung</span>
+      <audio id="audio-vorstellung" src="assets/audio/vorstellung.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-vorstellung');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Presentación / Imaginación</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Anwendung</span>
+      <audio id="audio-anwendung" src="assets/audio/anwendung.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-anwendung');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Aplicación / Uso</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Polizei</span>
+      <audio id="audio-polizei" src="assets/audio/polizei.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-polizei');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Policía</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Ausbildung</span>
+      <audio id="audio-ausbildung" src="assets/audio/ausbildung.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-ausbildung');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Formación / Capacitación</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Gefahr</span>
+      <audio id="audio-gefahr" src="assets/audio/gefahr.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-gefahr');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Peligro</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Maßnahme</span>
+      <audio id="audio-massnahme" src="assets/audio/massnahme.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-massnahme');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Medida</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Mitte</span>
+      <audio id="audio-mitte" src="assets/audio/mitte.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-mitte');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Centro / Mitad</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Ordnung</span>
+      <audio id="audio-ordnung" src="assets/audio/ordnung.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-ordnung');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Orden</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Reihe</span>
+      <audio id="audio-reihe" src="assets/audio/reihe.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-reihe');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Fila / Serie</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Bevölkerung</span>
+      <audio id="audio-bevoelkerung" src="assets/audio/bevoelkerung.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-bevoelkerung');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Población</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Erde</span>
+      <audio id="audio-erde" src="assets/audio/erde.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-erde');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Tierra</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Ebene</span>
+      <audio id="audio-ebene" src="assets/audio/ebene.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-ebene');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Nivel / Plano</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Einheit</span>
+      <audio id="audio-einheit" src="assets/audio/einheit.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-einheit');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Unidad</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Nähe</span>
+      <audio id="audio-naehe" src="assets/audio/naehe.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-naehe');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Cercanía / Proximidad</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Struktur</span>
+      <audio id="audio-struktur" src="assets/audio/struktur.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-struktur');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Estructura</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Bedingung</span>
+      <audio id="audio-bedingung" src="assets/audio/bedingung.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-bedingung');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Condición</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Wahl</span>
+      <audio id="audio-wahl" src="assets/audio/wahl.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-wahl');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Elección</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Wirkung</span>
+      <audio id="audio-wirkung" src="assets/audio/wirkung.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-wirkung');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Efecto</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Medien</span>
+      <audio id="audio-medien" src="assets/audio/medien.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-medien');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Medios de comunicación</td>
+  <td>Plural</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Macht</span>
+      <audio id="audio-macht" src="assets/audio/macht.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-macht');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Poder</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Untersuchung</span>
+      <audio id="audio-untersuchung" src="assets/audio/untersuchung.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-untersuchung');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Investigación / Examen</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Veränderung</span>
+      <audio id="audio-veraenderung" src="assets/audio/veraenderung.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-veraenderung');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Cambio / Modificación</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Methode</span>
+      <audio id="audio-methode" src="assets/audio/methode.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-methode');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Método</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Organisation</span>
+      <audio id="audio-organisation" src="assets/audio/organisation.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-organisation');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Organización</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Rede</span>
+      <audio id="audio-rede" src="assets/audio/rede.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-rede');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Discurso</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Diskussion</span>
+      <audio id="audio-diskussion" src="assets/audio/diskussion.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-diskussion');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Discusión</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Forderung</span>
+      <audio id="audio-forderung" src="assets/audio/forderung.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-forderung');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Exigencia / Demanda</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Technik</span>
+      <audio id="audio-technik" src="assets/audio/technik.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-technik');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Técnica / Tecnología</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Krankheit</span>
+      <audio id="audio-krankheit" src="assets/audio/krankheit.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-krankheit');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Enfermedad</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Schwierigkeit</span>
+      <audio id="audio-schwierigkeit" src="assets/audio/schwierigkeit.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-schwierigkeit');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Dificultad</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Tätigkeit</span>
+      <audio id="audio-taetigkeit" src="assets/audio/taetigkeit.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-taetigkeit');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Actividad</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Voraussetzung</span>
+      <audio id="audio-voraussetzung" src="assets/audio/voraussetzung.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-voraussetzung');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Requisito / Condición previa</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Region</span>
+      <audio id="audio-region" src="assets/audio/region.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-region');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Región</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Reaktion</span>
+      <audio id="audio-reaktion" src="assets/audio/reaktion.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-reaktion');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Reacción</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Linie</span>
+      <audio id="audio-linie" src="assets/audio/linie.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-linie');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Línea</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Literatur</span>
+      <audio id="audio-literatur" src="assets/audio/literatur.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-literatur');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Literatura</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Zelle</span>
+      <audio id="audio-zelle" src="assets/audio/zelle.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-zelle');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Célula</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Aussage</span>
+      <audio id="audio-aussage" src="assets/audio/aussage.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-aussage');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Afirmación / Declaración</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Wand</span>
+      <audio id="audio-wand" src="assets/audio/wand.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-wand');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Pared</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Farbe</span>
+      <audio id="audio-farbe" src="assets/audio/farbe.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-farbe');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Color</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Erinnerung</span>
+      <audio id="audio-erinnerung" src="assets/audio/erinnerung.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-erinnerung');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Recuerdo</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Kenntnis</span>
+      <audio id="audio-kenntnis" src="assets/audio/kenntnis.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-kenntnis');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Conocimiento</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Sekunde</span>
+      <audio id="audio-sekunde" src="assets/audio/sekunde.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-sekunde');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Segundo</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Wissenschaft</span>
+      <audio id="audio-wissenschaft" src="assets/audio/wissenschaft.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-wissenschaft');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Ciencia</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Wirklichkeit</span>
+      <audio id="audio-wirklichkeit" src="assets/audio/wirklichkeit.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-wirklichkeit');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Realidad</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Grundlage</span>
+      <audio id="audio-grundlage" src="assets/audio/grundlage.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-grundlage');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Base / Fundamento</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Freude</span>
+      <audio id="audio-freude" src="assets/audio/freude.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-freude');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Alegría</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Gemeinde</span>
+      <audio id="audio-gemeinde" src="assets/audio/gemeinde.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-gemeinde');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Municipio / Comunidad</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Position</span>
+      <audio id="audio-position" src="assets/audio/position.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-position');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Posición</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Bundesrepublik</span>
+      <audio id="audio-bundesrepublik" src="assets/audio/bundesrepublik.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-bundesrepublik');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>República federal</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Forschung</span>
+      <audio id="audio-forschung" src="assets/audio/forschung.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-forschung');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Investigación</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Haut</span>
+      <audio id="audio-haut" src="assets/audio/haut.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-haut');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Piel</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Praxis</span>
+      <audio id="audio-praxis" src="assets/audio/praxis.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-praxis');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Práctica / Consultorio</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Freundin</span>
+      <audio id="audio-freundin" src="assets/audio/freundin.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-freundin');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Amiga / Novia</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Sicht</span>
+      <audio id="audio-sicht" src="assets/audio/sicht.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-sicht');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Vista / Perspectiva</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Theorie</span>
+      <audio id="audio-theorie" src="assets/audio/theorie.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-theorie');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Teoría</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Umwelt</span>
+      <audio id="audio-umwelt" src="assets/audio/umwelt.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-umwelt');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Medio ambiente</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Maschine</span>
+      <audio id="audio-maschine" src="assets/audio/maschine.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-maschine');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Máquina</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Schulter</span>
+      <audio id="audio-schulter" src="assets/audio/schulter.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-schulter');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Hombro</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Unterstützung</span>
+      <audio id="audio-unterstuetzung" src="assets/audio/unterstuetzung.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-unterstuetzung');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Apoyo</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Produktion</span>
+      <audio id="audio-produktion" src="assets/audio/produktion.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-produktion');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Producción</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Ruhe</span>
+      <audio id="audio-ruhe" src="assets/audio/ruhe.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-ruhe');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Tranquilidad / Calma</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Tatsache</span>
+      <audio id="audio-tatsache" src="assets/audio/tatsache.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-tatsache');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Hecho</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Umgebung</span>
+      <audio id="audio-umgebung" src="assets/audio/umgebung.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-umgebung');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Entorno</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Öffentlichkeit</span>
+      <audio id="audio-oeffentlichkeit" src="assets/audio/oeffentlichkeit.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-oeffentlichkeit');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Opinión pública</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Energie</span>
+      <audio id="audio-energie" src="assets/audio/energie.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-energie');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Energía</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Behandlung</span>
+      <audio id="audio-behandlung" src="assets/audio/behandlung.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-behandlung');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Tratamiento</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Einrichtung</span>
+      <audio id="audio-einrichtung" src="assets/audio/einrichtung.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-einrichtung');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Instalación / Institución</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Hochschule</span>
+      <audio id="audio-hochschule" src="assets/audio/hochschule.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-hochschule');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Universidad superior</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Studie</span>
+      <audio id="audio-studie" src="assets/audio/studie.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-studie');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Estudio</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Vorsitzende</span>
+      <audio id="audio-vorsitzende" src="assets/audio/vorsitzende.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-vorsitzende');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Presidenta</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Analyse</span>
+      <audio id="audio-analyse" src="assets/audio/analyse.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-analyse');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Análisis</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Spur</span>
+      <audio id="audio-spur" src="assets/audio/spur.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-spur');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Huella / Rastro</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Erkenntnis</span>
+      <audio id="audio-erkenntnis" src="assets/audio/erkenntnis.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-erkenntnis');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Conocimiento / Hallazgo</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Freiheit</span>
+      <audio id="audio-freiheit" src="assets/audio/freiheit.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-freiheit');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Libertad</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Gegend</span>
+      <audio id="audio-gegend" src="assets/audio/gegend.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-gegend');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Zona / Región</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Kritik</span>
+      <audio id="audio-kritik" src="assets/audio/kritik.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-kritik');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Crítica</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Kontrolle</span>
+      <audio id="audio-kontrolle" src="assets/audio/kontrolle.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-kontrolle');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Control</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Aufnahme</span>
+      <audio id="audio-aufnahme" src="assets/audio/aufnahme.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-aufnahme');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Grabación / Admisión</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Fähigkeit</span>
+      <audio id="audio-faehigkeit" src="assets/audio/faehigkeit.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-faehigkeit');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Capacidad</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Verantwortung</span>
+      <audio id="audio-verantwortung" src="assets/audio/verantwortung.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-verantwortung');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Responsabilidad</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Wahrheit</span>
+      <audio id="audio-wahrheit" src="assets/audio/wahrheit.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-wahrheit');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Verdad</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Prüfung</span>
+      <audio id="audio-pruefung" src="assets/audio/pruefung.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-pruefung');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Examen</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Regelung</span>
+      <audio id="audio-regelung" src="assets/audio/regelung.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-regelung');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Regulación / Norma</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Ausstellung</span>
+      <audio id="audio-ausstellung" src="assets/audio/ausstellung.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-ausstellung');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Exposición</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Hoffnung</span>
+      <audio id="audio-hoffnung" src="assets/audio/hoffnung.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-hoffnung');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Esperanza</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Einstellung</span>
+      <audio id="audio-einstellung" src="assets/audio/einstellung.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-einstellung');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Actitud / Ajuste</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Tat</span>
+      <audio id="audio-tat" src="assets/audio/tat.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-tat');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Acto / Hecho</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Union</span>
+      <audio id="audio-union" src="assets/audio/union.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-union');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Unión</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Geographie</span>
+      <audio id="audio-geographie" src="assets/audio/geographie.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-geographie');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Geografía</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Qualität</span>
+      <audio id="audio-qualitaet" src="assets/audio/qualitaet.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-qualitaet');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Calidad</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Vergangenheit</span>
+      <audio id="audio-vergangenheit" src="assets/audio/vergangenheit.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-vergangenheit');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Pasado</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Aktiengesellschaft</span>
+      <audio id="audio-aktiengesellschaft" src="assets/audio/aktiengesellschaft.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-aktiengesellschaft');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Sociedad anónima</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Ehe</span>
+      <audio id="audio-ehe" src="assets/audio/ehe.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-ehe');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Matrimonio</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Ursache</span>
+      <audio id="audio-ursache" src="assets/audio/ursache.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-ursache');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Causa</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Anzahl</span>
+      <audio id="audio-anzahl" src="assets/audio/anzahl.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-anzahl');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Cantidad</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Insel</span>
+      <audio id="audio-insel" src="assets/audio/insel.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-insel');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Isla</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Nachricht</span>
+      <audio id="audio-nachricht" src="assets/audio/nachricht.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-nachricht');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Noticia</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Störung</span>
+      <audio id="audio-stoerung" src="assets/audio/stoerung.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-stoerung');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Avería / Interrupción</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Bildung</span>
+      <audio id="audio-bildung" src="assets/audio/bildung.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-bildung');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Educación / Formación</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Eigenschaft</span>
+      <audio id="audio-eigenschaft" src="assets/audio/eigenschaft.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-eigenschaft');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Característica</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Generation</span>
+      <audio id="audio-generation" src="assets/audio/generation.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-generation');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Generación</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Tradition</span>
+      <audio id="audio-tradition" src="assets/audio/tradition.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-tradition');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Tradición</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Anlage</span>
+      <audio id="audio-anlage" src="assets/audio/anlage.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-anlage');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Instalación / Inversión</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Behörde</span>
+      <audio id="audio-behoerde" src="assets/audio/behoerde.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-behoerde');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Autoridad</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Bühne</span>
+      <audio id="audio-buehne" src="assets/audio/buehne.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-buehne');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Escenario</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Gelegenheit</span>
+      <audio id="audio-gelegenheit" src="assets/audio/gelegenheit.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-gelegenheit');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Oportunidad</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Kommunikation</span>
+      <audio id="audio-kommunikation" src="assets/audio/kommunikation.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-kommunikation');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Comunicación</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Nutzung</span>
+      <audio id="audio-nutzung" src="assets/audio/nutzung.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-nutzung');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Uso</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Basis</span>
+      <audio id="audio-basis" src="assets/audio/basis.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-basis');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Base</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Ecke</span>
+      <audio id="audio-ecke" src="assets/audio/ecke.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-ecke');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Esquina</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Zusammenarbeit</span>
+      <audio id="audio-zusammenarbeit" src="assets/audio/zusammenarbeit.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-zusammenarbeit');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Colaboración</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Ansicht</span>
+      <audio id="audio-ansicht" src="assets/audio/ansicht.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-ansicht');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Opinión / Vista</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Auseinandersetzung</span>
+      <audio id="audio-auseinandersetzung" src="assets/audio/auseinandersetzung.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-auseinandersetzung');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Discusión / Conflicto</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Definition</span>
+      <audio id="audio-definition" src="assets/audio/definition.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-definition');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Definición</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Masse</span>
+      <audio id="audio-masse" src="assets/audio/masse.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-masse');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Masa</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Phase</span>
+      <audio id="audio-phase" src="assets/audio/phase.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-phase');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Fase</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Ausnahme</span>
+      <audio id="audio-ausnahme" src="assets/audio/ausnahme.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-ausnahme');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Excepción</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Lust</span>
+      <audio id="audio-lust" src="assets/audio/lust.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-lust');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Ganas / Deseo</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Mehrheit</span>
+      <audio id="audio-mehrheit" src="assets/audio/mehrheit.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-mehrheit');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Mayoría</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Rechnung</span>
+      <audio id="audio-rechnung" src="assets/audio/rechnung.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-rechnung');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Cuenta / Factura</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Aktivität</span>
+      <audio id="audio-aktivitaet" src="assets/audio/aktivitaet.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-aktivitaet');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Actividad</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>BGB</span>
+      <audio id="audio-bgb" src="assets/audio/bgb.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-bgb');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Código Civil alemán</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Mannschaft</span>
+      <audio id="audio-mannschaft" src="assets/audio/mannschaft.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-mannschaft');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Equipo</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Mauer</span>
+      <audio id="audio-mauer" src="assets/audio/mauer.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-mauer');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Muro</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Runde</span>
+      <audio id="audio-runde" src="assets/audio/runde.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-runde');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Ronda</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Gestalt</span>
+      <audio id="audio-gestalt" src="assets/audio/gestalt.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-gestalt');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Figura</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Stellung</span>
+      <audio id="audio-stellung" src="assets/audio/stellung.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-stellung');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Posición</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Figur</span>
+      <audio id="audio-figur" src="assets/audio/figur.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-figur');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Figura</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Industrie</span>
+      <audio id="audio-industrie" src="assets/audio/industrie.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-industrie');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Industria</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Darstellung</span>
+      <audio id="audio-darstellung" src="assets/audio/darstellung.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-darstellung');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Representación</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Gewalt</span>
+      <audio id="audio-gewalt" src="assets/audio/gewalt.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-gewalt');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Violencia</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Institution</span>
+      <audio id="audio-institution" src="assets/audio/institution.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-institution');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Institución</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Spitze</span>
+      <audio id="audio-spitze" src="assets/audio/spitze.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-spitze');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Punta</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Strecke</span>
+      <audio id="audio-strecke" src="assets/audio/strecke.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-strecke');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Trayecto</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Szene</span>
+      <audio id="audio-szene" src="assets/audio/szene.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-szene');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Escena</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Weltmeisterschaft</span>
+      <audio id="audio-weltmeisterschaft" src="assets/audio/weltmeisterschaft.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-weltmeisterschaft');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Campeonato mundial</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Dauer</span>
+      <audio id="audio-dauer" src="assets/audio/dauer.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-dauer');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Duración</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Konsequenz</span>
+      <audio id="audio-konsequenz" src="assets/audio/konsequenz.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-konsequenz');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Consecuencia</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Nase</span>
+      <audio id="audio-nase" src="assets/audio/nase.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-nase');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Nariz</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Aktie</span>
+      <audio id="audio-aktie" src="assets/audio/aktie.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-aktie');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Acción (bolsa)</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Aktion</span>
+      <audio id="audio-aktion" src="assets/audio/aktion.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-aktion');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Acción / Campaña</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Ausgabe</span>
+      <audio id="audio-ausgabe" src="assets/audio/ausgabe.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-ausgabe');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Edición / Salida</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Führung</span>
+      <audio id="audio-fuehrung" src="assets/audio/fuehrung.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-fuehrung');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Liderazgo / Guía</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Geschwindigkeit</span>
+      <audio id="audio-geschwindigkeit" src="assets/audio/geschwindigkeit.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-geschwindigkeit');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Velocidad</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Medizin</span>
+      <audio id="audio-medizin" src="assets/audio/medizin.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-medizin');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Medicina</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Software</span>
+      <audio id="audio-software" src="assets/audio/software.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-software');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Software</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Stufe</span>
+      <audio id="audio-stufe" src="assets/audio/stufe.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-stufe');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Nivel / Escalón</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Anforderung</span>
+      <audio id="audio-anforderung" src="assets/audio/anforderung.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-anforderung');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Requisito / Exigencia</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Belastung</span>
+      <audio id="audio-belastung" src="assets/audio/belastung.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-belastung');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Carga / Estrés</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Messe</span>
+      <audio id="audio-messe" src="assets/audio/messe.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-messe');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Feria</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Vorschrift</span>
+      <audio id="audio-vorschrift" src="assets/audio/vorschrift.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-vorschrift');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Norma / Reglamento</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Kommission</span>
+      <audio id="audio-kommission" src="assets/audio/kommission.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-kommission');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Comisión</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Decke</span>
+      <audio id="audio-decke" src="assets/audio/decke.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-decke');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Techo / Manta</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Schuld</span>
+      <audio id="audio-schuld" src="assets/audio/schuld.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-schuld');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Culpa / Deuda</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Hinsicht</span>
+      <audio id="audio-hinsicht" src="assets/audio/hinsicht.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-hinsicht');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Respecto / Punto de vista</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Verwaltung</span>
+      <audio id="audio-verwaltung" src="assets/audio/verwaltung.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-verwaltung');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Administración</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Weiler</span>
+      <audio id="audio-weiler" src="assets/audio/weiler.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-weiler');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Aldea</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Heimat</span>
+      <audio id="audio-heimat" src="assets/audio/heimat.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-heimat');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Patria / Hogar</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Konkurrenz</span>
+      <audio id="audio-konkurrenz" src="assets/audio/konkurrenz.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-konkurrenz');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Competencia</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Mathematik</span>
+      <audio id="audio-mathematik" src="assets/audio/mathematik.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-mathematik');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Matemáticas</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Schicht</span>
+      <audio id="audio-schicht" src="assets/audio/schicht.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-schicht');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Turno / Capa</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Gemeinschaft</span>
+      <audio id="audio-gemeinschaft" src="assets/audio/gemeinschaft.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-gemeinschaft');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Comunidad</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Gewerkschaft</span>
+      <audio id="audio-gewerkschaft" src="assets/audio/gewerkschaft.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-gewerkschaft');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Sindicato</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Platte</span>
+      <audio id="audio-platte" src="assets/audio/platte.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-platte');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Disco / Placa</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Tabelle</span>
+      <audio id="audio-tabelle" src="assets/audio/tabelle.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-tabelle');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Tabla</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Investition</span>
+      <audio id="audio-investition" src="assets/audio/investition.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-investition');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Inversión</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Planung</span>
+      <audio id="audio-planung" src="assets/audio/planung.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-planung');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Planificación</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Stärke</span>
+      <audio id="audio-staerke" src="assets/audio/staerke.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-staerke');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Fuerza</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Steuer</span>
+      <audio id="audio-steuer" src="assets/audio/steuer.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-steuer');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Impuesto</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Therapie</span>
+      <audio id="audio-therapie" src="assets/audio/therapie.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-therapie');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Terapia</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Überlegung</span>
+      <audio id="audio-ueberlegung" src="assets/audio/ueberlegung.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-ueberlegung');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Reflexión</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Verletzung</span>
+      <audio id="audio-verletzung" src="assets/audio/verletzung.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-verletzung');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Lesión</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Armee</span>
+      <audio id="audio-armee" src="assets/audio/armee.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-armee');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Ejército</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Atmosphäre</span>
+      <audio id="audio-atmosphaere" src="assets/audio/atmosphaere.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-atmosphaere');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Atmósfera</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Auswahl</span>
+      <audio id="audio-auswahl" src="assets/audio/auswahl.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-auswahl');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Selección</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Beschreibung</span>
+      <audio id="audio-beschreibung" src="assets/audio/beschreibung.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-beschreibung');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Descripción</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Einnahme</span>
+      <audio id="audio-einnahme" src="assets/audio/einnahme.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-einnahme');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Ingreso / Toma</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Erkrankung</span>
+      <audio id="audio-erkrankung" src="assets/audio/erkrankung.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-erkrankung');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Enfermedad</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Fläche</span>
+      <audio id="audio-flaeche" src="assets/audio/flaeche.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-flaeche');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Superficie</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Gesundheit</span>
+      <audio id="audio-gesundheit" src="assets/audio/gesundheit.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-gesundheit');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Salud</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Physik</span>
+      <audio id="audio-physik" src="assets/audio/physik.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-physik');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Física</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Stirn</span>
+      <audio id="audio-stirn" src="assets/audio/stirn.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-stirn');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Frente</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Strategie</span>
+      <audio id="audio-strategie" src="assets/audio/strategie.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-strategie');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Estrategia</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Demokratie</span>
+      <audio id="audio-demokratie" src="assets/audio/demokratie.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-demokratie');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Democracia</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Erwartung</span>
+      <audio id="audio-erwartung" src="assets/audio/erwartung.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-erwartung');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Expectativa</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Kombination</span>
+      <audio id="audio-kombination" src="assets/audio/kombination.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-kombination');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Combinación</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Schrift</span>
+      <audio id="audio-schrift" src="assets/audio/schrift.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-schrift');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Escritura</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Abteilung</span>
+      <audio id="audio-abteilung" src="assets/audio/abteilung.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-abteilung');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Departamento</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Dimension</span>
+      <audio id="audio-dimension" src="assets/audio/dimension.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-dimension');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Dimensión</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Integration</span>
+      <audio id="audio-integration" src="assets/audio/integration.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-integration');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Integración</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Kategorie</span>
+      <audio id="audio-kategorie" src="assets/audio/kategorie.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-kategorie');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Categoría</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Verbesserung</span>
+      <audio id="audio-verbesserung" src="assets/audio/verbesserung.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-verbesserung');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Mejora</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Verpflichtung</span>
+      <audio id="audio-verpflichtung" src="assets/audio/verpflichtung.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-verpflichtung');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Obligación</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Beschäftigung</span>
+      <audio id="audio-beschaeftigung" src="assets/audio/beschaeftigung.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-beschaeftigung');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Empleo</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Betrachtung</span>
+      <audio id="audio-betrachtung" src="assets/audio/betrachtung.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-betrachtung');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Consideración</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Kompetenz</span>
+      <audio id="audio-kompetenz" src="assets/audio/kompetenz.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-kompetenz');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Competencia</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Arbeitslosigkeit</span>
+      <audio id="audio-arbeitslosigkeit" src="assets/audio/arbeitslosigkeit.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-arbeitslosigkeit');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Desempleo</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Beobachtung</span>
+      <audio id="audio-beobachtung" src="assets/audio/beobachtung.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-beobachtung');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Observación</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Beteiligung</span>
+      <audio id="audio-beteiligung" src="assets/audio/beteiligung.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-beteiligung');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Participación</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Bewertung</span>
+      <audio id="audio-bewertung" src="assets/audio/bewertung.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-bewertung');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Evaluación</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Bezeichnung</span>
+      <audio id="audio-bezeichnung" src="assets/audio/bezeichnung.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-bezeichnung');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Denominación</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Brücke</span>
+      <audio id="audio-bruecke" src="assets/audio/bruecke.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-bruecke');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Puente</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Lippe</span>
+      <audio id="audio-lippe" src="assets/audio/lippe.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-lippe');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Labio</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Substanz</span>
+      <audio id="audio-substanz" src="assets/audio/substanz.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-substanz');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Sustancia</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Vorbereitung</span>
+      <audio id="audio-vorbereitung" src="assets/audio/vorbereitung.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-vorbereitung');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Preparación</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Initiative</span>
+      <audio id="audio-initiative" src="assets/audio/initiative.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-initiative');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Iniciativa</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Komponente</span>
+      <audio id="audio-komponente" src="assets/audio/komponente.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-komponente');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Componente</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Oberfläche</span>
+      <audio id="audio-oberflaeche" src="assets/audio/oberflaeche.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-oberflaeche');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Superficie</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Sendung</span>
+      <audio id="audio-sendung" src="assets/audio/sendung.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-sendung');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Programa</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Spannung</span>
+      <audio id="audio-spannung" src="assets/audio/spannung.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-spannung');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Tensión</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Technologie</span>
+      <audio id="audio-technologie" src="assets/audio/technologie.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-technologie');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Tecnología</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Truppe</span>
+      <audio id="audio-truppe" src="assets/audio/truppe.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-truppe');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Tropa</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Bilanz</span>
+      <audio id="audio-bilanz" src="assets/audio/bilanz.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-bilanz');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Balance</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Karriere</span>
+      <audio id="audio-karriere" src="assets/audio/karriere.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-karriere');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Carrera profesional</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Tiefe</span>
+      <audio id="audio-tiefe" src="assets/audio/tiefe.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-tiefe');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Profundidad</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Auffassung</span>
+      <audio id="audio-auffassung" src="assets/audio/auffassung.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-auffassung');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Opinión</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Erziehung</span>
+      <audio id="audio-erziehung" src="assets/audio/erziehung.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-erziehung');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Educación</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Herausforderung</span>
+      <audio id="audio-herausforderung" src="assets/audio/herausforderung.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-herausforderung');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Desafío</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>IT</span>
+      <audio id="audio-it" src="assets/audio/it.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-it');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Informática</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Informationstechnologie</span>
+      <audio id="audio-informationstechnologie" src="assets/audio/informationstechnologie.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-informationstechnologie');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Tecnología de la información</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Niederlage</span>
+      <audio id="audio-niederlage" src="assets/audio/niederlage.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-niederlage');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Derrota</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Norm</span>
+      <audio id="audio-norm" src="assets/audio/norm.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-norm');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Norma</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Reform</span>
+      <audio id="audio-reform" src="assets/audio/reform.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-reform');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Reforma</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Schülerin</span>
+      <audio id="audio-schuelerin" src="assets/audio/schuelerin.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-schuelerin');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Alumna</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Träne</span>
+      <audio id="audio-traene" src="assets/audio/traene.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-traene');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Lágrima</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Trauer</span>
+      <audio id="audio-trauer" src="assets/audio/trauer.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-trauer');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Tristeza</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Zustimmung</span>
+      <audio id="audio-zustimmung" src="assets/audio/zustimmung.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-zustimmung');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Aprobación</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Annahme</span>
+      <audio id="audio-annahme" src="assets/audio/annahme.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-annahme');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Suposición</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Blume</span>
+      <audio id="audio-blume" src="assets/audio/blume.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-blume');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Flor</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Bundeswehr</span>
+      <audio id="audio-bundeswehr" src="assets/audio/bundeswehr.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-bundeswehr');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Ejército alemán</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Disziplin</span>
+      <audio id="audio-disziplin" src="assets/audio/disziplin.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-disziplin');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Disciplina</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Existenz</span>
+      <audio id="audio-existenz" src="assets/audio/existenz.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-existenz');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Existencia</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Fraktion</span>
+      <audio id="audio-fraktion" src="assets/audio/fraktion.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-fraktion');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Grupo parlamentario</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Katastrophe</span>
+      <audio id="audio-katastrophe" src="assets/audio/katastrophe.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-katastrophe');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Catástrofe</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Opposition</span>
+      <audio id="audio-opposition" src="assets/audio/opposition.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-opposition');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Oposición</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Tendenz</span>
+      <audio id="audio-tendenz" src="assets/audio/tendenz.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-tendenz');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Tendencia</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Umsetzung</span>
+      <audio id="audio-umsetzung" src="assets/audio/umsetzung.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-umsetzung');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Implementación</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Versorgung</span>
+      <audio id="audio-versorgung" src="assets/audio/versorgung.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-versorgung');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Abastecimiento</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Angelegenheit</span>
+      <audio id="audio-angelegenheit" src="assets/audio/angelegenheit.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-angelegenheit');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Asunto</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Auskunft</span>
+      <audio id="audio-auskunft" src="assets/audio/auskunft.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-auskunft');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Información</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Begründung</span>
+      <audio id="audio-begruendung" src="assets/audio/begruendung.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-begruendung');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Justificación</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Entfernung</span>
+      <audio id="audio-entfernung" src="assets/audio/entfernung.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-entfernung');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Distancia</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Handlung</span>
+      <audio id="audio-handlung" src="assets/audio/handlung.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-handlung');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Acción</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Not</span>
+      <audio id="audio-not" src="assets/audio/not.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-not');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Necesidad</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Persönlichkeit</span>
+      <audio id="audio-persoenlichkeit" src="assets/audio/persoenlichkeit.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-persoenlichkeit');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Personalidad</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Seele</span>
+      <audio id="audio-seele" src="assets/audio/seele.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-seele');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Alma</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Unternehmung</span>
+      <audio id="audio-unternehmung" src="assets/audio/unternehmung.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-unternehmung');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Empresa / Actividad</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Vereinbarung</span>
+      <audio id="audio-vereinbarung" src="assets/audio/vereinbarung.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-vereinbarung');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Acuerdo</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Wahrnehmung</span>
+      <audio id="audio-wahrnehmung" src="assets/audio/wahrnehmung.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-wahrnehmung');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Percepción</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Äußerung</span>
+      <audio id="audio-aeusserung" src="assets/audio/aeusserung.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-aeusserung');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Declaración</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Begegnung</span>
+      <audio id="audio-begegnung" src="assets/audio/begegnung.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-begegnung');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Encuentro</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Datei</span>
+      <audio id="audio-datei" src="assets/audio/datei.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-datei');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Archivo</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Erzählung</span>
+      <audio id="audio-erzaehlung" src="assets/audio/erzaehlung.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-erzaehlung');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Narración</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Gründung</span>
+      <audio id="audio-gruendung" src="assets/audio/gruendung.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-gruendung');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Fundación</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Operation</span>
+      <audio id="audio-operation" src="assets/audio/operation.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-operation');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Operación</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Qualifikation</span>
+      <audio id="audio-qualifikation" src="assets/audio/qualifikation.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-qualifikation');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Cualificación</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Sammlung</span>
+      <audio id="audio-sammlung" src="assets/audio/sammlung.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-sammlung');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Colección</td>
+  <td>Femenino</td>
+</tr>
+<tr>
+  <td><span class="badge die">die</span></td>
+  <td>
+    <div class="word-audio">
+      <span>Tonne</span>
+      <audio id="audio-tonne" src="assets/audio/tonne.mp3"></audio>
+      <button class="audio-icon-btn" onclick="speakGermanWord(this); playAudio('audio-tonne');" title="Escuchar">🔊</button>
+    </div>
+  </td>
+  <td>Tonelada / Contenedor</td>
+  <td>Femenino</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+</div>
+</main>
+</body>
+</html>
+
+

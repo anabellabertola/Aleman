@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Casos Gramaticales en Alemán (Kasus)</title>
+<!-- Tipografía Roboto -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<!-- Hoja de estilos -->
+<link rel="stylesheet" href="css/verbos.css">
+<style>
+.intro-box, .outro-box {
+ margin: 15px 0 25px 0;
+ padding: 15px;
+ background-color: #f8f9fa;
+ border-left: 4px solid #e91e63;
+ border-radius: 4px;
+}
+.outro-box {
+ margin-top: 25px;
+ margin-bottom: 0;
+}
+.intro-box h2, .outro-box h2 {
+ margin-top: 0;
+ margin-bottom: 6px;
+ font-size: 1.1em;
+ color: #333;
+}
+.intro-box p, .outro-box p {
+ margin: 0 0 12px 0;
+ font-size: 0.95em;
+ color: #555;
+ line-height: 1.4;
+}
+.outro-box p:last-child {
+ margin-bottom: 0;
+}
+.audio-btn {
+ background: none;  
+ border: none;
+ cursor: pointer;
+ font-size: 0.9em;
+ padding: 0;
+ margin-left: 4px;
+}
+.conj-cell {
+ font-size: 0.9em;
+ line-height: 1.25;
+}
+.conj-cell small {
+ display: block;
+ color: #666;
+ font-size: 0.85em;
+ margin-top: 2px;
+}
+.section-title {
+ font-size: 1.4em;
+ color: #e91e63;
+ margin: 30px 0 15px 0;
+ font-weight: 700;
+}
+.german-text {
+ cursor: pointer;
+ color: #0056b3;
+}
+.german-text:hover {
+ text-decoration: underline;
+}
+.table-container {
+ overflow-x: auto;
+ margin-bottom: 20px;
+}
+table {
+ width: 100%;
+ border-collapse: collapse;
+ margin-top: 10px;
+}
+th, td {
+ padding: 10px 12px;
+ border: 1px solid #ddd;
+ text-align: left;
+} 
+th {
+ background-color: #f2f2f2;
+ font-weight: 700;
+}
+</style>
+</head>
+<body>
+<!-- Header Rosa Chicle -->
+    <!-- Header Rosa Chicle -->
+    <header class="site-header">
+    <div class="header-container">
+        <a href="index.html" class="logo">Deutsch</a>
+        <nav class="nav-container">
+            <ul class="nav-menu">
+                <li class="dropdown">
+                    <a href="#" class="nav-link dropdown-btn">Artículos y Sustantivos</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="der.html">Der</a></li>
+                        <li><a href="die.html">Die</a></li>
+                        <li><a href="das.html">Das</a></li>
+                    </ul>
+                </li>
+                <li><a href="akk-dativ.html" class="nav-link">Acusativos y Dativos</a></li>
+                <li class="dropdown">
+                    <a href="#" class="nav-link dropdown-btn active">Verbos</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="verbo-separables.html">Verbos Separables</a></li>
+                        <li><a href="verbos-regulares.html">Verbos Regulares</a></li>
+                        <li><a href="verbos-irregulares.html">Verbos Irregulares</a></li>
+                        <li><a href="verbos-modales.html">Verbos Modales</a></li>
+                        <li><a href="verbos-reflexivos.html">Verbos Reflexivos</a></li>
+                    </ul>
+                </li>
+                <li><a href="unidades-tiempo.html" class="nav-link">Unidades de Tiempo</a></li>
+                <li><a href="preposiciones.html" class="nav-link">Preposiciones</a></li>
+                <li><a href="vocabulario-hotel.html" class="nav-link">Hotel</a></li>
+                <li><a href="w-worter.html" class="nav-link">W-Worter</a></li>
+                <li><a href="saludos.html" class="nav-link">Saludos</a></li>
+                <li><a href="numeros.html" class="nav-link">Números</a></li>
+                <li><a href="casos.html" class="nav-link">Casos</a></li>
+                <li><a href="coenctores.html" class="nav-link">Conectores</a></li>
+                <li><a href="hora.html" class="nav-link">La Hora</a></li>
+                <li><a href="adjetivos.html" class="nav-link">Adjetivos</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main class="main-container" style="padding: 20px; max-width: 1200px; margin: 0 auto;">
+ <!-- Tabla 1: Preguntas y Funciones -->
+ <h1 class="section-title">Los 4 Casos Gramaticales (Kasus)</h1>
+ <div class="intro-box">
+ <h2>Estructura de la Oración</h2>
+ <p>En alemán, los casos determinan el rol que desempeña cada sustantivo dentro de la oración. Haz clic en las palabras u oraciones en alemán para escuchar la pronunciación nativa.</p>
+ </div>
+ <div class="table-container">
+ <table>
+ <thead>
+ <tr>
+ <th>Kasus</th>
+ <th>Frage / Pregunta</th>
+ <th>Funktion / Función</th>
+ <th>Beispiel DE</th>
+ <th>Ejemplo ES</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr>
+ <td><strong>Nominativ</strong></td>
+ <td>
+ <span class="german-text" onclick="playAudio('Wer? Was?')">Wer? / Was?</span>
+ <button class="audio-btn" onclick="playAudio('Wer? Was?')">🔊</button><br>
+ <small>(¿Quién? / ¿Qué?)</small>
+ </td>
+ <td>Subjekt / Sujeto (protagonista que ejecuta la acción)</td>
+ <td>
+ <span class="german-text" onclick="playAudio('Der Mann schläft.')">Der Mann schläft.</span>
+ <button class="audio-btn" onclick="playAudio('Der Mann schläft.')">🔊</button>
+ </td>
+ <td>El hombre duerme.</td>
+ </tr>  
+ <tr>
+ <td><strong>Akkusativ</strong></td>
+ <td>
+ <span class="german-text" onclick="playAudio('Wen? Was?')">Wen? / Was?</span>
+ <button class="audio-btn" onclick="playAudio('Wen? Was?')">🔊</button><br>
+ <small>(¿A quién? / ¿Qué cosa?)</small>
+ </td>
+ <td>Direktes Objekt / Objeto directo → “víctima” directa de la acción que ejerce el sujeto</td>
+ <td>
+ <span class="german-text" onclick="playAudio('Ich sehe den Mann.')">Ich sehe den Mann.</span>
+ <button class="audio-btn" onclick="playAudio('Ich sehe den Mann.')">🔊</button>
+ </td>
+ <td>Veo al hombre.</td>
+ </tr>
+ <tr>
+ <td><strong>Dativ</strong></td>
+ <td>
+ <span class="german-text" onclick="playAudio('Wem?')">Wem?</span>
+ <button class="audio-btn" onclick="playAudio('Wem?')">🔊</button><br>
+ <small>(¿A quién le?)</small>
+ </td>
+ <td>Indirektes Objekt / Objeto indirecto</td>
+ <td>
+ <span class="german-text" onclick="playAudio('Ich gebe dem Mann das Brot.')">Ich gebe dem Mann das Brot.</span>
+ <button class="audio-btn" onclick="playAudio('Ich gebe dem Mann das Brot.')">🔊</button>
+ </td>
+ <td>Le doy el pan al hombre.</td>
+ </tr>
+ <tr>
+ <td><strong>Genitiv</strong></td>
+ <td>
+ <span class="german-text" onclick="playAudio('Wessen?')">Wessen?</span>  
+ <button class="audio-btn" onclick="playAudio('Wessen?')">🔊</button><br>
+ <small>(¿De quién?)</small>
+ </td>
+ <td>Besitz / Posesión</td>
+ <td>
+ <span class="german-text" onclick="playAudio('Das Buch des Mannes.')">Das Buch des Mannes.</span>
+ <button class="audio-btn" onclick="playAudio('Das Buch des Mannes.')">🔊</button>
+ </td>
+ <td>El libro del hombre.</td>
+ </tr>
+ </tbody>
+ </table>
+ </div>
+
+ <!-- Tabla 2: Declinación por Género y Número (Artículos Determinados) -->
+ <h1 class="section-title">Declinación de Artículos Determinados por Género y Caso</h1>
+ <div class="table-container">
+ <table>
+ <thead>
+ <tr>
+ <th>Kasus</th>
+ <th>Maskulin (der)</th>
+ <th>Feminin (die)</th>
+ <th>Neutrum (das)</th>
+ <th>Plural (die)</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr>
+ <td><strong>Nominativ</strong></td>
+ <td>
+ <span class="german-text" onclick="playAudio('der Mann')">der Mann</span>
+ <button class="audio-btn" onclick="playAudio('der Mann')">🔊</button>
+ </td>
+ <td>  
+ <span class="german-text" onclick="playAudio('die Frau')">die Frau</span>
+ <button class="audio-btn" onclick="playAudio('die Frau')">🔊</button>
+ </td>
+ <td>
+ <span class="german-text" onclick="playAudio('das Kind')">das Kind</span>
+ <button class="audio-btn" onclick="playAudio('das Kind')">🔊</button>
+ </td>
+ <td>
+ <span class="german-text" onclick="playAudio('die Leute')">die Leute</span>
+ <button class="audio-btn" onclick="playAudio('die Leute')">🔊</button>
+ </td>
+ </tr>
+ <tr>
+ <td><strong>Akkusativ</strong></td>
+ <td>
+ <span class="german-text" onclick="playAudio('den Mann')">den Mann</span>
+ <button class="audio-btn" onclick="playAudio('den Mann')">🔊</button>
+ </td>
+ <td>
+ <span class="german-text" onclick="playAudio('die Frau')">die Frau</span>
+ <button class="audio-btn" onclick="playAudio('die Frau')">🔊</button>
+ </td>
+ <td>
+ <span class="german-text" onclick="playAudio('das Kind')">das Kind</span>
+ <button class="audio-btn" onclick="playAudio('das Kind')">🔊</button>
+ </td>
+ <td>
+ <span class="german-text" onclick="playAudio('die Leute')">die Leute</span>
+ <button class="audio-btn" onclick="playAudio('die Leute')">🔊</button>  
+ </td>
+ </tr>
+ <tr>
+ <td><strong>Dativ</strong></td>
+ <td>
+ <span class="german-text" onclick="playAudio('dem Mann')">dem Mann</span>
+ <button class="audio-btn" onclick="playAudio('dem Mann')">🔊</button>
+ </td>
+ <td>
+ <span class="german-text" onclick="playAudio('der Frau')">der Frau</span>
+ <button class="audio-btn" onclick="playAudio('der Frau')">🔊</button>
+ </td>
+ <td>
+ <span class="german-text" onclick="playAudio('dem Kind')">dem Kind</span>
+ <button class="audio-btn" onclick="playAudio('dem Kind')">🔊</button>
+ </td>
+ <td>
+ <span class="german-text" onclick="playAudio('den Leuten')">den Leuten</span>
+ <button class="audio-btn" onclick="playAudio('den Leuten')">🔊</button>
+ </td>
+ </tr>
+ <tr>
+ <td><strong>Genitiv</strong></td>
+ <td>
+ <span class="german-text" onclick="playAudio('des Mannes')">des Mannes</span>
+ <button class="audio-btn" onclick="playAudio('des Mannes')">🔊</button>
+ </td>
+ <td>
+ <span class="german-text" onclick="playAudio('der Frau')">der Frau</span>
+ <button class="audio-btn" onclick="playAudio('der Frau')">🔊</button>
+ </td>  
+ <td>
+ <span class="german-text" onclick="playAudio('des Kindes')">des Kindes</span>
+ <button class="audio-btn" onclick="playAudio('des Kindes')">🔊</button>
+ </td>
+ <td>
+ <span class="german-text" onclick="playAudio('der Leute')">der Leute</span>
+ <button class="audio-btn" onclick="playAudio('der Leute')">🔊</button>
+ </td>
+ </tr>
+ </tbody>
+ </table>
+ </div>
+
+ <!-- Tabla 3: Declinación por Género y Número (Artículos Indeterminados) -->
+ <h1 class="section-title">Declinación de Artículos Indeterminados por Género y Caso</h1>
+ <div class="table-container">
+ <table>
+ <thead>
+ <tr>
+ <th>Kasus</th>
+ <th>Maskulin (ein)</th>
+ <th>Feminin (eine)</th>
+ <th>Neutrum (ein)</th>
+ <th>Plural (—)</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr>
+ <td><strong>Nominativ</strong></td>
+ <td>
+ <span class="german-text" onclick="playAudio('ein Mann')">ein Mann</span>
+ <button class="audio-btn" onclick="playAudio('ein Mann')">🔊</button>
+ </td>
+ <td>
+ <span class="german-text" onclick="playAudio('eine Frau')">eine Frau</span>
+ <button class="audio-btn" onclick="playAudio('eine Frau')">🔊</button>
+ </td>
+ <td>
+ <span class="german-text" onclick="playAudio('ein Kind')">ein Kind</span>
+ <button class="audio-btn" onclick="playAudio('ein Kind')">🔊</button>
+ </td>
+ <td>
+ <span class="german-text" onclick="playAudio('Leute')">Leute</span>
+ <button class="audio-btn" onclick="playAudio('Leute')">🔊</button>
+ </td>
+ </tr>
+ <tr>
+ <td><strong>Akkusativ</strong></td>
+ <td>
+ <span class="german-text" onclick="playAudio('einen Mann')">einen Mann</span>
+ <button class="audio-btn" onclick="playAudio('einen Mann')">🔊</button>
+ </td>
+ <td>
+ <span class="german-text" onclick="playAudio('eine Frau')">eine Frau</span>
+ <button class="audio-btn" onclick="playAudio('eine Frau')">🔊</button>
+ </td>
+ <td>
+ <span class="german-text" onclick="playAudio('ein Kind')">ein Kind</span>
+ <button class="audio-btn" onclick="playAudio('ein Kind')">🔊</button>
+ </td>
+ <td>
+ <span class="german-text" onclick="playAudio('Leute')">Leute</span>
+ <button class="audio-btn" onclick="playAudio('Leute')">🔊</button>
+ </td>
+ </tr>
+ <tr>
+ <td><strong>Dativ</strong></td>
+ <td>
+ <span class="german-text" onclick="playAudio('einem Mann')">einem Mann</span>
+ <button class="audio-btn" onclick="playAudio('einem Mann')">🔊</button>
+ </td>
+ <td>
+ <span class="german-text" onclick="playAudio('einer Frau')">einer Frau</span>
+ <button class="audio-btn" onclick="playAudio('einer Frau')">🔊</button>
+ </td>
+ <td>
+ <span class="german-text" onclick="playAudio('einem Kind')">einem Kind</span>
+ <button class="audio-btn" onclick="playAudio('einem Kind')">🔊</button>
+ </td>
+ <td>
+ <span class="german-text" onclick="playAudio('Leuten')">Leuten</span>
+ <button class="audio-btn" onclick="playAudio('Leuten')">🔊</button>
+ </td>
+ </tr>
+ <tr>
+ <td><strong>Genitiv</strong></td>
+ <td>
+ <span class="german-text" onclick="playAudio('eines Mannes')">eines Mannes</span>
+ <button class="audio-btn" onclick="playAudio('eines Mannes')">🔊</button>
+ </td>
+ <td>
+ <span class="german-text" onclick="playAudio('einer Frau')">einer Frau</span>
+ <button class="audio-btn" onclick="playAudio('einer Frau')">🔊</button>
+ </td>
+ <td>
+ <span class="german-text" onclick="playAudio('eines Kindes')">eines Kindes</span>
+ <button class="audio-btn" onclick="playAudio('eines Kindes')">🔊</button>
+ </td>
+ <td>
+ <span class="german-text" onclick="playAudio('Leute')">Leute</span>
+ <button class="audio-btn" onclick="playAudio('Leute')">🔊</button>
+ </td>
+ </tr>
+ </tbody>
+ </table>
+ </div>
+
+ <!-- Tabla 4: Declinación por Género y Número (Artículos Negativos - kein) -->
+ <h1 class="section-title">Declinación de Artículos Negativos (kein) por Género y Caso</h1>
+ <div class="table-container">
+ <table>
+ <thead>
+ <tr>
+ <th>Kasus</th>
+ <th>Maskulin (kein)</th>
+ <th>Feminin (keine)</th>
+ <th>Neutrum (kein)</th>
+ <th>Plural (keine)</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr>
+ <td><strong>Nominativ</strong></td>
+ <td>
+ <span class="german-text" onclick="playAudio('kein Mann')">kein Mann</span>
+ <button class="audio-btn" onclick="playAudio('kein Mann')">🔊</button>
+ </td>
+ <td>
+ <span class="german-text" onclick="playAudio('keine Frau')">keine Frau</span>
+ <button class="audio-btn" onclick="playAudio('keine Frau')">🔊</button>
+ </td>
+ <td>
+ <span class="german-text" onclick="playAudio('kein Kind')">kein Kind</span>
+ <button class="audio-btn" onclick="playAudio('kein Kind')">🔊</button>
+ </td>
+ <td>
+ <span class="german-text" onclick="playAudio('keine Leute')">keine Leute</span>
+ <button class="audio-btn" onclick="playAudio('keine Leute')">🔊</button>
+ </td>
+ </tr>
+ <tr>
+ <td><strong>Akkusativ</strong></td>
+ <td>
+ <span class="german-text" onclick="playAudio('keinen Mann')">keinen Mann</span>
+ <button class="audio-btn" onclick="playAudio('keinen Mann')">🔊</button>
+ </td>
+ <td>
+ <span class="german-text" onclick="playAudio('keine Frau')">keine Frau</span>
+ <button class="audio-btn" onclick="playAudio('keine Frau')">🔊</button>
+ </td>
+ <td>
+ <span class="german-text" onclick="playAudio('kein Kind')">kein Kind</span>
+ <button class="audio-btn" onclick="playAudio('kein Kind')">🔊</button>
+ </td>
+ <td>
+ <span class="german-text" onclick="playAudio('keine Leute')">keine Leute</span>
+ <button class="audio-btn" onclick="playAudio('keine Leute')">🔊</button>
+ </td>
+ </tr>
+ <tr>
+ <td><strong>Dativ</strong></td>
+ <td>
+ <span class="german-text" onclick="playAudio('keinem Mann')">keinem Mann</span>
+ <button class="audio-btn" onclick="playAudio('keinem Mann')">🔊</button>
+ </td>
+ <td>
+ <span class="german-text" onclick="playAudio('keiner Frau')">keiner Frau</span>
+ <button class="audio-btn" onclick="playAudio('keiner Frau')">🔊</button>
+ </td>
+ <td>
+ <span class="german-text" onclick="playAudio('keinem Kind')">keinem Kind</span>
+ <button class="audio-btn" onclick="playAudio('keinem Kind')">🔊</button>
+ </td>
+ <td>
+ <span class="german-text" onclick="playAudio('keinen Leuten')">keinen Leuten</span>
+ <button class="audio-btn" onclick="playAudio('keinen Leuten')">🔊</button>
+ </td>
+ </tr>
+ <tr>
+ <td><strong>Genitiv</strong></td>
+ <td>
+ <span class="german-text" onclick="playAudio('keines Mannes')">keines Mannes</span>
+ <button class="audio-btn" onclick="playAudio('keines Mannes')">🔊</button>
+ </td>
+ <td>
+ <span class="german-text" onclick="playAudio('keiner Frau')">keiner Frau</span>
+ <button class="audio-btn" onclick="playAudio('keiner Frau')">🔊</button>
+ </td>
+ <td>
+ <span class="german-text" onclick="playAudio('keines Kindes')">keines Kindes</span>
+ <button class="audio-btn" onclick="playAudio('keines Kindes')">🔊</button>
+ </td>
+ <td>
+ <span class="german-text" onclick="playAudio('keiner Leute')">keiner Leute</span>
+ <button class="audio-btn" onclick="playAudio('keiner Leute')">🔊</button>
+ </td>
+ </tr>
+ </tbody>
+ </table>
+ </div>
+
+ <!-- Tabla 5: Artículos Posesivos por Persona -->
+ <h1 class="section-title">Zuerst: Welche Possessivartikel gibt es? / Primero: ¿Cuáles son los artículos posesivos?</h1>
+ <div class="table-container">
+ <table>
+ <thead>
+ <tr>
+ <th>Person / Persona</th>
+ <th>Possessivartikel / Artículos Posesivos</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr>
+ <td><strong>ich</strong></td>
+ <td>
+ <span class="german-text" onclick="playAudio('mein')">mein-</span>
+ <button class="audio-btn" onclick="playAudio('mein')">🔊</button>
+ </td>
+ </tr>
+ <tr>
+ <td><strong>du</strong></td>
+ <td>
+ <span class="german-text" onclick="playAudio('dein')">dein-</span>
+ <button class="audio-btn" onclick="playAudio('dein')">🔊</button>
+ </td>
+ </tr>
+ <tr>
+ <td><strong>er</strong></td>
+ <td>
+ <span class="german-text" onclick="playAudio('sein')">sein-</span>
+ <button class="audio-btn" onclick="playAudio('sein')">🔊</button>
+ <small>(su masculino)</small>
+ </td>
+ </tr>
+ <tr>
+ <td><strong>sie</strong></td>
+ <td>
+ <span class="german-text" onclick="playAudio('ihr')">ihr-</span>
+ <button class="audio-btn" onclick="playAudio('ihr')">🔊</button>
+ <small>(su femenino)</small>
+ </td>
+ </tr>
+ <tr>
+ <td><strong>es</strong></td>
+ <td>
+ <span class="german-text" onclick="playAudio('sein')">sein-</span>
+ <button class="audio-btn" onclick="playAudio('sein')">🔊</button>
+ </td>
+ </tr>
+ <tr>
+ <td><strong>wir</strong></td>
+ <td>
+ <span class="german-text" onclick="playAudio('unser')">unser-</span>
+ <button class="audio-btn" onclick="playAudio('unser')">🔊</button>
+ <small>(nuestro)</small>
+ </td>
+ </tr>
+ <tr>
+ <td><strong>ihr</strong></td>
+ <td>
+ <span class="german-text" onclick="playAudio('euer')">eure- / euer</span>
+ <button class="audio-btn" onclick="playAudio('euer')">🔊</button>
+ </td>
+ </tr>
+ <tr>
+ <td><strong>sie / Sie</strong></td>
+ <td>
+ <span class="german-text" onclick="playAudio('ihr')">ihr-</span>
+ <button class="audio-btn" onclick="playAudio('ihr')">🔊</button>
+ </td>
+ </tr>
+ </tbody>
+ </table>
+ </div>
+
+ <!-- Tabla 6: Declinación de Posesivos (Ejemplo con mein-) -->
+ <h1 class="section-title">Die Possessivartikel werden wie ein-/kein- dekliniert. Beispiel mit mein-: / Los posesivos se declinan como ein-/kein-. Ejemplo con mein-:</h1>
+ <div class="table-container">
+ <table>
+ <thead>
+ <tr>
+ <th>Kasus</th>
+ <th>Maskulin (mein)</th>
+ <th>Feminin (meine)</th>
+ <th>Neutrum (mein)</th>
+ <th>Plural (meine)</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr>
+ <td><strong>Nominativ</strong></td>
+ <td>
+ <span class="german-text" onclick="playAudio('mein Bruder')">mein Bruder</span>
+ <button class="audio-btn" onclick="playAudio('mein Bruder')">🔊</button>
+ </td>
+ <td>
+ <span class="german-text" onclick="playAudio('meine Schwester')">meine Schwester</span>
+ <button class="audio-btn" onclick="playAudio('meine Schwester')">🔊</button>
+ </td>
+ <td>
+ <span class="german-text" onclick="playAudio('mein Kind')">mein Kind</span>
+ <button class="audio-btn" onclick="playAudio('mein Kind')">🔊</button>
+ </td>
+ <td>
+ <span class="german-text" onclick="playAudio('meine Kinder')">meine Kinder</span>
+ <button class="audio-btn" onclick="playAudio('meine Kinder')">🔊</button>
+ </td>
+ </tr>
+ <tr>
+ <td><strong>Akkusativ</strong></td>
+ <td>
+ <span class="german-text" onclick="playAudio('meinen Bruder')">meinen Bruder</span>
+ <button class="audio-btn" onclick="playAudio('meinen Bruder')">🔊</button>
+ </td>
+ <td>
+ <span class="german-text" onclick="playAudio('meine Schwester')">meine Schwester</span>
+ <button class="audio-btn" onclick="playAudio('meine Schwester')">🔊</button>
+ </td>
+ <td>
+ <span class="german-text" onclick="playAudio('mein Kind')">mein Kind</span>
+ <button class="audio-btn" onclick="playAudio('mein Kind')">🔊</button>
+ </td>
+ <td>
+ <span class="german-text" onclick="playAudio('meine Kinder')">meine Kinder</span>
+ <button class="audio-btn" onclick="playAudio('meine Kinder')">🔊</button>
+ </td>
+ </tr>
+ <tr>
+ <td><strong>Dativ</strong></td>
+ <td>
+ <span class="german-text" onclick="playAudio('meinem Bruder')">meinem Bruder</span>
+ <button class="audio-btn" onclick="playAudio('meinem Bruder')">🔊</button>
+ </td>
+ <td>
+ <span class="german-text" onclick="playAudio('meiner Schwester')">meiner Schwester</span>
+ <button class="audio-btn" onclick="playAudio('meiner Schwester')">🔊</button>
+ </td>
+ <td>
+ <span class="german-text" onclick="playAudio('meinem Kind')">meinem Kind</span>
+ <button class="audio-btn" onclick="playAudio('meinem Kind')">🔊</button>
+ </td>
+ <td>
+ <span class="german-text" onclick="playAudio('meinen Kindern')">meinen Kindern</span>
+ <button class="audio-btn" onclick="playAudio('meinen Kindern')">🔊</button>
+ </td>
+ </tr>
+ <tr>
+ <td><strong>Genitiv</strong></td>
+ <td>
+ <span class="german-text" onclick="playAudio('meines Bruders')">meines Bruders</span>
+ <button class="audio-btn" onclick="playAudio('meines Bruders')">🔊</button>
+ </td>
+ <td>
+ <span class="german-text" onclick="playAudio('meiner Schwester')">meiner Schwester</span>
+ <button class="audio-btn" onclick="playAudio('meiner Schwester')">🔊</button>
+ </td>
+ <td>
+ <span class="german-text" onclick="playAudio('meines Kindes')">meines Kindes</span>
+ <button class="audio-btn" onclick="playAudio('meines Kindes')">🔊</button>
+ </td>
+ <td>
+ <span class="german-text" onclick="playAudio('meiner Kinder')">meiner Kinder</span>
+ <button class="audio-btn" onclick="playAudio('meiner Kinder')">🔊</button>
+ </td>
+ </tr>
+ </tbody>
+ </table>
+ </div>
+
+ <!-- Explicación de Terminaciones en Genitiv -->
+ <div class="outro-box">
+ <h2>Reglas de Terminación para el Genitivo Masculino y Neutro</h2>
+ <p>1. Los sustantivos masculinos y neutros en genitivo singular llevan la terminación <strong>-es/-s</strong> porque el artículo ya marca el caso (<em>des / eines / keines / meines</em>), pero el alemán "refuerza" la marca también en el sustantivo — es una doble señal de caso.</p>
+ <p>2. Se usa <strong>-es</strong> (forma larga) cuando el sustantivo es monosílabo o termina en <em>-s, -ß, -z, -x</em>:
+ <span class="german-text" onclick="playAudio('des Mannes')">des Mannes</span> <button class="audio-btn" onclick="playAudio('des Mannes')">🔊</button>,
+ <span class="german-text" onclick="playAudio('des Hauses')">des Hauses</span> <button class="audio-btn" onclick="playAudio('des Hauses')">🔊</button>,
+ <span class="german-text" onclick="playAudio('des Flusses')">des Flusses</span> <button class="audio-btn" onclick="playAudio('des Flusses')">🔊</button>.
+ </p>
+ <p>3. Se usa <strong>-s</strong> (forma corta) cuando el sustantivo tiene más de una sílaba y no termina en esas consonantes:
+ <span class="german-text" onclick="playAudio('des Lehrers')">des Lehrers</span> <button class="audio-btn" onclick="playAudio('des Lehrers')">🔊</button>,  
+ <span class="german-text" onclick="playAudio('des Kindes')">des Kindes</span> <button class="audio-btn" onclick="playAudio('des Kindes')">🔊</button> →
+ <span class="german-text" onclick="playAudio('des Vaters')">des Vaters</span> <button class="audio-btn" onclick="playAudio('des Vaters')">🔊</button>.
+ </p>
+ </div>
+</main>
+
+<script>
+function playAudio(text) {
+ if ('speechSynthesis' in window) {
+ window.speechSynthesis.cancel(); // Detener audios anteriores
+ const utterance = new SpeechSynthesisUtterance(text);
+ utterance.lang = 'de-DE';
+ utterance.rate = 0.9;
+ window.speechSynthesis.speak(utterance);
+ } else {
+ alert('Tu navegador no soporta la reproducción de voz.');
+ }
+}
+</script>
+</body>
+</html>
