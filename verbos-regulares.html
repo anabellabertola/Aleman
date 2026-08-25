@@ -10,7 +10,67 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <!-- Hoja de estilos -->
     <link rel="stylesheet" href="css/verbos.css">
-</head>
+<style>
+/* 1. Bordes definidos y cuadrícula clara */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid #d1d5db; /* Líneas finas y limpias */
+}
+
+th {
+  background-color: #f8f9fa;
+  padding: 8px;
+  font-size: 0.85rem;
+}
+
+/* 2. Celdas compactas y centradas */
+table td {
+  vertical-align: middle;
+  padding: 6px 8px;
+  text-align: center;
+  font-size: 0.85rem;
+}
+
+/* 3. Estructura flex ordenada */
+.word-audio, .example-de, .conjugation-cell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 4. Texto en alemán en negrita */
+.german-text, .conjugation-verb {
+  font-weight: bold;
+  color: #111827;
+  cursor: pointer;
+}
+
+/* 5. Traducción en español más pequeña */
+.word-audio small, .example-de small, td small {
+  display: block;
+  font-size: 0.7rem;
+  color: #6b7280;
+  font-weight: normal;
+  margin-top: 2px;
+  line-height: 1.1;
+}
+
+/* 6. Botón de audio compacto */
+.audio-btn, .audio-icon-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 0.75rem;
+  padding: 2px;
+  margin-top: 2px;
+}
+</style>
+  </head>
 <body>
 
     <!-- Header Rosa Chicle -->
@@ -78,29 +138,29 @@
 <table>
  <!-- 12. Antworten -->
 <!-- 12. Antworten -->
+<!-- 12. Antworten -->
 <tr>
   <td>
     <div class="word-audio">
-      <span>Antworten</span>
-      <audio id="audio-antworten" src="assets/audio/antworten.mp3"></audio>
-      <button class="audio-icon-btn" onclick="playAudio('audio-antworten', 'Antworten')">🔊</button>
+      <span class="german-text" onclick="playAudio('Antworten', this)">Antworten</span>
+      <button class="audio-btn" onclick="playAudio('Antworten', this)">🔊</button>
+      <small>responder</small>
     </div>
   </td>
   <td>responder</td>
   <td><img src="assets/img/antworten.jpg" alt="Antworten" class="verb-img"></td>
   <td>
     <div class="word-audio">
-      <span>hat geantwortet</span>
-      <audio id="audio-antworten-perfekt" src="assets/audio/antworten_perfekt.mp3"></audio>
-      <button class="audio-icon-btn" onclick="playAudio('audio-antworten-perfekt', 'hat geantwortet')">🔊</button>
+      <span class="german-text" onclick="playAudio('hat geantwortet', this)">hat geantwortet</span>
+      <button class="audio-btn" onclick="playAudio('hat geantwortet', this)">🔊</button>
+      <small>ha respondido</small>
     </div>
     <div class="example-box">
       <div class="example-de">
-        <span>Er hat geantwortet</span>
-        <audio id="audio-ex-antworten-perfekt" src="assets/audio/ex_antworten_perfekt.mp3"></audio>
-        <button class="audio-icon-btn" onclick="playAudio('audio-ex-antworten-perfekt', 'Er hat geantwortet')">🔊</button>
+        <span class="german-text" onclick="playAudio('Er hat geantwortet', this)">Er hat geantwortet</span>
+        <button class="audio-btn" onclick="playAudio('Er hat geantwortet', this)">🔊</button>
+        <small>Él ha respondido</small>
       </div>
-      <span class="example-es">Él ha respondido</span>
     </div>
   </td>
   <td>
@@ -108,11 +168,10 @@
       <span class="conjugation-verb">antworte</span>
       <div class="example-box">
         <div class="example-de">
-          <span>Ich antworte bald</span>
-          <audio id="audio-ex-ich-antworten" src="assets/audio/ex_ich_antworten.mp3"></audio>
-          <button class="audio-icon-btn" onclick="playAudio('audio-ex-ich-antworten', 'Ich antworte bald')">🔊</button>
+          <span class="german-text" onclick="playAudio('Ich antworte bald', this)">Ich antworte bald</span>
+          <button class="audio-btn" onclick="playAudio('Ich antworte bald', this)">🔊</button>
+          <small>Respondo pronto</small>
         </div>
-        <span class="example-es">Respondo pronto</span>
       </div>
     </div>
   </td>
@@ -121,11 +180,10 @@
       <span class="conjugation-verb">antwortest</span>
       <div class="example-box">
         <div class="example-de">
-          <span>Antwortest du mir?</span>
-          <audio id="audio-ex-du-antworten" src="assets/audio/ex_antworten.mp3"></audio>
-          <button class="audio-icon-btn" onclick="playAudio('audio-ex-du-antworten', 'Antwortest du mir?')">🔊</button>
+          <span class="german-text" onclick="playAudio('Antwortest du mir?', this)">Antwortest du mir?</span>
+          <button class="audio-btn" onclick="playAudio('Antwortest du mir?', this)">🔊</button>
+          <small>¿Me respondes?</small>
         </div>
-        <span class="example-es">¿Me respondes?</span>
       </div>
     </div>
   </td>
@@ -134,11 +192,10 @@
       <span class="conjugation-verb">antwortet</span>
       <div class="example-box">
         <div class="example-de">
-          <span>Er antwortet schnell</span>
-          <audio id="audio-ex-er-antworten" src="assets/audio/ex_er_antworten.mp3"></audio>
-          <button class="audio-icon-btn" onclick="playAudio('audio-ex-er-antworten', 'Er antwortet schnell')">🔊</button>
+          <span class="german-text" onclick="playAudio('Er antwortet schnell', this)">Er antwortet schnell</span>
+          <button class="audio-btn" onclick="playAudio('Er antwortet schnell', this)">🔊</button>
+          <small>Él responde rápido</small>
         </div>
-        <span class="example-es">Él responde rápido</span>
       </div>
     </div>
   </td>
@@ -147,11 +204,10 @@
       <span class="conjugation-verb">antworten</span>
       <div class="example-box">
         <div class="example-de">
-          <span>Wir antworten heute</span>
-          <audio id="audio-ex-wir-antworten" src="assets/audio/ex_wir_antworten.mp3"></audio>
-          <button class="audio-icon-btn" onclick="playAudio('audio-ex-wir-antworten', 'Wir antworten heute')">🔊</button>
+          <span class="german-text" onclick="playAudio('Wir antworten heute', this)">Wir antworten heute</span>
+          <button class="audio-btn" onclick="playAudio('Wir antworten heute', this)">🔊</button>
+          <small>Respondemos hoy</small>
         </div>
-        <span class="example-es">Respondemos hoy</span>
       </div>
     </div>
   </td>
@@ -160,11 +216,10 @@
       <span class="conjugation-verb">antwortet</span>
       <div class="example-box">
         <div class="example-de">
-          <span>Ihr antwortet nicht</span>
-          <audio id="audio-ex-ihr-antworten" src="assets/audio/ex_ihr_antworten.mp3"></audio>
-          <button class="audio-icon-btn" onclick="playAudio('audio-ex-ihr-antworten', 'Ihr antwortet nicht')">🔊</button>
+          <span class="german-text" onclick="playAudio('Ihr antwortet nicht', this)">Ihr antwortet nicht</span>
+          <button class="audio-btn" onclick="playAudio('Ihr antwortet nicht', this)">🔊</button>
+          <small>No respondéis</small>
         </div>
-        <span class="example-es">No respondéis</span>
       </div>
     </div>
   </td>
@@ -173,11 +228,10 @@
       <span class="conjugation-verb">antworten</span>
       <div class="example-box">
         <div class="example-de">
-          <span>Sie antworten höflich</span>
-          <audio id="audio-ex-sie-antworten" src="assets/audio/ex_sie_antworten.mp3"></audio>
-          <button class="audio-icon-btn" onclick="playAudio('audio-ex-sie-antworten', 'Sie antworten höflich')">🔊</button>
+          <span class="german-text" onclick="playAudio('Sie antworten höflich', this)">Sie antworten höflich</span>
+          <button class="audio-btn" onclick="playAudio('Sie antworten höflich', this)">🔊</button>
+          <small>Ellos responden educadamente</small>
         </div>
-        <span class="example-es">Ellos responden educadamente</span>
       </div>
     </div>
   </td>
@@ -187,26 +241,25 @@
 <tr>
   <td>
     <div class="word-audio">
-      <span>Bekommen</span>
-      <audio id="audio-bekommen" src="assets/audio/bekommen.mp3"></audio>
-      <button class="audio-icon-btn" onclick="playAudio('audio-bekommen', 'Bekommen')">🔊</button>
+      <span class="german-text" onclick="playAudio('Bekommen', this)">Bekommen</span>
+      <button class="audio-btn" onclick="playAudio('Bekommen', this)">🔊</button>
+      <small>recibir / obtener</small>
     </div>
   </td>
   <td>recibir / obtener</td>
   <td><img src="assets/img/bekommen.jpg" alt="Bekommen" class="verb-img"></td>
   <td>
     <div class="word-audio">
-      <span>hat bekommen</span>
-      <audio id="audio-bekommen-perfekt" src="assets/audio/bekommen_perfekt.mp3"></audio>
-      <button class="audio-icon-btn" onclick="playAudio('audio-bekommen-perfekt', 'hat bekommen')">🔊</button>
+      <span class="german-text" onclick="playAudio('hat bekommen', this)">hat bekommen</span>
+      <button class="audio-btn" onclick="playAudio('hat bekommen', this)">🔊</button>
+      <small>ha recibido</small>
     </div>
     <div class="example-box">
       <div class="example-de">
-        <span>Er hat Post bekommen</span>
-        <audio id="audio-ex-bekommen-perfekt" src="assets/audio/ex_bekommen_perfekt.mp3"></audio>
-        <button class="audio-icon-btn" onclick="playAudio('audio-ex-bekommen-perfekt', 'Er hat Post bekommen')">🔊</button>
+        <span class="german-text" onclick="playAudio('Er hat Post bekommen', this)">Er hat Post bekommen</span>
+        <button class="audio-btn" onclick="playAudio('Er hat Post bekommen', this)">🔊</button>
+        <small>Él ha recibido correo</small>
       </div>
-      <span class="example-es">Él ha recibido correo</span>
     </div>
   </td>
   <td>
@@ -214,11 +267,10 @@
       <span class="conjugation-verb">bekomme</span>
       <div class="example-box">
         <div class="example-de">
-          <span>Ich bekomme ein Geschenk</span>
-          <audio id="audio-ex-ich-bekommen" src="assets/audio/ex_ich_bekommen.mp3"></audio>
-          <button class="audio-icon-btn" onclick="playAudio('audio-ex-ich-bekommen', 'Ich bekomme ein Geschenk')">🔊</button>
+          <span class="german-text" onclick="playAudio('Ich bekomme ein Geschenk', this)">Ich bekomme ein Geschenk</span>
+          <button class="audio-btn" onclick="playAudio('Ich bekomme ein Geschenk', this)">🔊</button>
+          <small>Recibo un regalo</small>
         </div>
-        <span class="example-es">Recibo un regalo</span>
       </div>
     </div>
   </td>
@@ -227,11 +279,10 @@
       <span class="conjugation-verb">bekommst</span>
       <div class="example-box">
         <div class="example-de">
-          <span>Du bekommst una E-Mail</span>
-          <audio id="audio-ex-du-bekommen" src="assets/audio/ex_du_bekommen.mp3"></audio>
-          <button class="audio-icon-btn" onclick="playAudio('audio-ex-du-bekommen', 'Du bekommst eine E-Mail')">🔊</button>
+          <span class="german-text" onclick="playAudio('Du bekommst eine E-Mail', this)">Du bekommst eine E-Mail</span>
+          <button class="audio-btn" onclick="playAudio('Du bekommst eine E-Mail', this)">🔊</button>
+          <small>Recibes un correo electrónico</small>
         </div>
-        <span class="example-es">Recibes un correo electrónico</span>
       </div>
     </div>
   </td>
@@ -240,11 +291,10 @@
       <span class="conjugation-verb">bekommt</span>
       <div class="example-box">
         <div class="example-de">
-          <span>Er bekommt Geld</span>
-          <audio id="audio-ex-er-bekommen" src="assets/audio/ex_er_bekommen.mp3"></audio>
-          <button class="audio-icon-btn" onclick="playAudio('audio-ex-er-bekommen', 'Er bekommt Geld')">🔊</button>
+          <span class="german-text" onclick="playAudio('Er bekommt Geld', this)">Er bekommt Geld</span>
+          <button class="audio-btn" onclick="playAudio('Er bekommt Geld', this)">🔊</button>
+          <small>Él recibe dinero</small>
         </div>
-        <span class="example-es">Él recibe dinero</span>
       </div>
     </div>
   </td>
@@ -253,11 +303,10 @@
       <span class="conjugation-verb">bekommen</span>
       <div class="example-box">
         <div class="example-de">
-          <span>Wir bekommen Besuch</span>
-          <audio id="audio-ex-wir-bekommen" src="assets/audio/ex_wir_bekommen.mp3"></audio>
-          <button class="audio-icon-btn" onclick="playAudio('audio-ex-wir-bekommen', 'Wir bekommen Besuch')">🔊</button>
+          <span class="german-text" onclick="playAudio('Wir bekommen Besuch', this)">Wir bekommen Besuch</span>
+          <button class="audio-btn" onclick="playAudio('Wir bekommen Besuch', this)">🔊</button>
+          <small>Recibimos visitas</small>
         </div>
-        <span class="example-es">Recibimos visitas</span>
       </div>
     </div>
   </td>
@@ -266,11 +315,10 @@
       <span class="conjugation-verb">bekommt</span>
       <div class="example-box">
         <div class="example-de">
-          <span>Ihr bekommt Rabatt</span>
-          <audio id="audio-ex-ihr-bekommen" src="assets/audio/ex_ihr_bekommen.mp3"></audio>
-          <button class="audio-icon-btn" onclick="playAudio('audio-ex-ihr-bekommen', 'Ihr bekommt Rabatt')">🔊</button>
+          <span class="german-text" onclick="playAudio('Ihr bekommt Rabatt', this)">Ihr bekommt Rabatt</span>
+          <button class="audio-btn" onclick="playAudio('Ihr bekommt Rabatt', this)">🔊</button>
+          <small>Obtenéis un descuento</small>
         </div>
-        <span class="example-es">Obtenéis un descuento</span>
       </div>
     </div>
   </td>
@@ -279,11 +327,10 @@
       <span class="conjugation-verb">bekommen</span>
       <div class="example-box">
         <div class="example-de">
-          <span>Sie bekommen den Schlüssel</span>
-          <audio id="audio-ex-sie-bekommen" src="assets/audio/ex_sie_bekommen.mp3"></audio>
-          <button class="audio-icon-btn" onclick="playAudio('audio-ex-sie-bekommen', 'Sie bekommen den Schlüssel')">🔊</button>
+          <span class="german-text" onclick="playAudio('Sie bekommen den Schlüssel', this)">Sie bekommen den Schlüssel</span>
+          <button class="audio-btn" onclick="playAudio('Sie bekommen den Schlüssel', this)">🔊</button>
+          <small>Ellos reciben la llave</small>
         </div>
-        <span class="example-es">Ellos reciben la llave</span>
       </div>
     </div>
   </td>
@@ -293,26 +340,25 @@
 <tr>
   <td>
     <div class="word-audio">
-      <span>Benutzen</span>
-      <audio id="audio-benutzen" src="assets/audio/benutzen.mp3"></audio>
-      <button class="audio-icon-btn" onclick="playAudio('audio-benutzen', 'Benutzen')">🔊</button>
+      <span class="german-text" onclick="playAudio('Benutzen', this)">Benutzen</span>
+      <button class="audio-btn" onclick="playAudio('Benutzen', this)">🔊</button>
+      <small>usar / utilizar</small>
     </div>
   </td>
   <td>usar / utilizar</td>
   <td><img src="assets/img/benutzen.jpg" alt="Benutzen" class="verb-img"></td>
   <td>
     <div class="word-audio">
-      <span>hat benutzt</span>
-      <audio id="audio-benutzen-perfekt" src="assets/audio/benutzen_perfekt.mp3"></audio>
-      <button class="audio-icon-btn" onclick="playAudio('audio-benutzen-perfekt', 'hat benutzt')">🔊</button>
+      <span class="german-text" onclick="playAudio('hat benutzt', this)">hat benutzt</span>
+      <button class="audio-btn" onclick="playAudio('hat benutzt', this)">🔊</button>
+      <small>ha usado</small>
     </div>
     <div class="example-box">
       <div class="example-de">
-        <span>Er hat das Auto benutzt</span>
-        <audio id="audio-ex-benutzen-perfekt" src="assets/audio/ex_benutzen_perfekt.mp3"></audio>
-        <button class="audio-icon-btn" onclick="playAudio('audio-ex-benutzen-perfekt', 'Er hat das Auto benutzt')">🔊</button>
+        <span class="german-text" onclick="playAudio('Er hat das Auto benutzt', this)">Er hat das Auto benutzt</span>
+        <button class="audio-btn" onclick="playAudio('Er hat das Auto benutzt', this)">🔊</button>
+        <small>Él ha usado el coche</small>
       </div>
-      <span class="example-es">Él ha usado el coche</span>
     </div>
   </td>
   <td>
@@ -320,11 +366,10 @@
       <span class="conjugation-verb">benutze</span>
       <div class="example-box">
         <div class="example-de">
-          <span>Ich benutze das Handy</span>
-          <audio id="audio-ex-ich-benutzen" src="assets/audio/ex_ich_benutzen.mp3"></audio>
-          <button class="audio-icon-btn" onclick="playAudio('audio-ex-ich-benutzen', 'Ich benutze das Handy')">🔊</button>
+          <span class="german-text" onclick="playAudio('Ich benutze das Handy', this)">Ich benutze das Handy</span>
+          <button class="audio-btn" onclick="playAudio('Ich benutze das Handy', this)">🔊</button>
+          <small>Uso el celular</small>
         </div>
-        <span class="example-es">Uso el celular</span>
       </div>
     </div>
   </td>
@@ -333,11 +378,10 @@
       <span class="conjugation-verb">benutzt</span>
       <div class="example-box">
         <div class="example-de">
-          <span>Benutzt du Stifte?</span>
-          <audio id="audio-ex-du-benutzen" src="assets/audio/ex_du_benutzen.mp3"></audio>
-          <button class="audio-icon-btn" onclick="playAudio('audio-ex-du-benutzen', 'Benutzt du Stifte?')">🔊</button>
+          <span class="german-text" onclick="playAudio('Benutzt du Stifte?', this)">Benutzt du Stifte?</span>
+          <button class="audio-btn" onclick="playAudio('Benutzt du Stifte?', this)">🔊</button>
+          <small>¿Usas bolígrafos?</small>
         </div>
-        <span class="example-es">¿Usas bolígrafos?</span>
       </div>
     </div>
   </td>
@@ -346,11 +390,10 @@
       <span class="conjugation-verb">benutzt</span>
       <div class="example-box">
         <div class="example-de">
-          <span>Er benutzt den Bus</span>
-          <audio id="audio-ex-er-benutzen" src="assets/audio/ex_er_benutzen.mp3"></audio>
-          <button class="audio-icon-btn" onclick="playAudio('audio-ex-er-benutzen', 'Er benutzt den Bus')">🔊</button>
+          <span class="german-text" onclick="playAudio('Er benutzt den Bus', this)">Er benutzt den Bus</span>
+          <button class="audio-btn" onclick="playAudio('Er benutzt den Bus', this)">🔊</button>
+          <small>Él usa el autobús</small>
         </div>
-        <span class="example-es">Él usa el autobús</span>
       </div>
     </div>
   </td>
@@ -359,11 +402,10 @@
       <span class="conjugation-verb">benutzen</span>
       <div class="example-box">
         <div class="example-de">
-          <span>Wir benutzen Tools</span>
-          <audio id="audio-ex-wir-benutzen" src="assets/audio/ex_wir_benutzen.mp3"></audio>
-          <button class="audio-icon-btn" onclick="playAudio('audio-ex-wir-benutzen', 'Wir benutzen Tools')">🔊</button>
+          <span class="german-text" onclick="playAudio('Wir benutzen Tools', this)">Wir benutzen Tools</span>
+          <button class="audio-btn" onclick="playAudio('Wir benutzen Tools', this)">🔊</button>
+          <small>Usamos herramientas</small>
         </div>
-        <span class="example-es">Usamos herramientas</span>
       </div>
     </div>
   </td>
@@ -372,11 +414,10 @@
       <span class="conjugation-verb">benutzt</span>
       <div class="example-box">
         <div class="example-de">
-          <span>Ihr benutzt Regeln</span>
-          <audio id="audio-ex-ihr-benutzen" src="assets/audio/ex_ihr_benutzen.mp3"></audio>
-          <button class="audio-icon-btn" onclick="playAudio('audio-ex-ihr-benutzen', 'Ihr benutzt Regeln')">🔊</button>
+          <span class="german-text" onclick="playAudio('Ihr benutzt Regeln', this)">Ihr benutzt Regeln</span>
+          <button class="audio-btn" onclick="playAudio('Ihr benutzt Regeln', this)">🔊</button>
+          <small>Utilizáis reglas</small>
         </div>
-        <span class="example-es">Utilizáis reglas</span>
       </div>
     </div>
   </td>
@@ -385,11 +426,10 @@
       <span class="conjugation-verb">benutzen</span>
       <div class="example-box">
         <div class="example-de">
-          <span>Sie benutzen den Lift</span>
-          <audio id="audio-ex-sie-benutzen" src="assets/audio/ex_sie_benutzen.mp3"></audio>
-          <button class="audio-icon-btn" onclick="playAudio('audio-ex-sie-benutzen', 'Sie benutzen den Lift')">🔊</button>
+          <span class="german-text" onclick="playAudio('Sie benutzen den Lift', this)">Sie benutzen den Lift</span>
+          <button class="audio-btn" onclick="playAudio('Sie benutzen den Lift', this)">🔊</button>
+          <small>Usan el ascensor</small>
         </div>
-        <span class="example-es">Usan el ascensor</span>
       </div>
     </div>
   </td>
@@ -399,26 +439,25 @@
 <tr>
   <td>
     <div class="word-audio">
-      <span>Besuchen</span>
-      <audio id="audio-besuchen" src="assets/audio/besuchen.mp3"></audio>
-      <button class="audio-icon-btn" onclick="playAudio('audio-besuchen', 'Besuchen')">🔊</button>
+      <span class="german-text" onclick="playAudio('Besuchen', this)">Besuchen</span>
+      <button class="audio-btn" onclick="playAudio('Besuchen', this)">🔊</button>
+      <small>visitar</small>
     </div>
   </td>
   <td>visitar</td>
   <td><img src="assets/img/besuchen.jpg" alt="Besuchen" class="verb-img"></td>
   <td>
     <div class="word-audio">
-      <span>hat besucht</span>
-      <audio id="audio-besuchen-perfekt" src="assets/audio/besuchen_perfekt.mp3"></audio>
-      <button class="audio-icon-btn" onclick="playAudio('audio-besuchen-perfekt', 'hat besucht')">🔊</button>
+      <span class="german-text" onclick="playAudio('hat besucht', this)">hat besucht</span>
+      <button class="audio-btn" onclick="playAudio('hat besucht', this)">🔊</button>
+      <small>ha visitado</small>
     </div>
     <div class="example-box">
       <div class="example-de">
-        <span>Er hat uns besucht</span>
-        <audio id="audio-ex-besuchen-perfekt" src="assets/audio/ex_besuchen_perfekt.mp3"></audio>
-        <button class="audio-icon-btn" onclick="playAudio('audio-ex-besuchen-perfekt', 'Er hat uns besucht')">🔊</button>
+        <span class="german-text" onclick="playAudio('Er hat uns besucht', this)">Er hat uns besucht</span>
+        <button class="audio-btn" onclick="playAudio('Er hat uns besucht', this)">🔊</button>
+        <small>Él nos ha visitado</small>
       </div>
-      <span class="example-es">Él nos ha visitado</span>
     </div>
   </td>
   <td>
@@ -426,11 +465,10 @@
       <span class="conjugation-verb">besuche</span>
       <div class="example-box">
         <div class="example-de">
-          <span>Ich besuche Oma</span>
-          <audio id="audio-ex-ich-besuchen" src="assets/audio/ex_ich_besuchen.mp3"></audio>
-          <button class="audio-icon-btn" onclick="playAudio('audio-ex-ich-besuchen', 'Ich besuche Oma')">🔊</button>
+          <span class="german-text" onclick="playAudio('Ich besuche Oma', this)">Ich besuche Oma</span>
+          <button class="audio-btn" onclick="playAudio('Ich besuche Oma', this)">🔊</button>
+          <small>Visito a la abuela</small>
         </div>
-        <span class="example-es">Visito a la abuela</span>
       </div>
     </div>
   </td>
@@ -439,11 +477,10 @@
       <span class="conjugation-verb">besuchst</span>
       <div class="example-box">
         <div class="example-de">
-          <span>Besuchst du mich?</span>
-          <audio id="audio-ex-du-besuchen" src="assets/audio/ex_du_besuchen.mp3"></audio>
-          <button class="audio-icon-btn" onclick="playAudio('audio-ex-du-besuchen', 'Besuchst du mich?')">🔊</button>
+          <span class="german-text" onclick="playAudio('Besuchst du mich?', this)">Besuchst du mich?</span>
+          <button class="audio-btn" onclick="playAudio('Besuchst du mich?', this)">🔊</button>
+          <small>¿Me visitas?</small>
         </div>
-        <span class="example-es">¿Me visitas?</span>
       </div>
     </div>
   </td>
@@ -452,11 +489,10 @@
       <span class="conjugation-verb">besucht</span>
       <div class="example-box">
         <div class="example-de">
-          <span>Er besucht einen Kurs</span>
-          <audio id="audio-ex-er-besuchen" src="assets/audio/ex_er_besuchen.mp3"></audio>
-          <button class="audio-icon-btn" onclick="playAudio('audio-ex-er-besuchen', 'Er besucht einen Kurs')">🔊</button>
+          <span class="german-text" onclick="playAudio('Er besucht einen Kurs', this)">Er besucht einen Kurs</span>
+          <button class="audio-btn" onclick="playAudio('Er besucht einen Kurs', this)">🔊</button>
+          <small>Él asiste a un curso</small>
         </div>
-        <span class="example-es">Él asiste a un curso</span>
       </div>
     </div>
   </td>
@@ -465,11 +501,10 @@
       <span class="conjugation-verb">besuchen</span>
       <div class="example-box">
         <div class="example-de">
-          <span>Wir besuchen Berlin</span>
-          <audio id="audio-ex-wir-besuchen" src="assets/audio/ex_wir_besuchen.mp3"></audio>
-          <button class="audio-icon-btn" onclick="playAudio('audio-ex-wir-besuchen', 'Wir besuchen Berlin')">🔊</button>
+          <span class="german-text" onclick="playAudio('Wir besuchen Berlin', this)">Wir besuchen Berlin</span>
+          <button class="audio-btn" onclick="playAudio('Wir besuchen Berlin', this)">🔊</button>
+          <small>Visitamos Berlín</small>
         </div>
-        <span class="example-es">Visitamos Berlín</span>
       </div>
     </div>
   </td>
@@ -478,11 +513,10 @@
       <span class="conjugation-verb">besucht</span>
       <div class="example-box">
         <div class="example-de">
-          <span>Ihr besucht Freunde</span>
-          <audio id="audio-ex-ihr-besuchen" src="assets/audio/ex_ihr_besuchen.mp3"></audio>
-          <button class="audio-icon-btn" onclick="playAudio('audio-ex-ihr-besuchen', 'Ihr besucht Freunde')">🔊</button>
+          <span class="german-text" onclick="playAudio('Ihr besucht Freunde', this)">Ihr besucht Freunde</span>
+          <button class="audio-btn" onclick="playAudio('Ihr besucht Freunde', this)">🔊</button>
+          <small>Visitáis amigos</small>
         </div>
-        <span class="example-es">Visitáis amigos</span>
       </div>
     </div>
   </td>
@@ -491,40 +525,38 @@
       <span class="conjugation-verb">besuchen</span>
       <div class="example-box">
         <div class="example-de">
-          <span>Sie besuchen das Museum</span>
-          <audio id="audio-ex-sie-besuchen" src="assets/audio/ex_sie_besuchen.mp3"></audio>
-          <button class="audio-icon-btn" onclick="playAudio('audio-ex-sie-besuchen', 'Sie besuchen das Museum')">🔊</button>
+          <span class="german-text" onclick="playAudio('Sie besuchen das Museum', this)">Sie besuchen das Museum</span>
+          <button class="audio-btn" onclick="playAudio('Sie besuchen das Museum', this)">🔊</button>
+          <small>Visitan el museo</small>
         </div>
-        <span class="example-es">Visitan el museo</span>
       </div>
     </div>
   </td>
 </tr>
-
+<!-- 16. Bezahlen -->
 <!-- 16. Bezahlen -->
 <tr>
   <td>
     <div class="word-audio">
-      <span>Bezahlen</span>
-      <audio id="audio-bezahlen" src="assets/audio/bezahlen.mp3"></audio>
-      <button class="audio-icon-btn" onclick="playAudio('audio-bezahlen', 'Bezahlen')">🔊</button>
+      <span class="german-text" onclick="playAudio('Bezahlen', this)">Bezahlen</span>
+      <button class="audio-btn" onclick="playAudio('Bezahlen', this)">🔊</button>
+      <small>pagar</small>
     </div>
   </td>
   <td>pagar</td>
   <td><img src="assets/img/bezahlen.jpg" alt="Bezahlen" class="verb-img"></td>
   <td>
     <div class="word-audio">
-      <span>hat bezahlt</span>
-      <audio id="audio-bezahlen-perfekt" src="assets/audio/bezahlen_perfekt.mp3"></audio>
-      <button class="audio-icon-btn" onclick="playAudio('audio-bezahlen-perfekt', 'hat bezahlt')">🔊</button>
+      <span class="german-text" onclick="playAudio('hat bezahlt', this)">hat bezahlt</span>
+      <button class="audio-btn" onclick="playAudio('hat bezahlt', this)">🔊</button>
+      <small>ha pagado</small>
     </div>
     <div class="example-box">
       <div class="example-de">
-        <span>Er hat bezahlt</span>
-        <audio id="audio-ex-bezahlen-perfekt" src="assets/audio/ex_bezahlen_perfekt.mp3"></audio>
-        <button class="audio-icon-btn" onclick="playAudio('audio-ex-bezahlen-perfekt', 'Er hat bezahlt')">🔊</button>
+        <span class="german-text" onclick="playAudio('Er hat bezahlt', this)">Er hat bezahlt</span>
+        <button class="audio-btn" onclick="playAudio('Er hat bezahlt', this)">🔊</button>
+        <small>Él ha pagado</small>
       </div>
-      <span class="example-es">Él ha pagado</span>
     </div>
   </td>
   <td>
@@ -532,11 +564,10 @@
       <span class="conjugation-verb">bezahle</span>
       <div class="example-box">
         <div class="example-de">
-          <span>Ich bezahle bar</span>
-          <audio id="audio-ex-ich-bezahlen" src="assets/audio/ex_ich_bezahlen.mp3"></audio>
-          <button class="audio-icon-btn" onclick="playAudio('audio-ex-ich-bezahlen', 'Ich bezahle bar')">🔊</button>
+          <span class="german-text" onclick="playAudio('Ich bezahle bar', this)">Ich bezahle bar</span>
+          <button class="audio-btn" onclick="playAudio('Ich bezahle bar', this)">🔊</button>
+          <small>Pago en efectivo</small>
         </div>
-        <span class="example-es">Pago en efectivo</span>
       </div>
     </div>
   </td>
@@ -545,11 +576,10 @@
       <span class="conjugation-verb">bezahlst</span>
       <div class="example-box">
         <div class="example-de">
-          <span>Bezahlst du mit Karte?</span>
-          <audio id="audio-ex-du-bezahlen" src="assets/audio/ex_du_bezahlen.mp3"></audio>
-          <button class="audio-icon-btn" onclick="playAudio('audio-ex-du-bezahlen', 'Bezahlst du mit Karte?')">🔊</button>
+          <span class="german-text" onclick="playAudio('Bezahlst du mit Karte?', this)">Bezahlst du mit Karte?</span>
+          <button class="audio-btn" onclick="playAudio('Bezahlst du mit Karte?', this)">🔊</button>
+          <small>¿Pagas con tarjeta?</small>
         </div>
-        <span class="example-es">¿Pagas con tarjeta?</span>
       </div>
     </div>
   </td>
@@ -558,11 +588,10 @@
       <span class="conjugation-verb">bezahlt</span>
       <div class="example-box">
         <div class="example-de">
-          <span>Er bezahlt alles</span>
-          <audio id="audio-ex-er-bezahlen" src="assets/audio/ex_er_bezahlen.mp3"></audio>
-          <button class="audio-icon-btn" onclick="playAudio('audio-ex-er-bezahlen', 'Er bezahlt alles')">🔊</button>
+          <span class="german-text" onclick="playAudio('Er bezahlt alles', this)">Er bezahlt alles</span>
+          <button class="audio-btn" onclick="playAudio('Er bezahlt alles', this)">🔊</button>
+          <small>Él paga todo</small>
         </div>
-        <span class="example-es">Él paga todo</span>
       </div>
     </div>
   </td>
@@ -571,11 +600,10 @@
       <span class="conjugation-verb">bezahlen</span>
       <div class="example-box">
         <div class="example-de">
-          <span>Wir bezahlen die Rechnung</span>
-          <audio id="audio-ex-wir-bezahlen" src="assets/audio/ex_wir_bezahlen.mp3"></audio>
-          <button class="audio-icon-btn" onclick="playAudio('audio-ex-wir-bezahlen', 'Wir bezahlen die Rechnung')">🔊</button>
+          <span class="german-text" onclick="playAudio('Wir bezahlen die Rechnung', this)">Wir bezahlen die Rechnung</span>
+          <button class="audio-btn" onclick="playAudio('Wir bezahlen die Rechnung', this)">🔊</button>
+          <small>Pagamos la cuenta</small>
         </div>
-        <span class="example-es">Pagamos la cuenta</span>
       </div>
     </div>
   </td>
@@ -584,11 +612,10 @@
       <span class="conjugation-verb">bezahlt</span>
       <div class="example-box">
         <div class="example-de">
-          <span>Ihr bezahlt später</span>
-          <audio id="audio-ex-ihr-bezahlen" src="assets/audio/ex_ihr_bezahlen.mp3"></audio>
-          <button class="audio-icon-btn" onclick="playAudio('audio-ex-ihr-bezahlen', 'Ihr bezahlt später')">🔊</button>
+          <span class="german-text" onclick="playAudio('Ihr bezahlt später', this)">Ihr bezahlt später</span>
+          <button class="audio-btn" onclick="playAudio('Ihr bezahlt später', this)">🔊</button>
+          <small>Pagáis más tarde</small>
         </div>
-        <span class="example-es">Pagáis más tarde</span>
       </div>
     </div>
   </td>
@@ -597,11 +624,10 @@
       <span class="conjugation-verb">bezahlen</span>
       <div class="example-box">
         <div class="example-de">
-          <span>Sie bezahlen jetzt</span>
-          <audio id="audio-ex-sie-bezahlen" src="assets/audio/ex_sie_bezahlen.mp3"></audio>
-          <button class="audio-icon-btn" onclick="playAudio('audio-ex-sie-bezahlen', 'Sie bezahlen jetzt')">🔊</button>
+          <span class="german-text" onclick="playAudio('Sie bezahlen jetzt', this)">Sie bezahlen jetzt</span>
+          <button class="audio-btn" onclick="playAudio('Sie bezahlen jetzt', this)">🔊</button>
+          <small>Pagan ahora</small>
         </div>
-        <span class="example-es">Pagan ahora</span>
       </div>
     </div>
   </td>
@@ -611,26 +637,25 @@
 <tr>
   <td>
     <div class="word-audio">
-      <span>Dauern</span>
-      <audio id="audio-dauern" src="assets/audio/dauern.mp3"></audio>
-      <button class="audio-icon-btn" onclick="playAudio('audio-dauern', 'Dauern')">🔊</button>
+      <span class="german-text" onclick="playAudio('Dauern', this)">Dauern</span>
+      <button class="audio-btn" onclick="playAudio('Dauern', this)">🔊</button>
+      <small>durar / tardar</small>
     </div>
   </td>
   <td>durar / tardar</td>
   <td><img src="assets/img/dauern.jpg" alt="Dauern" class="verb-img"></td>
   <td>
     <div class="word-audio">
-      <span>hat gedauert</span>
-      <audio id="audio-dauern-perfekt" src="assets/audio/dauern_perfekt.mp3"></audio>
-      <button class="audio-icon-btn" onclick="playAudio('audio-dauern-perfekt', 'hat gedauert')">🔊</button>
+      <span class="german-text" onclick="playAudio('hat gedauert', this)">hat gedauert</span>
+      <button class="audio-btn" onclick="playAudio('hat gedauert', this)">🔊</button>
+      <small>ha durado</small>
     </div>
     <div class="example-box">
       <div class="example-de">
-        <span>Es hat lange gedauert</span>
-        <audio id="audio-ex-dauern-perfekt" src="assets/audio/ex_dauern_perfekt.mp3"></audio>
-        <button class="audio-icon-btn" onclick="playAudio('audio-ex-dauern-perfekt', 'Es hat lange gedauert')">🔊</button>
+        <span class="german-text" onclick="playAudio('Es hat lange gedauert', this)">Es hat lange gedauert</span>
+        <button class="audio-btn" onclick="playAudio('Es hat lange gedauert', this)">🔊</button>
+        <small>Ha durado mucho</small>
       </div>
-      <span class="example-es">Ha durado mucho</span>
     </div>
   </td>
   <td>
@@ -638,11 +663,10 @@
       <span class="conjugation-verb">dauere</span>
       <div class="example-box">
         <div class="example-de">
-          <span>Ich dauere nicht lange</span>
-          <audio id="audio-ex-ich-dauern" src="assets/audio/ex_ich_dauern.mp3"></audio>
-          <button class="audio-icon-btn" onclick="playAudio('audio-ex-ich-dauern', 'Ich dauere nicht lange')">🔊</button>
+          <span class="german-text" onclick="playAudio('Ich dauere nicht lange', this)">Ich dauere nicht lange</span>
+          <button class="audio-btn" onclick="playAudio('Ich dauere nicht lange', this)">🔊</button>
+          <small>No tardo mucho</small>
         </div>
-        <span class="example-es">No tardo mucho</span>
       </div>
     </div>
   </td>
@@ -651,11 +675,10 @@
       <span class="conjugation-verb">dauerst</span>
       <div class="example-box">
         <div class="example-de">
-          <span>Du dauerst lange</span>
-          <audio id="audio-ex-du-dauern" src="assets/audio/ex_du_dauern.mp3"></audio>
-          <button class="audio-icon-btn" onclick="playAudio('audio-ex-du-dauern', 'Du dauerst lange')">🔊</button>
+          <span class="german-text" onclick="playAudio('Du dauerst lange', this)">Du dauerst lange</span>
+          <button class="audio-btn" onclick="playAudio('Du dauerst lange', this)">🔊</button>
+          <small>Tardas mucho</small>
         </div>
-        <span class="example-es">Tardas mucho</span>
       </div>
     </div>
   </td>
@@ -664,11 +687,10 @@
       <span class="conjugation-verb">dauert</span>
       <div class="example-box">
         <div class="example-de">
-          <span>Es dauert 5 Minuten</span>
-          <audio id="audio-ex-er-dauern" src="assets/audio/ex_er_dauern.mp3"></audio>
-          <button class="audio-icon-btn" onclick="playAudio('audio-ex-er-dauern', 'Es dauert 5 Minuten')">🔊</button>
+          <span class="german-text" onclick="playAudio('Es dauert 5 Minuten', this)">Es dauert 5 Minuten</span>
+          <button class="audio-btn" onclick="playAudio('Es dauert 5 Minuten', this)">🔊</button>
+          <small>Tarda 5 minutos</small>
         </div>
-        <span class="example-es">Tarda 5 minutos</span>
       </div>
     </div>
   </td>
@@ -677,11 +699,10 @@
       <span class="conjugation-verb">dauern</span>
       <div class="example-box">
         <div class="example-de">
-          <span>Die Kurse dauern ewig</span>
-          <audio id="audio-ex-wir-dauern" src="assets/audio/ex_wir_dauern.mp3"></audio>
-          <button class="audio-icon-btn" onclick="playAudio('audio-ex-wir-dauern', 'Die Kurse dauern ewig')">🔊</button>
+          <span class="german-text" onclick="playAudio('Die Kurse dauern ewig', this)">Die Kurse dauern ewig</span>
+          <button class="audio-btn" onclick="playAudio('Die Kurse dauern ewig', this)">🔊</button>
+          <small>Los cursos duran una eternidad</small>
         </div>
-        <span class="example-es">Los cursos duran una eternidad</span>
       </div>
     </div>
   </td>
@@ -690,11 +711,10 @@
       <span class="conjugation-verb">dauert</span>
       <div class="example-box">
         <div class="example-de">
-          <span>Ihr dauert zu lange</span>
-          <audio id="audio-ex-ihr-dauern" src="assets/audio/ex_ihr_dauern.mp3"></audio>
-          <button class="audio-icon-btn" onclick="playAudio('audio-ex-ihr-dauern', 'Ihr dauert zu lange')">🔊</button>
+          <span class="german-text" onclick="playAudio('Ihr dauert zu lange', this)">Ihr dauert zu lange</span>
+          <button class="audio-btn" onclick="playAudio('Ihr dauert zu lange', this)">🔊</button>
+          <small>Tardáis demasiado</small>
         </div>
-        <span class="example-es">Tardáis demasiado</span>
       </div>
     </div>
   </td>
@@ -703,11 +723,10 @@
       <span class="conjugation-verb">dauern</span>
       <div class="example-box">
         <div class="example-de">
-          <span>Spiele dauern lang</span>
-          <audio id="audio-ex-sie-dauern" src="assets/audio/ex_sie_dauern.mp3"></audio>
-          <button class="audio-icon-btn" onclick="playAudio('audio-ex-sie-dauern', 'Spiele dauern lang')">🔊</button>
+          <span class="german-text" onclick="playAudio('Spiele dauern lang', this)">Spiele dauern lang</span>
+          <button class="audio-btn" onclick="playAudio('Spiele dauern lang', this)">🔊</button>
+          <small>Los juegos duran mucho</small>
         </div>
-        <span class="example-es">Los juegos duran mucho</span>
       </div>
     </div>
   </td>
@@ -717,26 +736,25 @@
 <tr>
   <td>
     <div class="word-audio">
-      <span>Erklären</span>
-      <audio id="audio-erklaeren" src="assets/audio/erklaeren.mp3"></audio>
-      <button class="audio-icon-btn" onclick="playAudio('audio-erklaeren', 'Erklären')">🔊</button>
+      <span class="german-text" onclick="playAudio('Erklären', this)">Erklären</span>
+      <button class="audio-btn" onclick="playAudio('Erklären', this)">🔊</button>
+      <small>explicar / aclarar</small>
     </div>
   </td>
   <td>explicar / aclarar</td>
   <td><img src="assets/img/erklaeren.jpg" alt="Erklären" class="verb-img"></td>
   <td>
     <div class="word-audio">
-      <span>hat erklärt</span>
-      <audio id="audio-erklaeren-perfekt" src="assets/audio/erklaeren_perfekt.mp3"></audio>
-      <button class="audio-icon-btn" onclick="playAudio('audio-erklaeren-perfekt', 'hat erklärt')">🔊</button>
+      <span class="german-text" onclick="playAudio('hat erklärt', this)">hat erklärt</span>
+      <button class="audio-btn" onclick="playAudio('hat erklärt', this)">🔊</button>
+      <small>ha explicado</small>
     </div>
     <div class="example-box">
       <div class="example-de">
-        <span>Er hat es erklärt</span>
-        <audio id="audio-ex-erklaeren-perfekt" src="assets/audio/ex_erklaeren_perfekt.mp3"></audio>
-        <button class="audio-icon-btn" onclick="playAudio('audio-ex-erklaeren-perfekt', 'Er hat es erklärt')">🔊</button>
+        <span class="german-text" onclick="playAudio('Er hat es erklärt', this)">Er hat es erklärt</span>
+        <button class="audio-btn" onclick="playAudio('Er hat es erklärt', this)">🔊</button>
+        <small>Él lo ha explicado</small>
       </div>
-      <span class="example-es">Él lo ha explicado</span>
     </div>
   </td>
   <td>
@@ -744,11 +762,10 @@
       <span class="conjugation-verb">erkläre</span>
       <div class="example-box">
         <div class="example-de">
-          <span>Ich erkläre die Regel</span>
-          <audio id="audio-ex-ich-erklaeren" src="assets/audio/ex_ich_erklaeren.mp3"></audio>
-          <button class="audio-icon-btn" onclick="playAudio('audio-ex-ich-erklaeren', 'Ich erkläre die Regel')">🔊</button>
+          <span class="german-text" onclick="playAudio('Ich erkläre die Regel', this)">Ich erkläre die Regel</span>
+          <button class="audio-btn" onclick="playAudio('Ich erkläre die Regel', this)">🔊</button>
+          <small>Explico la regla</small>
         </div>
-        <span class="example-es">Explico la regla</span>
       </div>
     </div>
   </td>
@@ -757,11 +774,10 @@
       <span class="conjugation-verb">erklärst</span>
       <div class="example-box">
         <div class="example-de">
-          <span>Erklärst du mir das?</span>
-          <audio id="audio-ex-du-erklaeren" src="assets/audio/ex_du_erklaeren.mp3"></audio>
-          <button class="audio-icon-btn" onclick="playAudio('audio-ex-du-erklaeren', 'Erklärst du mir das?')">🔊</button>
+          <span class="german-text" onclick="playAudio('Erklärst du mir das?', this)">Erklärst du mir das?</span>
+          <button class="audio-btn" onclick="playAudio('Erklärst du mir das?', this)">🔊</button>
+          <small>¿Me explicas eso?</small>
         </div>
-        <span class="example-es">¿Me explicas eso?</span>
       </div>
     </div>
   </td>
@@ -770,11 +786,10 @@
       <span class="conjugation-verb">erklärt</span>
       <div class="example-box">
         <div class="example-de">
-          <span>Der Lehrer erklärt</span>
-          <audio id="audio-ex-er-erklaeren" src="assets/audio/ex_er_erklaeren.mp3"></audio>
-          <button class="audio-icon-btn" onclick="playAudio('audio-ex-er-erklaeren', 'Der Lehrer erklärt')">🔊</button>
+          <span class="german-text" onclick="playAudio('Der Lehrer erklärt', this)">Der Lehrer erklärt</span>
+          <button class="audio-btn" onclick="playAudio('Der Lehrer erklärt', this)">🔊</button>
+          <small>El profesor explica</small>
         </div>
-        <span class="example-es">El profesor explica</span>
       </div>
     </div>
   </td>
@@ -783,11 +798,10 @@
       <span class="conjugation-verb">erklären</span>
       <div class="example-box">
         <div class="example-de">
-          <span>Wir erklären den Plan</span>
-          <audio id="audio-ex-wir-erklaeren" src="assets/audio/ex_wir_erklaeren.mp3"></audio>
-          <button class="audio-icon-btn" onclick="playAudio('audio-ex-wir-erklaeren', 'Wir erklären den Plan')">🔊</button>
+          <span class="german-text" onclick="playAudio('Wir erklären den Plan', this)">Wir erklären den Plan</span>
+          <button class="audio-btn" onclick="playAudio('Wir erklären den Plan', this)">🔊</button>
+          <small>Explicamos el plan</small>
         </div>
-        <span class="example-es">Explicamos el plan</span>
       </div>
     </div>
   </td>
@@ -796,11 +810,10 @@
       <span class="conjugation-verb">erklärt</span>
       <div class="example-box">
         <div class="example-de">
-          <span>Ihr erklärt gut</span>
-          <audio id="audio-ex-ihr-erklaeren" src="assets/audio/ex_ihr_erklaeren.mp3"></audio>
-          <button class="audio-icon-btn" onclick="playAudio('audio-ex-ihr-erklaeren', 'Ihr erklärt gut')">🔊</button>
+          <span class="german-text" onclick="playAudio('Ihr erklärt gut', this)">Ihr erklärt gut</span>
+          <button class="audio-btn" onclick="playAudio('Ihr erklärt gut', this)">🔊</button>
+          <small>Explicáis bien</small>
         </div>
-        <span class="example-es">Explicáis bien</span>
       </div>
     </div>
   </td>
@@ -809,11 +822,10 @@
       <span class="conjugation-verb">erklären</span>
       <div class="example-box">
         <div class="example-de">
-          <span>Sie erklären alles</span>
-          <audio id="audio-ex-sie-erklaeren" src="assets/audio/ex_sie_erklaeren.mp3"></audio>
-          <button class="audio-icon-btn" onclick="playAudio('audio-ex-sie-erklaeren', 'Sie erklären alles')">🔊</button>
+          <span class="german-text" onclick="playAudio('Sie erklären alles', this)">Sie erklären alles</span>
+          <button class="audio-btn" onclick="playAudio('Sie erklären alles', this)">🔊</button>
+          <small>Ellos explican todo</small>
         </div>
-        <span class="example-es">Ellos explican todo</span>
       </div>
     </div>
   </td>
@@ -823,26 +835,25 @@
 <tr>
   <td>
     <div class="word-audio">
-      <span>Erlauben</span>
-      <audio id="audio-erlauben" src="assets/audio/erlauben.mp3"></audio>
-      <button class="audio-icon-btn" onclick="playAudio('audio-erlauben', 'Erlauben')">🔊</button>
+      <span class="german-text" onclick="playAudio('Erlauben', this)">Erlauben</span>
+      <button class="audio-btn" onclick="playAudio('Erlauben', this)">🔊</button>
+      <small>permitir / autorizar</small>
     </div>
   </td>
   <td>permitir / autorizar</td>
   <td><img src="assets/img/erlauben.jpg" alt="Erlauben" class="verb-img"></td>
   <td>
     <div class="word-audio">
-      <span>hat erlaubt</span>
-      <audio id="audio-erlauben-perfekt" src="assets/audio/erlauben_perfekt.mp3"></audio>
-      <button class="audio-icon-btn" onclick="playAudio('audio-erlauben-perfekt', 'hat erlaubt')">🔊</button>
+      <span class="german-text" onclick="playAudio('hat erlaubt', this)">hat erlaubt</span>
+      <button class="audio-btn" onclick="playAudio('hat erlaubt', this)">🔊</button>
+      <small>ha permitido</small>
     </div>
     <div class="example-box">
       <div class="example-de">
-        <span>Er hat es erlaubt</span>
-        <audio id="audio-ex-erlauben-perfekt" src="assets/audio/ex_erlauben_perfekt.mp3"></audio>
-        <button class="audio-icon-btn" onclick="playAudio('audio-ex-erlauben-perfekt', 'Er hat es erlaubt')">🔊</button>
+        <span class="german-text" onclick="playAudio('Er hat es erlaubt', this)">Er hat es erlaubt</span>
+        <button class="audio-btn" onclick="playAudio('Er hat es erlaubt', this)">🔊</button>
+        <small>Él lo ha permitido</small>
       </div>
-      <span class="example-es">Él lo ha permitido</span>
     </div>
   </td>
   <td>
@@ -850,11 +861,10 @@
       <span class="conjugation-verb">erlaube</span>
       <div class="example-box">
         <div class="example-de">
-          <span>Ich erlaube das</span>
-          <audio id="audio-ex-ich-erlauben" src="assets/audio/ex_ich_erlauben.mp3"></audio>
-          <button class="audio-icon-btn" onclick="playAudio('audio-ex-ich-erlauben', 'Ich erlaube das')">🔊</button>
+          <span class="german-text" onclick="playAudio('Ich erlaube das', this)">Ich erlaube das</span>
+          <button class="audio-btn" onclick="playAudio('Ich erlaube das', this)">🔊</button>
+          <small>Permito eso</small>
         </div>
-        <span class="example-es">Permito eso</span>
       </div>
     </div>
   </td>
@@ -863,11 +873,10 @@
       <span class="conjugation-verb">erlaubst</span>
       <div class="example-box">
         <div class="example-de">
-          <span>Erlaubst du mir das?</span>
-          <audio id="audio-ex-du-erlauben" src="assets/audio/ex_du_erlauben.mp3"></audio>
-          <button class="audio-icon-btn" onclick="playAudio('audio-ex-du-erlauben', 'Erlaubst du mir das?')">🔊</button>
+          <span class="german-text" onclick="playAudio('Erlaubst du mir das?', this)">Erlaubst du mir das?</span>
+          <button class="audio-btn" onclick="playAudio('Erlaubst du mir das?', this)">🔊</button>
+          <small>¿Me permites eso?</small>
         </div>
-        <span class="example-es">¿Me permites eso?</span>
       </div>
     </div>
   </td>
@@ -876,11 +885,10 @@
       <span class="conjugation-verb">erlaubt</span>
       <div class="example-box">
         <div class="example-de">
-          <span>Der Vater erlaubt es</span>
-          <audio id="audio-ex-er-erlauben" src="assets/audio/ex_er_erlauben.mp3"></audio>
-          <button class="audio-icon-btn" onclick="playAudio('audio-ex-er-erlauben', 'Der Vater erlaubt es')">🔊</button>
+          <span class="german-text" onclick="playAudio('Der Vater erlaubt es', this)">Der Vater erlaubt es</span>
+          <button class="audio-btn" onclick="playAudio('Der Vater erlaubt es', this)">🔊</button>
+          <small>El padre lo permite</small>
         </div>
-        <span class="example-es">El padre lo permite</span>
       </div>
     </div>
   </td>
@@ -889,11 +897,10 @@
       <span class="conjugation-verb">erlauben</span>
       <div class="example-box">
         <div class="example-de">
-          <span>Wir erlauben das nicht</span>
-          <audio id="audio-ex-wir-erlauben" src="assets/audio/ex_wir_erlauben.mp3"></audio>
-          <button class="audio-icon-btn" onclick="playAudio('audio-ex-wir-erlauben', 'Wir erlauben das nicht')">🔊</button>
+          <span class="german-text" onclick="playAudio('Wir erlauben das nicht', this)">Wir erlauben das nicht</span>
+          <button class="audio-btn" onclick="playAudio('Wir erlauben das nicht', this)">🔊</button>
+          <small>No permitimos eso</small>
         </div>
-        <span class="example-es">No permitimos eso</span>
       </div>
     </div>
   </td>
@@ -902,11 +909,10 @@
       <span class="conjugation-verb">erlaubt</span>
       <div class="example-box">
         <div class="example-de">
-          <span>Ihr erlaubt viel</span>
-          <audio id="audio-ex-ihr-erlauben" src="assets/audio/ex_ihr_erlauben.mp3"></audio>
-          <button class="audio-icon-btn" onclick="playAudio('audio-ex-ihr-erlauben', 'Ihr erlaubt viel')">🔊</button>
+          <span class="german-text" onclick="playAudio('Ihr erlaubt viel', this)">Ihr erlaubt viel</span>
+          <button class="audio-btn" onclick="playAudio('Ihr erlaubt viel', this)">🔊</button>
+          <small>Permitís mucho</small>
         </div>
-        <span class="example-es">Permitís mucho</span>
       </div>
     </div>
   </td>
@@ -915,667 +921,1849 @@
       <span class="conjugation-verb">erlauben</span>
       <div class="example-box">
         <div class="example-de">
-          <span>Sie erlauben den Zutritt</span>
-          <audio id="audio-ex-sie-erlauben" src="assets/audio/ex_sie_erlauben.mp3"></audio>
-          <button class="audio-icon-btn" onclick="playAudio('audio-ex-sie-erlauben', 'Sie erlauben den Zutritt')">🔊</button>
+          <span class="german-text" onclick="playAudio('Sie erlauben den Zutritt', this)">Sie erlauben den Zutritt</span>
+          <button class="audio-btn" onclick="playAudio('Sie erlauben den Zutritt', this)">🔊</button>
+          <small>Permiten la entrada</small>
         </div>
-        <span class="example-es">Permiten la entrada</span>
       </div>
     </div>
   </td>
+</tr>
+<!-- 20. Fischen -->
 <!-- 20. Fischen -->
 <tr>
   <td>
     <div class="word-audio">
-      <span>Fischen</span>
-      <audio id="audio-fischen" src="assets/audio/fischen.mp3"></audio>
-      <button class="audio-icon-btn" onclick="playAudio('audio-fischen')"></button>
+      <span class="german-text" onclick="playAudio('Fischen', this)">Fischen</span>
+      <button class="audio-btn" onclick="playAudio('Fischen', this)">🔊</button>
+      <small>pescar</small>
     </div>
   </td>
   <td>pescar</td>
   <td><img src="assets/img/fischen.jpg" alt="Fischen" class="verb-img"></td>
   <td>
     <div class="word-audio">
-      <span>hat gefischt</span>
-      <audio id="audio-fischen-perfekt" src="assets/audio/fischen_perfekt.mp3"></audio>
-      <button class="audio-icon-btn" onclick="playAudio('audio-fischen-perfekt')"></button>
+      <span class="german-text" onclick="playAudio('hat gefischt', this)">hat gefischt</span>
+      <button class="audio-btn" onclick="playAudio('hat gefischt', this)">🔊</button>
+      <small>ha pescado</small>
     </div>
     <div class="example-box">
       <div class="example-de">
-        <span>Er hat gefischt</span>
-        <audio id="audio-ex-fischen-perfekt" src="assets/audio/ex_fischen_perfekt.mp3"></audio>
-        <button class="audio-icon-btn" onclick="playAudio('audio-ex-fischen-perfekt')"></button>
+        <span class="german-text" onclick="playAudio('Er hat gefischt', this)">Er hat gefischt</span>
+        <button class="audio-btn" onclick="playAudio('Er hat gefischt', this)">🔊</button>
+        <small>Él ha pescado</small>
       </div>
-      <span class="example-es">Él ha pescado</span>
     </div>
   </td>
-  <td><div class="conjugation-cell"><span class="conjugation-verb">fische</span><div class="example-box"><div class="example-de"><span>Ich fische am See</span><audio id="audio-ex-ich-fischen" src="assets/audio/ex ich fischen.mp3"></audio><button class="audio-icon-btn" onclick="playAudio('audio-ex-ich-fischen')"></button></div><span class="example-es">Pesco en el lago</span></div></div></td>
-  <td><div class="conjugation-cell"><span class="conjugation-verb">fischst</span><div class="example-box"><div class="example-de"><span>Fischst du gern?</span><audio id="audio-ex-du-fischen" src="assets/audio/ex du fischen.mp3"></audio><button class="audio-icon-btn" onclick="playAudio('audio-ex-du-fischen')"></button></div><span class="example-es">¿Te gusta pescar?</span></div></div></td>
-  <td><div class="conjugation-cell"><span class="conjugation-verb">fischt</span><div class="example-box"><div class="example-de"><span>Er fischt ein Lachs</span><audio id="audio-ex-er-fischen" src="assets/audio/ex_er_fischen.mp3"></audio><button class="audio-icon-btn" onclick="playAudio('audio-ex-er-fischen')"></button></div><span class="example-es">Él pesca un salmón</span></div></div></td>
-  <td><div class="conjugation-cell"><span class="conjugation-verb">fischen</span><div class="example-box"><div class="example-de"><span>Wir fischen heute</span><audio id="audio-ex-wir-fischen" src="assets/audio/ex_wir_fischen.mp3"></audio><button class="audio-icon-btn" onclick="playAudio('audio-ex-wir-fischen')"></button></div><span class="example-es">Pescamos hoy</span></div></div></td>
-  <td><div class="conjugation-cell"><span class="conjugation-verb">fischt</span><div class="example-box"><div class="example-de"><span>Ihr fischt am Fluss</span><audio id="audio-ex-ihr-fischen" src="assets/audio/ex_ihr_fischen.mp3"></audio><button class="audio-icon-btn" onclick="playAudio('audio-ex-ihr-fischen')"></button></div><span class="example-es">Pescáis en el rio</span></div></div></td>
-  <td><div class="conjugation-cell"><span class="conjugation-verb">fischen</span><div class="example-box"><div class="example-de"><span>Sie fischen viel</span><audio id="audio-ex-sie-fischen" src="assets/audio/ex_sie fischen.mp3"></audio><button class="audio-icon-btn" onclick="playAudio('audio-ex-sie-fischen')"></button></div><span class="example-es">Ellos pescan mucho</span></div></div></td>
+  <td>
+    <div class="conjugation-cell">
+      <span class="conjugation-verb">fische</span>
+      <div class="example-box">
+        <div class="example-de">
+          <span class="german-text" onclick="playAudio('Ich fische am See', this)">Ich fische am See</span>
+          <button class="audio-btn" onclick="playAudio('Ich fische am See', this)">🔊</button>
+          <small>Pesco en el lago</small>
+        </div>
+      </div>
+    </div>
+  </td>
+  <td>
+    <div class="conjugation-cell">
+      <span class="conjugation-verb">fischst</span>
+      <div class="example-box">
+        <div class="example-de">
+          <span class="german-text" onclick="playAudio('Fischst du gern?', this)">Fischst du gern?</span>
+          <button class="audio-btn" onclick="playAudio('Fischst du gern?', this)">🔊</button>
+          <small>¿Te gusta pescar?</small>
+        </div>
+      </div>
+    </div>
+  </td>
+  <td>
+    <div class="conjugation-cell">
+      <span class="conjugation-verb">fischt</span>
+      <div class="example-box">
+        <div class="example-de">
+          <span class="german-text" onclick="playAudio('Er fischt ein Lachs', this)">Er fischt ein Lachs</span>
+          <button class="audio-btn" onclick="playAudio('Er fischt ein Lachs', this)">🔊</button>
+          <small>Él pesca un salmón</small>
+        </div>
+      </div>
+    </div>
+  </td>
+  <td>
+    <div class="conjugation-cell">
+      <span class="conjugation-verb">fischen</span>
+      <div class="example-box">
+        <div class="example-de">
+          <span class="german-text" onclick="playAudio('Wir fischen heute', this)">Wir fischen heute</span>
+          <button class="audio-btn" onclick="playAudio('Wir fischen heute', this)">🔊</button>
+          <small>Pescamos hoy</small>
+        </div>
+      </div>
+    </div>
+  </td>
+  <td>
+    <div class="conjugation-cell">
+      <span class="conjugation-verb">fischt</span>
+      <div class="example-box">
+        <div class="example-de">
+          <span class="german-text" onclick="playAudio('Ihr fischt am Fluss', this)">Ihr fischt am Fluss</span>
+          <button class="audio-btn" onclick="playAudio('Ihr fischt am Fluss', this)">🔊</button>
+          <small>Pescáis en el rio</small>
+        </div>
+      </div>
+    </div>
+  </td>
+  <td>
+    <div class="conjugation-cell">
+      <span class="conjugation-verb">fischen</span>
+      <div class="example-box">
+        <div class="example-de">
+          <span class="german-text" onclick="playAudio('Sie fischen viel', this)">Sie fischen viel</span>
+          <button class="audio-btn" onclick="playAudio('Sie fischen viel', this)">🔊</button>
+          <small>Ellos pescan mucho</small>
+        </div>
+      </div>
+    </div>
+  </td>
 </tr>
 
 <!-- 21. Gehören -->
 <tr>
   <td>
     <div class="word-audio">
-      <span>Gehören</span>
-      <audio id="audio-gehoeren" src="assets/audio/gehoeren.mp3"></audio>
-      <button class="audio-icon-btn" onclick="playAudio('audio-gehoeren')"></button>
+      <span class="german-text" onclick="playAudio('Gehören', this)">Gehören</span>
+      <button class="audio-btn" onclick="playAudio('Gehören', this)">🔊</button>
+      <small>pertenecer</small>
     </div>
   </td>
   <td>pertenecer</td>
   <td><img src="assets/img/gehoeren.jpg" alt="Gehören" class="verb-img"></td>
   <td>
     <div class="word-audio">
-      <span>hat gehört</span>
-      <audio id="audio-gehoeren-perfekt" src="assets/audio/gehoeren_perfekt.mp3"></audio>
-      <button class="audio-icon-btn" onclick="playAudio('audio-gehoeren-perfekt')"></button>
+      <span class="german-text" onclick="playAudio('hat gehört', this)">hat gehört</span>
+      <button class="audio-btn" onclick="playAudio('hat gehört', this)">🔊</button>
+      <small>ha pertenecido</small>
     </div>
     <div class="example-box">
       <div class="example-de">
-        <span>Das hat mir gehört</span>
-        <audio id="audio-ex-gehoeren-perfekt" src="assets/audio/ex_gehoeren perfekt.mp3"></audio>
-        <button class="audio-icon-btn" onclick="playAudio('audio-ex-gehoeren-perfekt')"></button>
+        <span class="german-text" onclick="playAudio('Das hat mir gehört', this)">Das hat mir gehört</span>
+        <button class="audio-btn" onclick="playAudio('Das hat mir gehört', this)">🔊</button>
+        <small>Eso me ha pertenecido</small>
       </div>
-      <span class="example-es">Eso me ha pertenecido</span>
     </div>
   </td>
-  <td><div class="conjugation-cell"><span class="conjugation-verb">gehöre</span><div class="example-box"><div class="example-de"><span>Ich gehöre zu dir</span><audio id="audio-ex-ich-gehoeren" src="assets/audio/ex_ich gehoeren.mp3"></audio><button class="audio-icon-btn" onclick="playAudio('audio-ex-ich-gehoeren')"></button></div><span class="example-es">Pertenezco a ti</span></div></div></td>
-  <td><div class="conjugation-cell"><span class="conjugation-verb">gehörst</span><div class="example-box"><div class="example-de"><span>Du gehörst dazu</span><audio id="audio-ex-du-gehoeren" src="assets/audio/ex_du gehoeren.mp3"></audio><button class="audio-icon-btn" onclick="playAudio('audio-ex-du-gehoeren')"></button></div><span class="example-es">Perteneces aqui</span></div></div></td>
-  <td><div class="conjugation-cell"><span class="conjugation-verb">gehört</span><div class="example-box"><div class="example-de"><span>Das gehört mir</span><audio id="audio-ex-er-gehoeren" src="assets/audio/ex_er gehoeren.mp3"></audio><button class="audio-icon-btn" onclick="playAudio('audio-ex-er-gehoeren')"></button></div><span class="example-es">Eso me pertenece</span></div></div></td>
-  <td><div class="conjugation-cell"><span class="conjugation-verb">gehören</span><div class="example-box"><div class="example-de"><span>Wir gehören zusammen</span><audio id="audio-ex-wir-gehoeren" src="assets/audio/ex_wir_gehoeren.mp3"></audio><button class="audio-icon-btn" onclick="playAudio('audio-ex-wir-gehoeren')"></button></div><span class="example-es">Pertenecemos juntos</span></div></div></td>
-  <td><div class="conjugation-cell"><span class="conjugation-verb">gehört</span><div class="example-box"><div class="example-de"><span>Ihr gehört zum Team</span><audio id="audio-ex-ihr-gehoeren" src="assets/audio/ex_ihr_gehoeren.mp3"></audio><button class="audio-icon-btn" onclick="playAudio('audio-ex-ihr-gehoeren')"></button></div><span class="example-es">Pertenecéis al equipo</span></div></div></td>
-  <td><div class="conjugation-cell"><span class="conjugation-verb">gehören</span><div class="example-box"><div class="example-de"><span>Sie gehören hierher</span><audio id="audio-ex-sie-gehoeren" src="assets/audio/ex_sie_gehoeren.mp3"></audio><button class="audio-icon-btn" onclick="playAudio('audio-ex-sie-gehoeren')"></button></div><span class="example-es">Pertenecen aqui</span></div></div></td>
+  <td>
+    <div class="conjugation-cell">
+      <span class="conjugation-verb">gehöre</span>
+      <div class="example-box">
+        <div class="example-de">
+          <span class="german-text" onclick="playAudio('Ich gehöre zu dir', this)">Ich gehöre zu dir</span>
+          <button class="audio-btn" onclick="playAudio('Ich gehöre zu dir', this)">🔊</button>
+          <small>Pertenezco a ti</small>
+        </div>
+      </div>
+    </div>
+  </td>
+  <td>
+    <div class="conjugation-cell">
+      <span class="conjugation-verb">gehörst</span>
+      <div class="example-box">
+        <div class="example-de">
+          <span class="german-text" onclick="playAudio('Du gehörst dazu', this)">Du gehörst dazu</span>
+          <button class="audio-btn" onclick="playAudio('Du gehörst dazu', this)">🔊</button>
+          <small>Perteneces aquí</small>
+        </div>
+      </div>
+    </div>
+  </td>
+  <td>
+    <div class="conjugation-cell">
+      <span class="conjugation-verb">gehört</span>
+      <div class="example-box">
+        <div class="example-de">
+          <span class="german-text" onclick="playAudio('Das gehört mir', this)">Das gehört mir</span>
+          <button class="audio-btn" onclick="playAudio('Das gehört mir', this)">🔊</button>
+          <small>Eso me pertenece</small>
+        </div>
+      </div>
+    </div>
+  </td>
+  <td>
+    <div class="conjugation-cell">
+      <span class="conjugation-verb">gehören</span>
+      <div class="example-box">
+        <div class="example-de">
+          <span class="german-text" onclick="playAudio('Wir gehören zusammen', this)">Wir gehören zusammen</span>
+          <button class="audio-btn" onclick="playAudio('Wir gehören zusammen', this)">🔊</button>
+          <small>Pertenecemos juntos</small>
+        </div>
+      </div>
+    </div>
+  </td>
+  <td>
+    <div class="conjugation-cell">
+      <span class="conjugation-verb">gehört</span>
+      <div class="example-box">
+        <div class="example-de">
+          <span class="german-text" onclick="playAudio('Ihr gehört zum Team', this)">Ihr gehört zum Team</span>
+          <button class="audio-btn" onclick="playAudio('Ihr gehört zum Team', this)">🔊</button>
+          <small>Pertenecéis al equipo</small>
+        </div>
+      </div>
+    </div>
+  </td>
+  <td>
+    <div class="conjugation-cell">
+      <span class="conjugation-verb">gehören</span>
+      <div class="example-box">
+        <div class="example-de">
+          <span class="german-text" onclick="playAudio('Sie gehören hierher', this)">Sie gehören hierher</span>
+          <button class="audio-btn" onclick="playAudio('Sie gehören hierher', this)">🔊</button>
+          <small>Pertenecen aquí</small>
+        </div>
+      </div>
+    </div>
+  </td>
 </tr>
 
 <!-- 22. Interessieren -->
 <tr>
   <td>
     <div class="word-audio">
-      <span>Interessieren</span>
-      <audio id="audio-interessieren" src="assets/audio/interessieren.mp3"></audio>
-      <button class="audio-icon-btn" onclick="playAudio('audio-interessieren')"></button>
+      <span class="german-text" onclick="playAudio('Interessieren', this)">Interessieren</span>
+      <button class="audio-btn" onclick="playAudio('Interessieren', this)">🔊</button>
+      <small>interesar</small>
     </div>
   </td>
   <td>interesar</td>
   <td><img src="assets/img/interessieren.jpg" alt="Interessieren" class="verb-img"></td>
   <td>
     <div class="word-audio">
-      <span>hat interessiert</span>
-      <audio id="audio-interessieren-perfekt" src="assets/audio/interessieren_perfekt.mp3"></audio>
-      <button class="audio-icon-btn" onclick="playAudio('audio-interessieren-perfekt')"></button>
+      <span class="german-text" onclick="playAudio('hat interessiert', this)">hat interessiert</span>
+      <button class="audio-btn" onclick="playAudio('hat interessiert', this)">🔊</button>
+      <small>ha interesado</small>
     </div>
     <div class="example-box">
       <div class="example-de">
-        <span>Das hat mich interessiert</span>
-        <audio id="audio-ex-interessieren-perfekt" src="assets/audio/ex_interessieren_perfekt.mp3"></audio>
-        <button class="audio-icon-btn" onclick="playAudio('audio-ex-interessieren-perfekt')"></button>
+        <span class="german-text" onclick="playAudio('Das hat mich interessiert', this)">Das hat mich interessiert</span>
+        <button class="audio-btn" onclick="playAudio('Das hat mich interessiert', this)">🔊</button>
+        <small>Eso me ha interesado</small>
       </div>
-      <span class="example-es">Eso me ha interesado</span>
     </div>
   </td>
-  <td><div class="conjugation-cell"><span class="conjugation-verb">interessiere</span><div class="example-box"><div class="example-de"><span>Ich interessiere mich</span><audio id="audio-ex-ich-interessieren" src="assets/audio/ex_ich interessieren.mp3"></audio><button class="audio-icon-btn" onclick="playAudio('audio-ex-ich-interessieren')"></button></div><span class="example-es">Me intereso</span></div></div></td>
-  <td><div class="conjugation-cell"><span class="conjugation-verb">interessierst</span><div class="example-box"><div class="example-de"><span>Interessierst du dich?</span><audio id="audio-ex-du-interessieren" src="assets/audio/ex_du_interessieren.mp3"></audio><button class="audio-icon-btn" onclick="playAudio('audio-ex-du-interessieren')"></button></div><span class="example-es">¿Te interesas?</span></div></div></td>
-  <td><div class="conjugation-cell"><span class="conjugation-verb">interessiert</span><div class="example-box"><div class="example-de"><span>Das interessiert ihn</span><audio id="audio-ex-er-interessieren" src="assets/audio/ex er interessieren.mp3"></audio><button class="audio-icon-btn" onclick="playAudio('audio-ex-er-interessieren')"></button></div><span class="example-es">Eso le interesa</span></div></div></td>
-  <td><div class="conjugation-cell"><span class="conjugation-verb">interessieren</span><div class="example-box"><div class="example-de"><span>Wir interessieren uns</span><audio id="audio-ex-wir-interessieren" src="assets/audio/ex_wir_interessieren.mp3"></audio><button class="audio-icon-btn" onclick="playAudio('audio-ex-wir-interessieren')"></button></div><span class="example-es">Nos interesamos</span></div></div></td>
-  <td><div class="conjugation-cell"><span class="conjugation-verb">interessiert</span><div class="example-box"><div class="example-de"><span>Ihr interessiert euch</span><audio id="audio-ex-ihr-interessieren" src="assets/audio/ex_ihr_interessieren.mp3"></audio><button class="audio-icon-btn" onclick="playAudio('audio-ex-ihr-interessieren')"></button></div><span class="example-es">Os interesáis</span></div></div></td>
-  <td><div class="conjugation-cell"><span class="conjugation-verb">interessieren</span><div class="example-box"><div class="example-de"><span>Sie interessieren sich</span><audio id="audio-ex-sie-interessieren" src="assets/audio/ex_sie_interessieren.mp3"></audio><button class="audio-icon-btn" onclick="playAudio('audio-ex-sie-interessieren')"></button></div><span class="example-es">Se interesan</span></div></div></td>
+  <td>
+    <div class="conjugation-cell">
+      <span class="conjugation-verb">interessiere</span>
+      <div class="example-box">
+        <div class="example-de">
+          <span class="german-text" onclick="playAudio('Ich interessiere mich', this)">Ich interessiere mich</span>
+          <button class="audio-btn" onclick="playAudio('Ich interessiere mich', this)">🔊</button>
+          <small>Me intereso</small>
+        </div>
+      </div>
+    </div>
+  </td>
+  <td>
+    <div class="conjugation-cell">
+      <span class="conjugation-verb">interessierst</span>
+      <div class="example-box">
+        <div class="example-de">
+          <span class="german-text" onclick="playAudio('Interessierst du dich?', this)">Interessierst du dich?</span>
+          <button class="audio-btn" onclick="playAudio('Interessierst du dich?', this)">🔊</button>
+          <small>¿Te interesas?</small>
+        </div>
+      </div>
+    </div>
+  </td>
+  <td>
+    <div class="conjugation-cell">
+      <span class="conjugation-verb">interessiert</span>
+      <div class="example-box">
+        <div class="example-de">
+          <span class="german-text" onclick="playAudio('Das interessiert ihn', this)">Das interessiert ihn</span>
+          <button class="audio-btn" onclick="playAudio('Das interessiert ihn', this)">🔊</button>
+          <small>Eso le interesa</small>
+        </div>
+      </div>
+    </div>
+  </td>
+  <td>
+    <div class="conjugation-cell">
+      <span class="conjugation-verb">interessieren</span>
+      <div class="example-box">
+        <div class="example-de">
+          <span class="german-text" onclick="playAudio('Wir interessieren uns', this)">Wir interessieren uns</span>
+          <button class="audio-btn" onclick="playAudio('Wir interessieren uns', this)">🔊</button>
+          <small>Nos interesamos</small>
+        </div>
+      </div>
+    </div>
+  </td>
+  <td>
+    <div class="conjugation-cell">
+      <span class="conjugation-verb">interessiert</span>
+      <div class="example-box">
+        <div class="example-de">
+          <span class="german-text" onclick="playAudio('Ihr interessiert euch', this)">Ihr interessiert euch</span>
+          <button class="audio-btn" onclick="playAudio('Ihr interessiert euch', this)">🔊</button>
+          <small>Os interesáis</small>
+        </div>
+      </div>
+    </div>
+  </td>
+  <td>
+    <div class="conjugation-cell">
+      <span class="conjugation-verb">interessieren</span>
+      <div class="example-box">
+        <div class="example-de">
+          <span class="german-text" onclick="playAudio('Sie interessieren sich', this)">Sie interessieren sich</span>
+          <button class="audio-btn" onclick="playAudio('Sie interessieren sich', this)">🔊</button>
+          <small>Se interesan</small>
+        </div>
+      </div>
+    </div>
+  </td>
 </tr>
 
 <!-- 23. Legen -->
 <tr>
   <td>
     <div class="word-audio">
-      <span>Legen</span>
-      <audio id="audio-legen" src="assets/audio/legen.mp3"></audio>
-      <button class="audio-icon-btn" onclick="playAudio('audio-legen')"></button>
+      <span class="german-text" onclick="playAudio('Legen', this)">Legen</span>
+      <button class="audio-btn" onclick="playAudio('Legen', this)">🔊</button>
+      <small>poner / colocar (horizontal)</small>
     </div>
   </td>
   <td>poner / colocar (horizontal)</td>
   <td><img src="assets/img/legen.jpg" alt="Legen" class="verb-img"></td>
   <td>
     <div class="word-audio">
-      <span>hat gelegt</span>
-      <audio id="audio-legen-perfekt" src="assets/audio/legen_perfekt.mp3"></audio>
-      <button class="audio-icon-btn" onclick="playAudio('audio-legen-perfekt')"></button>
+      <span class="german-text" onclick="playAudio('hat gelegt', this)">hat gelegt</span>
+      <button class="audio-btn" onclick="playAudio('hat gelegt', this)">🔊</button>
+      <small>ha puesto</small>
     </div>
     <div class="example-box">
       <div class="example-de">
-        <span>Er hat es gelegt</span>
-        <audio id="audio-ex-legen-perfekt" src="assets/audio/ex_legen_perfekt.mp3"></audio>
-        <button class="audio-icon-btn" onclick="playAudio('audio-ex-legen-perfekt')"></button>
+        <span class="german-text" onclick="playAudio('Er hat es gelegt', this)">Er hat es gelegt</span>
+        <button class="audio-btn" onclick="playAudio('Er hat es gelegt', this)">🔊</button>
+        <small>Él lo ha puesto</small>
       </div>
-      <span class="example-es">Él lo ha puesto</span>
     </div>
   </td>
-  <td><div class="conjugation-cell"><span class="conjugation-verb">lege</span><div class="example-box"><div class="example-de"><span>Ich lege das Buch ab</span><audio id="audio-ex-ich-legen" src="assets/audio/ex_ich_legen.mp3"></audio><button class="audio-icon-btn" onclick="playAudio('audio-ex-ich-legen')"></button></div><span class="example-es">Pongo el libro</span></div></div></td>
-  <td><div class="conjugation-cell"><span class="conjugation-verb">legst</span><div class="example-box"><div class="example-de"><span>Du legst dich hin</span><audio id="audio-ex-du-legen" src="assets/audio/ex_du_legen.mp3"></audio><button class="audio-icon-btn" onclick="playAudio('audio-ex-du-legen')"></button></div><span class="example-es">Te acuestas</span></div></div></td>
-  <td><div class="conjugation-cell"><span class="conjugation-verb">legt</span><div class="example-box"><div class="example-de"><span>Er legt das Geld hin</span><audio id="audio-ex-er-legen" src="assets/audio/ex_er_legen.mp3"></audio><button class="audio-icon-btn" onclick="playAudio('audio-ex-er-legen')"></button></div><span class="example-es">Pone el dinero</span></div></div></td>
-  <td><div class="conjugation-cell"><span class="conjugation-verb">legen</span><div class="example-box"><div class="example-de"><span>Wir legen los</span><audio id="audio-ex-wir-legen" src="assets/audio/ex_wir legen.mp3"></audio><button class="audio-icon-btn" onclick="playAudio('audio-ex-wir-legen')"></button></div><span class="example-es">Empezamos</span></div></div></td>
-  <td><div class="conjugation-cell"><span class="conjugation-verb">legt</span><div class="example-box"><div class="example-de"><span>Ihr legt Wert darauf</span><audio id="audio-ex-ihr-legen" src="assets/audio/ex_ihr_legen.mp3"></audio><button class="audio-icon-btn" onclick="playAudio('audio-ex-ihr-legen')"></button></div><span class="example-es">Dáis valor a eso</span></div></div></td>
-  <td><div class="conjugation-cell"><span class="conjugation-verb">legen</span><div class="example-box"><div class="example-de"><span>Sie legen die Karten</span><audio id="audio-ex-sie-legen" src="assets/audio/ex_sie_legen.mp3"></audio><button class="audio-icon-btn" onclick="playAudio('audio-ex-sie-legen')"></button></div><span class="example-es">Ponen las cartas</span></div></div></td>
+  <td>
+    <div class="conjugation-cell">
+      <span class="conjugation-verb">lege</span>
+      <div class="example-box">
+        <div class="example-de">
+          <span class="german-text" onclick="playAudio('Ich lege das Buch ab', this)">Ich lege das Buch ab</span>
+          <button class="audio-btn" onclick="playAudio('Ich lege das Buch ab', this)">🔊</button>
+          <small>Pongo el libro</small>
+        </div>
+      </div>
+    </div>
+  </td>
+  <td>
+    <div class="conjugation-cell">
+      <span class="conjugation-verb">legst</span>
+      <div class="example-box">
+        <div class="example-de">
+          <span class="german-text" onclick="playAudio('Du legst dich hin', this)">Du legst dich hin</span>
+          <button class="audio-btn" onclick="playAudio('Du legst dich hin', this)">🔊</button>
+          <small>Te acuestas</small>
+        </div>
+      </div>
+    </div>
+  </td>
+  <td>
+    <div class="conjugation-cell">
+      <span class="conjugation-verb">legt</span>
+      <div class="example-box">
+        <div class="example-de">
+          <span class="german-text" onclick="playAudio('Er legt das Geld hin', this)">Er legt das Geld hin</span>
+          <button class="audio-btn" onclick="playAudio('Er legt das Geld hin', this)">🔊</button>
+          <small>Pone el dinero</small>
+        </div>
+      </div>
+    </div>
+  </td>
+  <td>
+    <div class="conjugation-cell">
+      <span class="conjugation-verb">legen</span>
+      <div class="example-box">
+        <div class="example-de">
+          <span class="german-text" onclick="playAudio('Wir legen los', this)">Wir legen los</span>
+          <button class="audio-btn" onclick="playAudio('Wir legen los', this)">🔊</button>
+          <small>Empezamos</small>
+        </div>
+      </div>
+    </div>
+  </td>
+  <td>
+    <div class="conjugation-cell">
+      <span class="conjugation-verb">legt</span>
+      <div class="example-box">
+        <div class="example-de">
+          <span class="german-text" onclick="playAudio('Ihr legt Wert darauf', this)">Ihr legt Wert darauf</span>
+          <button class="audio-btn" onclick="playAudio('Ihr legt Wert darauf', this)">🔊</button>
+          <small>Dáis valor a eso</small>
+        </div>
+      </div>
+    </div>
+  </td>
+  <td>
+    <div class="conjugation-cell">
+      <span class="conjugation-verb">legen</span>
+      <div class="example-box">
+        <div class="example-de">
+          <span class="german-text" onclick="playAudio('Sie legen die Karten', this)">Sie legen die Karten</span>
+          <button class="audio-btn" onclick="playAudio('Sie legen die Karten', this)">🔊</button>
+          <small>Ponen las cartas</small>
+        </div>
+      </div>
+    </div>
+  </td>
 </tr>
 
 <!-- 24. Lehren -->
 <tr>
   <td>
     <div class="word-audio">
-      <span>Lehren</span>
-      <audio id="audio-lehren" src="assets/audio/lehren.mp3"></audio>
-      <button class="audio-icon-btn" onclick="playAudio('audio-lehren')"></button>
+      <span class="german-text" onclick="playAudio('Lehren', this)">Lehren</span>
+      <button class="audio-btn" onclick="playAudio('Lehren', this)">🔊</button>
+      <small>enseñar</small>
     </div>
   </td>
   <td>enseñar</td>
   <td><img src="assets/img/lehren.jpg" alt="Lehren" class="verb-img"></td>
   <td>
     <div class="word-audio">
-      <span>hat gelehrt</span>
-      <audio id="audio-lehren-perfekt" src="assets/audio/lehren_perfekt.mp3"></audio>
-      <button class="audio-icon-btn" onclick="playAudio('audio-lehren-perfekt')"></button>
+      <span class="german-text" onclick="playAudio('hat gelehrt', this)">hat gelehrt</span>
+      <button class="audio-btn" onclick="playAudio('hat gelehrt', this)">🔊</button>
+      <small>ha enseñado</small>
     </div>
     <div class="example-box">
       <div class="example-de">
-        <span>Er hat gelehrt</span>
-        <audio id="audio-ex-lehren-perfekt" src="assets/audio/ex_lehren perfekt.mp3"></audio>
-        <button class="audio-icon-btn" onclick="playAudio('audio-ex-lehren-perfekt')"></button>
+        <span class="german-text" onclick="playAudio('Er hat gelehrt', this)">Er hat gelehrt</span>
+        <button class="audio-btn" onclick="playAudio('Er hat gelehrt', this)">🔊</button>
+        <small>Él ha enseñado</small>
       </div>
-      <span class="example-es">Él ha enseñado</span>
     </div>
   </td>
-  <td><div class="conjugation-cell"><span class="conjugation-verb">lehre</span><div class="example-box"><div class="example-de"><span>Ich lehre Deutsch</span><audio id="audio-ex-ich-lehren" src="assets/audio/ex_ich_lehren.mp3"></audio><button class="audio-icon-btn" onclick="playAudio('audio-ex-ich-lehren')"></button></div><span class="example-es">Enseño alemán</span></div></div></td>
-  <td><div class="conjugation-cell"><span class="conjugation-verb">lehrst</span><div class="example-box"><div class="example-de"><span>Du lehrst an der Uni</span><audio id="audio-ex-du-lehren" src="assets/audio/ex_du_lehren.mp3"></audio><button class="audio-icon-btn" onclick="playAudio('audio-ex-du-lehren')"></button></div><span class="example-es">Enseñas en la universidad</span></div></div></td>
-  <td><div class="conjugation-cell"><span class="conjugation-verb">lehrt</span><div class="example-box"><div class="example-de"><span>Er lehrt Geschichte</span><audio id="audio-ex-er-lehren" src="assets/audio/ex_er_lehren.mp3"></audio><button class="audio-icon-btn" onclick="playAudio('audio-ex-er-lehren')"></button></div><span class="example-es">Él enseña historia</span></div></div></td>
-  <td><div class="conjugation-cell"><span class="conjugation-verb">lehren</span><div class="example-box"><div class="example-de"><span>Wir lehren Kinder</span><audio id="audio-ex-wir-lehren" src="assets/audio/ex_wir lehren.mp3"></audio><button class="audio-icon-btn" onclick="playAudio('audio-ex-wir-lehren')"></button></div><span class="example-es">Enseñamos a niños</span></div></div></td>
-  <td><div class="conjugation-cell"><span class="conjugation-verb">lehrt</span><div class="example-box"><div class="example-de"><span>Ihr lehrt viel</span><audio id="audio-ex-ihr-lehren" src="assets/audio/ex ihr lehren.mp3"></audio><button class="audio-icon-btn" onclick="playAudio('audio-ex-ihr-lehren')"></button></div><span class="example-es">Enseñáis mucho</span></div></div></td>
-  <td><div class="conjugation-cell"><span class="conjugation-verb">lehren</span><div class="example-box"><div class="example-de"><span>Sie lehren Sprachen</span><audio id="audio-ex-sie-lehren" src="assets/audio/ex_sie_lehren.mp3"></audio><button class="audio-icon-btn" onclick="playAudio('audio-ex-sie-lehren')"></button></div><span class="example-es">Enseñan idiomas</span></div></div></td>
+  <td>
+    <div class="conjugation-cell">
+      <span class="conjugation-verb">lehre</span>
+      <div class="example-box">
+        <div class="example-de">
+          <span class="german-text" onclick="playAudio('Ich lehre Deutsch', this)">Ich lehre Deutsch</span>
+          <button class="audio-btn" onclick="playAudio('Ich lehre Deutsch', this)">🔊</button>
+          <small>Enseño alemán</small>
+        </div>
+      </div>
+    </div>
+  </td>
+  <td>
+    <div class="conjugation-cell">
+      <span class="conjugation-verb">lehrst</span>
+      <div class="example-box">
+        <div class="example-de">
+          <span class="german-text" onclick="playAudio('Du lehrst an der Uni', this)">Du lehrst an der Uni</span>
+          <button class="audio-btn" onclick="playAudio('Du lehrst an der Uni', this)">🔊</button>
+          <small>Enseñas en la universidad</small>
+        </div>
+      </div>
+    </div>
+  </td>
+  <td>
+    <div class="conjugation-cell">
+      <span class="conjugation-verb">lehrt</span>
+      <div class="example-box">
+        <div class="example-de">
+          <span class="german-text" onclick="playAudio('Er lehrt Geschichte', this)">Er lehrt Geschichte</span>
+          <button class="audio-btn" onclick="playAudio('Er lehrt Geschichte', this)">🔊</button>
+          <small>Él enseña historia</small>
+        </div>
+      </div>
+    </div>
+  </td>
+  <td>
+    <div class="conjugation-cell">
+      <span class="conjugation-verb">lehren</span>
+      <div class="example-box">
+        <div class="example-de">
+          <span class="german-text" onclick="playAudio('Wir lehren Kinder', this)">Wir lehren Kinder</span>
+          <button class="audio-btn" onclick="playAudio('Wir lehren Kinder', this)">🔊</button>
+          <small>Enseñamos a niños</small>
+        </div>
+      </div>
+    </div>
+  </td>
+  <td>
+    <div class="conjugation-cell">
+      <span class="conjugation-verb">lehrt</span>
+      <div class="example-box">
+        <div class="example-de">
+          <span class="german-text" onclick="playAudio('Ihr lehrt viel', this)">Ihr lehrt viel</span>
+          <button class="audio-btn" onclick="playAudio('Ihr lehrt viel', this)">🔊</button>
+          <small>Enseñáis mucho</small>
+        </div>
+      </div>
+    </div>
+  </td>
+  <td>
+    <div class="conjugation-cell">
+      <span class="conjugation-verb">lehren</span>
+      <div class="example-box">
+        <div class="example-de">
+          <span class="german-text" onclick="playAudio('Sie lehren Sprachen', this)">Sie lehren Sprachen</span>
+          <button class="audio-btn" onclick="playAudio('Sie lehren Sprachen', this)">🔊</button>
+          <small>Enseñan idiomas</small>
+        </div>
+      </div>
+    </div>
+  </td>
 </tr>
 
 <!-- 25. Lieben -->
 <tr>
   <td>
     <div class="word-audio">
-      <span>Lieben</span>
-      <audio id="audio-lieben" src="assets/audio/lieben.mp3"></audio>
-      <button class="audio-icon-btn" onclick="playAudio('audio-lieben')"></button>
+      <span class="german-text" onclick="playAudio('Lieben', this)">Lieben</span>
+      <button class="audio-btn" onclick="playAudio('Lieben', this)">🔊</button>
+      <small>amar / querer</small>
     </div>
   </td>
   <td>amar / querer</td>
   <td><img src="assets/img/lieben.jpg" alt="Lieben" class="verb-img"></td>
   <td>
     <div class="word-audio">
-      <span>hat geliebt</span>
-      <audio id="audio-lieben-perfekt" src="assets/audio/lieben_perfekt.mp3"></audio>
-      <button class="audio-icon-btn" onclick="playAudio('audio-lieben-perfekt')"></button>
+      <span class="german-text" onclick="playAudio('hat geliebt', this)">hat geliebt</span>
+      <button class="audio-btn" onclick="playAudio('hat geliebt', this)">🔊</button>
+      <small>ha amado</small>
     </div>
     <div class="example-box">
       <div class="example-de">
-        <span>Er hat geliebt</span>
-        <audio id="audio-ex-lieben-perfekt" src="assets/audio/ex_lieben perfekt.mp3"></audio>
-        <button class="audio-icon-btn" onclick="playAudio('audio-ex-lieben-perfekt')"></button>
+        <span class="german-text" onclick="playAudio('Er hat geliebt', this)">Er hat geliebt</span>
+        <button class="audio-btn" onclick="playAudio('Er hat geliebt', this)">🔊</button>
+        <small>Él ha amado</small>
       </div>
-      <span class="example-es">Él ha amado</span>
     </div>
   </td>
-  <td><div class="conjugation-cell"><span class="conjugation-verb">liebe</span><div class="example-box"><div class="example-de"><span>Ich liebe dich</span><audio id="audio-ex-ich-lieben" src="assets/audio/ex ich lieben.mp3"></audio><button class="audio-icon-btn" onclick="playAudio('audio-ex-ich-lieben')"></button></div><span class="example-es">Te amo</span></div></div></td>
-  <td><div class="conjugation-cell"><span class="conjugation-verb">liebst</span><div class="example-box"><div class="example-de"><span>Liebst du mich?</span><audio id="audio-ex-du-lieben" src="assets/audio/ex_du_lieben.mp3"></audio><button class="audio-icon-btn" onclick="playAudio('audio-ex-du-lieben')"></button></div><span class="example-es">¿Me amas?</span></div></div></td>
-  <td><div class="conjugation-cell"><span class="conjugation-verb">liebt</span><div class="example-box"><div class="example-de"><span>Er liebt Musik</span><audio id="audio-ex-er-lieben" src="assets/audio/ex_er_lieben.mp3"></audio><button class="audio-icon-btn" onclick="playAudio('audio-ex-er-lieben')"></button></div><span class="example-es">Él ama la música</span></div></div></td>
-  <td><div class="conjugation-cell"><span class="conjugation-verb">lieben</span><div class="example-box"><div class="example-de"><span>Wir lieben das Leben</span><audio id="audio-ex-wir-lieben" src="assets/audio/ex_wir lieben.mp3"></audio><button class="audio-icon-btn" onclick="playAudio('audio-ex-wir-lieben')"></button></div><span class="example-es">Amamos la vida</span></div></div></td>
-  <td><div class="conjugation-cell"><span class="conjugation-verb">liebt</span><div class="example-box"><div class="example-de"><span>Ihr liebt Hunde</span><audio id="audio-ex-ihr-lieben" src="assets/audio/ex_ihr lieben.mp3"></audio><button class="audio-icon-btn" onclick="playAudio('audio-ex-ihr-lieben')"></button></div><span class="example-es">Amáis a los perros</span></div></div></td>
-  <td><div class="conjugation-cell"><span class="conjugation-verb">lieben</span><div class="example-box"><div class="example-de"><span>Sie lieben Kunst</span><audio id="audio-ex-sie-lieben" src="assets/audio/ex sie lieben.mp3"></audio><button class="audio-icon-btn" onclick="playAudio('audio-ex-sie-lieben')"></button></div><span class="example-es">Aman el arte</span></div></div></td>
+  <td>
+    <div class="conjugation-cell">
+      <span class="conjugation-verb">liebe</span>
+      <div class="example-box">
+        <div class="example-de">
+          <span class="german-text" onclick="playAudio('Ich liebe dich', this)">Ich liebe dich</span>
+          <button class="audio-btn" onclick="playAudio('Ich liebe dich', this)">🔊</button>
+          <small>Te amo</small>
+        </div>
+      </div>
+    </div>
+  </td>
+  <td>
+    <div class="conjugation-cell">
+      <span class="conjugation-verb">liebst</span>
+      <div class="example-box">
+        <div class="example-de">
+          <span class="german-text" onclick="playAudio('Liebst du mich?', this)">Liebst du mich?</span>
+          <button class="audio-btn" onclick="playAudio('Liebst du mich?', this)">🔊</button>
+          <small>¿Me amas?</small>
+        </div>
+      </div>
+    </div>
+  </td>
+  <td>
+    <div class="conjugation-cell">
+      <span class="conjugation-verb">liebt</span>
+      <div class="example-box">
+        <div class="example-de">
+          <span class="german-text" onclick="playAudio('Er liebt Musik', this)">Er liebt Musik</span>
+          <button class="audio-btn" onclick="playAudio('Er liebt Musik', this)">🔊</button>
+          <small>Él ama la música</small>
+        </div>
+      </div>
+    </div>
+  </td>
+  <td>
+    <div class="conjugation-cell">
+      <span class="conjugation-verb">lieben</span>
+      <div class="example-box">
+        <div class="example-de">
+          <span class="german-text" onclick="playAudio('Wir lieben das Leben', this)">Wir lieben das Leben</span>
+          <button class="audio-btn" onclick="playAudio('Wir lieben das Leben', this)">🔊</button>
+          <small>Amamos la vida</small>
+        </div>
+      </div>
+    </div>
+  </td>
+  <td>
+    <div class="conjugation-cell">
+      <span class="conjugation-verb">liebt</span>
+      <div class="example-box">
+        <div class="example-de">
+          <span class="german-text" onclick="playAudio('Ihr liebt Hunde', this)">Ihr liebt Hunde</span>
+          <button class="audio-btn" onclick="playAudio('Ihr liebt Hunde', this)">🔊</button>
+          <small>Amáis a los perros</small>
+        </div>
+      </div>
+    </div>
+  </td>
+  <td>
+    <div class="conjugation-cell">
+      <span class="conjugation-verb">lieben</span>
+      <div class="example-box">
+        <div class="example-de">
+          <span class="german-text" onclick="playAudio('Sie lieben Kunst', this)">Sie lieben Kunst</span>
+          <button class="audio-btn" onclick="playAudio('Sie lieben Kunst', this)">🔊</button>
+          <small>Aman el arte</small>
+        </div>
+      </div>
+    </div>
+  </td>
 </tr>
 
 <!-- 26. Mieten -->
 <tr>
   <td>
     <div class="word-audio">
-      <span>Mieten</span>
-      <audio id="audio-mieten" src="assets/audio/mieten.mp3"></audio>
-      <button class="audio-icon-btn" onclick="playAudio('audio-mieten')"></button>
+      <span class="german-text" onclick="playAudio('Mieten', this)">Mieten</span>
+      <button class="audio-btn" onclick="playAudio('Mieten', this)">🔊</button>
+      <small>alquilar</small>
     </div>
   </td>
   <td>alquilar</td>
   <td><img src="assets/img/mieten.jpg" alt="Mieten" class="verb-img"></td>
   <td>
     <div class="word-audio">
-      <span>hat gemietet</span>
-      <audio id="audio-mieten-perfekt" src="assets/audio/mieten_perfekt.mp3"></audio>
-      <button class="audio-icon-btn" onclick="playAudio('audio-mieten-perfekt')"></button>
+      <span class="german-text" onclick="playAudio('hat gemietet', this)">hat gemietet</span>
+      <button class="audio-btn" onclick="playAudio('hat gemietet', this)">🔊</button>
+      <small>ha alquilado</small>
     </div>
     <div class="example-box">
       <div class="example-de">
-        <span>Er hat gemietet</span>
-        <audio id="audio-ex-mieten-perfekt" src="assets/audio/ex_mieten_perfekt.mp3"></audio>
-        <button class="audio-icon-btn" onclick="playAudio('audio-ex-mieten-perfekt')"></button>
+        <span class="german-text" onclick="playAudio('Er hat gemietet', this)">Er hat gemietet</span>
+        <button class="audio-btn" onclick="playAudio('Er hat gemietet', this)">🔊</button>
+        <small>Él ha alquilado</small>
       </div>
-      <span class="example-es">El ha alquilado</span>
     </div>
   </td>
-  <td><div class="conjugation-cell"><span class="conjugation-verb">miete</span><div class="example-box"><div class="example-de"><span>Ich miete eine Wohnung</span><audio id="audio-ex-ich-mieten" src="assets/audio/ex_ich_mieten.mp3"></audio><button class="audio-icon-btn" onclick="playAudio('audio-ex-ich-mieten')"></button></div><span class="example-es">Alquilo un apartamento</span></div></div></td>
-  <td><div class="conjugation-cell"><span class="conjugation-verb">mietest</span><div class="example-box"><div class="example-de"><span>Mietest du ein Auto?</span><audio id="audio-ex-du-mieten" src="assets/audio/ex du mieten.mp3"></audio><button class="audio-icon-btn" onclick="playAudio('audio-ex-du-mieten')"></button></div><span class="example-es">¿Alquilas un auto?</span></div></div></td>
-  <td><div class="conjugation-cell"><span class="conjugation-verb">mietet</span><div class="example-box"><div class="example-de"><span>Er mietet ein Boot</span><audio id="audio-ex-er-mieten" src="assets/audio/ex_er_mieten.mp3"></audio><button class="audio-icon-btn" onclick="playAudio('audio-ex-er-mieten')"></button></div><span class="example-es">Él alquila un barco</span></div></div></td>
-  <td><div class="conjugation-cell"><span class="conjugation-verb">mieten</span><div class="example-box"><div class="example-de"><span>Wir mieten ein Zimmer</span><audio id="audio-ex-wir-mieten" src="assets/audio/ex_wir_mieten.mp3"></audio><button class="audio-icon-btn" onclick="playAudio('audio-ex-wir-mieten')"></button></div><span class="example-es">Alquilamos una habitación</span></div></div></td>
-  <td><div class="conjugation-cell"><span class="conjugation-verb">mietet</span><div class="example-box"><div class="example-de"><span>Ihr mietet Fahrräder</span><audio id="audio-ex-ihr-mieten" src="assets/audio/ex_ihr mieten.mp3"></audio><button class="audio-icon-btn" onclick="playAudio('audio-ex-ihr-mieten')"></button></div><span class="example-es">Alquiláis bicicletas</span></div></div></td>
-  <td><div class="conjugation-cell"><span class="conjugation-verb">mieten</span><div class="example-box"><div class="example-de"><span>Sie mieten ein Haus</span><audio id="audio-ex-sie-mieten" src="assets/audio/ex sie mieten.mp3"></audio><button class="audio-icon-btn" onclick="playAudio('audio-ex-sie-mieten')"></button></div><span class="example-es">Alquilan una casa</span></div></div></td>
+  <td>
+    <div class="conjugation-cell">
+      <span class="conjugation-verb">miete</span>
+      <div class="example-box">
+        <div class="example-de">
+          <span class="german-text" onclick="playAudio('Ich miete eine Wohnung', this)">Ich miete eine Wohnung</span>
+          <button class="audio-btn" onclick="playAudio('Ich miete eine Wohnung', this)">🔊</button>
+          <small>Alquilo un apartamento</small>
+        </div>
+      </div>
+    </div>
+  </td>
+  <td>
+    <div class="conjugation-cell">
+      <span class="conjugation-verb">mietest</span>
+      <div class="example-box">
+        <div class="example-de">
+          <span class="german-text" onclick="playAudio('Mietest du ein Auto?', this)">Mietest du ein Auto?</span>
+          <button class="audio-btn" onclick="playAudio('Mietest du ein Auto?', this)">🔊</button>
+          <small>¿Alquilas un auto?</small>
+        </div>
+      </div>
+    </div>
+  </td>
+  <td>
+    <div class="conjugation-cell">
+      <span class="conjugation-verb">mietet</span>
+      <div class="example-box">
+        <div class="example-de">
+          <span class="german-text" onclick="playAudio('Er mietet ein Boot', this)">Er mietet ein Boot</span>
+          <button class="audio-btn" onclick="playAudio('Er mietet ein Boot', this)">🔊</button>
+          <small>Él alquila un barco</small>
+        </div>
+      </div>
+    </div>
+  </td>
+  <td>
+    <div class="conjugation-cell">
+      <span class="conjugation-verb">mieten</span>
+      <div class="example-box">
+        <div class="example-de">
+          <span class="german-text" onclick="playAudio('Wir mieten ein Zimmer', this)">Wir mieten ein Zimmer</span>
+          <button class="audio-btn" onclick="playAudio('Wir mieten ein Zimmer', this)">🔊</button>
+          <small>Alquilamos una habitación</small>
+        </div>
+      </div>
+    </div>
+  </td>
+  <td>
+    <div class="conjugation-cell">
+      <span class="conjugation-verb">mietet</span>
+      <div class="example-box">
+        <div class="example-de">
+          <span class="german-text" onclick="playAudio('Ihr mietet Fahrräder', this)">Ihr mietet Fahrräder</span>
+          <button class="audio-btn" onclick="playAudio('Ihr mietet Fahrräder', this)">🔊</button>
+          <small>Alquiláis bicicletas</small>
+        </div>
+      </div>
+    </div>
+  </td>
+  <td>
+    <div class="conjugation-cell">
+      <span class="conjugation-verb">mieten</span>
+      <div class="example-box">
+        <div class="example-de">
+          <span class="german-text" onclick="playAudio('Sie mieten ein Haus', this)">Sie mieten ein Haus</span>
+          <button class="audio-btn" onclick="playAudio('Sie mieten ein Haus', this)">🔊</button>
+          <small>Alquilan una casa</small>
+        </div>
+      </div>
+    </div>
+  </td>
 </tr>
 
 <!-- 27. Regnen -->
 <tr>
   <td>
     <div class="word-audio">
-      <span>Regnen</span>
-      <audio id="audio-regnen" src="assets/audio/regnen.mp3"></audio>
-      <button class="audio-icon-btn" onclick="playAudio('audio-regnen')"></button>
+      <span class="german-text" onclick="playAudio('Regnen', this)">Regnen</span>
+      <button class="audio-btn" onclick="playAudio('Regnen', this)">🔊</button>
+      <small>llover</small>
     </div>
   </td>
   <td>llover</td>
   <td><img src="assets/img/regnen.jpg" alt="Regnen" class="verb-img"></td>
   <td>
     <div class="word-audio">
-      <span>es hat geregnet</span>
-      <audio id="audio-regnen-perfekt" src="assets/audio/regnen_perfekt.mp3"></audio>
-      <button class="audio-icon-btn" onclick="playAudio('audio-regnen-perfekt')"></button>
+      <span class="german-text" onclick="playAudio('es hat geregnet', this)">es hat geregnet</span>
+      <button class="audio-btn" onclick="playAudio('es hat geregnet', this)">🔊</button>
+      <small>ha llovido</small>
     </div>
     <div class="example-box">
       <div class="example-de">
-        <span>Es hat geregnet</span>
-        <audio id="audio-ex-regnen-perfekt" src="assets/audio/ex_regnen_perfekt.mp3"></audio>
-        <button class="audio-icon-btn" onclick="playAudio('audio-ex-regnen-perfekt')"></button>
+        <span class="german-text" onclick="playAudio('Es hat geregnet', this)">Es hat geregnet</span>
+        <button class="audio-btn" onclick="playAudio('Es hat geregnet', this)">🔊</button>
+        <small>Ha llovido</small>
       </div>
-      <span class="example-es">Ha llovido</span>
     </div>
   </td>
-  <td><div class="conjugation-cell"><span class="conjugation-verb">regne</span><div class="example-box"><div class="example-de"><span>Ich regne nicht</span><audio id="audio-ex-ich-regnen" src="assets/audio/ex_ich_regnen.mp3"></audio><button class="audio-icon-btn" onclick="playAudio('audio-ex-ich-regnen')"></button></div><span class="example-es">No lluevo (imp.)</span></div></div></td>
-  <td><div class="conjugation-cell"><span class="conjugation-verb">regnest</span><div class="example-box"><div class="example-de"><span>Du regnest nicht</span><audio id="audio-ex-du-regnen" src="assets/audio/ex du regnen.mp3"></audio><button class="audio-icon-btn" onclick="playAudio('audio-ex-du-regnen')"></button></div><span class="example-es">No llueves (imp.)</span></div></div></td>
-  <td><div class="conjugation-cell"><span class="conjugation-verb">regnet</span><div class="example-box"><div class="example-de"><span>Es regnet stark</span><audio id="audio-ex-er-regnen" src="assets/audio/ex_er regnen.mp3"></audio><button class="audio-icon-btn" onclick="playAudio('audio-ex-er-regnen')"></button></div><span class="example-es">Llueve fuerte</span></div></div></td>
-  <td><div class="conjugation-cell"><span class="conjugation-verb">regnen</span><div class="example-box"><div class="example-de"><span>Wolken regnen</span><audio id="audio-ex-wir-regnen" src="assets/audio/ex_wir_regnen.mp3"></audio><button class="audio-icon-btn" onclick="playAudio('audio-ex-wir-regnen')"></button></div><span class="example-es">Las nubes llueven</span></div></div></td>
-  <td><div class="conjugation-cell"><span class="conjugation-verb">regnet</span><div class="example-box"><div class="example-de"><span>Ihr regnet nicht</span><audio id="audio-ex-ihr-regnen" src="assets/audio/ex_ihr_regnen.mp3"></audio><button class="audio-icon-btn" onclick="playAudio('audio-ex-ihr-regnen')"></button></div><span class="example-es">No llovéis (imp.)</span></div></div></td>
-  <td><div class="conjugation-cell"><span class="conjugation-verb">regnen</span><div class="example-box"><div class="example-de"><span>Tropfen regnen</span><audio id="audio-ex-sie-regnen" src="assets/audio/ex_sie regnen.mp3"></audio><button class="audio-icon-btn" onclick="playAudio('audio-ex-sie-regnen')"></button></div><span class="example-es">Las gotas llueven</span></div></div></td>
+  <td>
+    <div class="conjugation-cell">
+      <span class="conjugation-verb">regne</span>
+      <div class="example-box">
+        <div class="example-de">
+          <span class="german-text" onclick="playAudio('Ich regne nicht', this)">Ich regne nicht</span>
+          <button class="audio-btn" onclick="playAudio('Ich regne nicht', this)">🔊</button>
+          <small>No lluevo (imp.)</small>
+        </div>
+      </div>
+    </div>
+  </td>
+  <td>
+    <div class="conjugation-cell">
+      <span class="conjugation-verb">regnest</span>
+      <div class="example-box">
+        <div class="example-de">
+          <span class="german-text" onclick="playAudio('Du regnest nicht', this)">Du regnest nicht</span>
+          <button class="audio-btn" onclick="playAudio('Du regnest nicht', this)">🔊</button>
+          <small>No llueves (imp.)</small>
+        </div>
+      </div>
+    </div>
+  </td>
+  <td>
+    <div class="conjugation-cell">
+      <span class="conjugation-verb">regnet</span>
+      <div class="example-box">
+        <div class="example-de">
+          <span class="german-text" onclick="playAudio('Es regnet stark', this)">Es regnet stark</span>
+          <button class="audio-btn" onclick="playAudio('Es regnet stark', this)">🔊</button>
+          <small>Llueve fuerte</small>
+        </div>
+      </div>
+    </div>
+  </td>
+  <td>
+    <div class="conjugation-cell">
+      <span class="conjugation-verb">regnen</span>
+      <div class="example-box">
+        <div class="example-de">
+          <span class="german-text" onclick="playAudio('Wolken regnen', this)">Wolken regnen</span>
+          <button class="audio-btn" onclick="playAudio('Wolken regnen', this)">🔊</button>
+          <small>Las nubes llueven</small>
+        </div>
+      </div>
+    </div>
+  </td>
+  <td>
+    <div class="conjugation-cell">
+      <span class="conjugation-verb">regnet</span>
+      <div class="example-box">
+        <div class="example-de">
+          <span class="german-text" onclick="playAudio('Ihr regnet nicht', this)">Ihr regnet nicht</span>
+          <button class="audio-btn" onclick="playAudio('Ihr regnet nicht', this)">🔊</button>
+          <small>No llovéis (imp.)</small>
+        </div>
+      </div>
+    </div>
+  </td>
+  <td>
+    <div class="conjugation-cell">
+      <span class="conjugation-verb">regnen</span>
+      <div class="example-box">
+        <div class="example-de">
+          <span class="german-text" onclick="playAudio('Tropfen regnen', this)">Tropfen regnen</span>
+          <button class="audio-btn" onclick="playAudio('Tropfen regnen', this)">🔊</button>
+          <small>Las gotas llueven</small>
+        </div>
+      </div>
+    </div>
+  </td>
 </tr>
-<!-- Reisen -->
+
+<!-- 28. Reisen -->
 <tr>
   <td>
     <div class="word-audio">
-      <span>Reisen</span>
-      <audio id="audio-reisen" src="assets/audio/reisen.mp3"></audio>
-      <button class="audio-icon-btn" onclick="playAudio('audio-reisen')"></button>
+      <span class="german-text" onclick="playAudio('Reisen', this)">Reisen</span>
+      <button class="audio-btn" onclick="playAudio('Reisen', this)">🔊</button>
+      <small>viajar</small>
     </div>
   </td>
   <td>viajar</td>
   <td><img src="assets/img/reisen.jpg" alt="Reisen" class="verb-img"></td>
   <td>
     <div class="word-audio">
-      <span>ist gereist</span>
-      <audio id="audio-reisen-perfekt" src="assets/audio/reisen_perfekt.mp3"></audio>
-      <button class="audio-icon-btn" onclick="playAudio('audio-reisen-perfekt')"></button>
+      <span class="german-text" onclick="playAudio('ist gereist', this)">ist gereist</span>
+      <button class="audio-btn" onclick="playAudio('ist gereist', this)">🔊</button>
+      <small>ha viajado</small>
     </div>
     <div class="example-box">
       <div class="example-de">
-        <span>Er ist gereist</span>
-        <audio id="audio-ex-reisen-perfekt" src="assets/audio/ex_reisen_perfekt.mp3"></audio>
-        <button class="audio-icon-btn" onclick="playAudio('audio-ex-reisen-perfekt')"></button>
+        <span class="german-text" onclick="playAudio('Er ist gereist', this)">Er ist gereist</span>
+        <button class="audio-btn" onclick="playAudio('Er ist gereist', this)">🔊</button>
+        <small>Él ha viajado</small>
       </div>
-      <span class="example-es">Él ha viajado</span>
     </div>
   </td>
-  <td><div class="conjugation-cell"><span class="conjugation-verb">reise</span><div class="example-box"><div class="example-de"><span>Ich reise viel</span><audio id="audio-ex-ich-reisen" src="assets/audio/ex_ich_reisen.mp3"></audio><button class="audio-icon-btn" onclick="playAudio('audio-ex-ich-reisen')"></button></div><span class="example-es">Viajo mucho</span></div></div></td>
-  <td><div class="conjugation-cell"><span class="conjugation-verb">reist</span><div class="example-box"><div class="example-de"><span>Reist du gern?</span><audio id="audio-ex-du-reisen" src="assets/audio/ex_du_reisen.mp3"></audio><button class="audio-icon-btn" onclick="playAudio('audio-ex-du-reisen')"></button></div><span class="example-es">¿Te gusta viajar?</span></div></div></td>
-  <td><div class="conjugation-cell"><span class="conjugation-verb">reist</span><div class="example-box"><div class="example-de"><span>Er reist oft</span><audio id="audio-ex-er-reisen" src="assets/audio/ex_er_reisen.mp3"></audio><button class="audio-icon-btn" onclick="playAudio('audio-ex-er-reisen')"></button></div><span class="example-es">Él viaja a menudo</span></div></div></td>
-  <td><div class="conjugation-cell"><span class="conjugation-verb">reisen</span><div class="example-box"><div class="example-de"><span>Wir reisen heute</span><audio id="audio-ex-wir-reisen" src="assets/audio/ex_wir_reisen.mp3"></audio><button class="audio-icon-btn" onclick="playAudio('audio-ex-wir-reisen')"></button></div><span class="example-es">Viajamos hoy</span></div></div></td>
-  <td><div class="conjugation-cell"><span class="conjugation-verb">reist</span><div class="example-box"><div class="example-de"><span>Ihr reist zusammen</span><audio id="audio-ex-ihr-reisen" src="assets/audio/ex_ihr_reisen.mp3"></audio><button class="audio-icon-btn" onclick="playAudio('audio-ex-ihr-reisen')"></button></div><span class="example-es">Viajáis juntos</span></div></div></td>
-  <td><div class="conjugation-cell"><span class="conjugation-verb">reisen</span><div class="example-box"><div class="example-de"><span>Sie reisen gern</span><audio id="audio-ex-sie-reisen" src="assets/audio/ex_sie_reisen.mp3"></audio><button class="audio-icon-btn" onclick="playAudio('audio-ex-sie-reisen')"></button></div><span class="example-es">Ellos viajan con gusto</span></div></div></td>
+  <td>
+    <div class="conjugation-cell">
+      <span class="conjugation-verb">reise</span>
+      <div class="example-box">
+        <div class="example-de">
+          <span class="german-text" onclick="playAudio('Ich reise viel', this)">Ich reise viel</span>
+          <button class="audio-btn" onclick="playAudio('Ich reise viel', this)">🔊</button>
+          <small>Viajo mucho</small>
+        </div>
+      </div>
+    </div>
+  </td>
+  <td>
+    <div class="conjugation-cell">
+      <span class="conjugation-verb">reist</span>
+      <div class="example-box">
+        <div class="example-de">
+          <span class="german-text" onclick="playAudio('Reist du gern?', this)">Reist du gern?</span>
+          <button class="audio-btn" onclick="playAudio('Reist du gern?', this)">🔊</button>
+          <small>¿Te gusta viajar?</small>
+        </div>
+      </div>
+    </div>
+  </td>
+  <td>
+    <div class="conjugation-cell">
+      <span class="conjugation-verb">reist</span>
+      <div class="example-box">
+        <div class="example-de">
+          <span class="german-text" onclick="playAudio('Er reist oft', this)">Er reist oft</span>
+          <button class="audio-btn" onclick="playAudio('Er reist oft', this)">🔊</button>
+          <small>Él viaja a menudo</small>
+        </div>
+      </div>
+    </div>
+  </td>
+  <td>
+    <div class="conjugation-cell">
+      <span class="conjugation-verb">reisen</span>
+      <div class="example-box">
+        <div class="example-de">
+          <span class="german-text" onclick="playAudio('Wir reisen heute', this)">Wir reisen heute</span>
+          <button class="audio-btn" onclick="playAudio('Wir reisen heute', this)">🔊</button>
+          <small>Viajamos hoy</small>
+        </div>
+      </div>
+    </div>
+  </td>
+  <td>
+    <div class="conjugation-cell">
+      <span class="conjugation-verb">reist</span>
+      <div class="example-box">
+        <div class="example-de">
+          <span class="german-text" onclick="playAudio('Ihr reist zusammen', this)">Ihr reist zusammen</span>
+          <button class="audio-btn" onclick="playAudio('Ihr reist zusammen', this)">🔊</button>
+          <small>Viajáis juntos</small>
+        </div>
+      </div>
+    </div>
+  </td>
+  <td>
+    <div class="conjugation-cell">
+      <span class="conjugation-verb">reisen</span>
+      <div class="example-box">
+        <div class="example-de">
+          <span class="german-text" onclick="playAudio('Sie reisen gern', this)">Sie reisen gern</span>
+          <button class="audio-btn" onclick="playAudio('Sie reisen gern', this)">🔊</button>
+          <small>Ellos viajan con gusto</small>
+        </div>
+      </div>
+    </div>
+  </td>
 </tr>
 
-<!-- Schmecken -->
+<!-- 29. Schmecken -->
 <tr>
   <td>
     <div class="word-audio">
-      <span>Schmecken</span>
-      <audio id="audio-schmecken" src="assets/audio/schmecken.mp3"></audio>
-      <button class="audio-icon-btn" onclick="playAudio('audio-schmecken')"></button>
+      <span class="german-text" onclick="playAudio('Schmecken', this)">Schmecken</span>
+      <button class="audio-btn" onclick="playAudio('Schmecken', this)">🔊</button>
+      <small>saborear / gustar (comida)</small>
     </div>
   </td>
   <td>saborear / gustar (comida)</td>
   <td><img src="assets/img/schmecken.jpg" alt="Schmecken" class="verb-img"></td>
   <td>
     <div class="word-audio">
-      <span>hat geschmeckt</span>
-      <audio id="audio-schmecken-perfekt" src="assets/audio/schmecken_perfekt.mp3"></audio>
-      <button class="audio-icon-btn" onclick="playAudio('audio-schmecken-perfekt')"></button>
+      <span class="german-text" onclick="playAudio('hat geschmeckt', this)">hat geschmeckt</span>
+      <button class="audio-btn" onclick="playAudio('hat geschmeckt', this)">🔊</button>
+      <small>ha sabido bien</small>
     </div>
     <div class="example-box">
       <div class="example-de">
-        <span>Das hat gut geschmeckt</span>
-        <audio id="audio-ex-schmecken-perfekt" src="assets/audio/ex_schmecken_perfekt.mp3"></audio>
-        <button class="audio-icon-btn" onclick="playAudio('audio-ex-schmecken-perfekt')"></button>
+        <span class="german-text" onclick="playAudio('Das hat gut geschmeckt', this)">Das hat gut geschmeckt</span>
+        <button class="audio-btn" onclick="playAudio('Das hat gut geschmeckt', this)">🔊</button>
+        <small>Ha sabido bien</small>
       </div>
-      <span class="example-es">Ha sabido bien</span>
     </div>
   </td>
-  <td><div class="conjugation-cell"><span class="conjugation-verb">schmecke</span><div class="example-box"><div class="example-de"><span>Ich schmecke die Suppe</span><audio id="audio-ex-ich-schmecken" src="assets/audio/ex_ich_schmecken.mp3"></audio><button class="audio-icon-btn" onclick="playAudio('audio-ex-ich-schmecken')"></button></div><span class="example-es">Pruebo la sopa</span></div></div></td>
-  <td><div class="conjugation-cell"><span class="conjugation-verb">schmeckst</span><div class="example-box"><div class="example-de"><span>Schmeckst du das?</span><audio id="audio-ex-du-schmecken" src="assets/audio/ex_du_schmecken.mp3"></audio><button class="audio-icon-btn" onclick="playAudio('audio-ex-du-schmecken')"></button></div><span class="example-es">¿Sientes el sabor?</span></div></div></td>
-  <td><div class="conjugation-cell"><span class="conjugation-verb">schmeckt</span><div class="example-box"><div class="example-de"><span>Es schmeckt gut</span><audio id="audio-ex-er-schmecken" src="assets/audio/ex_er_schmecken.mp3"></audio><button class="audio-icon-btn" onclick="playAudio('audio-ex-er-schmecken')"></button></div><span class="example-es">Sabe bien</span></div></div></td>
-  <td><div class="conjugation-cell"><span class="conjugation-verb">schmecken</span><div class="example-box"><div class="example-de"><span>Wir schmecken alles</span><audio id="audio-ex-wir-schmecken" src="assets/audio/ex_wir_schmecken.mp3"></audio><button class="audio-icon-btn" onclick="playAudio('audio-ex-wir-schmecken')"></button></div><span class="example-es">Probamos todo</span></div></div></td>
-  <td><div class="conjugation-cell"><span class="conjugation-verb">schmeckt</span><div class="example-box"><div class="example-de"><span>Schmeckt ihr das?</span><audio id="audio-ex-ihr-schmecken" src="assets/audio/ex_ihr_schmecken.mp3"></audio><button class="audio-icon-btn" onclick="playAudio('audio-ex-ihr-schmecken')"></button></div><span class="example-es">¿Os gusta el sabor?</span></div></div></td>
-  <td><div class="conjugation-cell"><span class="conjugation-verb">schmecken</span><div class="example-box"><div class="example-de"><span>Ellos prueban</span><audio id="audio-ex-sie-schmecken" src="assets/audio/ex_sie_schmecken.mp3"></audio><button class="audio-icon-btn" onclick="playAudio('audio-ex-sie-schmecken')"></button></div><span class="example-es">Les gusta el sabor</span></div></div></td>
+  <td>
+    <div class="conjugation-cell">
+      <span class="conjugation-verb">schmecke</span>
+      <div class="example-box">
+        <div class="example-de">
+          <span class="german-text" onclick="playAudio('Ich schmecke die Suppe', this)">Ich schmecke die Suppe</span>
+          <button class="audio-btn" onclick="playAudio('Ich schmecke die Suppe', this)">🔊</button>
+          <small>Pruebo la sopa</small>
+        </div>
+      </div>
+    </div>
+  </td>
+  <td>
+    <div class="conjugation-cell">
+      <span class="conjugation-verb">schmeckst</span>
+      <div class="example-box">
+        <div class="example-de">
+          <span class="german-text" onclick="playAudio('Schmeckst du das?', this)">Schmeckst du das?</span>
+          <button class="audio-btn" onclick="playAudio('Schmeckst du das?', this)">🔊</button>
+          <small>¿Sientes el sabor?</small>
+        </div>
+      </div>
+    </div>
+  </td>
+  <td>
+    <div class="conjugation-cell">
+      <span class="conjugation-verb">schmeckt</span>
+      <div class="example-box">
+        <div class="example-de">
+          <span class="german-text" onclick="playAudio('Es schmeckt gut', this)">Es schmeckt gut</span>
+          <button class="audio-btn" onclick="playAudio('Es schmeckt gut', this)">🔊</button>
+          <small>Sabe bien</small>
+        </div>
+      </div>
+    </div>
+  </td>
+  <td>
+    <div class="conjugation-cell">
+      <span class="conjugation-verb">schmecken</span>
+      <div class="example-box">
+        <div class="example-de">
+          <span class="german-text" onclick="playAudio('Wir schmecken alles', this)">Wir schmecken alles</span>
+          <button class="audio-btn" onclick="playAudio('Wir schmecken alles', this)">🔊</button>
+          <small>Probamos todo</small>
+        </div>
+      </div>
+    </div>
+  </td>
+  <td>
+    <div class="conjugation-cell">
+      <span class="conjugation-verb">schmeckt</span>
+      <div class="example-box">
+        <div class="example-de">
+          <span class="german-text" onclick="playAudio('Schmeckt ihr das?', this)">Schmeckt ihr das?</span>
+          <button class="audio-btn" onclick="playAudio('Schmeckt ihr das?', this)">🔊</button>
+          <small>¿Os gusta el sabor?</small>
+        </div>
+      </div>
+    </div>
+  </td>
+  <td>
+    <div class="conjugation-cell">
+      <span class="conjugation-verb">schmecken</span>
+      <div class="example-box">
+        <div class="example-de">
+          <span class="german-text" onclick="playAudio('Sie schmecken das Essen', this)">Sie schmecken das Essen</span>
+          <button class="audio-btn" onclick="playAudio('Sie schmecken das Essen', this)">🔊</button>
+          <small>Les gusta el sabor</small>
+        </div>
+      </div>
+    </div>
+  </td>
 </tr>
 
-<!-- Stecken -->
+<!-- 30. Stecken -->
 <tr>
   <td>
     <div class="word-audio">
-      <span>Stecken</span>
-      <audio id="audio-stecken" src="assets/audio/stecken.mp3"></audio>
-      <button class="audio-icon-btn" onclick="playAudio('audio-stecken')"></button>
+      <span class="german-text" onclick="playAudio('Stecken', this)">Stecken</span>
+      <button class="audio-btn" onclick="playAudio('Stecken', this)">🔊</button>
+      <small>meter / poner</small>
     </div>
   </td>
   <td>meter / poner</td>
   <td><img src="assets/img/stecken.jpg" alt="Stecken" class="verb-img"></td>
   <td>
     <div class="word-audio">
-      <span>hat gesteckt</span>
-      <audio id="audio-stecken-perfekt" src="assets/audio/stecken_perfekt.mp3"></audio>
-      <button class="audio-icon-btn" onclick="playAudio('audio-stecken-perfekt')"></button>
+      <span class="german-text" onclick="playAudio('hat gesteckt', this)">hat gesteckt</span>
+      <button class="audio-btn" onclick="playAudio('hat gesteckt', this)">🔊</button>
+      <small>ha metido</small>
     </div>
     <div class="example-box">
       <div class="example-de">
-        <span>Er hat es gesteckt</span>
-        <audio id="audio-ex-stecken-perfekt" src="assets/audio/ex_stecken_perfekt.mp3"></audio>
-        <button class="audio-icon-btn" onclick="playAudio('audio-ex-stecken-perfekt')"></button>
+        <span class="german-text" onclick="playAudio('Er hat es gesteckt', this)">Er hat es gesteckt</span>
+        <button class="audio-btn" onclick="playAudio('Er hat es gesteckt', this)">🔊</button>
+        <small>Él lo ha metido</small>
       </div>
-      <span class="example-es">Él lo ha metido</span>
     </div>
   </td>
-  <td><div class="conjugation-cell"><span class="conjugation-verb">stecke</span><div class="example-box"><div class="example-de"><span>Ich stecke das ein</span><audio id="audio-ex-ich-stecken" src="assets/audio/ex_ich_stecken.mp3"></audio><button class="audio-icon-btn" onclick="playAudio('audio-ex-ich-stecken')"></button></div><span class="example-es">Lo meto dentro</span></div></div></td>
-  <td><div class="conjugation-cell"><span class="conjugation-verb">steckst</span><div class="example-box"><div class="example-de"><span>Steckst du den Schlüssel?</span><audio id="audio-ex-du-stecken" src="assets/audio/ex_du_stecken.mp3"></audio><button class="audio-icon-btn" onclick="playAudio('audio-ex-du-stecken')"></button></div><span class="example-es">¿Pones la llave?</span></div></div></td>
-  <td><div class="conjugation-cell"><span class="conjugation-verb">steckt</span><div class="example-box"><div class="example-de"><span>Er steckt das Geld weg</span><audio id="audio-ex-er-stecken" src="assets/audio/ex_er_stecken.mp3"></audio><button class="audio-icon-btn" onclick="playAudio('audio-ex-er-stecken')"></button></div><span class="example-es">Pone el dinero a resguardo</span></div></div></td>
-  <td><div class="conjugation-cell"><span class="conjugation-verb">stecken</span><div class="example-box"><div class="example-de"><span>Wir stecken fest</span><audio id="audio-ex-wir-stecken" src="assets/audio/ex_wir_stecken.mp3"></audio><button class="audio-icon-btn" onclick="playAudio('audio-ex-wir-stecken')"></button></div><span class="example-es">Estamos atascados</span></div></div></td>
-  <td><div class="conjugation-cell"><span class="conjugation-verb">steckt</span><div class="example-box"><div class="example-de"><span>Ihr steckt es hinein</span><audio id="audio-ex-ihr-stecken" src="assets/audio/ex_ihr_stecken.mp3"></audio><button class="audio-icon-btn" onclick="playAudio('audio-ex-ihr-stecken')"></button></div><span class="example-es">Lo metéis dentro</span></div></div></td>
-  <td><div class="conjugation-cell"><span class="conjugation-verb">stecken</span><div class="example-box"><div class="example-de"><span>Sie stecken zusammen</span><audio id="audio-ex-sie-stecken" src="assets/audio/ex_sie_stecken.mp3"></audio><button class="audio-icon-btn" onclick="playAudio('audio-ex-sie-stecken')"></button></div><span class="example-es">Están juntos</span></div></div></td>
+  <td>
+    <div class="conjugation-cell">
+      <span class="conjugation-verb">stecke</span>
+      <div class="example-box">
+        <div class="example-de">
+          <span class="german-text" onclick="playAudio('Ich stecke das ein', this)">Ich stecke das ein</span>
+          <button class="audio-btn" onclick="playAudio('Ich stecke das ein', this)">🔊</button>
+          <small>Lo meto dentro</small>
+        </div>
+      </div>
+    </div>
+  </td>
+  <td>
+    <div class="conjugation-cell">
+      <span class="conjugation-verb">steckst</span>
+      <div class="example-box">
+        <div class="example-de">
+          <span class="german-text" onclick="playAudio('Steckst du den Schlüssel?', this)">Steckst du den Schlüssel?</span>
+          <button class="audio-btn" onclick="playAudio('Steckst du den Schlüssel?', this)">🔊</button>
+          <small>¿Pones la llave?</small>
+        </div>
+      </div>
+    </div>
+  </td>
+  <td>
+    <div class="conjugation-cell">
+      <span class="conjugation-verb">steckt</span>
+      <div class="example-box">
+        <div class="example-de">
+          <span class="german-text" onclick="playAudio('Er steckt das Geld weg', this)">Er steckt das Geld weg</span>
+          <button class="audio-btn" onclick="playAudio('Er steckt das Geld weg', this)">🔊</button>
+          <small>Pone el dinero a resguardo</small>
+        </div>
+      </div>
+    </div>
+  </td>
+  <td>
+    <div class="conjugation-cell">
+      <span class="conjugation-verb">stecken</span>
+      <div class="example-box">
+        <div class="example-de">
+          <span class="german-text" onclick="playAudio('Wir stecken fest', this)">Wir stecken fest</span>
+          <button class="audio-btn" onclick="playAudio('Wir stecken fest', this)">🔊</button>
+          <small>Estamos atascados</small>
+        </div>
+      </div>
+    </div>
+  </td>
+  <td>
+    <div class="conjugation-cell">
+      <span class="conjugation-verb">steckt</span>
+      <div class="example-box">
+        <div class="example-de">
+          <span class="german-text" onclick="playAudio('Ihr steckt es hinein', this)">Ihr steckt es hinein</span>
+          <button class="audio-btn" onclick="playAudio('Ihr steckt es hinein', this)">🔊</button>
+          <small>Lo metéis dentro</small>
+        </div>
+      </div>
+    </div>
+  </td>
+  <td>
+    <div class="conjugation-cell">
+      <span class="conjugation-verb">stecken</span>
+      <div class="example-box">
+        <div class="example-de">
+          <span class="german-text" onclick="playAudio('Sie stecken zusammen', this)">Sie stecken zusammen</span>
+          <button class="audio-btn" onclick="playAudio('Sie stecken zusammen', this)">🔊</button>
+          <small>Están juntos</small>
+        </div>
+      </div>
+    </div>
+  </td>
 </tr>
 
-<!-- Studieren -->
+<!-- 31. Studieren -->
 <tr>
   <td>
     <div class="word-audio">
-      <span>Studieren</span>
-      <audio id="audio-studieren" src="assets/audio/studieren.mp3"></audio>
-      <button class="audio-icon-btn" onclick="playAudio('audio-studieren')"></button>
+      <span class="german-text" onclick="playAudio('Studieren', this)">Studieren</span>
+      <button class="audio-btn" onclick="playAudio('Studieren', this)">🔊</button>
+      <small>estudiar (universidad)</small>
     </div>
   </td>
   <td>estudiar (universidad)</td>
   <td><img src="assets/img/studieren.jpg" alt="Studieren" class="verb-img"></td>
   <td>
     <div class="word-audio">
-      <span>hat studiert</span>
-      <audio id="audio-studieren-perfekt" src="assets/audio/studieren_perfekt.mp3"></audio>
-      <button class="audio-icon-btn" onclick="playAudio('audio-studieren-perfekt')"></button>
+      <span class="german-text" onclick="playAudio('hat studiert', this)">hat studiert</span>
+      <button class="audio-btn" onclick="playAudio('hat studiert', this)">🔊</button>
+      <small>ha estudiado</small>
     </div>
     <div class="example-box">
       <div class="example-de">
-        <span>Er hat studiert</span>
-        <audio id="audio-ex-studieren-perfekt" src="assets/audio/ex_studieren_perfekt.mp3"></audio>
-        <button class="audio-icon-btn" onclick="playAudio('audio-ex-studieren-perfekt')"></button>
+        <span class="german-text" onclick="playAudio('Er hat studiert', this)">Er hat studiert</span>
+        <button class="audio-btn" onclick="playAudio('Er hat studiert', this)">🔊</button>
+        <small>Él ha estudiado</small>
       </div>
-      <span class="example-es">Él ha estudiado</span>
     </div>
   </td>
-  <td><div class="conjugation-cell"><span class="conjugation-verb">studiere</span><div class="example-box"><div class="example-de"><span>Ich studiere Medizin</span><audio id="audio-ex-ich-studieren" src="assets/audio/ex_ich_studieren.mp3"></audio><button class="audio-icon-btn" onclick="playAudio('audio-ex-ich-studieren')"></button></div><span class="example-es">Estudio medicina</span></div></div></td>
-  <td><div class="conjugation-cell"><span class="conjugation-verb">studierst</span><div class="example-box"><div class="example-de"><span>Studierst du hier?</span><audio id="audio-ex-du-studieren" src="assets/audio/ex_du_studieren.mp3"></audio><button class="audio-icon-btn" onclick="playAudio('audio-ex-du-studieren')"></button></div><span class="example-es">¿Estudias aquí?</span></div></div></td>
-  <td><div class="conjugation-cell"><span class="conjugation-verb">studiert</span><div class="example-box"><div class="example-de"><span>Er studiert Jura</span><audio id="audio-ex-er-studieren" src="assets/audio/ex_er_studieren.mp3"></audio><button class="audio-icon-btn" onclick="playAudio('audio-ex-er-studieren')"></button></div><span class="example-es">Él estudia derecho</span></div></div></td>
-  <td><div class="conjugation-cell"><span class="conjugation-verb">studieren</span><div class="example-box"><div class="example-de"><span>Wir studieren fleißig</span><audio id="audio-ex-wir-studieren" src="assets/audio/ex_wir_studieren.mp3"></audio><button class="audio-icon-btn" onclick="playAudio('audio-ex-wir-studieren')"></button></div><span class="example-es">Estudiamos mucho</span></div></div></td>
-  <td><div class="conjugation-cell"><span class="conjugation-verb">studiert</span><div class="example-box"><div class="example-de"><span>Ihr studiert viel</span><audio id="audio-ex-ihr-studieren" src="assets/audio/ex_ihr_studieren.mp3"></audio><button class="audio-icon-btn" onclick="playAudio('audio-ex-ihr-studieren')"></button></div><span class="example-es">Estudiáis mucho</span></div></div></td>
-  <td><div class="conjugation-cell"><span class="conjugation-verb">studieren</span><div class="example-box"><div class="example-de"><span>Sie studieren zusammen</span><audio id="audio-ex-sie-studieren" src="assets/audio/ex_sie_studieren.mp3"></audio><button class="audio-icon-btn" onclick="playAudio('audio-ex-sie-studieren')"></button></div><span class="example-es">Ellos estudian juntos</span></div></div></td>
+  <td>
+    <div class="conjugation-cell">
+      <span class="conjugation-verb">studiere</span>
+      <div class="example-box">
+        <div class="example-de">
+          <span class="german-text" onclick="playAudio('Ich studiere Medizin', this)">Ich studiere Medizin</span>
+          <button class="audio-btn" onclick="playAudio('Ich studiere Medizin', this)">🔊</button>
+          <small>Estudio medicina</small>
+        </div>
+      </div>
+    </div>
+  </td>
+  <td>
+    <div class="conjugation-cell">
+      <span class="conjugation-verb">studierst</span>
+      <div class="example-box">
+        <div class="example-de">
+          <span class="german-text" onclick="playAudio('Studierst du hier?', this)">Studierst du hier?</span>
+          <button class="audio-btn" onclick="playAudio('Studierst du hier?', this)">🔊</button>
+          <small>¿Estudias aquí?</small>
+        </div>
+      </div>
+    </div>
+  </td>
+  <td>
+    <div class="conjugation-cell">
+      <span class="conjugation-verb">studiert</span>
+      <div class="example-box">
+        <div class="example-de">
+          <span class="german-text" onclick="playAudio('Er studiert Jura', this)">Er studiert Jura</span>
+          <button class="audio-btn" onclick="playAudio('Er studiert Jura', this)">🔊</button>
+          <small>Él estudia derecho</small>
+        </div>
+      </div>
+    </div>
+  </td>
+  <td>
+    <div class="conjugation-cell">
+      <span class="conjugation-verb">studieren</span>
+      <div class="example-box">
+        <div class="example-de">
+          <span class="german-text" onclick="playAudio('Wir studieren fleißig', this)">Wir studieren fleißig</span>
+          <button class="audio-btn" onclick="playAudio('Wir studieren fleißig', this)">🔊</button>
+          <small>Estudiamos mucho</small>
+        </div>
+      </div>
+    </div>
+  </td>
+  <td>
+    <div class="conjugation-cell">
+      <span class="conjugation-verb">studiert</span>
+      <div class="example-box">
+        <div class="example-de">
+          <span class="german-text" onclick="playAudio('Ihr studiert viel', this)">Ihr studiert viel</span>
+          <button class="audio-btn" onclick="playAudio('Ihr studiert viel', this)">🔊</button>
+          <small>Estudiáis mucho</small>
+        </div>
+      </div>
+    </div>
+  </td>
+  <td>
+    <div class="conjugation-cell">
+      <span class="conjugation-verb">studieren</span>
+      <div class="example-box">
+        <div class="example-de">
+          <span class="german-text" onclick="playAudio('Sie studieren zusammen', this)">Sie studieren zusammen</span>
+          <button class="audio-btn" onclick="playAudio('Sie studieren zusammen', this)">🔊</button>
+          <small>Ellos estudian juntos</small>
+        </div>
+      </div>
+    </div>
+  </td>
 </tr>
 
 <!-- Suchen -->
+<!-- 32. Suchen -->
 <tr>
   <td>
     <div class="word-audio">
-      <span>Suchen</span>
-      <audio id="audio-suchen" src="assets/audio/suchen.mp3"></audio>
-      <button class="audio-icon-btn" onclick="playAudio('audio-suchen')"></button>
+      <span class="german-text" onclick="playAudio('Suchen', this)">Suchen</span>
+      <button class="audio-btn" onclick="playAudio('Suchen', this)">🔊</button>
+      <small>buscar</small>
     </div>
   </td>
   <td>buscar</td>
   <td><img src="assets/img/suchen.jpg" alt="Suchen" class="verb-img"></td>
   <td>
     <div class="word-audio">
-      <span>hat gesucht</span>
-      <audio id="audio-suchen-perfekt" src="assets/audio/suchen_perfekt.mp3"></audio>
-      <button class="audio-icon-btn" onclick="playAudio('audio-suchen-perfekt')"></button>
+      <span class="german-text" onclick="playAudio('hat gesucht', this)">hat gesucht</span>
+      <button class="audio-btn" onclick="playAudio('hat gesucht', this)">🔊</button>
+      <small>ha buscado</small>
     </div>
     <div class="example-box">
       <div class="example-de">
-        <span>Er hat gesucht</span>
-        <audio id="audio-ex-suchen-perfekt" src="assets/audio/ex_suchen_perfekt.mp3"></audio>
-        <button class="audio-icon-btn" onclick="playAudio('audio-ex-suchen-perfekt')"></button>
+        <span class="german-text" onclick="playAudio('Er hat gesucht', this)">Er hat gesucht</span>
+        <button class="audio-btn" onclick="playAudio('Er hat gesucht', this)">🔊</button>
+        <small>Él ha buscado</small>
       </div>
-      <span class="example-es">Él ha buscado</span>
     </div>
   </td>
-  <td><div class="conjugation-cell"><span class="conjugation-verb">suche</span><div class="example-box"><div class="example-de"><span>Ich suche den Schlüssel</span><audio id="audio-ex-ich-suchen" src="assets/audio/ex_ich_suchen.mp3"></audio><button class="audio-icon-btn" onclick="playAudio('audio-ex-ich-suchen')"></button></div><span class="example-es">Busco la llave</span></div></div></td>
-  <td><div class="conjugation-cell"><span class="conjugation-verb">suchst</span><div class="example-box"><div class="example-de"><span>Suchst du etwas?</span><audio id="audio-ex-du-suchen" src="assets/audio/ex_du_suchen.mp3"></audio><button class="audio-icon-btn" onclick="playAudio('audio-ex-du-suchen')"></button></div><span class="example-es">¿Buscas algo?</span></div></div></td>
-  <td><div class="conjugation-cell"><span class="conjugation-verb">sucht</span><div class="example-box"><div class="example-de"><span>Er sucht Arbeit</span><audio id="audio-ex-er-suchen" src="assets/audio/ex_er_suchen.mp3"></audio><button class="audio-icon-btn" onclick="playAudio('audio-ex-er-suchen')"></button></div><span class="example-es">Busca trabajo</span></div></div></td>
-  <td><div class="conjugation-cell"><span class="conjugation-verb">suchen</span><div class="example-box"><div class="example-de"><span>Wir suchen ein Hotel</span><audio id="audio-ex-wir-suchen" src="assets/audio/ex_wir_suchen.mp3"></audio><button class="audio-icon-btn" onclick="playAudio('audio-ex-wir-suchen')"></button></div><span class="example-es">Buscamos un hotel</span></div></div></td>
-  <td><div class="conjugation-cell"><span class="conjugation-verb">sucht</span><div class="example-box"><div class="example-de"><span>Ihr sucht den Weg</span><audio id="audio-ex-ihr-suchen" src="assets/audio/ex_ihr_suchen.mp3"></audio><button class="audio-icon-btn" onclick="playAudio('audio-ex-ihr-suchen')"></button></div><span class="example-es">Buscáis el camino</span></div></div></td>
-  <td><div class="conjugation-cell"><span class="conjugation-verb">suchen</span><div class="example-box"><div class="example-de"><span>Sie suchen Hilfe</span><audio id="audio-ex-sie-suchen" src="assets/audio/ex_sie_suchen.mp3"></audio><button class="audio-icon-btn" onclick="playAudio('audio-ex-sie-suchen')"></button></div><span class="example-es">Buscáis ayuda</span></div></div></td>
+  <td>
+    <div class="conjugation-cell">
+      <span class="conjugation-verb">suche</span>
+      <div class="example-box">
+        <div class="example-de">
+          <span class="german-text" onclick="playAudio('Ich suche den Schlüssel', this)">Ich suche den Schlüssel</span>
+          <button class="audio-btn" onclick="playAudio('Ich suche den Schlüssel', this)">🔊</button>
+          <small>Busco la llave</small>
+        </div>
+      </div>
+    </div>
+  </td>
+  <td>
+    <div class="conjugation-cell">
+      <span class="conjugation-verb">suchst</span>
+      <div class="example-box">
+        <div class="example-de">
+          <span class="german-text" onclick="playAudio('Suchst du etwas?', this)">Suchst du etwas?</span>
+          <button class="audio-btn" onclick="playAudio('Suchst du etwas?', this)">🔊</button>
+          <small>¿Buscas algo?</small>
+        </div>
+      </div>
+    </div>
+  </td>
+  <td>
+    <div class="conjugation-cell">
+      <span class="conjugation-verb">sucht</span>
+      <div class="example-box">
+        <div class="example-de">
+          <span class="german-text" onclick="playAudio('Er sucht Arbeit', this)">Er sucht Arbeit</span>
+          <button class="audio-btn" onclick="playAudio('Er sucht Arbeit', this)">🔊</button>
+          <small>Busca trabajo</small>
+        </div>
+      </div>
+    </div>
+  </td>
+  <td>
+    <div class="conjugation-cell">
+      <span class="conjugation-verb">suchen</span>
+      <div class="example-box">
+        <div class="example-de">
+          <span class="german-text" onclick="playAudio('Wir suchen ein Hotel', this)">Wir suchen ein Hotel</span>
+          <button class="audio-btn" onclick="playAudio('Wir suchen ein Hotel', this)">🔊</button>
+          <small>Buscamos un hotel</small>
+        </div>
+      </div>
+    </div>
+  </td>
+  <td>
+    <div class="conjugation-cell">
+      <span class="conjugation-verb">sucht</span>
+      <div class="example-box">
+        <div class="example-de">
+          <span class="german-text" onclick="playAudio('Ihr sucht den Weg', this)">Ihr sucht den Weg</span>
+          <button class="audio-btn" onclick="playAudio('Ihr sucht den Weg', this)">🔊</button>
+          <small>Buscáis el camino</small>
+        </div>
+      </div>
+    </div>
+  </td>
+  <td>
+    <div class="conjugation-cell">
+      <span class="conjugation-verb">suchen</span>
+      <div class="example-box">
+        <div class="example-de">
+          <span class="german-text" onclick="playAudio('Sie suchen Hilfe', this)">Sie suchen Hilfe</span>
+          <button class="audio-btn" onclick="playAudio('Sie suchen Hilfe', this)">🔊</button>
+          <small>Buscáis ayuda</small>
+        </div>
+      </div>
+    </div>
+  </td>
 </tr>
 
-<!-- Verkaufen -->
+<!-- 33. Verkaufen -->
 <tr>
   <td>
     <div class="word-audio">
-      <span>Verkaufen</span>
-      <audio id="audio-verkaufen" src="assets/audio/verkaufen.mp3"></audio>
-      <button class="audio-icon-btn" onclick="playAudio('audio-verkaufen')"></button>
+      <span class="german-text" onclick="playAudio('Verkaufen', this)">Verkaufen</span>
+      <button class="audio-btn" onclick="playAudio('Verkaufen', this)">🔊</button>
+      <small>vender</small>
     </div>
   </td>
   <td>vender</td>
   <td><img src="assets/img/verkaufen.jpg" alt="Verkaufen" class="verb-img"></td>
   <td>
     <div class="word-audio">
-      <span>hat verkauft</span>
-      <audio id="audio-verkaufen-perfekt" src="assets/audio/verkaufen_perfekt.mp3"></audio>
-      <button class="audio-icon-btn" onclick="playAudio('audio-verkaufen-perfekt')"></button>
+      <span class="german-text" onclick="playAudio('hat verkauft', this)">hat verkauft</span>
+      <button class="audio-btn" onclick="playAudio('hat verkauft', this)">🔊</button>
+      <small>ha vendido</small>
     </div>
     <div class="example-box">
       <div class="example-de">
-        <span>Er hat verkauft</span>
-        <audio id="audio-ex-verkaufen-perfekt" src="assets/audio/ex_verkaufen_perfekt.mp3"></audio>
-        <button class="audio-icon-btn" onclick="playAudio('audio-ex-verkaufen-perfekt')"></button>
+        <span class="german-text" onclick="playAudio('Er hat verkauft', this)">Er hat verkauft</span>
+        <button class="audio-btn" onclick="playAudio('Er hat verkauft', this)">🔊</button>
+        <small>Él ha vendido</small>
       </div>
-      <span class="example-es">Él ha vendido</span>
     </div>
   </td>
-  <td><div class="conjugation-cell"><span class="conjugation-verb">verkaufe</span><div class="example-box"><div class="example-de"><span>Ich verkaufe mein Auto</span><audio id="audio-ex-ich-verkaufen" src="assets/audio/ex_ich_verkaufen.mp3"></audio><button class="audio-icon-btn" onclick="playAudio('audio-ex-ich-verkaufen')"></button></div><span class="example-es">Vendo mi auto</span></div></div></td>
-  <td><div class="conjugation-cell"><span class="conjugation-verb">verkaufst</span><div class="example-box"><div class="example-de"><span>Verkaufst du das Haus?</span><audio id="audio-ex-du-verkaufen" src="assets/audio/ex_du_verkaufen.mp3"></audio><button class="audio-icon-btn" onclick="playAudio('audio-ex-du-verkaufen')"></button></div><span class="example-es">¿Vendes la casa?</span></div></div></td>
-  <td><div class="conjugation-cell"><span class="conjugation-verb">verkauft</span><div class="example-box"><div class="example-de"><span>Er verkauft Obst</span><audio id="audio-ex-er-verkaufen" src="assets/audio/ex_er_verkaufen.mp3"></audio><button class="audio-icon-btn" onclick="playAudio('audio-ex-er-verkaufen')"></button></div><span class="example-es">Vende fruta</span></div></div></td>
-  <td><div class="conjugation-cell"><span class="conjugation-verb">verkaufen</span><div class="example-box"><div class="example-de"><span>Wir verkaufen Kleidung</span><audio id="audio-ex-wir-verkaufen" src="assets/audio/ex_wir_verkaufen.mp3"></audio><button class="audio-icon-btn" onclick="playAudio('audio-ex-wir-verkaufen')"></button></div><span class="example-es">Vendemos ropa</span></div></div></td>
-  <td><div class="conjugation-cell"><span class="conjugation-verb">verkauft</span><div class="example-box"><div class="example-de"><span>Ihr verkauft viel</span><audio id="audio-ex-ihr-verkaufen" src="assets/audio/ex_ihr_verkaufen.mp3"></audio><button class="audio-icon-btn" onclick="playAudio('audio-ex-ihr-verkaufen')"></button></div><span class="example-es">Vendéis mucho</span></div></div></td>
-  <td><div class="conjugation-cell"><span class="conjugation-verb">verkaufen</span><div class="example-box"><div class="example-de"><span>Sie verkaufen Bücher</span><audio id="audio-ex-sie-verkaufen" src="assets/audio/ex_sie_verkaufen.mp3"></audio><button class="audio-icon-btn" onclick="playAudio('audio-ex-sie-verkaufen')"></button></div><span class="example-es">Venden libros</span></div></div></td>
+  <td>
+    <div class="conjugation-cell">
+      <span class="conjugation-verb">verkaufe</span>
+      <div class="example-box">
+        <div class="example-de">
+          <span class="german-text" onclick="playAudio('Ich verkaufe mein Auto', this)">Ich verkaufe mein Auto</span>
+          <button class="audio-btn" onclick="playAudio('Ich verkaufe mein Auto', this)">🔊</button>
+          <small>Vendo mi auto</small>
+        </div>
+      </div>
+    </div>
+  </td>
+  <td>
+    <div class="conjugation-cell">
+      <span class="conjugation-verb">verkaufst</span>
+      <div class="example-box">
+        <div class="example-de">
+          <span class="german-text" onclick="playAudio('Verkaufst du das Haus?', this)">Verkaufst du das Haus?</span>
+          <button class="audio-btn" onclick="playAudio('Verkaufst du das Haus?', this)">🔊</button>
+          <small>¿Vendes la casa?</small>
+        </div>
+      </div>
+    </div>
+  </td>
+  <td>
+    <div class="conjugation-cell">
+      <span class="conjugation-verb">verkauft</span>
+      <div class="example-box">
+        <div class="example-de">
+          <span class="german-text" onclick="playAudio('Er verkauft Obst', this)">Er verkauft Obst</span>
+          <button class="audio-btn" onclick="playAudio('Er verkauft Obst', this)">🔊</button>
+          <small>Vende fruta</small>
+        </div>
+      </div>
+    </div>
+  </td>
+  <td>
+    <div class="conjugation-cell">
+      <span class="conjugation-verb">verkaufen</span>
+      <div class="example-box">
+        <div class="example-de">
+          <span class="german-text" onclick="playAudio('Wir verkaufen Kleidung', this)">Wir verkaufen Kleidung</span>
+          <button class="audio-btn" onclick="playAudio('Wir verkaufen Kleidung', this)">🔊</button>
+          <small>Vendemos ropa</small>
+        </div>
+      </div>
+    </div>
+  </td>
+  <td>
+    <div class="conjugation-cell">
+      <span class="conjugation-verb">verkauft</span>
+      <div class="example-box">
+        <div class="example-de">
+          <span class="german-text" onclick="playAudio('Ihr verkauft viel', this)">Ihr verkauft viel</span>
+          <button class="audio-btn" onclick="playAudio('Ihr verkauft viel', this)">🔊</button>
+          <small>Vendéis mucho</small>
+        </div>
+      </div>
+    </div>
+  </td>
+  <td>
+    <div class="conjugation-cell">
+      <span class="conjugation-verb">verkaufen</span>
+      <div class="example-box">
+        <div class="example-de">
+          <span class="german-text" onclick="playAudio('Sie verkaufen Bücher', this)">Sie verkaufen Bücher</span>
+          <button class="audio-btn" onclick="playAudio('Sie verkaufen Bücher', this)">🔊</button>
+          <small>Venden libros</small>
+        </div>
+      </div>
+    </div>
+  </td>
 </tr>
 
-<!-- Versuchen -->
+<!-- 34. Versuchen -->
 <tr>
   <td>
     <div class="word-audio">
-      <span>Versuchen</span>
-      <audio id="audio-versuchen" src="assets/audio/versuchen.mp3"></audio>
-      <button class="audio-icon-btn" onclick="playAudio('audio-versuchen')"></button>
+      <span class="german-text" onclick="playAudio('Versuchen', this)">Versuchen</span>
+      <button class="audio-btn" onclick="playAudio('Versuchen', this)">🔊</button>
+      <small>intentar / tratar</small>
     </div>
   </td>
   <td>intentar / tratar</td>
   <td><img src="assets/img/versuchen.jpg" alt="Versuchen" class="verb-img"></td>
   <td>
     <div class="word-audio">
-      <span>hat versucht</span>
-      <audio id="audio-versuchen-perfekt" src="assets/audio/versuchen_perfekt.mp3"></audio>
-      <button class="audio-icon-btn" onclick="playAudio('audio-versuchen-perfekt')"></button>
+      <span class="german-text" onclick="playAudio('hat versucht', this)">hat versucht</span>
+      <button class="audio-btn" onclick="playAudio('hat versucht', this)">🔊</button>
+      <small>ha intentado</small>
     </div>
     <div class="example-box">
       <div class="example-de">
-        <span>Er hat es versucht</span>
-        <audio id="audio-ex-versuchen-perfekt" src="assets/audio/ex_versuchen_perfekt.mp3"></audio>
-        <button class="audio-icon-btn" onclick="playAudio('audio-ex-versuchen-perfekt')"></button>
+        <span class="german-text" onclick="playAudio('Er hat es versucht', this)">Er hat es versucht</span>
+        <button class="audio-btn" onclick="playAudio('Er hat es versucht', this)">🔊</button>
+        <small>Él lo ha intentado</small>
       </div>
-      <span class="example-es">Él lo ha intentado</span>
     </div>
   </td>
-  <td><div class="conjugation-cell"><span class="conjugation-verb">versuche</span><div class="example-box"><div class="example-de"><span>Ich versuche es</span><audio id="audio-ex-ich-versuchen" src="assets/audio/ex_ich_versuchen.mp3"></audio><button class="audio-icon-btn" onclick="playAudio('audio-ex-ich-versuchen')"></button></div><span class="example-es">Lo intento</span></div></div></td>
-  <td><div class="conjugation-cell"><span class="conjugation-verb">versuchst</span><div class="example-box"><div class="example-de"><span>Versuchst du es nochmal?</span><audio id="audio-ex-du-versuchen" src="assets/audio/ex_du_versuchen.mp3"></audio><button class="audio-icon-btn" onclick="playAudio('audio-ex-du-versuchen')"></button></div><span class="example-es">¿Lo intentas otra vez?</span></div></div></td>
-  <td><div class="conjugation-cell"><span class="conjugation-verb">versucht</span><div class="example-box"><div class="example-de"><span>Er versucht sein Bestes</span><audio id="audio-ex-er-versuchen" src="assets/audio/ex_er_versuchen.mp3"></audio><button class="audio-icon-btn" onclick="playAudio('audio-ex-er-versuchen')"></button></div><span class="example-es">Intenta dar lo mejor</span></div></div></td>
-  <td><div class="conjugation-cell"><span class="conjugation-verb">versuchen</span><div class="example-box"><div class="example-de"><span>Wir versuchen zu helfen</span><audio id="audio-ex-wir-versuchen" src="assets/audio/ex_wir_versuchen.mp3"></audio><button class="audio-icon-btn" onclick="playAudio('audio-ex-wir-versuchen')"></button></div><span class="example-es">Intentamos ayudar</span></div></div></td>
-  <td><div class="conjugation-cell"><span class="conjugation-verb">versucht</span><div class="example-box"><div class="example-de"><span>Ihr versucht viel</span><audio id="audio-ex-ihr-versuchen" src="assets/audio/ex_ihr_versuchen.mp3"></audio><button class="audio-icon-btn" onclick="playAudio('audio-ex-ihr-versuchen')"></button></div><span class="example-es">Intentáis mucho</span></div></div></td>
-  <td><div class="conjugation-cell"><span class="conjugation-verb">versuchen</span><div class="example-box"><div class="example-de"><span>Sie versuchen alles</span><audio id="audio-ex-sie-versuchen" src="assets/audio/ex_sie_versuchen.mp3"></audio><button class="audio-icon-btn" onclick="playAudio('audio-ex-sie-versuchen')"></button></div><span class="example-es">Lo intentan todo</span></div></div></td>
+  <td>
+    <div class="conjugation-cell">
+      <span class="conjugation-verb">versuche</span>
+      <div class="example-box">
+        <div class="example-de">
+          <span class="german-text" onclick="playAudio('Ich versuche es', this)">Ich versuche es</span>
+          <button class="audio-btn" onclick="playAudio('Ich versuche es', this)">🔊</button>
+          <small>Lo intento</small>
+        </div>
+      </div>
+    </div>
+  </td>
+  <td>
+    <div class="conjugation-cell">
+      <span class="conjugation-verb">versuchst</span>
+      <div class="example-box">
+        <div class="example-de">
+          <span class="german-text" onclick="playAudio('Versuchst du es nochmal?', this)">Versuchst du es nochmal?</span>
+          <button class="audio-btn" onclick="playAudio('Versuchst du es nochmal?', this)">🔊</button>
+          <small>¿Lo intentas otra vez?</small>
+        </div>
+      </div>
+    </div>
+  </td>
+  <td>
+    <div class="conjugation-cell">
+      <span class="conjugation-verb">versucht</span>
+      <div class="example-box">
+        <div class="example-de">
+          <span class="german-text" onclick="playAudio('Er versucht sein Bestes', this)">Er versucht sein Bestes</span>
+          <button class="audio-btn" onclick="playAudio('Er versucht sein Bestes', this)">🔊</button>
+          <small>Intenta dar lo mejor</small>
+        </div>
+      </div>
+    </div>
+  </td>
+  <td>
+    <div class="conjugation-cell">
+      <span class="conjugation-verb">versuchen</span>
+      <div class="example-box">
+        <div class="example-de">
+          <span class="german-text" onclick="playAudio('Wir versuchen zu helfen', this)">Wir versuchen zu helfen</span>
+          <button class="audio-btn" onclick="playAudio('Wir versuchen zu helfen', this)">🔊</button>
+          <small>Intentamos ayudar</small>
+        </div>
+      </div>
+    </div>
+  </td>
+  <td>
+    <div class="conjugation-cell">
+      <span class="conjugation-verb">versucht</span>
+      <div class="example-box">
+        <div class="example-de">
+          <span class="german-text" onclick="playAudio('Ihr versucht viel', this)">Ihr versucht viel</span>
+          <button class="audio-btn" onclick="playAudio('Ihr versucht viel', this)">🔊</button>
+          <small>Intentáis mucho</small>
+        </div>
+      </div>
+    </div>
+  </td>
+  <td>
+    <div class="conjugation-cell">
+      <span class="conjugation-verb">versuchen</span>
+      <div class="example-box">
+        <div class="example-de">
+          <span class="german-text" onclick="playAudio('Sie versuchen alles', this)">Sie versuchen alles</span>
+          <button class="audio-btn" onclick="playAudio('Sie versuchen alles', this)">🔊</button>
+          <small>Lo intentan todo</small>
+        </div>
+      </div>
+    </div>
+  </td>
 </tr>
 
-<!-- Wohnen -->
+<!-- 35. Wohnen -->
 <tr>
   <td>
     <div class="word-audio">
-      <span>Wohnen</span>
-      <audio id="audio-wohnen" src="assets/audio/wohnen.mp3"></audio>
-      <button class="audio-icon-btn" onclick="playAudio('audio-wohnen')"></button>
+      <span class="german-text" onclick="playAudio('Wohnen', this)">Wohnen</span>
+      <button class="audio-btn" onclick="playAudio('Wohnen', this)">🔊</button>
+      <small>vivir / residir</small>
     </div>
   </td>
   <td>vivir / residir</td>
   <td><img src="assets/img/wohnen.jpg" alt="Wohnen" class="verb-img"></td>
   <td>
     <div class="word-audio">
-      <span>hat gewohnt</span>
-      <audio id="audio-wohnen-perfekt" src="assets/audio/wohnen_perfekt.mp3"></audio>
-      <button class="audio-icon-btn" onclick="playAudio('audio-wohnen-perfekt')"></button>
+      <span class="german-text" onclick="playAudio('hat gewohnt', this)">hat gewohnt</span>
+      <button class="audio-btn" onclick="playAudio('hat gewohnt', this)">🔊</button>
+      <small>ha vivido</small>
     </div>
     <div class="example-box">
       <div class="example-de">
-        <span>Er hat hier gewohnt</span>
-        <audio id="audio-ex-wohnen-perfekt" src="assets/audio/ex_wohnen_perfekt.mp3"></audio>
-        <button class="audio-icon-btn" onclick="playAudio('audio-ex-wohnen-perfekt')"></button>
+        <span class="german-text" onclick="playAudio('Er hat hier gewohnt', this)">Er hat hier gewohnt</span>
+        <button class="audio-btn" onclick="playAudio('Er hat hier gewohnt', this)">🔊</button>
+        <small>Él ha vivido aquí</small>
       </div>
-      <span class="example-es">Él ha vivido aquí</span>
     </div>
   </td>
-  <td><div class="conjugation-cell"><span class="conjugation-verb">wohne</span><div class="example-box"><div class="example-de"><span>Ich wohne in Berlin</span><audio id="audio-ex-ich-wohnen" src="assets/audio/ex_ich_wohnen.mp3"></audio><button class="audio-icon-btn" onclick="playAudio('audio-ex-ich-wohnen')"></button></div><span class="example-es">Vivo en Berlín</span></div></div></td>
-  <td><div class="conjugation-cell"><span class="conjugation-verb">wohnst</span><div class="example-box"><div class="example-de"><span>Wo wohnst du?</span><audio id="audio-ex-du-wohnen" src="assets/audio/ex_du_wohnen.mp3"></audio><button class="audio-icon-btn" onclick="playAudio('audio-ex-du-wohnen')"></button></div><span class="example-es">¿Dónde vives?</span></div></div></td>
-  <td><div class="conjugation-cell"><span class="conjugation-verb">wohnt</span><div class="example-box"><div class="example-de"><span>Er wohnt allein</span><audio id="audio-ex-er-wohnen" src="assets/audio/ex_er_wohnen.mp3"></audio><button class="audio-icon-btn" onclick="playAudio('audio-ex-er-wohnen')"></button></div><span class="example-es">Vive solo</span></div></div></td>
-  <td><div class="conjugation-cell"><span class="conjugation-verb">wohnen</span><div class="example-box"><div class="example-de"><span>Wir wohnen zusammen</span><audio id="audio-ex-wir-wohnen" src="assets/audio/ex_wir_wohnen.mp3"></audio><button class="audio-icon-btn" onclick="playAudio('audio-ex-wir-wohnen')"></button></div><span class="example-es">Vivimos juntos</span></div></div></td>
-  <td><div class="conjugation-cell"><span class="conjugation-verb">wohnt</span><div class="example-box"><div class="example-de"><span>Wo wohnt ihr?</span><audio id="audio-ex-ihr-wohnen" src="assets/audio/ex_ihr_wohnen.mp3"></audio><button class="audio-icon-btn" onclick="playAudio('audio-ex-ihr-wohnen')"></button></div><span class="example-es">¿Dónde vivís?</span></div></div></td>
-  <td><div class="conjugation-cell"><span class="conjugation-verb">wohnen</span><div class="example-box"><div class="example-de"><span>Sie wohnen hier</span><audio id="audio-ex-sie-wohnen" src="assets/audio/ex_sie_wohnen.mp3"></audio><button class="audio-icon-btn" onclick="playAudio('audio-ex-sie-wohnen')"></button></div><span class="example-es">Viven aquí</span></div></div></td>
+  <td>
+    <div class="conjugation-cell">
+      <span class="conjugation-verb">wohne</span>
+      <div class="example-box">
+        <div class="example-de">
+          <span class="german-text" onclick="playAudio('Ich wohne in Berlin', this)">Ich wohne in Berlin</span>
+          <button class="audio-btn" onclick="playAudio('Ich wohne in Berlin', this)">🔊</button>
+          <small>Vivo en Berlín</small>
+        </div>
+      </div>
+    </div>
+  </td>
+  <td>
+    <div class="conjugation-cell">
+      <span class="conjugation-verb">wohnst</span>
+      <div class="example-box">
+        <div class="example-de">
+          <span class="german-text" onclick="playAudio('Wo wohnst du?', this)">Wo wohnst du?</span>
+          <button class="audio-btn" onclick="playAudio('Wo wohnst du?', this)">🔊</button>
+          <small>¿Dónde vives?</small>
+        </div>
+      </div>
+    </div>
+  </td>
+  <td>
+    <div class="conjugation-cell">
+      <span class="conjugation-verb">wohnt</span>
+      <div class="example-box">
+        <div class="example-de">
+          <span class="german-text" onclick="playAudio('Er wohnt allein', this)">Er wohnt allein</span>
+          <button class="audio-btn" onclick="playAudio('Er wohnt allein', this)">🔊</button>
+          <small>Vive solo</small>
+        </div>
+      </div>
+    </div>
+  </td>
+  <td>
+    <div class="conjugation-cell">
+      <span class="conjugation-verb">wohnen</span>
+      <div class="example-box">
+        <div class="example-de">
+          <span class="german-text" onclick="playAudio('Wir wohnen zusammen', this)">Wir wohnen zusammen</span>
+          <button class="audio-btn" onclick="playAudio('Wir wohnen zusammen', this)">🔊</button>
+          <small>Vivimos juntos</small>
+        </div>
+      </div>
+    </div>
+  </td>
+  <td>
+    <div class="conjugation-cell">
+      <span class="conjugation-verb">wohnt</span>
+      <div class="example-box">
+        <div class="example-de">
+          <span class="german-text" onclick="playAudio('Wo wohnt ihr?', this)">Wo wohnt ihr?</span>
+          <button class="audio-btn" onclick="playAudio('Wo wohnt ihr?', this)">🔊</button>
+          <small>¿Dónde vivís?</small>
+        </div>
+      </div>
+    </div>
+  </td>
+  <td>
+    <div class="conjugation-cell">
+      <span class="conjugation-verb">wohnen</span>
+      <div class="example-box">
+        <div class="example-de">
+          <span class="german-text" onclick="playAudio('Sie wohnen hier', this)">Sie wohnen hier</span>
+          <button class="audio-btn" onclick="playAudio('Sie wohnen hier', this)">🔊</button>
+          <small>Viven aquí</small>
+        </div>
+      </div>
+    </div>
+  </td>
 </tr>
 
-<!-- Bitten -->
+<!-- 36. Bitten -->
 <tr>
   <td>
     <div class="word-audio">
-      <span>Bitten</span>
-      <audio id="audio-bitten" src="assets/audio/bitten.mp3"></audio>
-      <button class="audio-icon-btn" onclick="playAudio('audio-bitten')"></button>
+      <span class="german-text" onclick="playAudio('Bitten', this)">Bitten</span>
+      <button class="audio-btn" onclick="playAudio('Bitten', this)">🔊</button>
+      <small>pedir</small>
     </div>
   </td>
   <td>pedir</td>
   <td><img src="assets/img/bitten.jpg" alt="Bitten" class="verb-img"></td>
   <td>
     <div class="word-audio">
-      <span>hat gebeten</span>
-      <audio id="audio-bitten-perfekt" src="assets/audio/bitten_perfekt.mp3"></audio>
-      <button class="audio-icon-btn" onclick="playAudio('audio-bitten-perfekt')"></button>
+      <span class="german-text" onclick="playAudio('hat gebeten', this)">hat gebeten</span>
+      <button class="audio-btn" onclick="playAudio('hat gebeten', this)">🔊</button>
+      <small>ha pedido</small>
     </div>
     <div class="example-box">
       <div class="example-de">
-        <span>Er hat gebeten</span>
-        <audio id="audio-ex-bitten-perfekt" src="assets/audio/ex_bitten_perfekt.mp3"></audio>
-        <button class="audio-icon-btn" onclick="playAudio('audio-ex-bitten-perfekt')"></button>
+        <span class="german-text" onclick="playAudio('Er hat gebeten', this)">Er hat gebeten</span>
+        <button class="audio-btn" onclick="playAudio('Er hat gebeten', this)">🔊</button>
+        <small>Él ha pedido</small>
       </div>
-      <span class="example-es">Él ha pedido</span>
     </div>
   </td>
-  <td><div class="conjugation-cell"><span class="conjugation-verb">bitte</span><div class="example-box"><div class="example-de"><span>Ich bitte um Hilfe</span><audio id="audio-ex-ich-bitten" src="assets/audio/ex_ich_bitten.mp3"></audio><button class="audio-icon-btn" onclick="playAudio('audio-ex-ich-bitten')"></button></div><span class="example-es">Pido ayuda</span></div></div></td>
-  <td><div class="conjugation-cell"><span class="conjugation-verb">bittest</span><div class="example-box"><div class="example-de"><span>Bittest du darum?</span><audio id="audio-ex-du-bitten" src="assets/audio/ex_du_bitten.mp3"></audio><button class="audio-icon-btn" onclick="playAudio('audio-ex-du-bitten')"></button></div><span class="example-es">¿Pides eso?</span></div></div></td>
-  <td><div class="conjugation-cell"><span class="conjugation-verb">bittet</span><div class="example-box"><div class="example-de"><span>Er bittet um Zeit</span><audio id="audio-ex-er-bitten" src="assets/audio/ex_er_bitten.mp3"></audio><button class="audio-icon-btn" onclick="playAudio('audio-ex-er-bitten')"></button></div><span class="example-es">Pide tiempo</span></div></div></td>
-  <td><div class="conjugation-cell"><span class="conjugation-verb">bitten</span><div class="example-box"><div class="example-de"><span>Wir bitten um Ruhe</span><audio id="audio-ex-wir-bitten" src="assets/audio/ex_wir_bitten.mp3"></audio><button class="audio-icon-btn" onclick="playAudio('audio-ex-wir-bitten')"></button></div><span class="example-es">Pedimos silencio</span></div></div></td>
-  <td><div class="conjugation-cell"><span class="conjugation-verb">bittet</span><div class="example-box"><div class="example-de"><span>Ihr bittet um Geld</span><audio id="audio-ex-ihr-bitten" src="assets/audio/ex_ihr_bitten.mp3"></audio><button class="audio-icon-btn" onclick="playAudio('audio-ex-ihr-bitten')"></button></div><span class="example-es">Pedís dinero</span></div></div></td>
-  <td><div class="conjugation-cell"><span class="conjugation-verb">bitten</span><div class="example-box"><div class="example-de"><span>Sie bitten um Einlass</span><audio id="audio-ex-sie-bitten" src="assets/audio/ex_sie_bitten.mp3"></audio><button class="audio-icon-btn" onclick="playAudio('audio-ex-sie-bitten')"></button></div><span class="example-es">Piden entrar</span></div></div></td>
+  <td>
+    <div class="conjugation-cell">
+      <span class="conjugation-verb">bitte</span>
+      <div class="example-box">
+        <div class="example-de">
+          <span class="german-text" onclick="playAudio('Ich bitte um Hilfe', this)">Ich bitte um Hilfe</span>
+          <button class="audio-btn" onclick="playAudio('Ich bitte um Hilfe', this)">🔊</button>
+          <small>Pido ayuda</small>
+        </div>
+      </div>
+    </div>
+  </td>
+  <td>
+    <div class="conjugation-cell">
+      <span class="conjugation-verb">bittest</span>
+      <div class="example-box">
+        <div class="example-de">
+          <span class="german-text" onclick="playAudio('Bittest du darum?', this)">Bittest du darum?</span>
+          <button class="audio-btn" onclick="playAudio('Bittest du darum?', this)">🔊</button>
+          <small>¿Pides eso?</small>
+        </div>
+      </div>
+    </div>
+  </td>
+  <td>
+    <div class="conjugation-cell">
+      <span class="conjugation-verb">bittet</span>
+      <div class="example-box">
+        <div class="example-de">
+          <span class="german-text" onclick="playAudio('Er bittet um Zeit', this)">Er bittet um Zeit</span>
+          <button class="audio-btn" onclick="playAudio('Er bittet um Zeit', this)">🔊</button>
+          <small>Pide tiempo</small>
+        </div>
+      </div>
+    </div>
+  </td>
+  <td>
+    <div class="conjugation-cell">
+      <span class="conjugation-verb">bitten</span>
+      <div class="example-box">
+        <div class="example-de">
+          <span class="german-text" onclick="playAudio('Wir bitten um Ruhe', this)">Wir bitten um Ruhe</span>
+          <button class="audio-btn" onclick="playAudio('Wir bitten um Ruhe', this)">🔊</button>
+          <small>Pedimos silencio</small>
+        </div>
+      </div>
+    </div>
+  </td>
+  <td>
+    <div class="conjugation-cell">
+      <span class="conjugation-verb">bittet</span>
+      <div class="example-box">
+        <div class="example-de">
+          <span class="german-text" onclick="playAudio('Ihr bittet um Geld', this)">Ihr bittet um Geld</span>
+          <button class="audio-btn" onclick="playAudio('Ihr bittet um Geld', this)">🔊</button>
+          <small>Pedís dinero</small>
+        </div>
+      </div>
+    </div>
+  </td>
+  <td>
+    <div class="conjugation-cell">
+      <span class="conjugation-verb">bitten</span>
+      <div class="example-box">
+        <div class="example-de">
+          <span class="german-text" onclick="playAudio('Sie bitten um Einlass', this)">Sie bitten um Einlass</span>
+          <button class="audio-btn" onclick="playAudio('Sie bitten um Einlass', this)">🔊</button>
+          <small>Piden entrar</small>
+        </div>
+      </div>
+    </div>
+  </td>
 </tr>
 
-<!-- Glauben -->
+<!-- 37. Glauben -->
 <tr>
   <td>
     <div class="word-audio">
-      <span>Glauben</span>
-      <audio id="audio-glauben" src="assets/audio/glauben.mp3"></audio>
-      <button class="audio-icon-btn" onclick="playAudio('audio-glauben')"></button>
+      <span class="german-text" onclick="playAudio('Glauben', this)">Glauben</span>
+      <button class="audio-btn" onclick="playAudio('Glauben', this)">🔊</button>
+      <small>creer</small>
     </div>
   </td>
   <td>creer</td>
   <td><img src="assets/img/glauben.jpg" alt="Glauben" class="verb-img"></td>
   <td>
     <div class="word-audio">
-      <span>hat geglaubt</span>
-      <audio id="audio-glauben-perfekt" src="assets/audio/glauben_perfekt.mp3"></audio>
-      <button class="audio-icon-btn" onclick="playAudio('audio-glauben-perfekt')"></button>
+      <span class="german-text" onclick="playAudio('hat geglaubt', this)">hat geglaubt</span>
+      <button class="audio-btn" onclick="playAudio('hat geglaubt', this)">🔊</button>
+      <small>ha creído</small>
     </div>
     <div class="example-box">
       <div class="example-de">
-        <span>Er hat geglaubt</span>
-        <audio id="audio-ex-glauben-perfekt" src="assets/audio/ex_glauben_perfekt.mp3"></audio>
-        <button class="audio-icon-btn" onclick="playAudio('audio-ex-glauben-perfekt')"></button>
+        <span class="german-text" onclick="playAudio('Er hat geglaubt', this)">Er hat geglaubt</span>
+        <button class="audio-btn" onclick="playAudio('Er hat geglaubt', this)">🔊</button>
+        <small>Él ha creído</small>
       </div>
-      <span class="example-es">Él ha creído</span>
     </div>
   </td>
-  <td><div class="conjugation-cell"><span class="conjugation-verb">glaube</span><div class="example-box"><div class="example-de"><span>Ich glaube dir</span><audio id="audio-ex-ich-glauben" src="assets/audio/ex_ich_glauben.mp3"></audio><button class="audio-icon-btn" onclick="playAudio('audio-ex-ich-glauben')"></button></div><span class="example-es">Te creo</span></div></div></td>
-  <td><div class="conjugation-cell"><span class="conjugation-verb">glaubst</span><div class="example-box"><div class="example-de"><span>Glaubst du das?</span><audio id="audio-ex-du-glauben" src="assets/audio/ex_du_glauben.mp3"></audio><button class="audio-icon-btn" onclick="playAudio('audio-ex-du-glauben')"></button></div><span class="example-es">¿Crees eso?</span></div></div></td>
-  <td><div class="conjugation-cell"><span class="conjugation-verb">glaubt</span><div class="example-box"><div class="example-de"><span>Er glaubt daran</span><audio id="audio-ex-er-glauben" src="assets/audio/ex_er_glauben.mp3"></audio><button class="audio-icon-btn" onclick="playAudio('audio-ex-er-glauben')"></button></div><span class="example-es">Él cree en eso</span></div></div></td>
-  <td><div class="conjugation-cell"><span class="conjugation-verb">glauben</span><div class="example-box"><div class="example-de"><span>Wir glauben das</span><audio id="audio-ex-wir-glauben" src="assets/audio/ex_wir_glauben.mp3"></audio><button class="audio-icon-btn" onclick="playAudio('audio-ex-wir-glauben')"></button></div><span class="example-es">Creemos eso</span></div></div></td>
-  <td><div class="conjugation-cell"><span class="conjugation-verb">glaubt</span><div class="example-box"><div class="example-de"><span>Glaubt ihr alles?</span><audio id="audio-ex-ihr-glauben" src="assets/audio/ex_ihr_glauben.mp3"></audio><button class="audio-icon-btn" onclick="playAudio('audio-ex-ihr-glauben')"></button></div><span class="example-es">¿Creéis todo?</span></div></div></td>
-  <td><div class="conjugation-cell"><span class="conjugation-verb">glauben</span><div class="example-box"><div class="example-de"><span>Sie glauben mir</span><audio id="audio-ex-sie-glauben" src="assets/audio/ex_sie_glauben.mp3"></audio><button class="audio-icon-btn" onclick="playAudio('audio-ex-sie-glauben')"></button></div><span class="example-es">Me creen</span></div></div></td>
+  <td>
+    <div class="conjugation-cell">
+      <span class="conjugation-verb">glaube</span>
+      <div class="example-box">
+        <div class="example-de">
+          <span class="german-text" onclick="playAudio('Ich glaube dir', this)">Ich glaube dir</span>
+          <button class="audio-btn" onclick="playAudio('Ich glaube dir', this)">🔊</button>
+          <small>Te creo</small>
+        </div>
+      </div>
+    </div>
+  </td>
+  <td>
+    <div class="conjugation-cell">
+      <span class="conjugation-verb">glaubst</span>
+      <div class="example-box">
+        <div class="example-de">
+          <span class="german-text" onclick="playAudio('Glaubst du das?', this)">Glaubst du das?</span>
+          <button class="audio-btn" onclick="playAudio('Glaubst du das?', this)">🔊</button>
+          <small>¿Crees eso?</small>
+        </div>
+      </div>
+    </div>
+  </td>
+  <td>
+    <div class="conjugation-cell">
+      <span class="conjugation-verb">glaubt</span>
+      <div class="example-box">
+        <div class="example-de">
+          <span class="german-text" onclick="playAudio('Er glaubt daran', this)">Er glaubt daran</span>
+          <button class="audio-btn" onclick="playAudio('Er glaubt daran', this)">🔊</button>
+          <small>Él cree en eso</small>
+        </div>
+      </div>
+    </div>
+  </td>
+  <td>
+    <div class="conjugation-cell">
+      <span class="conjugation-verb">glauben</span>
+      <div class="example-box">
+        <div class="example-de">
+          <span class="german-text" onclick="playAudio('Wir glauben das', this)">Wir glauben das</span>
+          <button class="audio-btn" onclick="playAudio('Wir glauben das', this)">🔊</button>
+          <small>Creemos eso</small>
+        </div>
+      </div>
+    </div>
+  </td>
+  <td>
+    <div class="conjugation-cell">
+      <span class="conjugation-verb">glaubt</span>
+      <div class="example-box">
+        <div class="example-de">
+          <span class="german-text" onclick="playAudio('Glaubt ihr alles?', this)">Glaubt ihr alles?</span>
+          <button class="audio-btn" onclick="playAudio('Glaubt ihr alles?', this)">🔊</button>
+          <small>¿Creéis todo?</small>
+        </div>
+      </div>
+    </div>
+  </td>
+  <td>
+    <div class="conjugation-cell">
+      <span class="conjugation-verb">glauben</span>
+      <div class="example-box">
+        <div class="example-de">
+          <span class="german-text" onclick="playAudio('Sie glauben mir', this)">Sie glauben mir</span>
+          <button class="audio-btn" onclick="playAudio('Sie glauben mir', this)">🔊</button>
+          <small>Me creen</small>
+        </div>
+      </div>
+    </div>
+  </td>
 </tr>
 </table>
 
 <script>
-function playAudio(audioId) {
-  // 1. Intentar reproducir el archivo HTML5 audio local si existe[cite: 1]
-  const audioElement = document.getElementById(audioId);
-  
-  if (audioElement && audioElement.src && audioElement.src.indexOf('.mp3') !== -1) {
-    audioElement.play().catch(() => {
-      // Si falla la reproducción del archivo, usa síntesis de voz automática
-      speakGermanFromButton(audioId);
-    });
-  } else {
-    // Si no hay tag de audio o falla, usa síntesis de voz automáticamente
-    speakGermanFromButton(audioId);
+function playAudio(germanText, element) {
+  window.speechSynthesis.cancel();
+
+  // 1. Locución en Alemán
+  const germanUtterance = new SpeechSynthesisUtterance(germanText);
+  germanUtterance.lang = 'de-DE';
+  germanUtterance.rate = 0.85;
+
+  let spanishUtterance = null;
+
+  // 2. Extraer el texto en Español desde el DOM usando "this"
+  if (element) {
+    // Si la celda donde hiciste clic tiene un tag <small>, toma ese texto.
+    // De lo contrario, busca en la celda contigua (td).
+    const cell = element.closest('td');
+    let spanishText = '';
+
+    if (cell) {
+      const smallTag = cell.querySelector('small');
+      if (smallTag) {
+        spanishText = smallTag.textContent;
+      } else if (cell.nextElementSibling) {
+        spanishText = cell.nextElementSibling.textContent;
+      }
+    }
+
+    if (spanishText) {
+      // Limpia aclaraciones entre paréntesis o barras para que la voz lea fluido
+      spanishText = spanishText.replace(/\(.*?\)/g, '').replace(/[/]/g, ',');
+      spanishUtterance = new SpeechSynthesisUtterance(spanishText);
+      spanishUtterance.lang = 'es-ES';
+      spanishUtterance.rate = 0.95;
+    }
   }
-}
 
-function speakGermanFromButton(audioId) {
-  if ('speechSynthesis' in window) {
-    window.speechSynthesis.cancel(); // Detener cualquier audio previo
-    
-    // Buscar el texto en alemán más cercano al botón
-    const audioTag = document.getElementById(audioId);
-    if (!audioTag) return;
-    
-    const parent = audioTag.parentElement;
-    let textToSpeak = '';
-    
-    // Obtener texto desde un <span> dentro del mismo contenedor
-    const span = parent.querySelector('span');
-    if (span) {
-      textToSpeak = span.textContent;
-    } else {
-      textToSpeak = parent.textContent.replace('🔊', '').trim();
-    }
+  // Selección de voces naturales/HD si están disponibles
+  const voices = window.speechSynthesis.getVoices();
+  const germanVoice = voices.find(v => v.lang.startsWith('de') && (v.name.includes('Google') || v.name.includes('Natural') || v.name.includes('Neural')));
+  if (germanVoice) germanUtterance.voice = germanVoice;
 
-    if (textToSpeak) {
-      const utterance = new SpeechSynthesisUtterance(textToSpeak);
-      utterance.lang = 'de-DE'; // Idioma Alemán[cite: 1]
-      utterance.rate = 0.9; // Velocidad de lectura óptima para estudio
-      window.speechSynthesis.speak(utterance);
-    }
+  if (spanishUtterance) {
+    const spanishVoice = voices.find(v => v.lang.startsWith('es') && (v.name.includes('Google') || v.name.includes('Natural') || v.name.includes('Neural')));
+    if (spanishVoice) spanishUtterance.voice = spanishVoice;
+  }
+
+  // Reproducir secuencialmente: Alemán -> Español
+  window.speechSynthesis.speak(germanUtterance);
+  if (spanishUtterance) {
+    window.speechSynthesis.speak(spanishUtterance);
   }
 }
 </script>

@@ -124,139 +124,262 @@
 <tbody>
 
 <!-- ich -->
+<!-- ich -->
 <tr>
-<td><b>ich</b></td>
-<td><b>mich / mir</b></td>
-<td>
- <b>ich wasche mich</b> <button type="button" class="audio-btn" onclick="speechSynthesis.speak(Object.assign(new SpeechSynthesisUtterance('ich wasche mich'), {lang: 'de-DE'}))">🔊</button>
- <div class="example-box">
- <span>Ich wasche mich morgens <button type="button" class="audio-btn" onclick="speechSynthesis.speak(Object.assign(new SpeechSynthesisUtterance('Ich wasche mich morgens.'), {lang: 'de-DE'}))">🔊</button></span>
- <small>(Me lavo por la mañana)</small>
- </div>
-</td>
-<td>
- <b>ich wasche mir...</b> <button type="button" class="audio-btn" onclick="speechSynthesis.speak(Object.assign(new SpeechSynthesisUtterance('ich wasche mir'), {lang: 'de-DE'}))">🔊</button>
- <div class="example-box">
- <span>Ich wasche mir die Hände <button type="button" class="audio-btn" onclick="speechSynthesis.speak(Object.assign(new SpeechSynthesisUtterance('Ich wasche mir die Hände.'), {lang: 'de-DE'}))">🔊</button></span>
- <small>(Me lavo las manos)</small>
- </div>
-</td>
+  <td><b>ich</b></td>
+  <td><b>mich / mir</b></td>
+  <td>
+    <div class="word-audio">
+      <span>ich wasche mich</span>
+      <button class="audio-icon-btn" onclick="playAudio('ich wasche mich', this)">🔊</button>
+    </div>
+    <div class="example-box">
+      <div class="example-de">
+        <span>Ich wasche mich morgens</span>
+        <button class="audio-icon-btn" onclick="playAudio('Ich wasche mich morgens', this)">🔊</button>
+      </div>
+      <small>Me lavo por la mañana</small>
+    </div>
+  </td>
+  <td>
+    <div class="word-audio">
+      <span>ich wasche mir...</span>
+      <button class="audio-icon-btn" onclick="playAudio('ich wasche mir', this)">🔊</button>
+    </div>
+    <div class="example-box">
+      <div class="example-de">
+        <span>Ich wasche mir die Hände</span>
+        <button class="audio-icon-btn" onclick="playAudio('Ich wasche mir die Hände', this)">🔊</button>
+      </div>
+      <small>Me lavo las manos</small>
+    </div>
+  </td>
 </tr>
 
 <!-- du -->
 <tr>
-<td><b>du</b></td>
-<td><b>dich / dir</b></td>
-<td>
- <b>du wäschst dich</b> <button type="button" class="audio-btn" onclick="speechSynthesis.speak(Object.assign(new SpeechSynthesisUtterance('du wäschst dich'), {lang: 'de-DE'}))">🔊</button>
- <div class="example-box">
- <span>Du wäschst dich schnell <button type="button" class="audio-btn" onclick="speechSynthesis.speak(Object.assign(new SpeechSynthesisUtterance('Du wäschst dich schnell.'), {lang: 'de-DE'}))">🔊</button></span>
- <small>(Te lavas rápido)</small>
- </div> 
-</td>
-<td>
- <b>du wäschst dir...</b> <button type="button" class="audio-btn" onclick="speechSynthesis.speak(Object.assign(new SpeechSynthesisUtterance('du wäschst dir'), {lang: 'de-DE'}))">🔊</button>
- <div class="example-box">
- <span>Du wäschst dir die Haare <button type="button" class="audio-btn" onclick="speechSynthesis.speak(Object.assign(new SpeechSynthesisUtterance('Du wäschst dir die Haare.'), {lang: 'de-DE'}))">🔊</button></span>
- <small>(Te lavas el pelo)</small>
- </div>
-</td>
+  <td><b>du</b></td>
+  <td><b>dich / dir</b></td>
+  <td>
+    <div class="word-audio">
+      <span>du wäschst dich</span>
+      <button class="audio-icon-btn" onclick="playAudio('du wäschst dich', this)">🔊</button>
+    </div>
+    <div class="example-box">
+      <div class="example-de">
+        <span>Du wäschst dich schnell</span>
+        <button class="audio-icon-btn" onclick="playAudio('Du wäschst dich schnell', this)">🔊</button>
+      </div>
+      <small>Te lavas rápido</small>
+    </div>
+  </td>
+  <td>
+    <div class="word-audio">
+      <span>du wäschst dir...</span>
+      <button class="audio-icon-btn" onclick="playAudio('du wäschst dir', this)">🔊</button>
+    </div>
+    <div class="example-box">
+      <div class="example-de">
+        <span>Du wäschst dir die Haare</span>
+        <button class="audio-icon-btn" onclick="playAudio('Du wäschst dir die Haare', this)">🔊</button>
+      </div>
+      <small>Te lavas el pelo</small>
+    </div>
+  </td>
 </tr>
 
-<!-- er / sie / es -->
+<!-- er/sie/es -->
 <tr>
-<td><b>er / sie / es</b></td>
-<td><b>sich / sich</b></td>
-<td>
- <b>er/sie wäscht sich</b> <button type="button" class="audio-btn" onclick="speechSynthesis.speak(Object.assign(new SpeechSynthesisUtterance('er wäscht sich'), {lang: 'de-DE'}))">🔊</button>
- <div class="example-box">
- <span>Er wäscht sich im Bad <button type="button" class="audio-btn" onclick="speechSynthesis.speak(Object.assign(new SpeechSynthesisUtterance('Er wäscht sich im Bad.'), {lang: 'de-DE'}))">🔊</button></span>
- <small>(Él se lava en el baño)</small>
- </div>
-</td>
-<td>
- <b>er/sie wäscht sich...</b> <button type="button" class="audio-btn" onclick="speechSynthesis.speak(Object.assign(new SpeechSynthesisUtterance('sie wäscht sich'), {lang: 'de-DE'}))">🔊</button>
- <div class="example-box">
- <span>Sie wäscht sich das Gesicht <button type="button" class="audio-btn" onclick="speechSynthesis.speak(Object.assign(new SpeechSynthesisUtterance('Sie wäscht sich das Gesicht.'), {lang: 'de-DE'}))">🔊</button></span>
- <small>(Ella se lava la cara)</small>
- </div>
-</td>
+  <td><b>er/sie/es</b></td>
+  <td><b>sich / sich</b></td>
+  <td>
+    <div class="word-audio">
+      <span>er/sie wäscht sich</span>
+      <button class="audio-icon-btn" onclick="playAudio('er wäscht sich', this)">🔊</button>
+    </div>
+    <div class="example-box">
+      <div class="example-de">
+        <span>Er wäscht sich im Bad</span>
+        <button class="audio-icon-btn" onclick="playAudio('Er wäscht sich im Bad', this)">🔊</button>
+      </div>
+      <small>Él se lava en el baño</small>
+    </div>
+  </td>
+  <td>
+    <div class="word-audio">
+      <span>er/sie wäscht sich...</span>
+      <button class="audio-icon-btn" onclick="playAudio('sie wäscht sich', this)">🔊</button>
+    </div>
+    <div class="example-box">
+      <div class="example-de">
+        <span>Sie wäscht sich das Gesicht</span>
+        <button class="audio-icon-btn" onclick="playAudio('Sie wäscht sich das Gesicht', this)">🔊</button>
+      </div>
+      <small>Ella se lava la cara</small>
+    </div>
+  </td>
 </tr>
 
 <!-- wir -->
 <tr>
-<td><b>wir</b></td>
-<td><b>uns / uns</b></td>
-<td>
- <b>wir waschen uns</b> <button type="button" class="audio-btn" onclick="speechSynthesis.speak(Object.assign(new SpeechSynthesisUtterance('wir waschen uns'), {lang: 'de-DE'}))">🔊</button>
- <div class="example-box">
- <span>Wir waschen uns jeden Tag <button type="button" class="audio-btn" onclick="speechSynthesis.speak(Object.assign(new SpeechSynthesisUtterance('Wir waschen uns jeden Tag.'), {lang: 'de-DE'}))">🔊</button></span>
- <small>(Nos lavamos todos los días)</small>
- </div>
-</td>
-<td>
- <b>wir waschen uns...</b> <button type="button" class="audio-btn" onclick="speechSynthesis.speak(Object.assign(new SpeechSynthesisUtterance('wir waschen uns'), {lang: 'de-DE'}))">🔊</button>
- <div class="example-box">
- <span>Wir waschen uns die Hände <button type="button" class="audio-btn" onclick="speechSynthesis.speak(Object.assign(new SpeechSynthesisUtterance('Wir waschen uns die Hände.'), {lang: 'de-DE'}))">🔊</button></span>
- <small>(Nos lavamos las manos)</small>
- </div>
-</td>
+  <td><b>wir</b></td>
+  <td><b>uns / uns</b></td>
+  <td>
+    <div class="word-audio">
+      <span>wir waschen uns</span>
+      <button class="audio-icon-btn" onclick="playAudio('wir waschen uns', this)">🔊</button>
+    </div>
+    <div class="example-box">
+      <div class="example-de">
+        <span>Wir waschen uns jeden Tag</span>
+        <button class="audio-icon-btn" onclick="playAudio('Wir waschen uns jeden Tag', this)">🔊</button>
+      </div>
+      <small>Nos lavamos todos los días</small>
+    </div>
+  </td>
+  <td>
+    <div class="word-audio">
+      <span>wir waschen uns...</span>
+      <button class="audio-icon-btn" onclick="playAudio('wir waschen uns', this)">🔊</button>
+    </div>
+    <div class="example-box">
+      <div class="example-de">
+        <span>Wir waschen uns die Hände</span>
+        <button class="audio-icon-btn" onclick="playAudio('Wir waschen uns die Hände', this)">🔊</button>
+      </div>
+      <small>Nos lavamos las manos</small>
+    </div>
+  </td>
 </tr>
 
 <!-- ihr -->
 <tr>
-<td><b>ihr</b></td>
-<td><b>euch / euch</b></td>
-<td>
- <b>ihr wascht euch</b> <button type="button" class="audio-btn" onclick="speechSynthesis.speak(Object.assign(new SpeechSynthesisUtterance('ihr wascht euch'), {lang: 'de-DE'}))">🔊</button>
- <div class="example-box">
- <span>Ihr wascht euch spät <button type="button" class="audio-btn" onclick="speechSynthesis.speak(Object.assign(new SpeechSynthesisUtterance('Ihr wascht euch spät.'), {lang: 'de-DE'}))">🔊</button></span>
- <small>(Os laváis tarde)</small>
- </div>
-</td>
-<td>
- <b>ihr wascht euch...</b> <button type="button" class="audio-btn" onclick="speechSynthesis.speak(Object.assign(new SpeechSynthesisUtterance('ihr wascht euch'), {lang: 'de-DE'}))">🔊</button>
- <div class="example-box">
- <span>Ihr wascht euch die Zähne <button type="button" class="audio-btn" onclick="speechSynthesis.speak(Object.assign(new SpeechSynthesisUtterance('Ihr wascht euch die Zähne.'), {lang: 'de-DE'}))">🔊</button></span>
- <small>(Os laváis los dientes)</small>
- </div>
-</td>
+  <td><b>ihr</b></td>
+  <td><b>euch / euch</b></td>
+  <td>
+    <div class="word-audio">
+      <span>ihr wascht euch</span>
+      <button class="audio-icon-btn" onclick="playAudio('ihr wascht euch', this)">🔊</button>
+    </div>
+    <div class="example-box">
+      <div class="example-de">
+        <span>Ihr wascht euch spät</span>
+        <button class="audio-icon-btn" onclick="playAudio('Ihr wascht euch spät', this)">🔊</button>
+      </div>
+      <small>Os laváis tarde</small>
+    </div>
+  </td>
+  <td>
+    <div class="word-audio">
+      <span>ihr wascht euch...</span>
+      <button class="audio-icon-btn" onclick="playAudio('ihr wascht euch', this)">🔊</button>
+    </div>
+    <div class="example-box">
+      <div class="example-de">
+        <span>Ihr wascht euch die Zähne</span>
+        <button class="audio-icon-btn" onclick="playAudio('Ihr wascht euch die Zähne', this)">🔊</button>
+      </div>
+      <small>Os laváis los dientes</small>
+    </div>
+  </td>
 </tr>
 
 <!-- sie / Sie -->
 <tr>
-<td><b>sie / Sie</b></td>
-<td><b>sich / sich</b></td>
-<td>
- <b>sie/Sie waschen sich</b> <button type="button" class="audio-btn" onclick="speechSynthesis.speak(Object.assign(new SpeechSynthesisUtterance('sie waschen sich'), {lang: 'de-DE'}))">🔊</button>
- <div class="example-box">
- <span>Sie waschen sich jetzt <button type="button" class="audio-btn" onclick="speechSynthesis.speak(Object.assign(new SpeechSynthesisUtterance('Sie waschen sich jetzt.'), {lang: 'de-DE'}))">🔊</button></span>
- <small>(Ellos se lavan / Usted se lava ahora)</small>
- </div> 
-</td>
-<td>
- <b>sie/Sie waschen sich...</b> <button type="button" class="audio-btn" onclick="speechSynthesis.speak(Object.assign(new SpeechSynthesisUtterance('Sie waschen sich'), {lang: 'de-DE'}))">🔊</button>
- <div class="example-box">
- <span>Sie waschen sich die Hände <button type="button" class="audio-btn" onclick="speechSynthesis.speak(Object.assign(new SpeechSynthesisUtterance('Sie waschen sich die Hände.'), {lang: 'de-DE'}))">🔊</button></span>
- <small>(Ellos se lavan / Usted se lava las manos)</small>
- </div>
-</td>
+  <td><b>sie / Sie</b></td>
+  <td><b>sich / sich</b></td>
+  <td>
+    <div class="word-audio">
+      <span>sie/Sie waschen sich</span>
+      <button class="audio-icon-btn" onclick="playAudio('sie waschen sich', this)">🔊</button>
+    </div>
+    <div class="example-box">
+      <div class="example-de">
+        <span>Sie waschen sich jetzt</span>
+        <button class="audio-icon-btn" onclick="playAudio('Sie waschen sich jetzt', this)">🔊</button>
+      </div>
+      <small>Ellos se lavan / Usted se lava ahora</small>
+    </div>
+  </td>
+  <td>
+    <div class="word-audio">
+      <span>sie/Sie waschen sich...</span>
+      <button class="audio-icon-btn" onclick="playAudio('Sie waschen sich', this)">🔊</button>
+    </div>
+    <div class="example-box">
+      <div class="example-de">
+        <span>Sie waschen sich die Hände</span>
+        <button class="audio-icon-btn" onclick="playAudio('Sie waschen sich die Hände', this)">🔊</button>
+      </div>
+      <small>Ellos se lavan / Usted se lava las manos</small>
+    </div>
+  </td>
 </tr>
-
 </tbody>
 </table>
 </div>
 
 <!-- Sección Explicativa Final -->
 <div class="outro-box">
- <h2>¿Cuándo usamos mich/dich/sich… (Akkusativ)?</h2>
- <p>Cuando el pronombre es el objeto directo.</p>
-
- <h2>¿Cuándo usamos mir/dir/sich… (Dativ)?</h2>
- <p>Cuando hay otro objeto en acusativo.</p>
+  <h2>¿Cuándo usamos mich/dich/sich... (Akkusativ)?</h2>
+  <p>Cuando el pronombre es el objeto directo.</p>
+  <h2>¿Cuándo usamos mir/dir/sich... (Dativ)?</h2>
+  <p>Cuando hay otro objeto en acusativo.</p>
 </div>
-
 </div>
 </main>
+<script>
+function playAudio(germanText, element) {
+  window.speechSynthesis.cancel();
+
+  // 1. Locución en Alemán
+  const germanUtterance = new SpeechSynthesisUtterance(germanText);
+  germanUtterance.lang = 'de-DE';
+  germanUtterance.rate = 0.85;
+
+  let spanishUtterance = null;
+
+  // 2. Extraer el texto en Español desde el DOM usando "this"
+  if (element) {
+    // Si la celda donde hiciste clic tiene un tag <small>, toma ese texto.
+    // De lo contrario, busca en la celda contigua (td).
+    const cell = element.closest('td');
+    let spanishText = '';
+
+    if (cell) {
+      const smallTag = cell.querySelector('small');
+      if (smallTag) {
+        spanishText = smallTag.textContent;
+      } else if (cell.nextElementSibling) {
+        spanishText = cell.nextElementSibling.textContent;
+      }
+    }
+
+    if (spanishText) {
+      // Limpia aclaraciones entre paréntesis o barras para que la voz lea fluido
+      spanishText = spanishText.replace(/\(.*?\)/g, '').replace(/[/]/g, ',');
+      spanishUtterance = new SpeechSynthesisUtterance(spanishText);
+      spanishUtterance.lang = 'es-ES';
+      spanishUtterance.rate = 0.95;
+    }
+  }
+
+  // Selección de voces naturales/HD si están disponibles
+  const voices = window.speechSynthesis.getVoices();
+  const germanVoice = voices.find(v => v.lang.startsWith('de') && (v.name.includes('Google') || v.name.includes('Natural') || v.name.includes('Neural')));
+  if (germanVoice) germanUtterance.voice = germanVoice;
+
+  if (spanishUtterance) {
+    const spanishVoice = voices.find(v => v.lang.startsWith('es') && (v.name.includes('Google') || v.name.includes('Natural') || v.name.includes('Neural')));
+    if (spanishVoice) spanishUtterance.voice = spanishVoice;
+  }
+
+  // Reproducir secuencialmente: Alemán -> Español
+  window.speechSynthesis.speak(germanUtterance);
+  if (spanishUtterance) {
+    window.speechSynthesis.speak(spanishUtterance);
+  }
+}
+ </script>
 </body>
 </html>

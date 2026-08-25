@@ -155,44 +155,44 @@ td small {
  </thead>
  <tbody>
  <tr>
- <td>
- <span class="german-text" onclick="playAudio('Wie spät ist es?')">Wie spät ist es?</span>
- <button class="audio-btn" onclick="playAudio('Wie spät ist es?')">🔊</button>
- <small>¿Qué hora es? (lit. ¿Qué tan tarde es?)</small>
- </td>
- <td>¿Qué hora es?</td>
- <td>
- <span class="german-text" onclick="playAudio('Es ist...')">Es ist...</span>
- <button class="audio-btn" onclick="playAudio('Es ist...')">🔊</button>
- <small>Son las... / Es la...</small>
- </td>
- </tr>
- <tr>
- <td>
- <span class="german-text" onclick="playAudio('Wie viel Uhr ist es?')">Wie viel Uhr ist es?</span>
- <button class="audio-btn" onclick="playAudio('Wie viel Uhr ist es?')">🔊</button>
- <small>¿Qué hora es? (lit. ¿Cuánta hora es?)</small>
- </td> 
- <td>¿Qué hora es?</td>
- <td>
- <span class="german-text" onclick="playAudio('Es ist...')">Es ist...</span>
- <button class="audio-btn" onclick="playAudio('Es ist...')">🔊</button>
- <small>Son las... / Es la...</small>
- </td>
- </tr>
- <tr>
- <td>
- <span class="german-text" onclick="playAudio('Um wie viel Uhr...?')">Um wie viel Uhr...?</span>
- <button class="audio-btn" onclick="playAudio('Um wie viel Uhr...?')">🔊</button>
- <small>¿A qué hora...?</small>
- </td>
- <td>¿A qué hora...?</td>
- <td>
- <span class="german-text" onclick="playAudio('Um...')">Um... [Uhr]</span>
- <button class="audio-btn" onclick="playAudio('Um...')">🔊</button>
- <small>A las... [horas]</small>
- </td>
- </tr>
+  <td>
+    <span class="german-text" onclick="playAudio('Wie spät ist es?', this)">Wie spät ist es?</span>
+    <button class="audio-btn" onclick="playAudio('Wie spät ist es?', this)">🔊</button>
+    <small>¿Qué hora es? (lit. ¿Qué tan tarde es?)</small>
+  </td>
+  <td>¿Qué hora es?</td>
+  <td>
+    <span class="german-text" onclick="playAudio('Es ist...', this)">Es ist...</span>
+    <button class="audio-btn" onclick="playAudio('Es ist...', this)">🔊</button>
+    <small>Son las... / Es la...</small>
+  </td>
+</tr>
+<tr>
+  <td>
+    <span class="german-text" onclick="playAudio('Wie viel Uhr ist es?', this)">Wie viel Uhr ist es?</span>
+    <button class="audio-btn" onclick="playAudio('Wie viel Uhr ist es?', this)">🔊</button>
+    <small>¿Qué hora es? (lit. ¿Cuánta hora es?)</small>
+  </td>
+  <td>¿Qué hora es?</td>
+  <td>
+    <span class="german-text" onclick="playAudio('Es ist...', this)">Es ist...</span>
+    <button class="audio-btn" onclick="playAudio('Es ist...', this)">🔊</button>
+    <small>Son las... / Es la...</small>
+  </td>
+</tr>
+<tr>
+  <td>
+    <span class="german-text" onclick="playAudio('Um wie viel Uhr...?', this)">Um wie viel Uhr...?</span>
+    <button class="audio-btn" onclick="playAudio('Um wie viel Uhr...?', this)">🔊</button>
+    <small>¿A qué hora...?</small>
+  </td>
+  <td>¿A qué hora...?</td>
+  <td>
+    <span class="german-text" onclick="playAudio('Um...', this)">Um... [Uhr]</span>
+    <button class="audio-btn" onclick="playAudio('Um...', this)">🔊</button>
+    <small>A las... [horas]</small>
+  </td>
+</tr>
  </tbody>
  </table>
  </div>
@@ -209,177 +209,253 @@ td small {
  </tr>
  </thead>
  <tbody>
- <tr>
- <td>
- <span class="german-text" onclick="playAudio('nach')">nach</span>
- <button class="audio-btn" onclick="playAudio('nach')">🔊</button>
- <small>pasadas de / después de</small>
- </td>
- <td>pasa de / después de</td> 
- <td>Se usa para los minutos del 1 al 25.</td>
- </tr>
- <tr>
- <td>
- <span class="german-text" onclick="playAudio('vor')">vor</span>
- <button class="audio-btn" onclick="playAudio('vor')">🔊</button>
- <small>para / antes de</small>
- </td>
- <td>para / antes de</td>
- <td>Se usa para los minutos del 35 al 59.</td>
- </tr>
- <tr>
- <td>
- <span class="german-text" onclick="playAudio('halb')">halb</span>
- <button class="audio-btn" onclick="playAudio('halb')">🔊</button>
- <small>media hora para...</small>
- </td>
- <td>media hora para la(s)...</td>
- <td><strong>¡Atención!</strong> "halb 3" significa 2:30 (media hora antes de las 3).</td>
- </tr>
- <tr>
- <td>
- <span class="german-text" onclick="playAudio('Viertel')">Viertel</span>
- <button class="audio-btn" onclick="playAudio('Viertel')">🔊</button>
- <small>cuarto</small>
- </td>
- <td>cuarto</td>
- <td><em>Viertel nach</em> (y cuarto) / <em>Viertel vor</em> (menos cuarto).</td>
- </tr>
- </tbody>
- </table>
- </div>
+<tr>
+  <td>
+    <span class="german-text" onclick="playAudio('nach', this)">nach</span>
+    <button class="audio-btn" onclick="playAudio('nach', this)">🔊</button>
+    <small>pasadas de / después de</small>
+  </td>
+  <td>pasadas de / después de</td>
+  <td>Se usa para los minutos del 1 al 25.</td>
+</tr>
+<tr>
+  <td>
+    <span class="german-text" onclick="playAudio('vor', this)">vor</span>
+    <button class="audio-btn" onclick="playAudio('vor', this)">🔊</button>
+    <small>para / antes de</small>
+  </td>
+  <td>para / antes de</td>
+  <td>Se usa para los minutos del 35 al 59.</td>
+</tr>
+<tr>
+  <td>
+    <span class="german-text" onclick="playAudio('halb', this)">halb</span>
+    <button class="audio-btn" onclick="playAudio('halb', this)">🔊</button>
+    <small>media hora para...</small>
+  </td>
+  <td>media hora para la(s)...</td>
+  <td><strong>¡Atención!</strong> "halb 3" significa 2:30 (media hora antes de las 3).</td>
+</tr>
+<tr>
+  <td>
+    <span class="german-text" onclick="playAudio('Viertel', this)">Viertel</span>
+    <button class="audio-btn" onclick="playAudio('Viertel', this)">🔊</button>
+    <small>cuarto</small>
+  </td>
+  <td>cuarto</td>
+  <td><em>Viertel nach</em> (y cuarto) / <em>Viertel vor</em> (menos cuarto).</td>
+</tr>
+</tbody>
+</table>
+</div>
 
- <!-- Ejemplos Comparativos Formal vs Informal -->
- <h1 class="section-title">Ejemplos: Forma Oficial vs. Forma Coloquial</h1>
- <div class="table-container">
- <table>
- <thead>
- <tr>
- <th>Digital</th>
- <th>Forma Oficial / Formal (24h)</th>
- <th>Forma Coloquial / Informal (12h)</th> 
- </tr>
- </thead>
- <tbody>
- <tr>
- <td><strong>08:00</strong></td>
- <td>
- <span class="german-text" onclick="playAudio('Es ist acht Uhr.')">Es ist acht Uhr.</span>
- <button class="audio-btn" onclick="playAudio('Es ist acht Uhr.')">🔊</button>
- <small>Son las ocho en punto.</small>
- </td>
- <td>
- <span class="german-text" onclick="playAudio('Es ist acht.')">Es ist acht.</span>
- <button class="audio-btn" onclick="playAudio('Es ist acht.')">🔊</button>
- <small>Son las ocho.</small>
- </td>
- </tr>
- <tr>
- <td><strong>08:05</strong></td>
- <td>
- <span class="german-text" onclick="playAudio('Es ist acht Uhr fünf.')">Es ist acht Uhr fünf.</span>
- <button class="audio-btn" onclick="playAudio('Es ist acht Uhr fünf.')">🔊</button>
- <small>Son las ocho y cinco.</small>
- </td>
- <td>
- <span class="german-text" onclick="playAudio('Es ist fünf nach acht.')">Es ist fünf nach acht.</span>
- <button class="audio-btn" onclick="playAudio('Es ist fünf nach acht.')">🔊</button>
- <small>Son las ocho y cinco (cinco pasadas de las ocho).</small>
- </td>
- </tr>
- <tr>
- <td><strong>08:15</strong></td>
- <td>
- <span class="german-text" onclick="playAudio('Es ist acht Uhr fünfzehn.')">Es ist acht Uhr fünfzehn.</span>
- <button class="audio-btn" onclick="playAudio('Es ist acht Uhr fünfzehn.')">🔊</button>
- <small>Son las ocho y quince.</small>
- </td>
- <td> 
- <span class="german-text" onclick="playAudio('Es ist Viertel nach acht.')">Es ist Viertel nach acht.</span>
- <button class="audio-btn" onclick="playAudio('Es ist Viertel nach acht.')">🔊</button>
- <small>Son las ocho y cuarto.</small>
- </td>
- </tr>
- <tr>
- <td><strong>08:30</strong></td>
- <td>
- <span class="german-text" onclick="playAudio('Es ist acht Uhr dreißig.')">Es ist acht Uhr dreißig.</span>
- <button class="audio-btn" onclick="playAudio('Es ist acht Uhr dreißig.')">🔊</button>
- <small>Son las ocho y treinta.</small>
- </td>
- <td>
- <span class="german-text" onclick="playAudio('Es ist halb neun.')">Es ist halb neun.</span>
- <button class="audio-btn" onclick="playAudio('Es ist halb neun.')">🔊</button>
- <small>Son las ocho y media (media hora para las nueve).</small>
- </td>
- </tr>
- <tr>
- <td><strong>08:45</strong></td>
- <td>
- <span class="german-text" onclick="playAudio('Es ist acht Uhr fünfundvierzig.')">Es ist acht Uhr fünfundvierzig.</span>
- <button class="audio-btn" onclick="playAudio('Es ist acht Uhr fünfundvierzig.')">🔊</button>
- <small>Son las ocho y cuarenta y cinco.</small>
- </td>
- <td>
- <span class="german-text" onclick="playAudio('Es ist Viertel vor neun.')">Es ist Viertel vor neun.</span>
- <button class="audio-btn" onclick="playAudio('Es ist Viertel vor neun.')">🔊</button>
- <small>Un cuarto para las nueve / Nueve menos cuarto.</small>
- </td>
- </tr>
- <tr>
- <td><strong>08:50</strong></td>
- <td>
- <span class="german-text" onclick="playAudio('Es ist acht Uhr fünfzig.')">Es ist acht Uhr fünfzig.</span>
- <button class="audio-btn" onclick="playAudio('Es ist acht Uhr fünfzig.')">🔊</button>
- <small>Son las ocho y cincuenta.</small>
- </td>
- <td>
- <span class="german-text" onclick="playAudio('Es ist zehn vor neun.')">Es ist zehn vor neun.</span>
- <button class="audio-btn" onclick="playAudio('Es ist zehn vor neun.')">🔊</button>
- <small>Diez para las nueve / Nueve menos diez.</small>
- </td>
- </tr>
- <tr>
- <td><strong>14:00</strong></td>
- <td>
- <span class="german-text" onclick="playAudio('Es ist vierzehn Uhr.')">Es ist vierzehn Uhr.</span>
- <button class="audio-btn" onclick="playAudio('Es ist vierzehn Uhr.')">🔊</button>
- <small>Son las catorce horas.</small>
- </td>
- <td>
- <span class="german-text" onclick="playAudio('Es ist zwei.')">Es ist zwei.</span>
- <button class="audio-btn" onclick="playAudio('Es ist zwei.')">🔊</button>
- <small>Son las dos.</small>
- </td>
- </tr>
+<!-- Ejemplos Comparativos Formal vs Informal -->
+<h1 class="section-title">Ejemplos: Forma Oficial vs. Forma Coloquial</h1>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+  <th>Digital</th>
+  <th>Forma Oficial / Formal (24h)</th>
+  <th>Forma Coloquial / Informal (12h)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><strong>08:00</strong></td>
+  <td>
+    <span class="german-text" onclick="playAudio('Es ist acht Uhr.', this)">Es ist acht Uhr.</span>
+    <button class="audio-btn" onclick="playAudio('Es ist acht Uhr.', this)">🔊</button>
+    <small>Son las ocho en punto.</small>
+  </td>
+  <td>
+    <span class="german-text" onclick="playAudio('Es ist acht.', this)">Es ist acht.</span>
+    <button class="audio-btn" onclick="playAudio('Es ist acht.', this)">🔊</button>
+    <small>Son las ocho.</small>
+  </td>
+</tr>
+<tr>
+  <td><strong>08:05</strong></td>
+  <td>
+    <span class="german-text" onclick="playAudio('Es ist acht Uhr fünf.', this)">Es ist acht Uhr fünf.</span>
+    <button class="audio-btn" onclick="playAudio('Es ist acht Uhr fünf.', this)">🔊</button>
+    <small>Son las ocho y cinco.</small>
+  </td>
+  <td>
+    <span class="german-text" onclick="playAudio('Es ist fünf nach acht.', this)">Es ist fünf nach acht.</span>
+    <button class="audio-btn" onclick="playAudio('Es ist fünf nach acht.', this)">🔊</button>
+    <small>Son las ocho y cinco (cinco pasadas de las ocho).</small>
+  </td>
+</tr>
+<tr>
+  <td><strong>08:15</strong></td>
+  <td>
+    <span class="german-text" onclick="playAudio('Es ist acht Uhr fünfzehn.', this)">Es ist acht Uhr fünfzehn.</span>
+    <button class="audio-btn" onclick="playAudio('Es ist acht Uhr fünfzehn.', this)">🔊</button>
+    <small>Son las ocho y quince.</small>
+  </td>
+  <td>
+    <span class="german-text" onclick="playAudio('Es ist Viertel nach acht.', this)">Es ist Viertel nach acht.</span>
+    <button class="audio-btn" onclick="playAudio('Es ist Viertel nach acht.', this)">🔊</button>
+    <small>Son las ocho y cuarto.</small>
+  </td>
+</tr>
+<tr>
+  <td><strong>08:30</strong></td>
+  <td>
+    <span class="german-text" onclick="playAudio('Es ist acht Uhr dreißig.', this)">Es ist acht Uhr dreißig.</span>
+    <button class="audio-btn" onclick="playAudio('Es ist acht Uhr dreißig.', this)">🔊</button>
+    <small>Son las ocho y treinta.</small>
+  </td>
+  <td>
+    <span class="german-text" onclick="playAudio('Es ist halb neun.', this)">Es ist halb neun.</span>
+    <button class="audio-btn" onclick="playAudio('Es ist halb neun.', this)">🔊</button>
+    <small>Son las ocho y media (media hora para las nueve).</small>
+  </td>
+</tr>
+<tr>
+  <td><strong>08:45</strong></td>
+  <td>
+    <span class="german-text" onclick="playAudio('Es ist acht Uhr fünfundvierzig.', this)">Es ist acht Uhr fünfundvierzig.</span>
+    <button class="audio-btn" onclick="playAudio('Es ist acht Uhr fünfundvierzig.', this)">🔊</button>
+    <small>Son las ocho y cuarenta y cinco.</small>
+  </td>
+  <td>
+    <span class="german-text" onclick="playAudio('Es ist Viertel vor neun.', this)">Es ist Viertel vor neun.</span>
+    <button class="audio-btn" onclick="playAudio('Es ist Viertel vor neun.', this)">🔊</button>
+    <small>Un cuarto para las nueve / Nueve menos cuarto.</small>
+  </td>
+</tr>
+<tr>
+  <td><strong>08:50</strong></td>
+  <td>
+    <span class="german-text" onclick="playAudio('Es ist acht Uhr fünfzig.', this)">Es ist acht Uhr fünfzig.</span>
+    <button class="audio-btn" onclick="playAudio('Es ist acht Uhr fünfzig.', this)">🔊</button>
+    <small>Son las ocho y cincuenta.</small>
+  </td>
+  <td>
+    <span class="german-text" onclick="playAudio('Es ist zehn vor neun.', this)">Es ist zehn vor neun.</span>
+    <button class="audio-btn" onclick="playAudio('Es ist zehn vor neun.', this)">🔊</button>
+    <small>Diez para las nueve / Nueve menos diez.</small>
+  </td>
+</tr>
+<tr>
+  <td><strong>14:00</strong></td>
+  <td>
+    <span class="german-text" onclick="playAudio('Es ist vierzehn Uhr.', this)">Es ist vierzehn Uhr.</span>
+    <button class="audio-btn" onclick="playAudio('Es ist vierzehn Uhr.', this)">🔊</button>
+    <small>Son las catorce horas.</small>
+  </td>
+  <td>
+    <span class="german-text" onclick="playAudio('Es ist zwei.', this)">Es ist zwei.</span>
+    <button class="audio-btn" onclick="playAudio('Es ist zwei.', this)">🔊</button>
+    <small>Son las dos.</small>
+  </td>
+</tr>
  </tbody>
  </table>
  </div>
 
  <!-- Explicación Adicional -->
- <div class="outro-box">
- <h2>Partes del Día (Tageszeiten)</h2>
- <p>Para aclarar el momento del día en la forma informal se suelen agregar estas expresiones:</p>
- <p>• <strong>morgens</strong> (por la mañana): <span class="german-text" onclick="playAudio('um 7 Uhr morgens')">um 7 Uhr morgens</span> <button class="audio-btn" onclick="playAudio('um 7 Uhr morgens')">🔊</button> <small>(a las 7 de la mañana)</small></p>
- <p>• <strong>vormittags</strong> (por la mañana / antes del mediodía): <span class="german-text" onclick="playAudio('um 10 Uhr vormittags')">um 10 Uhr vormittags</span> <button class="audio-btn" onclick="playAudio('um 10 Uhr vormittags')">🔊</button> <small>(a las 10 de la mañana)</small></p>
- <p>• <strong>mittags</strong> (al mediodía): <span class="german-text" onclick="playAudio('um 12 Uhr mittags')">um 12 Uhr mittags</span> <button class="audio-btn" onclick="playAudio('um 12 Uhr mittags')">🔊</button> <small>(a las 12 del mediodía)</small></p>
- <p>• <strong>nachmittags</strong> (por la tarde): <span class="german-text" onclick="playAudio('um 3 Uhr nachmittags')">um 3 Uhr nachmittags</span> <button class="audio-btn" onclick="playAudio('um 3 Uhr nachmittags')">🔊</button> <small>(a las 3 de la tarde)</small></p>
- <p>• <strong>abends</strong> (por la noche / al atardecer): <span class="german-text" onclick="playAudio('um 8 Uhr abends')">um 8 Uhr abends</span> <button class="audio-btn" onclick="playAudio('um 8 Uhr abends')">🔊</button> <small>(a las 8 de la noche)</small></p>
- <p>• <strong>nachts</strong> (por la madrugada): <span class="german-text" onclick="playAudio('um 2 Uhr nachts')">um 2 Uhr nachts</span> <button class="audio-btn" onclick="playAudio('um 2 Uhr nachts')">🔊</button> <small>(a las 2 de la madrugada)</small></p>
- </div>
+<div class="outro-box">
+  <h2>Partes del Día (Tageszeiten)</h2>
+  <p>Para aclarar el momento del día en la forma informal se suelen agregar estas expresiones:</p>
+
+  <p>
+    <strong>morgens</strong> (por la mañana): 
+    <span class="german-text" onclick="playAudio('um 7 Uhr morgens', this)">um 7 Uhr morgens</span> 
+    <button class="audio-btn" onclick="playAudio('um 7 Uhr morgens', this)">🔊</button> 
+    <small>(a las 7 de la mañana)</small>
+  </p>
+
+  <p>
+    <strong>vormittags</strong> (por la mañana / antes del mediodía): 
+    <span class="german-text" onclick="playAudio('um 10 Uhr vormittags', this)">um 10 Uhr vormittags</span> 
+    <button class="audio-btn" onclick="playAudio('um 10 Uhr vormittags', this)">🔊</button> 
+    <small>(a las 10 de la mañana)</small>
+  </p>
+
+  <p>
+    <strong>mittags</strong> (al mediodía): 
+    <span class="german-text" onclick="playAudio('um 12 Uhr mittags', this)">um 12 Uhr mittags</span> 
+    <button class="audio-btn" onclick="playAudio('um 12 Uhr mittags', this)">🔊</button> 
+    <small>(a las 12 del mediodía)</small>
+  </p>
+
+  <p>
+    <strong>nachmittags</strong> (por la tarde): 
+    <span class="german-text" onclick="playAudio('um 3 Uhr nachmittags', this)">um 3 Uhr nachmittags</span> 
+    <button class="audio-btn" onclick="playAudio('um 3 Uhr nachmittags', this)">🔊</button> 
+    <small>(a las 3 de la tarde)</small>
+  </p>
+
+  <p>
+    <strong>abends</strong> (por la noche / al atardecer): 
+    <span class="german-text" onclick="playAudio('um 8 Uhr abends', this)">um 8 Uhr abends</span> 
+    <button class="audio-btn" onclick="playAudio('um 8 Uhr abends', this)">🔊</button> 
+    <small>(a las 8 de la noche)</small>
+  </p>
+
+  <p>
+    <strong>nachts</strong> (por la madrugada): 
+    <span class="german-text" onclick="playAudio('um 2 Uhr nachts', this)">um 2 Uhr nachts</span> 
+    <button class="audio-btn" onclick="playAudio('um 2 Uhr nachts', this)">🔊</button> 
+    <small>(a las 2 de la madrugada)</small>
+  </p>
+</div>
 </main>
 
 <script>
-function playAudio(text) {
- if ('speechSynthesis' in window) {
- window.speechSynthesis.cancel(); // Detener audios anteriores
- const utterance = new SpeechSynthesisUtterance(text);
- utterance.lang = 'de-DE';
- utterance.rate = 0.9;
- window.speechSynthesis.speak(utterance);
- } else {
- alert('Tu navegador no soporta la reproducción de voz.');
- }
+function playAudio(germanText, element) {
+  window.speechSynthesis.cancel();
+
+  // 1. Locución en Alemán
+  const germanUtterance = new SpeechSynthesisUtterance(germanText);
+  germanUtterance.lang = 'de-DE';
+  germanUtterance.rate = 0.85;
+
+  let spanishUtterance = null;
+
+  // 2. Extraer el texto en Español desde el DOM usando "this"
+  if (element) {
+    // Si la celda donde hiciste clic tiene un tag <small>, toma ese texto.
+    // De lo contrario, busca en la celda contigua (td).
+    const cell = element.closest('td');
+    let spanishText = '';
+
+    if (cell) {
+      const smallTag = cell.querySelector('small');
+      if (smallTag) {
+        spanishText = smallTag.textContent;
+      } else if (cell.nextElementSibling) {
+        spanishText = cell.nextElementSibling.textContent;
+      }
+    }
+
+    if (spanishText) {
+      // Limpia aclaraciones entre paréntesis o barras para que la voz lea fluido
+      spanishText = spanishText.replace(/\(.*?\)/g, '').replace(/[/]/g, ',');
+      spanishUtterance = new SpeechSynthesisUtterance(spanishText);
+      spanishUtterance.lang = 'es-ES';
+      spanishUtterance.rate = 0.95;
+    }
+  }
+
+  // Selección de voces naturales/HD si están disponibles
+  const voices = window.speechSynthesis.getVoices();
+  const germanVoice = voices.find(v => v.lang.startsWith('de') && (v.name.includes('Google') || v.name.includes('Natural') || v.name.includes('Neural')));
+  if (germanVoice) germanUtterance.voice = germanVoice;
+
+  if (spanishUtterance) {
+    const spanishVoice = voices.find(v => v.lang.startsWith('es') && (v.name.includes('Google') || v.name.includes('Natural') || v.name.includes('Neural')));
+    if (spanishVoice) spanishUtterance.voice = spanishVoice;
+  }
+
+  // Reproducir secuencialmente: Alemán -> Español
+  window.speechSynthesis.speak(germanUtterance);
+  if (spanishUtterance) {
+    window.speechSynthesis.speak(spanishUtterance);
+  }
 }
 </script>
 </body>

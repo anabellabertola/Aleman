@@ -174,318 +174,334 @@ td small {
  </tr>
  </thead>
  <tbody>
- <tr>
- <td><strong>Nominativ</strong></td>
- <td>
- <span class="german-text" onclick="playAudio('der gute Mann')">der gute Mann</span>
- <button class="audio-btn" onclick="playAudio('der gute Mann')">🔊</button>
- <small>el buen hombre</small>
- </td>
- <td>
- <span class="german-text" onclick="playAudio('die gute Frau')">die gute Frau</span>
- <button class="audio-btn" onclick="playAudio('die gute Frau')">🔊</button>
- <small>la buena mujer</small>
- </td>
- <td>
- <span class="german-text" onclick="playAudio('das gute Kind')">das gute Kind</span>
- <button class="audio-btn" onclick="playAudio('das gute Kind')">🔊</button>
- <small>el buen niño</small>
- </td>
- <td>
- <span class="german-text" onclick="playAudio('die guten Leute')">die guten Leute</span>
- <button class="audio-btn" onclick="playAudio('die guten Leute')">🔊</button>
- <small>la buena gente</small>
- </td>
- </tr>
- <tr>
- <td><strong>Akkusativ</strong></td>
- <td>
- <span class="german-text" onclick="playAudio('den guten Mann')">den guten Mann</span>
- <button class="audio-btn" onclick="playAudio('den guten Mann')">🔊</button>
- <small>al buen hombre</small>
- </td>
- <td>
- <span class="german-text" onclick="playAudio('die gute Frau')">die gute Frau</span>
- <button class="audio-btn" onclick="playAudio('die gute Frau')">🔊</button>
- <small>a la buena mujer</small>
- </td>
- <td>
- <span class="german-text" onclick="playAudio('das gute Kind')">das gute Kind</span>
- <button class="audio-btn" onclick="playAudio('das gute Kind')">🔊</button>
- <small>al buen niño</small>
- </td>
- <td>
- <span class="german-text" onclick="playAudio('die guten Leute')">die guten Leute</span>
- <button class="audio-btn" onclick="playAudio('die guten Leute')">🔊</button>
- <small>a la buena gente</small>
- </td>
- </tr>
- <tr>
- <td><strong>Dativ</strong></td>
- <td>
- <span class="german-text" onclick="playAudio('dem guten Mann')">dem guten Mann</span>
- <button class="audio-btn" onclick="playAudio('dem guten Mann')">🔊</button>
- <small>al/para el buen hombre</small>
- </td>
- <td>
- <span class="german-text" onclick="playAudio('der guten Frau')">der guten Frau</span>
- <button class="audio-btn" onclick="playAudio('der guten Frau')">🔊</button>
- <small>a la/para la buena mujer</small>
- </td>
- <td>
- <span class="german-text" onclick="playAudio('dem guten Kind')">dem guten Kind</span>
- <button class="audio-btn" onclick="playAudio('dem guten Kind')">🔊</button>
- <small>al/para el buen niño</small>
- </td>
- <td>
- <span class="german-text" onclick="playAudio('den guten Leuten')">den guten Leuten</span>
- <button class="audio-btn" onclick="playAudio('den guten Leuten')">🔊</button>
- <small>a la/para la buena gente</small>
- </td>
- </tr>
- <tr>
- <td><strong>Genitiv</strong></td>
- <td>
- <span class="german-text" onclick="playAudio('des guten Mannes')">des guten Mannes</span>
- <button class="audio-btn" onclick="playAudio('des guten Mannes')">🔊</button>
- <small>del buen hombre</small>
- </td>
- <td>
- <span class="german-text" onclick="playAudio('der guten Frau')">der guten Frau</span>
- <button class="audio-btn" onclick="playAudio('der guten Frau')">🔊</button>
- <small>de la buena mujer</small>
- </td>
- <td>
- <span class="german-text" onclick="playAudio('des guten Kindes')">des guten Kindes</span>
- <button class="audio-btn" onclick="playAudio('des guten Kindes')">🔊</button>
- <small>del buen niño</small>
- </td>
- <td>
- <span class="german-text" onclick="playAudio('der guten Leute')">der guten Leute</span>
- <button class="audio-btn" onclick="playAudio('der guten Leute')">🔊</button>
- <small>de la buena gente</small>
- </td>
- </tr>
- </tbody>
- </table>
- </div>
+ <!-- Tabla 1: Declinación Débil (con artículo determinado) -->
+<div class="table-container">
+  <table>
+    <thead>
+      <tr>
+        <th>Caso</th>
+        <th>Masculino</th>
+        <th>Femenino</th>
+        <th>Neutro</th>
+        <th>Plural</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Nominativ</strong></td>
+        <td>
+          <span class="german-text" onclick="playAudio('der gute Mann', this)">der gute Mann</span>
+          <button class="audio-btn" onclick="playAudio('der gute Mann', this)" title="Escuchar">🔊</button>
+          <small>el buen hombre</small>
+        </td>
+        <td>
+          <span class="german-text" onclick="playAudio('die gute Frau', this)">die gute Frau</span>
+          <button class="audio-btn" onclick="playAudio('die gute Frau', this)" title="Escuchar">🔊</button>
+          <small>la buena mujer</small>
+        </td>
+        <td>
+          <span class="german-text" onclick="playAudio('das gute Kind', this)">das gute Kind</span>
+          <button class="audio-btn" onclick="playAudio('das gute Kind', this)" title="Escuchar">🔊</button>
+          <small>el buen niño</small>
+        </td>
+        <td>
+          <span class="german-text" onclick="playAudio('die guten Leute', this)">die guten Leute</span>
+          <button class="audio-btn" onclick="playAudio('die guten Leute', this)" title="Escuchar">🔊</button>
+          <small>la buena gente</small>
+        </td>
+      </tr>
+      <tr>
+        <td><strong>Akkusativ</strong></td>
+        <td>
+          <span class="german-text" onclick="playAudio('den guten Mann', this)">den guten Mann</span>
+          <button class="audio-btn" onclick="playAudio('den guten Mann', this)" title="Escuchar">🔊</button>
+          <small>al buen hombre</small>
+        </td>
+        <td>
+          <span class="german-text" onclick="playAudio('die gute Frau', this)">die gute Frau</span>
+          <button class="audio-btn" onclick="playAudio('die gute Frau', this)" title="Escuchar">🔊</button>
+          <small>a la buena mujer</small>
+        </td>
+        <td>
+          <span class="german-text" onclick="playAudio('das gute Kind', this)">das gute Kind</span>
+          <button class="audio-btn" onclick="playAudio('das gute Kind', this)" title="Escuchar">🔊</button>
+          <small>al buen niño</small>
+        </td>
+        <td>
+          <span class="german-text" onclick="playAudio('die guten Leute', this)">die guten Leute</span>
+          <button class="audio-btn" onclick="playAudio('die guten Leute', this)" title="Escuchar">🔊</button>
+          <small>a la buena gente</small>
+        </td>
+      </tr>
+      <tr>
+        <td><strong>Dativ</strong></td>
+        <td>
+          <span class="german-text" onclick="playAudio('dem guten Mann', this)">dem guten Mann</span>
+          <button class="audio-btn" onclick="playAudio('dem guten Mann', this)" title="Escuchar">🔊</button>
+          <small>al/para el buen hombre</small>
+        </td>
+        <td>
+          <span class="german-text" onclick="playAudio('der guten Frau', this)">der guten Frau</span>
+          <button class="audio-btn" onclick="playAudio('der guten Frau', this)" title="Escuchar">🔊</button>
+          <small>a la/para la buena mujer</small>
+        </td>
+        <td>
+          <span class="german-text" onclick="playAudio('dem guten Kind', this)">dem guten Kind</span>
+          <button class="audio-btn" onclick="playAudio('dem guten Kind', this)" title="Escuchar">🔊</button>
+          <small>al/para el buen niño</small>
+        </td>
+        <td>
+          <span class="german-text" onclick="playAudio('den guten Leuten', this)">den guten Leuten</span>
+          <button class="audio-btn" onclick="playAudio('den guten Leuten', this)" title="Escuchar">🔊</button>
+          <small>a la/para la buena gente</small>
+        </td>
+      </tr>
+      <tr>
+        <td><strong>Genitiv</strong></td>
+        <td>
+          <span class="german-text" onclick="playAudio('des guten Mannes', this)">des guten Mannes</span>
+          <button class="audio-btn" onclick="playAudio('des guten Mannes', this)" title="Escuchar">🔊</button>
+          <small>del buen hombre</small>
+        </td>
+        <td>
+          <span class="german-text" onclick="playAudio('der guten Frau', this)">der guten Frau</span>
+          <button class="audio-btn" onclick="playAudio('der guten Frau', this)" title="Escuchar">🔊</button>
+          <small>de la buena mujer</small>
+        </td>
+        <td>
+          <span class="german-text" onclick="playAudio('des guten Kindes', this)">des guten Kindes</span>
+          <button class="audio-btn" onclick="playAudio('des guten Kindes', this)" title="Escuchar">🔊</button>
+          <small>del buen niño</small>
+        </td>
+        <td>
+          <span class="german-text" onclick="playAudio('der guten Leute', this)">der guten Leute</span>
+          <button class="audio-btn" onclick="playAudio('der guten Leute', this)" title="Escuchar">🔊</button>
+          <small>de la buena gente</small>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
- <!-- Tabla 2: Declinación Mixta -->
- <h1 class="section-title">2️⃣ Declinación Mixta (con ein / kein / posesivo)</h1>
- <div class="table-container">
- <table>
- <thead>
- <tr>
- <th>Caso</th>
- <th>Masculino (ein Mann)</th>
- <th>Femenino (eine Frau)</th>
- <th>Neutro (ein Kind)</th>
- <th>Plural (keine Leute)</th>
- </tr>
- </thead>
- <tbody>
- <tr>
- <td><strong>Nominativ</strong></td>
- <td>
- <span class="german-text" onclick="playAudio('ein guter Mann')">ein guter Mann</span>
- <button class="audio-btn" onclick="playAudio('ein guter Mann')">🔊</button>
- <small>un buen hombre</small>
- </td>
- <td>
- <span class="german-text" onclick="playAudio('eine gute Frau')">eine gute Frau</span>
- <button class="audio-btn" onclick="playAudio('eine gute Frau')">🔊</button>
- <small>una buena mujer</small>
- </td>
- <td>
- <span class="german-text" onclick="playAudio('ein gutes Kind')">ein gutes Kind</span>
- <button class="audio-btn" onclick="playAudio('ein gutes Kind')">🔊</button>
- <small>un buen niño</small>
- </td>
- <td>
- <span class="german-text" onclick="playAudio('keine guten Leute')">keine guten Leute</span>
- <button class="audio-btn" onclick="playAudio('keine guten Leute')">🔊</button>
- <small>ninguna buena gente</small>
- </td>
- </tr>
- <tr>
- <td><strong>Akkusativ</strong></td>
- <td>
- <span class="german-text" onclick="playAudio('einen guten Mann')">einen guten Mann</span>
- <button class="audio-btn" onclick="playAudio('einen guten Mann')">🔊</button>
- <small>a un buen hombre</small>
- </td>
- <td>
- <span class="german-text" onclick="playAudio('eine gute Frau')">eine gute Frau</span>
- <button class="audio-btn" onclick="playAudio('eine gute Frau')">🔊</button>
- <small>a una buena mujer</small>
- </td>
- <td>
- <span class="german-text" onclick="playAudio('ein gutes Kind')">ein gutes Kind</span>
- <button class="audio-btn" onclick="playAudio('ein gutes Kind')">🔊</button>
- <small>a un buen niño</small>
- </td>
- <td>
- <span class="german-text" onclick="playAudio('keine guten Leute')">keine guten Leute</span>
- <button class="audio-btn" onclick="playAudio('keine guten Leute')">🔊</button>
- <small>a ninguna buena gente</small>
- </td>
- </tr>
- <tr>
- <td><strong>Dativ</strong></td>
- <td>
- <span class="german-text" onclick="playAudio('einem guten Mann')">einem guten Mann</span>
- <button class="audio-btn" onclick="playAudio('einem guten Mann')">🔊</button>
- <small>a un/para un buen hombre</small>
- </td>
- <td>
- <span class="german-text" onclick="playAudio('einer guten Frau')">einer guten Frau</span>
- <button class="audio-btn" onclick="playAudio('einer guten Frau')">🔊</button>
- <small>a una/para una buena mujer</small>
- </td>
- <td>
- <span class="german-text" onclick="playAudio('einem guten Kind')">einem guten Kind</span>
- <button class="audio-btn" onclick="playAudio('einem guten Kind')">🔊</button>
- <small>a un/para un buen niño</small>
- </td>
- <td>
- <span class="german-text" onclick="playAudio('keinen guten Leuten')">keinen guten Leuten</span>
- <button class="audio-btn" onclick="playAudio('keinen guten Leuten')">🔊</button>
- <small>a ninguna buena gente</small>
- </td>
- </tr>
- <tr>
- <td><strong>Genitiv</strong></td>
- <td>
- <span class="german-text" onclick="playAudio('eines guten Mannes')">eines guten Mannes</span>
- <button class="audio-btn" onclick="playAudio('eines guten Mannes')">🔊</button>
- <small>de un buen hombre</small>
- </td>
- <td>
- <span class="german-text" onclick="playAudio('einer guten Frau')">einer guten Frau</span>
- <button class="audio-btn" onclick="playAudio('einer guten Frau')">🔊</button>
- <small>de una buena mujer</small>
- </td>
- <td>
- <span class="german-text" onclick="playAudio('eines guten Kindes')">eines guten Kindes</span>
- <button class="audio-btn" onclick="playAudio('eines guten Kindes')">🔊</button>
- <small>de un buen niño</small>
- </td>
- <td>
- <span class="german-text" onclick="playAudio('keiner guten Leute')">keiner guten Leute</span>
- <button class="audio-btn" onclick="playAudio('keiner guten Leute')">🔊</button>
- <small>de ninguna buena gente</small>
- </td>
- </tr>
- </tbody>
- </table>
- </div>
+<!-- Tabla 2: Declinación Mixta -->
+<h1 class="section-title">2. Declinación Mixta (con ein / kein / posesivo)</h1>
+<div class="table-container">
+  <table>
+    <thead>
+      <tr>
+        <th>Caso</th>
+        <th>Masculino (ein Mann)</th>
+        <th>Femenino (eine Frau)</th>
+        <th>Neutro (ein Kind)</th>
+        <th>Plural (keine Leute)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Nominativ</strong></td>
+        <td>
+          <span class="german-text" onclick="playAudio('ein guter Mann', this)">ein guter Mann</span>
+          <button class="audio-btn" onclick="playAudio('ein guter Mann', this)" title="Escuchar">🔊</button>
+          <small>un buen hombre</small>
+        </td>
+        <td>
+          <span class="german-text" onclick="playAudio('eine gute Frau', this)">eine gute Frau</span>
+          <button class="audio-btn" onclick="playAudio('eine gute Frau', this)" title="Escuchar">🔊</button>
+          <small>una buena mujer</small>
+        </td>
+        <td>
+          <span class="german-text" onclick="playAudio('ein gutes Kind', this)">ein gutes Kind</span>
+          <button class="audio-btn" onclick="playAudio('ein gutes Kind', this)" title="Escuchar">🔊</button>
+          <small>un buen niño</small>
+        </td>
+        <td>
+          <span class="german-text" onclick="playAudio('keine guten Leute', this)">keine guten Leute</span>
+          <button class="audio-btn" onclick="playAudio('keine guten Leute', this)" title="Escuchar">🔊</button>
+          <small>ninguna buena gente</small>
+        </td>
+      </tr>
+      <tr>
+        <td><strong>Akkusativ</strong></td>
+        <td>
+          <span class="german-text" onclick="playAudio('einen guten Mann', this)">einen guten Mann</span>
+          <button class="audio-btn" onclick="playAudio('einen guten Mann', this)" title="Escuchar">🔊</button>
+          <small>a un buen hombre</small>
+        </td>
+        <td>
+          <span class="german-text" onclick="playAudio('eine gute Frau', this)">eine gute Frau</span>
+          <button class="audio-btn" onclick="playAudio('eine gute Frau', this)" title="Escuchar">🔊</button>
+          <small>a una buena mujer</small>
+        </td>
+        <td>
+          <span class="german-text" onclick="playAudio('ein gutes Kind', this)">ein gutes Kind</span>
+          <button class="audio-btn" onclick="playAudio('ein gutes Kind', this)" title="Escuchar">🔊</button>
+          <small>a un buen niño</small>
+        </td>
+        <td>
+          <span class="german-text" onclick="playAudio('keine guten Leute', this)">keine guten Leute</span>
+          <button class="audio-btn" onclick="playAudio('keine guten Leute', this)" title="Escuchar">🔊</button>
+          <small>a ninguna buena gente</small>
+        </td>
+      </tr>
+      <tr>
+        <td><strong>Dativ</strong></td>
+        <td>
+          <span class="german-text" onclick="playAudio('einem guten Mann', this)">einem guten Mann</span>
+          <button class="audio-btn" onclick="playAudio('einem guten Mann', this)" title="Escuchar">🔊</button>
+          <small>a un/para un buen hombre</small>
+        </td>
+        <td>
+          <span class="german-text" onclick="playAudio('einer guten Frau', this)">einer guten Frau</span>
+          <button class="audio-btn" onclick="playAudio('einer guten Frau', this)" title="Escuchar">🔊</button>
+          <small>a una/para una buena mujer</small>
+        </td>
+        <td>
+          <span class="german-text" onclick="playAudio('einem guten Kind', this)">einem guten Kind</span>
+          <button class="audio-btn" onclick="playAudio('einem guten Kind', this)" title="Escuchar">🔊</button>
+          <small>a un/para un buen niño</small>
+        </td>
+        <td>
+          <span class="german-text" onclick="playAudio('keinen guten Leuten', this)">keinen guten Leuten</span>
+          <button class="audio-btn" onclick="playAudio('keinen guten Leuten', this)" title="Escuchar">🔊</button>
+          <small>a ninguna buena gente</small>
+        </td>
+      </tr>
+      <tr>
+        <td><strong>Genitiv</strong></td>
+        <td>
+          <span class="german-text" onclick="playAudio('eines guten Mannes', this)">eines guten Mannes</span>
+          <button class="audio-btn" onclick="playAudio('eines guten Mannes', this)" title="Escuchar">🔊</button>
+          <small>de un buen hombre</small>
+        </td>
+        <td>
+          <span class="german-text" onclick="playAudio('einer guten Frau', this)">einer guten Frau</span>
+          <button class="audio-btn" onclick="playAudio('einer guten Frau', this)" title="Escuchar">🔊</button>
+          <small>de una buena mujer</small>
+        </td>
+        <td>
+          <span class="german-text" onclick="playAudio('eines guten Kindes', this)">eines guten Kindes</span>
+          <button class="audio-btn" onclick="playAudio('eines guten Kindes', this)" title="Escuchar">🔊</button>
+          <small>de un buen niño</small>
+        </td>
+        <td>
+          <span class="german-text" onclick="playAudio('keiner guten Leute', this)">keiner guten Leute</span>
+          <button class="audio-btn" onclick="playAudio('keiner guten Leute', this)" title="Escuchar">🔊</button>
+          <small>de ninguna buena gente</small>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
- <!-- Tabla 3: Declinación Fuerte -->
- <h1 class="section-title">3️⃣ Declinación Fuerte (sin artículo)</h1>
- <div class="table-container">
- <table>
- <thead>
- <tr>
- <th>Caso</th>
- <th>Masculino (Wein)</th>
- <th>Femenino (Milch)</th>
- <th>Neutro (Bier)</th>
- <th>Plural (Schuhe)</th>
- </tr>
- </thead>
- <tbody>
- <tr>
- <td><strong>Nominativ</strong></td>
- <td>
- <span class="german-text" onclick="playAudio('guter Wein')">guter Wein</span>
- <button class="audio-btn" onclick="playAudio('guter Wein')">🔊</button>
- <small>buen vino</small>
- </td>
- <td>
- <span class="german-text" onclick="playAudio('gute Milch')">gute Milch</span>
- <button class="audio-btn" onclick="playAudio('gute Milch')">🔊</button>
- <small>buena leche</small>
- </td>
- <td>
- <span class="german-text" onclick="playAudio('gutes Bier')">gutes Bier</span>
- <button class="audio-btn" onclick="playAudio('gutes Bier')">🔊</button>
- <small>buena cerveza</small>
- </td>
- <td>
- <span class="german-text" onclick="playAudio('gute Schuhe')">gute Schuhe</span>
- <button class="audio-btn" onclick="playAudio('gute Schuhe')">🔊</button>
- <small>buenos zapatos</small>
- </td>
- </tr>
- <tr>
- <td><strong>Akkusativ</strong></td>
- <td>
- <span class="german-text" onclick="playAudio('guten Wein')">guten Wein</span>
- <button class="audio-btn" onclick="playAudio('guten Wein')">🔊</button>
- <small>buen vino</small>
- </td>
- <td>
- <span class="german-text" onclick="playAudio('gute Milch')">gute Milch</span>
- <button class="audio-btn" onclick="playAudio('gute Milch')">🔊</button>
- <small>buena leche</small>
- </td>
- <td>
- <span class="german-text" onclick="playAudio('gutes Bier')">gutes Bier</span>
- <button class="audio-btn" onclick="playAudio('gutes Bier')">🔊</button>
- <small>buena cerveza</small>
- </td>
- <td>
- <span class="german-text" onclick="playAudio('gute Schuhe')">gute Schuhe</span>
- <button class="audio-btn" onclick="playAudio('gute Schuhe')">🔊</button>
- <small>buenos zapatos</small>
- </td>
- </tr>
- <tr>
- <td><strong>Dativ</strong></td>
- <td>
- <span class="german-text" onclick="playAudio('gutem Wein')">gutem Wein</span>
- <button class="audio-btn" onclick="playAudio('gutem Wein')">🔊</button>
- <small>a/con buen vino</small>
- </td>
- <td>
- <span class="german-text" onclick="playAudio('guter Milch')">guter Milch</span>
- <button class="audio-btn" onclick="playAudio('guter Milch')">🔊</button>
- <small>a/con buena leche</small>
- </td>
- <td>
- <span class="german-text" onclick="playAudio('gutem Bier')">gutem Bier</span>
- <button class="audio-btn" onclick="playAudio('gutem Bier')">🔊</button>
- <small>a/con buena cerveza</small>
- </td>
- <td>
- <span class="german-text" onclick="playAudio('guten Schuhen')">guten Schuhen</span>
- <button class="audio-btn" onclick="playAudio('guten Schuhen')">🔊</button>
- <small>a/con buenos zapatos</small>
- </td>
- </tr>
- <tr>
- <td><strong>Genitiv</strong></td>
- <td>
- <span class="german-text" onclick="playAudio('guten Weines')">guten Weines</span>
- <button class="audio-btn" onclick="playAudio('guten Weines')">🔊</button>
- <small>de buen vino</small>
- </td>
- <td>
- <span class="german-text" onclick="playAudio('guter Milch')">guter Milch</span>
- <button class="audio-btn" onclick="playAudio('guter Milch')">🔊</button>
- <small>de buena leche</small>
- </td>
- <td>
- <span class="german-text" onclick="playAudio('guten Bieres')">guten Bieres</span>
- <button class="audio-btn" onclick="playAudio('guten Bieres')">🔊</button>
- <small>de buena cerveza</small>
- </td>
- <td>
- <span class="german-text" onclick="playAudio('guter Schuhe')">guter Schuhe</span>
- <button class="audio-btn" onclick="playAudio('guter Schuhe')">🔊</button>
- <small>de buenos zapatos</small>
- </td>
- </tr>
+<!-- Tabla 3: Declinación Fuerte -->
+<h1 class="section-title">3. Declinación Fuerte (sin artículo)</h1>
+<div class="table-container">
+  <table>
+    <thead>
+      <tr>
+        <th>Caso</th>
+        <th>Masculino (Wein)</th>
+        <th>Femenino (Milch)</th>
+        <th>Neutro (Bier)</th>
+        <th>Plural (Schuhe)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Nominativ</strong></td>
+        <td>
+          <span class="german-text" onclick="playAudio('guter Wein', this)">guter Wein</span>
+          <button class="audio-btn" onclick="playAudio('guter Wein', this)" title="Escuchar">🔊</button>
+          <small>buen vino</small>
+        </td>
+        <td>
+          <span class="german-text" onclick="playAudio('gute Milch', this)">gute Milch</span>
+          <button class="audio-btn" onclick="playAudio('gute Milch', this)" title="Escuchar">🔊</button>
+          <small>buena leche</small>
+        </td>
+        <td>
+          <span class="german-text" onclick="playAudio('gutes Bier', this)">gutes Bier</span>
+          <button class="audio-btn" onclick="playAudio('gutes Bier', this)" title="Escuchar">🔊</button>
+          <small>buena cerveza</small>
+        </td>
+        <td>
+          <span class="german-text" onclick="playAudio('gute Schuhe', this)">gute Schuhe</span>
+          <button class="audio-btn" onclick="playAudio('gute Schuhe', this)" title="Escuchar">🔊</button>
+          <small>buenos zapatos</small>
+        </td>
+      </tr>
+      <tr>
+        <td><strong>Akkusativ</strong></td>
+        <td>
+          <span class="german-text" onclick="playAudio('guten Wein', this)">guten Wein</span>
+          <button class="audio-btn" onclick="playAudio('guten Wein', this)" title="Escuchar">🔊</button>
+          <small>buen vino</small>
+        </td>
+        <td>
+          <span class="german-text" onclick="playAudio('gute Milch', this)">gute Milch</span>
+          <button class="audio-btn" onclick="playAudio('gute Milch', this)" title="Escuchar">🔊</button>
+          <small>buena leche</small>
+        </td>
+        <td>
+          <span class="german-text" onclick="playAudio('gutes Bier', this)">gutes Bier</span>
+          <button class="audio-btn" onclick="playAudio('gutes Bier', this)" title="Escuchar">🔊</button>
+          <small>buena cerveza</small>
+        </td>
+        <td>
+          <span class="german-text" onclick="playAudio('gute Schuhe', this)">gute Schuhe</span>
+          <button class="audio-btn" onclick="playAudio('gute Schuhe', this)" title="Escuchar">🔊</button>
+          <small>buenos zapatos</small>
+        </td>
+      </tr>
+      <tr>
+        <td><strong>Dativ</strong></td>
+        <td>
+          <span class="german-text" onclick="playAudio('gutem Wein', this)">gutem Wein</span>
+          <button class="audio-btn" onclick="playAudio('gutem Wein', this)" title="Escuchar">🔊</button>
+          <small>a/con buen vino</small>
+        </td>
+        <td>
+          <span class="german-text" onclick="playAudio('guter Milch', this)">guter Milch</span>
+          <button class="audio-btn" onclick="playAudio('guter Milch', this)" title="Escuchar">🔊</button>
+          <small>a/con buena leche</small>
+        </td>
+        <td>
+          <span class="german-text" onclick="playAudio('gutem Bier', this)">gutem Bier</span>
+          <button class="audio-btn" onclick="playAudio('gutem Bier', this)" title="Escuchar">🔊</button>
+          <small>a/con buena cerveza</small>
+        </td>
+        <td>
+          <span class="german-text" onclick="playAudio('guten Schuhen', this)">guten Schuhen</span>
+          <button class="audio-btn" onclick="playAudio('guten Schuhen', this)" title="Escuchar">🔊</button>
+          <small>a/con buenos zapatos</small>
+        </td>
+      </tr>
+      <tr>
+        <td><strong>Genitiv</strong></td>
+        <td>
+          <span class="german-text" onclick="playAudio('guten Weines', this)">guten Weines</span>
+          <button class="audio-btn" onclick="playAudio('guten Weines', this)" title="Escuchar">🔊</button>
+          <small>de buen vino</small>
+        </td>
+        <td>
+          <span class="german-text" onclick="playAudio('guter Milch', this)">guter Milch</span>
+          <button class="audio-btn" onclick="playAudio('guter Milch', this)" title="Escuchar">🔊</button>
+          <small>de buena leche</small>
+        </td>
+        <td>
+          <span class="german-text" onclick="playAudio('guten Bieres', this)">guten Bieres</span>
+          <button class="audio-btn" onclick="playAudio('guten Bieres', this)" title="Escuchar">🔊</button>
+          <small>de buena cerveza</small>
+        </td>
+        <td>
+          <span class="german-text" onclick="playAudio('guter Schuhe', this)">guter Schuhe</span>
+          <button class="audio-btn" onclick="playAudio('guter Schuhe', this)" title="Escuchar">🔊</button>
+          <small>de buenos zapatos</small>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
  </tbody>
  </table>
  </div>
@@ -504,173 +520,248 @@ td small {
  <ul>
  <li>Para comparar dos elementos desiguales se usa <strong>"als"</strong> (que):
  <br>
- <span class="german-text" onclick="playAudio('Er ist schneller als ich.')">Er ist schneller als ich.</span>
- <button class="audio-btn" onclick="playAudio('Er ist schneller als ich.')">🔊</button>
- <small style="display:inline; color:#666;"> (Él es más rápido que yo)</small>
- </li>
- <li style="margin-top: 8px;">Para expresar igualdad se usa <strong>"genauso... wie"</strong> o <strong>"so... wie"</strong>:
- <br>
- <span class="german-text" onclick="playAudio('Sie ist genauso groß wie ihre Schwester.')">Sie ist genauso groß wie ihre Schwester.</span>
- <button class="audio-btn" onclick="playAudio('Sie ist genauso groß wie ihre Schwester.')">🔊</button>
- <small style="display:inline; color:#666;"> (Ella es igual de grande que su hermana)</small>
- </li>
- <li style="margin-top: 8px;">Muchos adjetivos de una sílaba con <em>a, o, u</em> añaden Umlaut (ä, ö, ü): <em>alt → älter, groß → größer, jung → jünger, kalt → kälter, warm → wärmer</em>.</li>
- </ul>
- <p style="margin-top: 12px; font-weight: 500;">Ejemplos:</p>
- <ul>
- <li>
- <span class="german-text" onclick="playAudio('Argentinien ist kälter als die Schweiz.')">Argentinien ist kälter als die Schweiz.</span>
- <button class="audio-btn" onclick="playAudio('Argentinien ist kälter als die Schweiz.')">🔊</button>
- <small style="display:inline; color:#666;"> (Argentina es más fría que Suiza)</small>
- </li>
- <li>
- <span class="german-text" onclick="playAudio('Spanien ist wärmer als Argentinien.')">Spanien ist wärmer als Argentinien.</span>
- <button class="audio-btn" onclick="playAudio('Spanien ist wärmer als Argentinien.')">🔊</button>
- <small style="display:inline; color:#666;"> (España es más caliente que Argentina)</small>
- </li>
- </ul>
- </div>
+    <span class="german-text" onclick="playAudio('Er ist schneller als ich.', this)">Er ist schneller als ich.</span>
+    <button class="audio-btn" onclick="playAudio('Er ist schneller als ich.', this)" title="Escuchar">🔊</button>
+    <small style="display:inline; color:#666;"> (Él es más rápido que yo) </small>
+  </li>
+  <li style="margin-top: 8px;">Para expresar igualdad se usa
+    <strong>"genauso... wie"</strong> o <strong>"so... wie"</strong>:
+    <br>
+    <span class="german-text" onclick="playAudio('Sie ist genauso groß wie ihre Schwester.', this)">Sie ist genauso groß wie ihre Schwester.</span>
+    <button class="audio-btn" onclick="playAudio('Sie ist genauso groß wie ihre Schwester.', this)" title="Escuchar">🔊</button>
+    <small style="display:inline; color:#666;"> (Ella es igual de grande que su hermana)</small>
+  </li>
+  <li style="margin-top: 8px;">Muchos adjetivos de una sílaba con <em>a, o, u</em> añaden Umlaut (ä, ö, ü): <em>alt &rarr; älter, kalt &rarr; kälter, warm &rarr; wärmer, groß &rarr; größer, jung &rarr; jünger</em>.</li>
+</ul>
 
- <!-- 2. Superlativ -->
- <h1 class="section-title">2. Superlativ (superlativo)</h1>
- <div class="intro-box">
- <ul>
- <li><strong>Forma predicativa (con el verbo "sein"):</strong> <strong>am + adjetivo + -sten</strong>
- <br>
- <span class="german-text" onclick="playAudio('Er ist am schnellsten.')">Er ist am schnellsten.</span>
- <button class="audio-btn" onclick="playAudio('Er ist am schnellsten.')">🔊</button>
- <small style="display:inline; color:#666;"> (Él es el más rápido)</small>
- <br>
- <span class="german-text" onclick="playAudio('Er ist am schönsten.')">schön = bonito → Er ist am schönsten.</span>
- <button class="audio-btn" onclick="playAudio('Er ist am schönsten.')">🔊</button>
- <small style="display:inline; color:#666;"> (Él es el más bonito)</small>
- </li>
- <li style="margin-top: 10px;"><strong>Forma atributiva (delante de un sustantivo, con artículo y declinación):</strong> <strong>der/die/das + adjetivo + -ste(n) + terminación</strong>
- <br>
- <span class="german-text" onclick="playAudio('Er ist der schnellste Läufer.')">Er ist der schnellste Läufer.</span>
- <button class="audio-btn" onclick="playAudio('Er ist der schnellste Läufer.')">🔊</button>
- <small style="display:inline; color:#666;"> (Él es el corredor más rápido)</small>
- <br>
- <span class="german-text" onclick="playAudio('Sie sind die schnellsten Läufer.')">Sie sind die schnellsten Läufer. (PLURAL)</span>
- <button class="audio-btn" onclick="playAudio('Sie sind die schnellsten Läufer.')">🔊</button>
- <small style="display:inline; color:#666;"> (Ellos son los corredores más rápidos)</small>
- </li>
- <li style="margin-top: 10px;">Adjetivos que terminan en <em>-d, -t, -s, -z, -sch</em> suelen añadir <strong>-esten</strong> en vez de <em>-sten</em>: <em>am ältesten, am kürzesten</em>.</li>
- </ul>
- </div>
+<p style="margin-top: 12px; font-weight: 500;">Ejemplos:</p>
+<ul>
+  <li>
+    <span class="german-text" onclick="playAudio('Argentinien ist kälter als die Schweiz.', this)">Argentinien ist kälter als die Schweiz.</span>
+    <button class="audio-btn" onclick="playAudio('Argentinien ist kälter als die Schweiz.', this)" title="Escuchar">🔊</button>
+    <small style="display:inline; color:#666;"> (Argentina es más fría que Suiza)</small>
+  </li>
+  <li>
+    <span class="german-text" onclick="playAudio('Spanien ist wärmer als Argentinien.', this)">Spanien ist wärmer als Argentinien.</span>
+    <button class="audio-btn" onclick="playAudio('Spanien ist wärmer als Argentinien.', this)" title="Escuchar">🔊</button>
+    <small style="display:inline; color:#666;"> (España es más caliente que Argentina)</small>
+  </li>
+</ul>
+</div>
 
- <!-- 3. Unregelmäßige Formen -->
- <h1 class="section-title">3. Unregelmäßige Formen (formas irregulares)</h1>
- <div class="intro-box">
- <p>Estas formas son irregulares y hay que memorizarlas:</p>
- </div>
- <div class="table-container">
- <table>
- <thead>
- <tr>
- <th>Positiv</th>
- <th>Komparativ</th>
- <th>Superlativ</th>
- <th>Beispiel (Ejemplo)</th>
- </tr>
- </thead>
- <tbody>
- <tr>
- <td><strong>gut</strong> (bueno)</td>
- <td>
- <span class="german-text" onclick="playAudio('besser')">besser</span>
- <button class="audio-btn" onclick="playAudio('besser')">🔊</button>
- </td>
- <td>
- <span class="german-text" onclick="playAudio('am besten')">am besten</span>
- <button class="audio-btn" onclick="playAudio('am besten')">🔊</button>
- </td>
- <td>
- <span class="german-text" onclick="playAudio('Dieser Kuchen ist am besten.')">Dieser Kuchen ist am besten.</span>
- <button class="audio-btn" onclick="playAudio('Dieser Kuchen ist am besten.')">🔊</button>
- <small>Este pastel es el mejor.</small>
- </td>
- </tr>
- <tr>
- <td><strong>viel</strong> (mucho)</td>
- <td>
- <span class="german-text" onclick="playAudio('mehr')">mehr</span>
- <button class="audio-btn" onclick="playAudio('mehr')">🔊</button>
- </td>
- <td>
- <span class="german-text" onclick="playAudio('am meisten')">am meisten</span>
- <button class="audio-btn" onclick="playAudio('am meisten')">🔊</button>
- </td>
- <td>
- <span class="german-text" onclick="playAudio('Sie hat am meisten Erfahrung.')">Sie hat am meisten Erfahrung.</span>
- <button class="audio-btn" onclick="playAudio('Sie hat am meisten Erfahrung.')">🔊</button>
- <small>Ella tiene la mayor experiencia.</small>
- </td>
- </tr>
- <tr>
- <td><strong>gern</strong> (con gusto)</td>
- <td>
- <span class="german-text" onclick="playAudio('lieber')">lieber</span>
- <button class="audio-btn" onclick="playAudio('lieber')">🔊</button>
- </td>
- <td>
- <span class="german-text" onclick="playAudio('am liebsten')">am liebsten</span>
- <button class="audio-btn" onclick="playAudio('am liebsten')">🔊</button>
- </td>
- <td>
- <span class="german-text" onclick="playAudio('Ich trinke am liebsten Tee.')">Ich trinke am liebsten Tee.</span>
- <button class="audio-btn" onclick="playAudio('Ich trinke am liebsten Tee.')">🔊</button>
- <small>Lo que más me gusta beber es té.</small>
- </td>
- </tr>
- <tr>
- <td><strong>hoch</strong> (alto)</td>
- <td>
- <span class="german-text" onclick="playAudio('höher')">höher</span>
- <button class="audio-btn" onclick="playAudio('höher')">🔊</button>
- </td>
- <td>
- <span class="german-text" onclick="playAudio('am höchsten')">am höchsten</span>
- <button class="audio-btn" onclick="playAudio('am höchsten')">🔊</button>
- </td>
- <td>
- <span class="german-text" onclick="playAudio('Der Berg ist am höchsten.')">Der Berg ist am höchsten.</span>
- <button class="audio-btn" onclick="playAudio('Der Berg ist am höchsten.')">🔊</button>
- <small>La montaña es la más alta.</small>
- </td>
- </tr>
- <tr>
- <td><strong>nah</strong> (cercano)</td>
- <td>
- <span class="german-text" onclick="playAudio('näher')">näher</span>
- <button class="audio-btn" onclick="playAudio('näher')">🔊</button>
- </td>
- <td>
- <span class="german-text" onclick="playAudio('am nächsten')">am nächsten</span>
- <button class="audio-btn" onclick="playAudio('am nächsten')">🔊</button>
- </td>
- <td>
- <span class="german-text" onclick="playAudio('Die Schule ist am nächsten.')">Die Schule ist am nächsten.</span>
- <button class="audio-btn" onclick="playAudio('Die Schule ist am nächsten.')">🔊</button>
- <small>La escuela es la más cercana.</small>
- </td>
- </tr>
+<!-- 2. Superlativ -->
+<h1 class="section-title">2. Superlativ (superlativo)</h1>
+<div class="intro-box">
+<ul>
+  <li><strong>Forma predicativa (con el verbo "sein"):</strong> <strong>am + adjetivo + -sten</strong>
+    <br>
+    <span class="german-text" onclick="playAudio('Er ist am schnellsten.', this)">Er ist am schnellsten.</span>
+    <button class="audio-btn" onclick="playAudio('Er ist am schnellsten.', this)" title="Escuchar">🔊</button>
+    <small style="display:inline; color:#666;"> (Él es el más rápido)</small>
+    <br>
+    <span class="german-text" onclick="playAudio('Er ist am schönsten.', this)">schön = bonito &rarr; Er ist am schönsten.</span>
+    <button class="audio-btn" onclick="playAudio('Er ist am schönsten.', this)" title="Escuchar">🔊</button>
+    <small style="display:inline; color:#666;"> (Él es el más bonito)</small>
+  </li>
+  <li style="margin-top: 10px;"><strong>Forma atributiva (delante de un sustantivo, con artículo y declinación):</strong> <strong>der/die/das + adjetivo + ste(n) + terminación</strong>
+    <br>
+    <span class="german-text" onclick="playAudio('Er ist der schnellste Läufer.', this)">Er ist der schnellste Läufer.</span>
+    <button class="audio-btn" onclick="playAudio('Er ist der schnellste Läufer.', this)" title="Escuchar">🔊</button>
+    <small style="display:inline; color:#666;"> (Él es el corredor más rápido)</small>
+    <br>
+    <span class="german-text" onclick="playAudio('Sie sind die schnellsten Läufer.', this)">Sie sind die schnellsten Läufer. (PLURAL)</span>
+    <button class="audio-btn" onclick="playAudio('Sie sind die schnellsten Läufer.', this)" title="Escuchar">🔊</button>
+    <small style="display:inline; color:#666;"> (Ellos son los corredores más rápidos)</small>
+  </li>
+  <li style="margin-top: 10px;">Adjetivos que terminan en <em>-d, -t, -s, -z, -sch</em> suelen añadir <strong>-esten</strong> en vez de <em>-sten</em>: <em>am ältesten, am kürzesten</em>.</li>
+</ul>
+</div>
+
+<!-- 3. Unregelmäßige Formen -->
+<h1 class="section-title">3. Unregelmäßige Formen (formas irregulares)</h1>
+<div class="intro-box">
+  <p>Estas formas son irregulares y hay que memorizarlas:</p>
+</div>
+<div class="table-container">
+<table>
+  <thead>
+    <tr>
+      <th>Positiv</th>
+      <th>Komparativ</th>
+      <th>Superlativ</th>
+      <th>Beispiel (Ejemplo)</th>
+    </tr>
+  </thead>
+  <tbody>
+<tr>
+  <td>
+    <span class="german-text" onclick="playAudio('gut', this)">gut</span>
+    <button class="audio-btn" onclick="playAudio('gut', this)" title="Escuchar">🔊</button>
+    <br><small>bueno</small>
+  </td>
+  <td>
+    <span class="german-text" onclick="playAudio('besser', this)">besser</span>
+    <button class="audio-btn" onclick="playAudio('besser', this)" title="Escuchar">🔊</button>
+    <br><small>mejor</small>
+  </td>
+  <td>
+    <span class="german-text" onclick="playAudio('am besten', this)">am besten</span>
+    <button class="audio-btn" onclick="playAudio('am besten', this)" title="Escuchar">🔊</button>
+    <br><small>el mejor / lo mejor</small>
+  </td>
+  <td>
+    <span class="german-text" onclick="playAudio('Dieser Kuchen ist am besten.', this)">Dieser Kuchen ist am besten.</span>
+    <button class="audio-btn" onclick="playAudio('Dieser Kuchen ist am besten.', this)" title="Escuchar">🔊</button>
+    <br><small>Este pastel es el mejor.</small>
+  </td>
+</tr>
+<tr>
+  <td>
+    <span class="german-text" onclick="playAudio('viel', this)">viel</span>
+    <button class="audio-btn" onclick="playAudio('viel', this)" title="Escuchar">🔊</button>
+    <br><small>mucho</small>
+  </td>
+  <td>
+    <span class="german-text" onclick="playAudio('mehr', this)">mehr</span>
+    <button class="audio-btn" onclick="playAudio('mehr', this)" title="Escuchar">🔊</button>
+    <br><small>más</small>
+  </td>
+  <td>
+    <span class="german-text" onclick="playAudio('am meisten', this)">am meisten</span>
+    <button class="audio-btn" onclick="playAudio('am meisten', this)" title="Escuchar">🔊</button>
+    <br><small>lo más / la mayoría</small>
+  </td>
+  <td>
+    <span class="german-text" onclick="playAudio('Sie hat am meisten Erfahrung.', this)">Sie hat am meisten Erfahrung.</span>
+    <button class="audio-btn" onclick="playAudio('Sie hat am meistem Erfahrung.', this)" title="Escuchar">🔊</button>
+    <br><small>Ella tiene la mayor experiencia.</small>
+  </td>
+</tr>
+<tr>
+  <td>
+    <span class="german-text" onclick="playAudio('gern', this)">gern</span>
+    <button class="audio-btn" onclick="playAudio('gern', this)" title="Escuchar">🔊</button>
+    <br><small>con gusto</small>
+  </td>
+  <td>
+    <span class="german-text" onclick="playAudio('lieber', this)">lieber</span>
+    <button class="audio-btn" onclick="playAudio('lieber', this)" title="Escuchar">🔊</button>
+    <br><small>preferiblemente / más a gusto</small>
+  </td>
+  <td>
+    <span class="german-text" onclick="playAudio('am liebsten', this)">am liebsten</span>
+    <button class="audio-btn" onclick="playAudio('am liebsten', this)" title="Escuchar">🔊</button>
+    <br><small>lo que más me/le gusta</small>
+  </td>
+  <td>
+    <span class="german-text" onclick="playAudio('Ich trinke am liebsten Tee.', this)">Ich trinke am liebsten Tee.</span>
+    <button class="audio-btn" onclick="playAudio('Ich trinke am liebsten Tee.', this)" title="Escuchar">🔊</button>
+    <br><small>Lo que más me gusta beber es té.</small>
+  </td>
+</tr>
+<tr>
+  <td>
+    <span class="german-text" onclick="playAudio('hoch', this)">hoch</span>
+    <button class="audio-btn" onclick="playAudio('hoch', this)" title="Escuchar">🔊</button>
+    <br><small>alto</small>
+  </td>
+  <td>
+    <span class="german-text" onclick="playAudio('höher', this)">höher</span>
+    <button class="audio-btn" onclick="playAudio('höher', this)" title="Escuchar">🔊</button>
+    <br><small>más alto</small>
+  </td>
+  <td>
+    <span class="german-text" onclick="playAudio('am höchsten', this)">am höchsten</span>
+    <button class="audio-btn" onclick="playAudio('am höchsten', this)" title="Escuchar">🔊</button>
+    <br><small>el más alto / lo más alto</small>
+  </td>
+  <td>
+    <span class="german-text" onclick="playAudio('Der Berg ist am höchsten.', this)">Der Berg ist am höchsten.</span>
+    <button class="audio-btn" onclick="playAudio('Der Berg ist am höchsten.', this)" title="Escuchar">🔊</button>
+    <br><small>La montaña es la más alta.</small>
+  </td>
+</tr>
+<tr>
+  <td>
+    <span class="german-text" onclick="playAudio('nah', this)">nah</span>
+    <button class="audio-btn" onclick="playAudio('nah', this)" title="Escuchar">🔊</button>
+    <br><small>cercano</small>
+  </td>
+  <td>
+    <span class="german-text" onclick="playAudio('näher', this)">näher</span>
+    <button class="audio-btn" onclick="playAudio('näher', this)" title="Escuchar">🔊</button>
+    <br><small>más cercano</small>
+  </td>
+  <td>
+    <span class="german-text" onclick="playAudio('am nächsten', this)">am nächsten</span>
+    <button class="audio-btn" onclick="playAudio('am nächsten', this)" title="Escuchar">🔊</button>
+    <br><small>el más cercano</small>
+  </td>
+  <td>
+    <span class="german-text" onclick="playAudio('Die Schule ist am nächsten.', this)">Die Schule ist am nächsten.</span>
+    <button class="audio-btn" onclick="playAudio('Die Schule ist am nächsten.', this)" title="Escuchar">🔊</button>
+    <br><small>La escuela es la más cercana.</small>
+  </td>
+</tr>
+  </tbody>
+</table>
+</div>
  </tbody>
  </table>
  </div>
 </main>
 
 <script>
-function playAudio(text) {
- if ('speechSynthesis' in window) {
- window.speechSynthesis.cancel(); // Detener audios anteriores
- const utterance = new SpeechSynthesisUtterance(text);
- utterance.lang = 'de-DE';
- utterance.rate = 0.9;
- window.speechSynthesis.speak(utterance);
- } else {
- alert('Tu navegador no soporta la reproducción de voz.');
- }
+function playAudio(germanText, element) {
+  window.speechSynthesis.cancel();
+
+  // 1. Locución en Alemán
+  const germanUtterance = new SpeechSynthesisUtterance(germanText);
+  germanUtterance.lang = 'de-DE';
+  germanUtterance.rate = 0.85;
+
+  let spanishUtterance = null;
+
+  // 2. Extraer el texto en Español desde el DOM usando "this"
+  if (element) {
+    // Si la celda donde hiciste clic tiene un tag <small>, toma ese texto.
+    // De lo contrario, busca en la celda contigua (td).
+    const cell = element.closest('td');
+    let spanishText = '';
+
+    if (cell) {
+      const smallTag = cell.querySelector('small');
+      if (smallTag) {
+        spanishText = smallTag.textContent;
+      } else if (cell.nextElementSibling) {
+        spanishText = cell.nextElementSibling.textContent;
+      }
+    }
+
+    if (spanishText) {
+      // Limpia aclaraciones entre paréntesis o barras para que la voz lea fluido
+      spanishText = spanishText.replace(/\(.*?\)/g, '').replace(/[/]/g, ',');
+      spanishUtterance = new SpeechSynthesisUtterance(spanishText);
+      spanishUtterance.lang = 'es-ES';
+      spanishUtterance.rate = 0.95;
+    }
+  }
+
+  // Selección de voces naturales/HD si están disponibles
+  const voices = window.speechSynthesis.getVoices();
+  const germanVoice = voices.find(v => v.lang.startsWith('de') && (v.name.includes('Google') || v.name.includes('Natural') || v.name.includes('Neural')));
+  if (germanVoice) germanUtterance.voice = germanVoice;
+
+  if (spanishUtterance) {
+    const spanishVoice = voices.find(v => v.lang.startsWith('es') && (v.name.includes('Google') || v.name.includes('Natural') || v.name.includes('Neural')));
+    if (spanishVoice) spanishUtterance.voice = spanishVoice;
+  }
+
+  // Reproducir secuencialmente: Alemán -> Español
+  window.speechSynthesis.speak(germanUtterance);
+  if (spanishUtterance) {
+    window.speechSynthesis.speak(spanishUtterance);
+  }
 }
 </script>
 </body>

@@ -155,193 +155,237 @@ td small {
  </tr>
  </thead>
  <tbody>
- <tr>
- <td><strong>1</strong></td>
- <td>
- <span class="german-text" onclick="playAudio('eins')">eins</span>
- <button class="audio-btn" onclick="playAudio('eins')">🔊</button>
- <small>Uno</small>
- </td>
- <td>Uno</td>
- </tr>
- <tr>
- <td><strong>2</strong></td>
- <td>
- <span class="german-text" onclick="playAudio('zwei')">zwei</span>
- <button class="audio-btn" onclick="playAudio('zwei')">🔊</button>
- <small>Dos</small>
- </td>
- <td>Dos</td>
- </tr>
- <tr>
- <td><strong>3</strong></td>
- <td>
- <span class="german-text" onclick="playAudio('drei')">drei</span>
- <button class="audio-btn" onclick="playAudio('drei')">🔊</button>
- <small>Tres</small>
- </td>
- <td>Tres</td>
- </tr>
- <tr>
- <td><strong>4</strong></td>
- <td>
- <span class="german-text" onclick="playAudio('vier')">vier</span>
- <button class="audio-btn" onclick="playAudio('vier')">🔊</button>
- <small>Cuatro</small>
- </td>
- <td>Cuatro</td>
- </tr>
- <tr>
- <td><strong>5</strong></td>
- <td>
- <span class="german-text" onclick="playAudio('fünf')">fünf</span>
- <button class="audio-btn" onclick="playAudio('fünf')">🔊</button>
- <small>Cinco</small>
- </td>
- <td>Cinco</td>
- </tr>
- <tr>
- <td><strong>6</strong></td>
- <td>
- <span class="german-text" onclick="playAudio('sechs')">sechs</span>
- <button class="audio-btn" onclick="playAudio('sechs')">🔊</button>
- <small>Seis</small>
- </td>
- <td>Seis</td>
- </tr>
- <tr>
- <td><strong>7</strong></td>
- <td>
- <span class="german-text" onclick="playAudio('sieben')">sieben</span>
- <button class="audio-btn" onclick="playAudio('sieben')">🔊</button>
- <small>Siete</small>
- </td>
- <td>Siete</td>
- </tr>
- <tr>
- <td><strong>8</strong></td>
- <td>
- <span class="german-text" onclick="playAudio('acht')">acht</span>
- <button class="audio-btn" onclick="playAudio('acht')">🔊</button>
- <small>Ocho</small>
- </td>
- <td>Ocho</td>
- </tr>
- <tr>
- <td><strong>9</strong></td>
- <td>
- <span class="german-text" onclick="playAudio('neun')">neun</span>
- <button class="audio-btn" onclick="playAudio('neun')">🔊</button>
- <small>Nueve</small>
- </td>
- <td>Nueve</td>
- </tr>
- <tr>
- <td><strong>10</strong></td>
- <td>
- <span class="german-text" onclick="playAudio('zehn')">zehn</span>
- <button class="audio-btn" onclick="playAudio('zehn')">🔊</button>
- <small>Diez</small>
- </td>
- <td>Diez</td>
- </tr>
- </tbody>
- </table>
- </div>
+ <!-- Números del 1 al 10 -->
+<tr>
+  <td><strong>1</strong></td>
+  <td>
+    <span class="german-text" onclick="playAudio('eins', this)">eins</span>
+    <button class="audio-btn" onclick="playAudio('eins', this)" title="Escuchar">🔊</button>
+    <small>Uno</small>
+  </td>
+  <td>
+    Uno
+    <button class="audio-btn" onclick="playAudio('Uno', this)" title="Escuchar en español">🔊</button>
+  </td>
+</tr>
+<tr>
+  <td><strong>2</strong></td>
+  <td>
+    <span class="german-text" onclick="playAudio('zwei', this)">zwei</span>
+    <button class="audio-btn" onclick="playAudio('zwei', this)" title="Escuchar">🔊</button>
+    <small>Dos</small>
+  </td>
+  <td>
+    Dos
+    <button class="audio-btn" onclick="playAudio('Dos', this)" title="Escuchar en español">🔊</button>
+  </td>
+</tr>
+<tr>
+  <td><strong>3</strong></td>
+  <td>
+    <span class="german-text" onclick="playAudio('drei', this)">drei</span>
+    <button class="audio-btn" onclick="playAudio('drei', this)" title="Escuchar">🔊</button>
+    <small>Tres</small>
+  </td>
+  <td>
+    Tres
+    <button class="audio-btn" onclick="playAudio('Tres', this)" title="Escuchar en español">🔊</button>
+  </td>
+</tr>
+<tr>
+  <td><strong>4</strong></td>
+  <td>
+    <span class="german-text" onclick="playAudio('vier', this)">vier</span>
+    <button class="audio-btn" onclick="playAudio('vier', this)" title="Escuchar">🔊</button>
+    <small>Cuatro</small>
+  </td>
+  <td>
+    Cuatro
+    <button class="audio-btn" onclick="playAudio('Cuatro', this)" title="Escuchar en español">🔊</button>
+  </td>
+</tr>
+<tr>
+  <td><strong>5</strong></td>
+  <td>
+    <span class="german-text" onclick="playAudio('fünf', this)">fünf</span>
+    <button class="audio-btn" onclick="playAudio('fünf', this)" title="Escuchar">🔊</button>
+    <small>Cinco</small>
+  </td>
+  <td>
+    Cinco
+    <button class="audio-btn" onclick="playAudio('Cinco', this)" title="Escuchar en español">🔊</button>
+  </td>
+</tr>
+<tr>
+  <td><strong>6</strong></td>
+  <td>
+    <span class="german-text" onclick="playAudio('sechs', this)">sechs</span>
+    <button class="audio-btn" onclick="playAudio('sechs', this)" title="Escuchar">🔊</button>
+    <small>Seis</small>
+  </td>
+  <td>
+    Seis
+    <button class="audio-btn" onclick="playAudio('Seis', this)" title="Escuchar en español">🔊</button>
+  </td>
+</tr>
+<tr>
+  <td><strong>7</strong></td>
+  <td>
+    <span class="german-text" onclick="playAudio('sieben', this)">sieben</span>
+    <button class="audio-btn" onclick="playAudio('sieben', this)" title="Escuchar">🔊</button>
+    <small>Siete</small>
+  </td>
+  <td>
+    Siete
+    <button class="audio-btn" onclick="playAudio('Siete', this)" title="Escuchar en español">🔊</button>
+  </td>
+</tr>
+<tr>
+  <td><strong>8</strong></td>
+  <td>
+    <span class="german-text" onclick="playAudio('acht', this)">acht</span>
+    <button class="audio-btn" onclick="playAudio('acht', this)" title="Escuchar">🔊</button>
+    <small>Ocho</small>
+  </td>
+  <td>
+    Ocho
+    <button class="audio-btn" onclick="playAudio('Ocho', this)" title="Escuchar en español">🔊</button>
+  </td>
+</tr>
+<tr>
+  <td><strong>9</strong></td>
+  <td>
+    <span class="german-text" onclick="playAudio('neun', this)">neun</span>
+    <button class="audio-btn" onclick="playAudio('neun', this)" title="Escuchar">🔊</button>
+    <small>Nueve</small>
+  </td>
+  <td>
+    Nueve
+    <button class="audio-btn" onclick="playAudio('Nueve', this)" title="Escuchar en español">🔊</button>
+  </td>
+</tr>
+<tr>
+  <td><strong>10</strong></td>
+  <td>
+    <span class="german-text" onclick="playAudio('zehn', this)">zehn</span>
+    <button class="audio-btn" onclick="playAudio('zehn', this)" title="Escuchar">🔊</button>
+    <small>Diez</small>
+  </td>
+  <td>
+    Diez
+    <button class="audio-btn" onclick="playAudio('Diez', this)" title="Escuchar en español">🔊</button>
+  </td>
+</tr>
 
- <!-- Sección: Decenas (10 al 90) -->
- <h1 class="section-title">🔟 Decenas (del 10 al 90)</h1>
- <div class="table-container">
- <table>
- <thead>
- <tr>
- <th>Número</th>
- <th>Alemán</th>
- <th>Español</th>
- </tr>
- </thead>
- <tbody>
- <tr>
- <td><strong>10</strong></td>
- <td>
- <span class="german-text" onclick="playAudio('zehn')">zehn</span>
- <button class="audio-btn" onclick="playAudio('zehn')">🔊</button>
- <small>Diez</small>
- </td>
- <td>Diez</td>
- </tr>
- <tr>
- <td><strong>20</strong></td>
- <td>
- <span class="german-text" onclick="playAudio('zwanzig')">zwanzig</span>
- <button class="audio-btn" onclick="playAudio('zwanzig')">🔊</button>
- <small>Veinte</small>
- </td>
- <td>Veinte</td>
- </tr>
- <tr>
- <td><strong>30</strong></td>
- <td>
- <span class="german-text" onclick="playAudio('dreißig')">dreißig</span>
- <button class="audio-btn" onclick="playAudio('dreißig')">🔊</button>
- <small>Treinta</small>
- </td>
- <td>Treinta</td>
- </tr>
- <tr>
- <td><strong>40</strong></td>
- <td>
- <span class="german-text" onclick="playAudio('vierzig')">vierzig</span>
- <button class="audio-btn" onclick="playAudio('vierzig')">🔊</button>
- <small>Cuarenta</small>
- </td>
- <td>Cuarenta</td>
- </tr>
- <tr>
- <td><strong>50</strong></td>
- <td>
- <span class="german-text" onclick="playAudio('fünfzig')">fünfzig</span>
- <button class="audio-btn" onclick="playAudio('fünfzig')">🔊</button>
- <small>Cincuenta</small>
- </td>
- <td>Cincuenta</td>
- </tr>
- <tr>
- <td><strong>60</strong></td>
- <td>
- <span class="german-text" onclick="playAudio('sechzig')">sechzig</span>
- <button class="audio-btn" onclick="playAudio('sechzig')">🔊</button>
- <small>Sesenta</small>
- </td>
- <td>Sesenta</td>
- </tr>
- <tr>
- <td><strong>70</strong></td>
- <td>
- <span class="german-text" onclick="playAudio('siebzig')">siebzig</span>
- <button class="audio-btn" onclick="playAudio('siebzig')">🔊</button>
- <small>Setenta</small>
- </td>
- <td>Setenta</td>
- </tr>
- <tr>
- <td><strong>80</strong></td>
- <td>
- <span class="german-text" onclick="playAudio('achtzig')">achtzig</span>
- <button class="audio-btn" onclick="playAudio('achtzig')">🔊</button>
- <small>Ochenta</small>
- </td>
- <td>Ochenta</td>
- </tr>
- <tr>
- <td><strong>90</strong></td>
- <td>
- <span class="german-text" onclick="playAudio('neunzig')">neunzig</span>
- <button class="audio-btn" onclick="playAudio('neunzig')">🔊</button>
- <small>Noventa</small>
- </td>
- <td>Noventa</td>
- </tr>
+<!-- Decenas (del 10 al 90) -->
+<tr>
+  <td><strong>10</strong></td>
+  <td>
+    <span class="german-text" onclick="playAudio('zehn', this)">zehn</span>
+    <button class="audio-btn" onclick="playAudio('zehn', this)" title="Escuchar">🔊</button>
+    <small>Diez</small>
+  </td>
+  <td>
+    Diez
+    <button class="audio-btn" onclick="playAudio('Diez', this)" title="Escuchar en español">🔊</button>
+  </td>
+</tr>
+<tr>
+  <td><strong>20</strong></td>
+  <td>
+    <span class="german-text" onclick="playAudio('zwanzig', this)">zwanzig</span>
+    <button class="audio-btn" onclick="playAudio('zwanzig', this)" title="Escuchar">🔊</button>
+    <small>Veinte</small>
+  </td>
+  <td>
+    Veinte
+    <button class="audio-btn" onclick="playAudio('Veinte', this)" title="Escuchar en español">🔊</button>
+  </td>
+</tr>
+<tr>
+  <td><strong>30</strong></td>
+  <td>
+    <span class="german-text" onclick="playAudio('dreißig', this)">dreißig</span>
+    <button class="audio-btn" onclick="playAudio('dreißig', this)" title="Escuchar">🔊</button>
+    <small>Treinta</small>
+  </td>
+  <td>
+    Treinta
+    <button class="audio-btn" onclick="playAudio('Treinta', this)" title="Escuchar en español">🔊</button>
+  </td>
+</tr>
+<tr>
+  <td><strong>40</strong></td>
+  <td>
+    <span class="german-text" onclick="playAudio('vierzig', this)">vierzig</span>
+    <button class="audio-btn" onclick="playAudio('vierzig', this)" title="Escuchar">🔊</button>
+    <small>Cuarenta</small>
+  </td>
+  <td>
+    Cuarenta
+    <button class="audio-btn" onclick="playAudio('Cuarenta', this)" title="Escuchar en español">🔊</button>
+  </td>
+</tr>
+<tr>
+  <td><strong>50</strong></td>
+  <td>
+    <span class="german-text" onclick="playAudio('fünfzig', this)">fünfzig</span>
+    <button class="audio-btn" onclick="playAudio('fünfzig', this)" title="Escuchar">🔊</button>
+    <small>Cincuenta</small>
+  </td>
+  <td>
+    Cincuenta
+    <button class="audio-btn" onclick="playAudio('Cincuenta', this)" title="Escuchar en español">🔊</button>
+  </td>
+</tr>
+<tr>
+  <td><strong>60</strong></td>
+  <td>
+    <span class="german-text" onclick="playAudio('sechzig', this)">sechzig</span>
+    <button class="audio-btn" onclick="playAudio('sechzig', this)" title="Escuchar">🔊</button>
+    <small>Sesenta</small>
+  </td>
+  <td>
+    Sesenta
+    <button class="audio-btn" onclick="playAudio('Sesenta', this)" title="Escuchar en español">🔊</button>
+  </td>
+</tr>
+<tr>
+  <td><strong>70</strong></td>
+  <td>
+    <span class="german-text" onclick="playAudio('siebzig', this)">siebzig</span>
+    <button class="audio-btn" onclick="playAudio('siebzig', this)" title="Escuchar">🔊</button>
+    <small>Setenta</small>
+  </td>
+  <td>
+    Setenta
+    <button class="audio-btn" onclick="playAudio('Setenta', this)" title="Escuchar en español">🔊</button>
+  </td>
+</tr>
+<tr>
+  <td><strong>80</strong></td>
+  <td>
+    <span class="german-text" onclick="playAudio('achtzig', this)">achtzig</span>
+    <button class="audio-btn" onclick="playAudio('achtzig', this)" title="Escuchar">🔊</button>
+    <small>Ochenta</small>
+  </td>
+  <td>
+    Ochenta
+    <button class="audio-btn" onclick="playAudio('Ochenta', this)" title="Escuchar en español">🔊</button>
+  </td>
+</tr>
+<tr>
+  <td><strong>90</strong></td>
+  <td>
+    <span class="german-text" onclick="playAudio('neunzig', this)">neunzig</span>
+    <button class="audio-btn" onclick="playAudio('neunzig', this)" title="Escuchar">🔊</button>
+    <small>Noventa</small>
+  </td>
+  <td>
+    Noventa
+    <button class="audio-btn" onclick="playAudio('Noventa', this)" title="Escuchar en español">🔊</button>
+  </td>
+</tr>
  </tbody>
  </table>
  </div>
@@ -365,95 +409,141 @@ td small {
  <button class="audio-btn" onclick="playAudio('hundert')">🔊</button>
  <small>Cien / Ciento</small>
  </td>
- <td>Cien</td>
- </tr>
- <tr>
- <td><strong>1000</strong></td>
- <td>
- <span class="german-text" onclick="playAudio('tausend')">tausend / eintausend</span>
- <button class="audio-btn" onclick="playAudio('tausend')">🔊</button>
- <small>Mil / Un mil</small>
- </td>
- <td>Mil</td>
- </tr>
- </tbody>
- </table>
- </div>
+ <!-- Cien / Mil -->
+<tr>
+  <td><strong>100</strong></td>
+  <td>
+    <span class="german-text" onclick="playAudio('hundert', this)">hundert / einhundert</span>
+    <button class="audio-btn" onclick="playAudio('hundert', this)" title="Escuchar">🔊</button>
+    <small>Cien / Un cien</small>
+  </td>
+  <td>
+    Cien
+    <button class="audio-btn" onclick="playAudio('Cien', this)" title="Escuchar en español">🔊</button>
+  </td>
+</tr>
+<tr>
+  <td><strong>1000</strong></td>
+  <td>
+    <span class="german-text" onclick="playAudio('tausend', this)">tausend / eintausend</span>
+    <button class="audio-btn" onclick="playAudio('tausend', this)" title="Escuchar">🔊</button>
+    <small>Mil / Un mil</small>
+  </td>
+  <td>
+    Mil
+    <button class="audio-btn" onclick="playAudio('Mil', this)" title="Escuchar en español">🔊</button>
+  </td>
+</tr>
 
- <!-- Sección: Regla para Números de Dos Cifras -->
- <h1 class="section-title">💡 Regla de Números de Dos Cifras (21 - 99)</h1>
- <div class="intro-box">
- <h2>Estructura "Unidad + und + Decena"</h2>
- <p>En alemán, para formar los números de dos cifras del 21 al 99, <strong>se dice primero la unidad, luego la palabra "und" (y), y finalmente la decena</strong>. Todo se escribe junto como una sola palabra (nota: <em>eins</em> pierde la 's' final y pasa a ser <em>ein</em>).</p>
- </div>
-
- <div class="table-container">
- <table>
- <thead>
- <tr>
- <th>Número</th>
- <th>Estructura</th>
- <th>Alemán</th>
- <th>Español</th>
- </tr>
- </thead>
- <tbody>
- <tr>
- <td><strong>21</strong></td>
- <td>Unidad (ein) + und + Decena (zwanzig)</td>
- <td>
- <span class="german-text" onclick="playAudio('einundzwanzig')">einundzwanzig</span>
- <button class="audio-btn" onclick="playAudio('einundzwanzig')">🔊</button>
- <small>Literal: Uno y veinte</small>
- </td>
- <td>Veintiuno</td>
- </tr>
- <tr>
- <td><strong>34</strong></td>
- <td>Unidad (vier) + und + Decena (dreißig)</td>
- <td>
- <span class="german-text" onclick="playAudio('vierunddreißig')">vierunddreißig</span>
- <button class="audio-btn" onclick="playAudio('vierunddreißig')">🔊</button>
- <small>Literal: Cuatro y treinta</small>
- </td>
- <td>Treinta y cuatro</td>
- </tr>
- <tr>
- <td><strong>57</strong></td>
- <td>Unidad (sieben) + und + Decena (fünfzig)</td>
- <td>
- <span class="german-text" onclick="playAudio('siebenundfünfzig')">siebenundfünfzig</span>
- <button class="audio-btn" onclick="playAudio('siebenundfünfzig')">🔊</button>
- <small>Literal: Siete y cincuenta</small>
- </td>
- <td>Cincuenta y siete</td>
- </tr>
- <tr>
- <td><strong>98</strong></td>
- <td>Unidad (acht) + und + Decena (neunzig)</td>
- <td>
- <span class="german-text" onclick="playAudio('achtundneunzig')">achtundneunzig</span>
- <button class="audio-btn" onclick="playAudio('achtundneunzig')">🔊</button>
- <small>Literal: Ocho y noventa</small>
- </td>
- <td>Noventa y ocho</td>
- </tr>
+<!-- Regla de Números de Dos Cifras (21 - 99) -->
+<tr>
+  <td><strong>21</strong></td>
+  <td>Unidad (ein) + und + Decena (zwanzig)</td>
+  <td>
+    <span class="german-text" onclick="playAudio('einundzwanzig', this)">einundzwanzig</span>
+    <button class="audio-btn" onclick="playAudio('einundzwanzig', this)" title="Escuchar">🔊</button>
+    <small>Literal: Uno y veinte</small>
+  </td>
+  <td>
+    Veintiuno
+    <button class="audio-btn" onclick="playAudio('Veintiuno', this)" title="Escuchar en español">🔊</button>
+  </td>
+</tr>
+<tr>
+  <td><strong>34</strong></td>
+  <td>Unidad (vier) + und + Decena (dreißig)</td>
+  <td>
+    <span class="german-text" onclick="playAudio('vierunddreißig', this)">vierunddreißig</span>
+    <button class="audio-btn" onclick="playAudio('vierunddreißig', this)" title="Escuchar">🔊</button>
+    <small>Literal: Cuatro y treinta</small>
+  </td>
+  <td>
+    Treinta y cuatro
+    <button class="audio-btn" onclick="playAudio('Treinta y cuatro', this)" title="Escuchar en español">🔊</button>
+  </td>
+</tr>
+<tr>
+  <td><strong>57</strong></td>
+  <td>Unidad (sieben) + und + Decena (fünfzig)</td>
+  <td>
+    <span class="german-text" onclick="playAudio('siebenundfünfzig', this)">siebenundfünfzig</span>
+    <button class="audio-btn" onclick="playAudio('siebenundfünfzig', this)" title="Escuchar">🔊</button>
+    <small>Literal: Siete y cincuenta</small>
+  </td>
+  <td>
+    Cincuenta y siete
+    <button class="audio-btn" onclick="playAudio('Cincuenta y siete', this)" title="Escuchar en español">🔊</button>
+  </td>
+</tr>
+<tr>
+  <td><strong>98</strong></td>
+  <td>Unidad (acht) + und + Decena (neunzig)</td>
+  <td>
+    <span class="german-text" onclick="playAudio('achtundneunzig', this)">achtundneunzig</span>
+    <button class="audio-btn" onclick="playAudio('achtundneunzig', this)" title="Escuchar">🔊</button>
+    <small>Literal: Ocho y noventa</small>
+  </td>
+  <td>
+    Noventa y ocho
+    <button class="audio-btn" onclick="playAudio('Noventa y ocho', this)" title="Escuchar en español">🔊</button>
+  </td>
+</tr>
  </tbody>
  </table>
  </div>
 </main>
 
 <script>
-function playAudio(text) {
- if ('speechSynthesis' in window) {
- window.speechSynthesis.cancel(); // Detener audios anteriores
- const utterance = new SpeechSynthesisUtterance(text);
- utterance.lang = 'de-DE';
- utterance.rate = 0.9;
- window.speechSynthesis.speak(utterance);
- } else {
- alert('Tu navegador no soporta la reproducción de voz.');
- }
+function playAudio(germanText, element) {
+  window.speechSynthesis.cancel();
+
+  // 1. Locución en Alemán
+  const germanUtterance = new SpeechSynthesisUtterance(germanText);
+  germanUtterance.lang = 'de-DE';
+  germanUtterance.rate = 0.85;
+
+  let spanishUtterance = null;
+
+  // 2. Extraer el texto en Español desde el DOM usando "this"
+  if (element) {
+    // Si la celda donde hiciste clic tiene un tag <small>, toma ese texto.
+    // De lo contrario, busca en la celda contigua (td).
+    const cell = element.closest('td');
+    let spanishText = '';
+
+    if (cell) {
+      const smallTag = cell.querySelector('small');
+      if (smallTag) {
+        spanishText = smallTag.textContent;
+      } else if (cell.nextElementSibling) {
+        spanishText = cell.nextElementSibling.textContent;
+      }
+    }
+
+    if (spanishText) {
+      // Limpia aclaraciones entre paréntesis o barras para que la voz lea fluido
+      spanishText = spanishText.replace(/\(.*?\)/g, '').replace(/[/]/g, ',');
+      spanishUtterance = new SpeechSynthesisUtterance(spanishText);
+      spanishUtterance.lang = 'es-ES';
+      spanishUtterance.rate = 0.95;
+    }
+  }
+
+  // Selección de voces naturales/HD si están disponibles
+  const voices = window.speechSynthesis.getVoices();
+  const germanVoice = voices.find(v => v.lang.startsWith('de') && (v.name.includes('Google') || v.name.includes('Natural') || v.name.includes('Neural')));
+  if (germanVoice) germanUtterance.voice = germanVoice;
+
+  if (spanishUtterance) {
+    const spanishVoice = voices.find(v => v.lang.startsWith('es') && (v.name.includes('Google') || v.name.includes('Natural') || v.name.includes('Neural')));
+    if (spanishVoice) spanishUtterance.voice = spanishVoice;
+  }
+
+  // Reproducir secuencialmente: Alemán -> Español
+  window.speechSynthesis.speak(germanUtterance);
+  if (spanishUtterance) {
+    window.speechSynthesis.speak(spanishUtterance);
+  }
 }
 </script>
 </body>
