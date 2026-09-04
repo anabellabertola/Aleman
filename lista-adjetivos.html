@@ -73,6 +73,46 @@ th {
  background-color: #f2f2f2;
  font-weight: 700;
 }
+.grammar-card {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  }
+  .highlight {
+    color: #d9534f; /* Color rojo/destacado para las terminaciones */
+    font-weight: bold;
+  }
+  .highlight-rule {
+    color: #0275d8; /* Color azul/destacado para conectores y reglas */
+    font-weight: bold;
+  }
+  .example {
+    font-weight: 600;
+    font-size: 1.05em;
+  }
+  .grammar-list {
+    margin: 10px 0;
+    padding-left: 20px;
+  }
+  .grammar-list li {
+    margin-bottom: 8px;
+  }
+  .example-box {
+    background: #f8f9fa;
+    border-left: 4px solid #0275d8;
+    padding: 12px;
+    margin-top: 15px;
+    border-radius: 4px;
+  }
+  .note-box {
+    background: #fff3cd;
+    border-left: 4px solid #ffc107;
+    padding: 12px;
+    margin-top: 15px;
+    border-radius: 4px;
+  }
 </style>
 </head>
 <body>
@@ -126,10 +166,74 @@ th {
 <main class="main-container" style="padding: 20px; max-width: 1200px; margin: 0 auto;">
  <h1 class="section-title">✨ Adjektivliste: Komparativ & Superlativ</h1>
 
+
  <div class="intro-box">
  <h2>Información sobre la lista</h2>
  <p>Esta lista está organizada en tres grupos: adjetivos regulares (sin cambio de vocal), adjetivos con Umlaut (cambian a, o, u → ä, ö, ü en comparativo y superlativo) y adjetivos irregulares (formas completamente distintas).</p>
  </div>
+
+ <section class="grammar-section">
+  <h1 class="section-title">Komparativ und Superlativ (comparativo y superlativo)</h1>
+  <div class="intro-box">
+    <p>El comparativo (<strong>Komparativ</strong>) se usa para comparar dos cosas, y el superlativo (<strong>Superlativ</strong>) para expresar el grado máximo dentro de un grupo.</p>
+  </div>
+
+  <div class="grammar-card">
+    <h2>1. Komparativ (comparativo)</h2>
+     <p>&nbsp;</p>
+     <p>&nbsp;</p>
+    <p>Se forma añadiendo <strong class="highlight">-er</strong> al adjetivo: schnell → schnell<strong class="highlight">er</strong>, klein → klein<strong class="highlight">er</strong>.</p>
+    
+    <ul class="grammar-list">
+      <li>Para comparar dos elementos desiguales se usa "<strong class="highlight-rule">als</strong>" (que): 
+        <span class="example">Er ist schneller <strong class="highlight-rule">als</strong> ich.</span> 
+        <small>(Él es más rápido que yo)</small>
+      </li>
+      <li>Para expresar igualdad se usa "<strong class="highlight-rule">genauso... wie</strong>" o "<strong class="highlight-rule">so... wie</strong>": 
+        <span class="example">Sie ist <strong class="highlight-rule">(genau)so</strong> groß <strong class="highlight-rule">wie</strong> ihre Schwester.</span> 
+        <small>(Ella es igual de grande que su hermana)</small>
+      </li>
+      <li>Muchos adjetivos de una sílaba con <em>a, o, u</em> añaden Umlaut: 
+        alt → <strong class="highlight">ä</strong>lt<strong class="highlight">er</strong>, 
+        groß → gr<strong class="highlight">ö</strong>ß<strong class="highlight">er</strong>, 
+        jung → j<strong class="highlight">ü</strong>ng<strong class="highlight">er</strong>, 
+        kalt → k<strong class="highlight">ä</strong>lt<strong class="highlight">er</strong>, 
+        warm → w<strong class="highlight">ä</strong>rm<strong class="highlight">er</strong>.
+      </li>
+    </ul>
+
+    <div class="example-box">
+      <p><strong>EJEMPLOS:</strong></p>
+      <p>Argentina es más fría que Suiza. → <span class="german-text">Argentinien ist k<strong class="highlight">ä</strong>lt<strong class="highlight">er</strong> <strong class="highlight-rule">als</strong> die Schweiz.</span></p>
+      <p>España es más caliente que Argentina. → <span class="german-text">Spanien ist w<strong class="highlight">ä</strong>rm<strong class="highlight">er</strong> <strong class="highlight-rule">als</strong> Argentinien.</span></p>
+    </div>
+  </div>
+
+  <div class="grammar-card">
+    <h2>2. Superlativ (superlativo)</h2>
+
+     <p>&nbsp;</p>
+     <p>&nbsp;</p>
+    <p><strong>Forma predicativa</strong> (con el verbo <em>"sein"</em>): <strong class="highlight-rule">am</strong> + adjetivo + <strong class="highlight">-sten</strong></p>
+    <ul class="grammar-list">
+      <li><span class="example">Er ist <strong class="highlight-rule">am</strong> schnell<strong class="highlight">sten</strong>.</span> <small>(Él es el más rápido)</small></li>
+      <li>schön = bonito → <span class="example">Er ist <strong class="highlight-rule">am</strong> schön<strong class="highlight">sten</strong>.</span> <small>(Él es el más bonito)</small></li>
+    </ul>
+
+    <p><strong>Forma atributiva</strong> (delante de un sustantivo, con artículo y declinación): <strong class="highlight-rule">der/die/das</strong> + adjetivo + <strong class="highlight">-ste(n)</strong> + terminación de declinación</p>
+    <ul class="grammar-list">
+      <li><span class="example">Er ist <strong class="highlight-rule">der</strong> schnell<strong class="highlight">ste</strong> Läufer.</span> <small>(Él es el corredor más rápido)</small></li>
+      <li><em>der Läufer, die Läufer</em> = el corredor, los corredores</li>
+      <li><span class="example">Sie sind <strong class="highlight-rule">die</strong> schnell<strong class="highlight">sten</strong> Läufer. (PLURAL)</span> <small>(Ellos son los corredores más rápidos)</small></li>
+    </ul>
+
+    <blockquote class="note-box">
+      <strong>Regla especial:</strong> Adjetivos que terminan en <em>-d, -t, -s, -z, -sch</em> suelen añadir <strong class="highlight">-esten</strong> en vez de <em>-sten</em>:<br>
+      am <strong class="highlight">ä</strong>lt<strong class="highlight">esten</strong>, am kürz<strong class="highlight">esten</strong>.
+    </blockquote>
+  </div>
+</section>
+
 
  <!-- Sección 1: Regulares -->
  <h1 class="section-title">1. Regelmäßige Adjektive (adjetivos regulares)</h1>
